@@ -598,5 +598,545 @@
     "artist": "Rutger van der Maar",
     "license": "CC BY 2.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:1970_Citro%C3%ABn_2CV_4.jpg"
+  },
+  "chevrolet-spark": {
+    "file": "chevrolet-spark.webp",
+    "artist": "Kevauto",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2019_Chevrolet_Spark_LT_(M400_facelift)_front_NYIAS_2019.jpg"
+  },
+  "hyundai-atos": {
+    "file": "hyundai-atos.webp",
+    "artist": "Corvettec6r",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2001_Hyundai_Atos_Prime_front.JPG"
+  },
+  "daewoo-matiz": {
+    "file": "daewoo-matiz.webp",
+    "artist": "김한일",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2009_Daewoo_Matiz_Creative_hatchback_01.jpg"
+  },
+  "chevrolet-aveo": {
+    "file": "chevrolet-aveo.webp",
+    "artist": "Michge",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:FSO_Chevrolet_Aveo_II_Sedan_front_-_PSM_2009.jpg"
+  },
+  "kia-morning": {
+    "file": "kia-morning.webp",
+    "artist": "Damian B Oh",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kia_Morning_TA_Galaxy_Black_(1).jpg"
+  },
+  "datsun-go": {
+    "file": "datsun-go.webp",
+    "artist": "Agratsa",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Datsun_redi-Go_(front).png"
+  },
+  "tata-nexon": {
+    "file": "tata-nexon.webp",
+    "artist": "DriveSpark",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2020_Tata_Nexon_EV_(India)_front_view.png"
+  },
+  "mahindra-xuv300": {
+    "file": "mahindra-xuv300.webp",
+    "artist": "Wheel Wellz",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mahindra_XUV300.jpg"
+  },
+  "hyundai-accent": {
+    "file": "hyundai-accent.webp",
+    "artist": "Bull-Doser",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hyundai_Accent_Sedan_RB.jpg"
+  },
+  "kia-cerato": {
+    "file": "kia-cerato.webp",
+    "artist": "Dinkun Chen",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:KIA_CERATO_SEDAN_(LD)_China.jpg"
+  },
+  "maruti-swift": {
+    "file": "maruti-swift.webp",
+    "artist": "Amitabha Gupta",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shiva_temple_at_Kamarpole_in_South_24_Parganas_district_06.jpg"
+  },
+  "maruti-wagon-r": {
+    "file": "maruti-wagon-r.webp",
+    "artist": "Andra Febrian",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2013_Maruti_Suzuki_Wagon_R_Stingray_VXi_front_view.jpg"
+  },
+  "geely-emgrand": {
+    "file": "geely-emgrand.webp",
+    "artist": "GZrex",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Geely_Emgrand_L_on_display_front.jpg"
+  },
+  "chery-qq": {
+    "file": "chery-qq.webp",
+    "artist": "NaBUru38",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chery_QQ_and_Chevrolet_Spark_in_Montevideo_(front).jpg"
+  },
+  "byd-seagull": {
+    "file": "byd-seagull.webp",
+    "artist": "User3204",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_BYD_Seagull_(front).jpg"
+  },
+  "volkswagen-id3": {
+    "file": "volkswagen-id3.webp",
+    "artist": "Vauxford",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2020_Volkswagen_ID.3_1st_Front.jpg"
+  },
+  "nissan-leaf": {
+    "file": "nissan-leaf.webp",
+    "artist": "Tokumeigakarinoaoshima",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nissan_LEAF_e%2B_AUTECH_(ZAA-ZE1)_front.jpg"
+  },
+  "renault-zoe": {
+    "file": "renault-zoe.webp",
+    "artist": "Damian B Oh",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Renault_Zoe_Highland_Silver_(2).jpg"
+  },
+  "hyundai-kona-electric": {
+    "file": "hyundai-kona-electric.webp",
+    "artist": "Alexander-93",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hyundai_Kona_Electric_(SX2)_Auto_Zuerich_2023_1X7A1021.jpg"
+  },
+  "tesla-model-3": {
+    "file": "tesla-model-3.webp",
+    "artist": "Alexander-93",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tesla_Model_3_1X7A6940.jpg"
+  },
+  "holden-fe": {
+    "file": "holden-fe.webp",
+    "artist": "Museumsfotografierer",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Holden_FE_1956_01.jpg"
+  },
+  "austin-mini": {
+    "file": "austin-mini.webp",
+    "artist": "Vauxford",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1962_Austin_Mini_%27Twini%27_Moke_850cc_Front.jpg"
+  },
+  "ford-anglia": {
+    "file": "ford-anglia.webp",
+    "artist": "No machine-readable author provided. THORtenerife~commonswiki assumed (based on copyright claims).",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ford-Anglia-Tenerife.JPG"
+  },
+  "morris-minor": {
+    "file": "morris-minor.webp",
+    "artist": "sv1ambo",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1968_Morris_Minor_1000_sedan_-_Panda_car_replica_(6107359415).jpg"
+  },
+  "trabant-601": {
+    "file": "trabant-601.webp",
+    "artist": "Lechita",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trabant_601-s%C5%82.jpg"
+  },
+  "lada-2101": {
+    "file": "lada-2101.webp",
+    "artist": "Charles01",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lada_1300_(21012)_in_England_1981.jpg"
+  },
+  "dacia-130": {
+    "file": "dacia-130.webp",
+    "artist": "Ocatenc",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:White_Dacia_1310_L_and_an_orange_Opel_Kadett_E_in_Brasov,_Romania.jpg"
+  },
+  "skoda-105-120": {
+    "file": "skoda-105-120.webp",
+    "artist": "Kelovy",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%C5%A0KODA_120_LS_front.JPG"
+  },
+  "seat-leon-cupra-280": {
+    "file": "seat-leon-cupra-280.webp",
+    "artist": "Quird",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seat_Leon_5F_Cupra_300_(Phase_2).jpg"
+  },
+  "opel-astra-opc": {
+    "file": "opel-astra-opc.webp",
+    "artist": "Charles from Port Chester, New York",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Opel_Astra_K_1.6T_Sport_OPC-Line_(2021)_(52713386523).jpg"
+  },
+  "ford-mustang-ecoboost": {
+    "file": "ford-mustang-ecoboost.webp",
+    "artist": "Vauxford",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2017_Ford_Mustang_Ecoboost_Coupe_2.3.jpg"
+  },
+  "dodge-challenger-rt": {
+    "file": "dodge-challenger-rt.webp",
+    "artist": "Bull-Doser",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dodge_Challenger_RT_Coupe_(Orange_Julep).jpg"
+  },
+  "chevrolet-camaro-ss": {
+    "file": "chevrolet-camaro-ss.webp",
+    "artist": "MercurySable99",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1969_Chevrolet_Camaro_SS_Sport_Coupe,_front_left_(Cruisin%27_the_River_Lowellville_Car_Show,_July_10th,_2023).jpg"
+  },
+  "infiniti-q50-red-sport": {
+    "file": "infiniti-q50-red-sport.webp",
+    "artist": "Grant.C",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2017_ASA_AutoX_IMG_8021_edited_(34729939550).jpg"
+  },
+  "lexus-is-f": {
+    "file": "lexus-is-f.webp",
+    "artist": "FotoSleuth",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lexus_IS350_F_Sports.jpg"
+  },
+  "acura-tlx-type-s": {
+    "file": "acura-tlx-type-s.webp",
+    "artist": "SmackJam",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Acura_TLX_Type-S_WGI22.jpg"
+  },
+  "nissan-skyline-gtr-r32": {
+    "file": "nissan-skyline-gtr-r32.webp",
+    "artist": "Bull-Doser",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nissan_Skyline_GT-R_R32_(Orange_Julep).JPG"
+  },
+  "nissan-300zx-z32": {
+    "file": "nissan-300zx-z32.webp",
+    "artist": "先従隗始",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nissan_E-GCZ32_Fairlady_Z_300ZX_Twin_Turbo_2_by_2_T-Bar_Roof_(22080710530).jpg"
+  },
+  "toyota-mr2-sw20": {
+    "file": "toyota-mr2-sw20.webp",
+    "artist": "Tokumeigakarinoaoshima",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tuned_Toyota_MR2_GT_(SW20)_front.JPG"
+  },
+  "mitsubishi-gto-3000gt": {
+    "file": "mitsubishi-gto-3000gt.webp",
+    "artist": "Rutger van der Maar",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mitsubishi_3000GT_front.jpg"
+  },
+  "mazda-rx7-fc": {
+    "file": "mazda-rx7-fc.webp",
+    "artist": "Tokumeigakarinoaoshima",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tuned_Mazda_SAVANNA_RX-7_GT-R_(E-FC3S)_at_night_front.jpg"
+  },
+  "jaguar-xj220": {
+    "file": "jaguar-xj220.webp",
+    "artist": "Kieran White from Manchester, England",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1994_Jaguar_XJ220_(14969266456).jpg"
+  },
+  "bugatti-veyron": {
+    "file": "bugatti-veyron.webp",
+    "artist": "Charles from Port Chester, New York",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bugatti_Veyron_EB_16.4_(2008)_(52569946394).jpg"
+  },
+  "porsche-918-spyder": {
+    "file": "porsche-918-spyder.webp",
+    "artist": "David Villarreal Fernández",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Porsche_918_Spyder.jpg"
+  },
+  "lamborghini-countach": {
+    "file": "lamborghini-countach.webp",
+    "artist": "Alexandre Prévot from Nancy, France",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lamborghini_Countach_LP_500_S_(22111440938).jpg"
+  },
+  "ferrari-testarossa": {
+    "file": "ferrari-testarossa.webp",
+    "artist": "TTTNIS",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ferrari_Testarossa_01.jpg"
+  },
+  "porsche-959": {
+    "file": "porsche-959.webp",
+    "artist": "Alexandre Prevot from Nancy, France",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Porsche_959_Prototype_(52675487523).jpg"
+  },
+  "ferrari-250-gto": {
+    "file": "ferrari-250-gto.webp",
+    "artist": "Lothar Spurzem",
+    "license": "CC BY-SA 2.0 de",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ferrari_250_GTO,_CMC-Modell_(T%C3%BCr_offen_2017-02-14).JPG"
+  },
+  "jaguar-d-type": {
+    "file": "jaguar-d-type.webp",
+    "artist": "Brian Snelson",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1956JaguarD-TypeLongNose.jpg"
+  },
+  "aston-martin-db9": {
+    "file": "aston-martin-db9.webp",
+    "artist": "Clément Bucco-Lechat",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Geneva_MotorShow_2013_-_Aston_Martin_DB9_turn_signal.jpg"
+  },
+  "bentley-continental-gt": {
+    "file": "bentley-continental-gt.webp",
+    "artist": "M 93",
+    "license": "CC BY-SA 3.0 de",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bentley_Continental_GTC_(II)_%E2%80%93_Frontansicht_(1),_25._Oktober_2011,_D%C3%BCsseldorf.jpg"
+  },
+  "rolls-royce-phantom": {
+    "file": "rolls-royce-phantom.webp",
+    "artist": "JustAnotherCarDesigner",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rolls-Royce_Phantom_VIII_001.jpg"
+  },
+  "lamborghini-miura": {
+    "file": "lamborghini-miura.webp",
+    "artist": "Andrew Bossi",
+    "license": "CC BY-SA 2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:6274_-_Luzern_-_Verkehrshaus_-_Lamborghini_Miura.JPG"
+  },
+  "ferrari-daytona": {
+    "file": "ferrari-daytona.webp",
+    "artist": "Matteo \"TT\" Stucchi (webmaster@swisscarsightings.com) Original uploader was PeterHoch at de.wikipedia",
+    "license": "CC BY-SA 2.0 de",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ferrari_365_GTB_Daytona_front.jpg"
+  },
+  "porsche-carrera-rs-2.7": {
+    "file": "porsche-carrera-rs-2.7.webp",
+    "artist": "Lothar Spurzem",
+    "license": "CC BY-SA 2.0 de",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Porsche_911_Carrera_RS,_Bj._1972-73,_Front_(2016-07-02_02_Sp).JPG"
+  },
+  "ferrari-gto-evolution": {
+    "file": "ferrari-gto-evolution.webp",
+    "artist": "Calreyn88",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ferrari_288_GTO_Evoluzione.jpg"
+  },
+  "mclaren-mp4-12c": {
+    "file": "mclaren-mp4-12c.webp",
+    "artist": "Tokumeigakarinoaoshima",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:McLaren_MP4-12C_coupe.JPG"
+  },
+  "ferrari-250-gto-1962": {
+    "file": "ferrari-250-gto-1962.webp",
+    "artist": "SG2012",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ferrari_250_GTO_1962-1963_Replica.jpg"
+  },
+  "porsche-911-speedster-1989": {
+    "file": "porsche-911-speedster-1989.webp",
+    "artist": "Mr.choppers",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1989_Porsche_911_Speedster_Turbo-Look_in_Silver,_front_right.jpg"
+  },
+  "lamborghini-diablo-se30": {
+    "file": "lamborghini-diablo-se30.webp",
+    "artist": "MrWalkr",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1996_Lamborghini_Diablo_SE30_Silver.jpg"
+  },
+  "lotus-esprit-v8": {
+    "file": "lotus-esprit-v8.webp",
+    "artist": "Jackson lo2007",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2000_Lotus_Esprit_V8_Twin_Turbo_Lightning_Pearl_Yellow.jpg"
+  },
+  "fiat-126": {
+    "file": "fiat-126.webp",
+    "artist": "Marc Breuer",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fiat_126_BIS_front.jpg"
+  },
+  "ford-ka": {
+    "file": "ford-ka.webp",
+    "artist": "Rudolf Stricker",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ford_Ka_front_20071011.jpg"
+  },
+  "hyundai-getz": {
+    "file": "hyundai-getz.webp",
+    "artist": "OSX",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2006_Hyundai_Getz_(TB_MY06)_5-door_hatchback_(2007-05-28).jpg"
+  },
+  "kia-rio": {
+    "file": "kia-rio.webp",
+    "artist": "Self-Proclaimed-Car-Enthusiast",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kia_Rio_QB_Sedan_(front).jpg"
+  },
+  "peugeot-106": {
+    "file": "peugeot-106.webp",
+    "artist": "Rudolf Stricker",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Peugeot_106_front_20070609.jpg"
+  },
+  "vauxhall-corsa-b": {
+    "file": "vauxhall-corsa-b.webp",
+    "artist": "TuRbO_J from Adelaide, Australia",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1995-1997_Holden_Barina_(SB)_Swing_5-door_hatchback_(19669722092)_(cropped).jpg"
+  },
+  "rover-25": {
+    "file": "rover-25.webp",
+    "artist": "Alessandro Antonelli",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black_Rover_25.jpg"
+  },
+  "mitsubishi-mirage": {
+    "file": "mitsubishi-mirage.webp",
+    "artist": "Tokumeigakarinoaoshima",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mitsubishi_MIRAGE_HATCHBACK_SWIFT_X_(E-C52A)_front.jpg"
+  },
+  "proton-saga": {
+    "file": "proton-saga.webp",
+    "artist": "LuvsMG481",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_Proton_Saga_Premium_1.3_front.jpg"
+  },
+  "perodua-myvi": {
+    "file": "perodua-myvi.webp",
+    "artist": "Automachi",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021_Perodua_Myvi_1.5_AV_(Malaysia)_front_view.png"
+  },
+  "suzuki-alto": {
+    "file": "suzuki-alto.webp",
+    "artist": "Vis M",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maruti_Suzuki_Alto_K10_-_front.jpg"
+  },
+  "volkswagen-id4": {
+    "file": "volkswagen-id4.webp",
+    "artist": "Dennis Elzinga",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2020_Volkswagen_ID.4_Pro_(Netherlands)_front_view.jpg"
+  },
+  "hyundai-ioniq-5": {
+    "file": "hyundai-ioniq-5.webp",
+    "artist": "Harvey Bold",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021_Hyundai_Ioniq_5_Premium_EV_-_54kWh_(170PS)_Electric_-_Silver_-_02-2025,_Front.jpg"
+  },
+  "volvo-c30-r-design": {
+    "file": "volvo-c30-r-design.webp",
+    "artist": "Bull-Doser",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%2709_Volvo_C30_R-Design_(MIAS).JPG"
+  },
+  "lexus-is-250": {
+    "file": "lexus-is-250.webp",
+    "artist": "Tokumeigakarinoaoshima",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:3rd_generation_Lexus_IS250_front.JPG"
+  },
+  "acura-rsx": {
+    "file": "acura-rsx.webp",
+    "artist": "hugh llewelyn",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2002_Honda_Integra_Type_R.jpg"
+  },
+  "mitsubishi-evo-x-final-edition": {
+    "file": "mitsubishi-evo-x-final-edition.webp",
+    "artist": "IFCAR",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Lancer_EVO_X.jpg"
+  },
+  "subaru-sti-hatchback": {
+    "file": "subaru-sti-hatchback.webp",
+    "artist": "IFCAR",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2011_Subaru_Impreza_WRX_STI_sedan_front_--_2011_DC.jpg"
+  },
+  "bmw-335i": {
+    "file": "bmw-335i.webp",
+    "artist": "OSX",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2006-2010_BMW_335i_(E92)_coupe_01.jpg"
+  },
+  "porsche-911-turbo-930": {
+    "file": "porsche-911-turbo-930.webp",
+    "artist": "Ermell",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Porsche_911_Turbo_(Typ_930-3.3)-_6301917.jpg"
+  },
+  "bmw-m1": {
+    "file": "bmw-m1.webp",
+    "artist": "Carfanatic2019",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1981_BMW_M1_(255_BMW).jpg"
+  },
+  "lancia-stratos": {
+    "file": "lancia-stratos.webp",
+    "artist": "Mr.choppers",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1974_Lancia_Stratos_Stradale_at_Greenwich_2021,_front_left.jpg"
+  },
+  "maserati-bora": {
+    "file": "maserati-bora.webp",
+    "artist": "Alexandre Prevot from Nancy, France",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maserati_Bora_4.9_(52680851706).jpg"
+  },
+  "de-tomaso-pantera": {
+    "file": "de-tomaso-pantera.webp",
+    "artist": "Thesupermat",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paris_-_Bonhams_2014_-_De_Tomaso_Pantera_Group_3_-_1972_-_001.jpg"
+  },
+  "lotus-esprit-s1": {
+    "file": "lotus-esprit-s1.webp",
+    "artist": "Jagvar",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lotus_Turbo_Esprit_HC.jpg"
+  },
+  "jensen-interceptor": {
+    "file": "jensen-interceptor.webp",
+    "artist": "Sicnag",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1972_Jensen_Interceptor_MkIII.jpg"
+  },
+  "iso-grifo": {
+    "file": "iso-grifo.webp",
+    "artist": "MrWalkr",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1968_Iso_Grifo_GL_365.jpg"
+  },
+  "dodge-charger-rt-1970": {
+    "file": "dodge-charger-rt-1970.webp",
+    "artist": "Sicnag",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1970_Dodge_Charger_RT.jpg"
+  },
+  "pontiac-gto-judge": {
+    "file": "pontiac-gto-judge.webp",
+    "artist": "Xnatedawgx",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1970_Pontiac_GTO_The_Judge,_white,_front_left_side,_Golden_Super_Cruise_2026-07-04.jpg"
   }
 }

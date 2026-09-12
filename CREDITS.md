@@ -106,3 +106,93 @@ each card's detail view.
 | Lamborghini Veneno | Clément Bucco-Lechat | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Geneva_MotorShow_2013_-_Lamborghini_Veneno_1.jpg) |
 | Aston Martin Valkyrie | Vauxford | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2019_Aston_Martin_Valkyrie_AMR_Pro_6.5_Front.jpg) |
 | Koenigsegg Jesko Absolut | Matti Blume | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Koenigsegg_Jesko,_GIMS_2019,_Le_Grand-Saconnex_(GIMS1047).jpg) |
+| Chevrolet Spark | Kevauto | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2019_Chevrolet_Spark_LT_(M400_facelift)_front_NYIAS_2019.jpg) |
+| Hyundai Atos | Corvettec6r | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:2001_Hyundai_Atos_Prime_front.JPG) |
+| Daewoo Matiz | 김한일 | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:2009_Daewoo_Matiz_Creative_hatchback_01.jpg) |
+| Chevrolet Aveo | Michge | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:FSO_Chevrolet_Aveo_II_Sedan_front_-_PSM_2009.jpg) |
+| Kia Morning | Damian B Oh | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Kia_Morning_TA_Galaxy_Black_(1).jpg) |
+| Datsun GO | Agratsa | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Datsun_redi-Go_(front).png) |
+| Tata Nexon | DriveSpark | CC BY 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:2020_Tata_Nexon_EV_(India)_front_view.png) |
+| Mahindra XUV300 | Wheel Wellz | CC BY 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Mahindra_XUV300.jpg) |
+| Hyundai Accent | Bull-Doser | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Hyundai_Accent_Sedan_RB.jpg) |
+| Kia Cerato | Dinkun Chen | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:KIA_CERATO_SEDAN_(LD)_China.jpg) |
+| Maruti Swift | Amitabha Gupta | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Shiva_temple_at_Kamarpole_in_South_24_Parganas_district_06.jpg) |
+| Maruti Wagon R | Andra Febrian | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2013_Maruti_Suzuki_Wagon_R_Stingray_VXi_front_view.jpg) |
+| Geely Emgrand | GZrex | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Geely_Emgrand_L_on_display_front.jpg) |
+| Chery QQ | NaBUru38 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Chery_QQ_and_Chevrolet_Spark_in_Montevideo_(front).jpg) |
+| BYD Seagull | User3204 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_BYD_Seagull_(front).jpg) |
+| Volkswagen ID.3 | Vauxford | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2020_Volkswagen_ID.3_1st_Front.jpg) |
+| Nissan Leaf | Tokumeigakarinoaoshima | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Nissan_LEAF_e%2B_AUTECH_(ZAA-ZE1)_front.jpg) |
+| Renault Zoe | Damian B Oh | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Renault_Zoe_Highland_Silver_(2).jpg) |
+| Hyundai Kona Electric | Alexander-93 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Hyundai_Kona_Electric_(SX2)_Auto_Zuerich_2023_1X7A1021.jpg) |
+| Tesla Model 3 | Alexander-93 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Tesla_Model_3_1X7A6940.jpg) |
+| Holden FE | Museumsfotografierer | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Holden_FE_1956_01.jpg) |
+| Austin Mini | Vauxford | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1962_Austin_Mini_%27Twini%27_Moke_850cc_Front.jpg) |
+| Ford Anglia | No machine-readable author provided. THORtenerife~commonswiki assumed (based on copyright claims). | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Ford-Anglia-Tenerife.JPG) |
+| Morris Minor | sv1ambo | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1968_Morris_Minor_1000_sedan_-_Panda_car_replica_(6107359415).jpg) |
+| Trabant 601 | Lechita | CC BY 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Trabant_601-s%C5%82.jpg) |
+| Lada 2101 | Charles01 | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Lada_1300_(21012)_in_England_1981.jpg) |
+| Dacia 1310 | Ocatenc | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:White_Dacia_1310_L_and_an_orange_Opel_Kadett_E_in_Brasov,_Romania.jpg) |
+| Škoda 105/120 | Kelovy | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:%C5%A0KODA_120_LS_front.JPG) |
+| SEAT León Cupra | Quird | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Seat_Leon_5F_Cupra_300_(Phase_2).jpg) |
+| Opel Astra OPC | Charles from Port Chester, New York | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Opel_Astra_K_1.6T_Sport_OPC-Line_(2021)_(52713386523).jpg) |
+| Ford Mustang EcoBoost | Vauxford | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2017_Ford_Mustang_Ecoboost_Coupe_2.3.jpg) |
+| Dodge Challenger RT | Bull-Doser | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Dodge_Challenger_RT_Coupe_(Orange_Julep).jpg) |
+| Chevrolet Camaro SS | MercurySable99 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1969_Chevrolet_Camaro_SS_Sport_Coupe,_front_left_(Cruisin%27_the_River_Lowellville_Car_Show,_July_10th,_2023).jpg) |
+| Infiniti Q50 Red Sport | Grant.C | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:2017_ASA_AutoX_IMG_8021_edited_(34729939550).jpg) |
+| Lexus IS-F | FotoSleuth | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Lexus_IS350_F_Sports.jpg) |
+| Acura TLX Type-S | SmackJam | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Acura_TLX_Type-S_WGI22.jpg) |
+| Nissan Skyline GT-R R32 | Bull-Doser | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Nissan_Skyline_GT-R_R32_(Orange_Julep).JPG) |
+| Nissan 300ZX Z32 | 先従隗始 | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Nissan_E-GCZ32_Fairlady_Z_300ZX_Twin_Turbo_2_by_2_T-Bar_Roof_(22080710530).jpg) |
+| Toyota MR2 SW20 | Tokumeigakarinoaoshima | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Tuned_Toyota_MR2_GT_(SW20)_front.JPG) |
+| Mitsubishi 3000GT | Rutger van der Maar | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Mitsubishi_3000GT_front.jpg) |
+| Mazda RX-7 FC | Tokumeigakarinoaoshima | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Tuned_Mazda_SAVANNA_RX-7_GT-R_(E-FC3S)_at_night_front.jpg) |
+| Jaguar XJ220 | Kieran White from Manchester, England | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1994_Jaguar_XJ220_(14969266456).jpg) |
+| Bugatti Veyron | Charles from Port Chester, New York | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Bugatti_Veyron_EB_16.4_(2008)_(52569946394).jpg) |
+| Porsche 918 Spyder | David Villarreal Fernández | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Porsche_918_Spyder.jpg) |
+| Lamborghini Countach | Alexandre Prévot from Nancy, France | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Lamborghini_Countach_LP_500_S_(22111440938).jpg) |
+| Ferrari Testarossa | TTTNIS | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Ferrari_Testarossa_01.jpg) |
+| Porsche 959 | Alexandre Prevot from Nancy, France | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Porsche_959_Prototype_(52675487523).jpg) |
+| Ferrari 250 GTO | Lothar Spurzem | CC BY-SA 2.0 de | [Commons](https://commons.wikimedia.org/wiki/File:Ferrari_250_GTO,_CMC-Modell_(T%C3%BCr_offen_2017-02-14).JPG) |
+| Jaguar D-Type | Brian Snelson | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1956JaguarD-TypeLongNose.jpg) |
+| Aston Martin DB9 | Clément Bucco-Lechat | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Geneva_MotorShow_2013_-_Aston_Martin_DB9_turn_signal.jpg) |
+| Bentley Continental GT | M 93 | CC BY-SA 3.0 de | [Commons](https://commons.wikimedia.org/wiki/File:Bentley_Continental_GTC_(II)_%E2%80%93_Frontansicht_(1),_25._Oktober_2011,_D%C3%BCsseldorf.jpg) |
+| Rolls-Royce Phantom | JustAnotherCarDesigner | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Rolls-Royce_Phantom_VIII_001.jpg) |
+| Lamborghini Miura | Andrew Bossi | CC BY-SA 2.5 | [Commons](https://commons.wikimedia.org/wiki/File:6274_-_Luzern_-_Verkehrshaus_-_Lamborghini_Miura.JPG) |
+| Ferrari Daytona 365 GTB/4 | Matteo "TT" Stucchi (webmaster@swisscarsightings.com) Original uploader was PeterHoch at de.wikipedia | CC BY-SA 2.0 de | [Commons](https://commons.wikimedia.org/wiki/File:Ferrari_365_GTB_Daytona_front.jpg) |
+| Porsche Carrera RS 2.7 | Lothar Spurzem | CC BY-SA 2.0 de | [Commons](https://commons.wikimedia.org/wiki/File:Porsche_911_Carrera_RS,_Bj._1972-73,_Front_(2016-07-02_02_Sp).JPG) |
+| Ferrari 288 GTO Evoluzione | Calreyn88 | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Ferrari_288_GTO_Evoluzione.jpg) |
+| McLaren MP4-12C | Tokumeigakarinoaoshima | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:McLaren_MP4-12C_coupe.JPG) |
+| Ferrari 250 GTO | SG2012 | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Ferrari_250_GTO_1962-1963_Replica.jpg) |
+| Porsche 911 Speedster 1989 | Mr.choppers | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:1989_Porsche_911_Speedster_Turbo-Look_in_Silver,_front_right.jpg) |
+| Lamborghini Diablo SE30 | MrWalkr | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1996_Lamborghini_Diablo_SE30_Silver.jpg) |
+| Lotus Esprit V8 | Jackson lo2007 | CC BY 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:2000_Lotus_Esprit_V8_Twin_Turbo_Lightning_Pearl_Yellow.jpg) |
+| Fiat 126 | Marc Breuer | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Fiat_126_BIS_front.jpg) |
+| Ford Ka | Rudolf Stricker | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Ford_Ka_front_20071011.jpg) |
+| Hyundai Getz | OSX | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:2006_Hyundai_Getz_(TB_MY06)_5-door_hatchback_(2007-05-28).jpg) |
+| Kia Rio | Self-Proclaimed-Car-Enthusiast | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Kia_Rio_QB_Sedan_(front).jpg) |
+| Peugeot 106 | Rudolf Stricker | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Peugeot_106_front_20070609.jpg) |
+| Vauxhall Corsa B | TuRbO_J from Adelaide, Australia | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1995-1997_Holden_Barina_(SB)_Swing_5-door_hatchback_(19669722092)_(cropped).jpg) |
+| Rover 25 | Alessandro Antonelli | CC BY 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Black_Rover_25.jpg) |
+| Mitsubishi Mirage | Tokumeigakarinoaoshima | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Mitsubishi_MIRAGE_HATCHBACK_SWIFT_X_(E-C52A)_front.jpg) |
+| Proton Saga | LuvsMG481 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2018_Proton_Saga_Premium_1.3_front.jpg) |
+| Perodua Myvi | Automachi | CC BY 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:2021_Perodua_Myvi_1.5_AV_(Malaysia)_front_view.png) |
+| Suzuki Alto | Vis M | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Maruti_Suzuki_Alto_K10_-_front.jpg) |
+| Volkswagen ID.4 | Dennis Elzinga | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:2020_Volkswagen_ID.4_Pro_(Netherlands)_front_view.jpg) |
+| Hyundai Ioniq 5 | Harvey Bold | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:2021_Hyundai_Ioniq_5_Premium_EV_-_54kWh_(170PS)_Electric_-_Silver_-_02-2025,_Front.jpg) |
+| Volvo C30 R-Design | Bull-Doser | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:%2709_Volvo_C30_R-Design_(MIAS).JPG) |
+| Lexus IS 250 | Tokumeigakarinoaoshima | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:3rd_generation_Lexus_IS250_front.JPG) |
+| Acura RSX | hugh llewelyn | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:2002_Honda_Integra_Type_R.jpg) |
+| Mitsubishi Lancer Evolution X | IFCAR | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Mitsubishi_Lancer_EVO_X.jpg) |
+| Subaru Impreza WRX STI Hatchback | IFCAR | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:2011_Subaru_Impreza_WRX_STI_sedan_front_--_2011_DC.jpg) |
+| BMW 335i | OSX | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:2006-2010_BMW_335i_(E92)_coupe_01.jpg) |
+| Porsche 911 Turbo 930 | Ermell | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Porsche_911_Turbo_(Typ_930-3.3)-_6301917.jpg) |
+| BMW M1 | Carfanatic2019 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1981_BMW_M1_(255_BMW).jpg) |
+| Lancia Stratos | Mr.choppers | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:1974_Lancia_Stratos_Stradale_at_Greenwich_2021,_front_left.jpg) |
+| Maserati Bora | Alexandre Prevot from Nancy, France | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Maserati_Bora_4.9_(52680851706).jpg) |
+| De Tomaso Pantera | Thesupermat | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Paris_-_Bonhams_2014_-_De_Tomaso_Pantera_Group_3_-_1972_-_001.jpg) |
+| Lotus Esprit S1 | Jagvar | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Lotus_Turbo_Esprit_HC.jpg) |
+| Jensen Interceptor | Sicnag | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1972_Jensen_Interceptor_MkIII.jpg) |
+| Iso Grifo | MrWalkr | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1968_Iso_Grifo_GL_365.jpg) |
+| Dodge Charger R/T | Sicnag | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1970_Dodge_Charger_RT.jpg) |
+| Pontiac GTO Judge | Xnatedawgx | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1970_Pontiac_GTO_The_Judge,_white,_front_left_side,_Golden_Super_Cruise_2026-07-04.jpg) |
