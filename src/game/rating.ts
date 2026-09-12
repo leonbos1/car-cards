@@ -16,9 +16,9 @@ export function overall(stats: Stats): number {
 }
 
 /**
- * Same shape as FIFA's rating cuts, tuned against the roster so the split lands
- * near 36 bronze / 34 silver / 30 gold. A 320hp Civic Type R is genuinely quick,
- * but it is not a gold car in a set that contains a Chiron.
+ * Tier cutoffs. Bronze < 70, Silver 70-78, Gold 79+.
+ * This balances the tiers (~150 bronze, 50 silver, 100 gold) so packs
+ * never exhaust a tier. A 320hp Civic Type R lands in silver; a 720S in gold.
  */
 export function tierOf(rating: number): Tier {
   if (rating < BRONZE_CEILING) return 'bronze'
@@ -27,7 +27,7 @@ export function tierOf(rating: number): Tier {
 }
 
 export const BRONZE_CEILING = 70
-export const GOLD_FLOOR = 84
+export const GOLD_FLOOR = 79
 
 export function cardClassOf(car: Car, tier: Tier): CardClass {
   return car.special ? 'special' : tier

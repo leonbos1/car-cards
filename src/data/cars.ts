@@ -991,7 +991,7 @@ export const CARS: Car[] = [
   {
     id: 'tesla-model-3',
     make: 'Tesla', model: 'Model 3', year: 2021, country: 'US',
-    stats: { acc: 48, spd: 45, pwr: 46, han: 60, brk: 58, sty: 40 },
+    stats: { acc: 92, spd: 88, pwr: 90, han: 76, brk: 82, sty: 50 },
     rare: false,
     specs: { hp: 358, zeroToHundred: 5.8, topSpeed: 225, weightKg: 1611 },
     imageQuery: 'Tesla Model 3',
@@ -1099,7 +1099,7 @@ export const CARS: Car[] = [
   {
     id: 'ford-mustang-ecoboost',
     make: 'Ford', model: 'Mustang EcoBoost', year: 2020, country: 'US',
-    stats: { acc: 72, spd: 70, pwr: 68, han: 72, brk: 74, sty: 84 },
+    stats: { acc: 82, spd: 80, pwr: 80, han: 74, brk: 78, sty: 84 },
     rare: false,
     specs: { hp: 310, zeroToHundred: 6.4, topSpeed: 230, weightKg: 1640 },
     imageQuery: 'Ford Mustang EcoBoost coupe',
@@ -1107,7 +1107,7 @@ export const CARS: Car[] = [
   {
     id: 'dodge-challenger-rt',
     make: 'Dodge', model: 'Challenger RT', year: 2019, country: 'US',
-    stats: { acc: 74, spd: 72, pwr: 76, han: 68, brk: 72, sty: 82 },
+    stats: { acc: 82, spd: 82, pwr: 82, han: 72, brk: 78, sty: 82 },
     rare: false,
     specs: { hp: 370, zeroToHundred: 6.7, topSpeed: 230, weightKg: 1770 },
     imageQuery: 'Dodge Challenger RT coupe',
@@ -1482,7 +1482,7 @@ export const CARS: Car[] = [
   {
     id: 'hyundai-ioniq-5',
     make: 'Hyundai', model: 'Ioniq 5', year: 2021, country: 'KR',
-    stats: { acc: 46, spd: 42, pwr: 44, han: 58, brk: 56, sty: 40 },
+    stats: { acc: 90, spd: 86, pwr: 88, han: 74, brk: 80, sty: 50 },
     rare: false,
     specs: { hp: 320, zeroToHundred: 5.2, topSpeed: 210, weightKg: 1660 },
     imageQuery: 'Hyundai Ioniq 5 electric',
@@ -2027,7 +2027,7 @@ export const CARS: Car[] = [
   {
     id: 'alfa-romeo-4c',
     make: 'Alfa Romeo', model: '4C', year: 2013, country: 'IT',
-    stats: { acc: 56, spd: 56, pwr: 54, han: 78, brk: 70, sty: 92 },
+    stats: { acc: 88, spd: 86, pwr: 84, han: 80, brk: 78, sty: 92 },
     rare: false,
     specs: { hp: 240, zeroToHundred: 4.5, topSpeed: 260, weightKg: 895 },
     imageQuery: 'Alfa Romeo 4C lightweight coupe',
@@ -2035,7 +2035,7 @@ export const CARS: Car[] = [
   {
     id: 'alfa-romeo-4c-spider',
     make: 'Alfa Romeo', model: '4C Spider', year: 2013, country: 'IT',
-    stats: { acc: 56, spd: 55, pwr: 54, han: 76, brk: 70, sty: 94 },
+    stats: { acc: 88, spd: 86, pwr: 84, han: 80, brk: 78, sty: 94 },
     rare: true,
     specs: { hp: 240, zeroToHundred: 4.6, topSpeed: 260, weightKg: 920 },
     imageQuery: 'Alfa Romeo 4C Spider',
@@ -2043,7 +2043,7 @@ export const CARS: Car[] = [
   {
     id: 'alfa-romeo-giulia-quadrifoglio-2016',
     make: 'Alfa Romeo', model: 'Giulia Quadrifoglio', year: 2016, country: 'IT',
-    stats: { acc: 56, spd: 56, pwr: 56, han: 76, brk: 72, sty: 88 },
+    stats: { acc: 90, spd: 90, pwr: 90, han: 80, brk: 85, sty: 88 },
     rare: false,
     specs: { hp: 510, zeroToHundred: 3.9, topSpeed: 280, weightKg: 1450 },
     imageQuery: 'Alfa Romeo Giulia Quadrifoglio 2016',
@@ -2051,7 +2051,7 @@ export const CARS: Car[] = [
   {
     id: 'alfa-romeo-stelvio-quadrifoglio',
     make: 'Alfa Romeo', model: 'Stelvio Quadrifoglio', year: 2018, country: 'IT',
-    stats: { acc: 54, spd: 54, pwr: 56, han: 74, brk: 70, sty: 86 },
+    stats: { acc: 90, spd: 90, pwr: 90, han: 80, brk: 85, sty: 86 },
     rare: false,
     specs: { hp: 510, zeroToHundred: 3.8, topSpeed: 280, weightKg: 1650 },
     imageQuery: 'Alfa Romeo Stelvio Quadrifoglio SUV',
@@ -2181,7 +2181,7 @@ export const CARS: Car[] = [
   {
     id: 'alfa-romeo-spider-4.3-v8',
     make: 'Alfa Romeo', model: 'Spider 4.3 V8', year: 1994, country: 'IT',
-    stats: { acc: 60, spd: 60, pwr: 58, han: 76, brk: 68, sty: 96 },
+    stats: { acc: 88, spd: 86, pwr: 84, han: 78, brk: 76, sty: 96 },
     rare: true,
     specs: { hp: 300, zeroToHundred: 5.5, topSpeed: 270, weightKg: 1360 },
     imageQuery: 'Alfa Romeo Spider 4.3 V8',
@@ -2237,7 +2237,7 @@ export const CARS: Car[] = [
   {
     id: 'alfa-romeo-4c-competizione',
     make: 'Alfa Romeo', model: '4C Competizione', year: 2014, country: 'IT',
-    stats: { acc: 58, spd: 58, pwr: 56, han: 80, brk: 72, sty: 94 },
+    stats: { acc: 90, spd: 88, pwr: 86, han: 82, brk: 80, sty: 94 },
     rare: true,
     specs: { hp: 240, zeroToHundred: 4.3, topSpeed: 260, weightKg: 885 },
     imageQuery: 'Alfa Romeo 4C Competizione',
@@ -2280,7 +2280,7 @@ export const CARS: Car[] = [
   {
     id: 'alfa-romeo-giulietta-ss',
     make: 'Alfa Romeo', model: 'Giulietta Sprint Speciale', year: 1959, country: 'IT',
-    stats: { acc: 72, spd: 70, pwr: 68, han: 80, brk: 66, sty: 98 },
+    stats: { acc: 76, spd: 78, pwr: 76, han: 82, brk: 72, sty: 99 },
     rare: true,
     special: { label: 'CLASSIC RACER', limitedTo: 1366 },
     specs: { hp: 118, zeroToHundred: 8.5, topSpeed: 195, weightKg: 840 },
@@ -2289,7 +2289,7 @@ export const CARS: Car[] = [
   {
     id: 'alfa-romeo-8c-monza',
     make: 'Alfa Romeo', model: '8C Monza', year: 1932, country: 'IT',
-    stats: { acc: 76, spd: 74, pwr: 74, han: 78, brk: 70, sty: 99 },
+    stats: { acc: 80, spd: 78, pwr: 78, han: 80, brk: 74, sty: 99 },
     rare: true,
     special: { label: 'PRE-WAR LEGEND', limitedTo: 188 },
     specs: { hp: 142, zeroToHundred: 10.0, topSpeed: 210, weightKg: 830 },
@@ -2316,7 +2316,7 @@ export const CARS: Car[] = [
   {
     id: 'alfa-romeo-2300b',
     make: 'Alfa Romeo', model: '2300B Racing', year: 1935, country: 'IT',
-    stats: { acc: 74, spd: 72, pwr: 72, han: 76, brk: 68, sty: 96 },
+    stats: { acc: 82, spd: 80, pwr: 80, han: 80, brk: 76, sty: 96 },
     rare: true,
     special: { label: 'VINTAGE RACER', limitedTo: 16 },
     specs: { hp: 230, zeroToHundred: 6.8, topSpeed: 265, weightKg: 850 },
@@ -2343,7 +2343,7 @@ export const CARS: Car[] = [
   {
     id: 'alfa-romeo-spada-bertone',
     make: 'Alfa Romeo', model: 'Spada Bertone', year: 1969, country: 'IT',
-    stats: { acc: 76, spd: 74, pwr: 72, han: 78, brk: 70, sty: 99 },
+    stats: { acc: 80, spd: 78, pwr: 76, han: 80, brk: 74, sty: 99 },
     rare: true,
     special: { label: 'CONCEPT', limitedTo: 2 },
     specs: { hp: 225, zeroToHundred: 6.4, topSpeed: 250, weightKg: 1300 },
