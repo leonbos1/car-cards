@@ -1,0 +1,51 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Archivo', 'Arial Narrow', system-ui, sans-serif;
+
+  --color-bronze-1: #6b4423;
+  --color-bronze-2: #c98f4e;
+  --color-bronze-3: #f3d2a8;
+  --color-silver-1: #4a5259;
+  --color-silver-2: #b4bec8;
+  --color-silver-3: #f0f4f8;
+  --color-gold-1: #7a5c14;
+  --color-gold-2: #e8c25a;
+  --color-gold-3: #fff2c4;
+  --color-special-1: #10060f;
+  --color-special-2: #2b1030;
+  --color-special-3: #ffd9f4;
+  --color-pitch: #05070c;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background: var(--color-pitch);
+  color: #e8eef6;
+  font-family: var(--font-display);
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior: none;
+}
+
+/* The stadium-ish backdrop every screen sits on. */
+.app-bg {
+  background:
+    radial-gradient(ellipse 80% 50% at 50% -10%, #1a2740 0%, transparent 60%),
+    radial-gradient(ellipse 60% 40% at 50% 110%, #14203a 0%, transparent 60%),
+    var(--color-pitch);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

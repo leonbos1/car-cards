@@ -1,9 +1,13 @@
 import type { Pack } from '../types'
 
 /**
- * Prices are lifted straight from the FUT coin store; contents are adapted to a
- * 100-car roster. Each pack's `odds` block is what the store renders, and the
- * same numbers on the pack drive openPack — they cannot drift apart.
+ * Prices are lifted straight from the FUT coin store. Sizes are not: FIFA's
+ * 12/24/30-card packs assume thousands of players, and a gold-only pack that
+ * big would have to hand out the same car three times over a 20-car gold pool.
+ * Each pack is sized to what its pool can fill with distinct cars instead.
+ *
+ * Each pack's `odds` block is what the store renders, and the same numbers on
+ * the pack drive openPack — they cannot drift apart.
  */
 export const PACKS: Pack[] = [
   {
@@ -78,13 +82,13 @@ export const PACKS: Pack[] = [
     id: 'gold',
     name: 'Gold Pack',
     price: 5000,
-    size: 12,
+    size: 10,
     tiers: ['gold'],
     guaranteedRare: 0,
     specialChance: 0,
     art: 'gold',
     odds: {
-      contents: '12 gold cars',
+      contents: '10 gold cars',
       rates: [
         { label: 'Gold', chance: 1 },
         { label: 'Rare', chance: 0.15 },
@@ -95,13 +99,13 @@ export const PACKS: Pack[] = [
     id: 'premium-gold',
     name: 'Premium Gold Pack',
     price: 7500,
-    size: 12,
+    size: 10,
     tiers: ['gold'],
     guaranteedRare: 3,
     specialChance: 0.02,
     art: 'gold',
     odds: {
-      contents: '12 gold cars, at least 3 rare',
+      contents: '10 gold cars, at least 3 rare',
       rates: [
         { label: 'Gold', chance: 1 },
         { label: 'Rare (guaranteed 3)', chance: 0.3 },
@@ -113,16 +117,16 @@ export const PACKS: Pack[] = [
     id: 'jumbo-premium-gold',
     name: 'Jumbo Premium Gold Pack',
     price: 15000,
-    size: 24,
+    size: 16,
     tiers: ['gold'],
-    guaranteedRare: 6,
+    guaranteedRare: 5,
     specialChance: 0.035,
     art: 'gold',
     odds: {
-      contents: '24 gold cars, at least 6 rare',
+      contents: '16 gold cars, at least 5 rare',
       rates: [
         { label: 'Gold', chance: 1 },
-        { label: 'Rare (guaranteed 6)', chance: 0.3 },
+        { label: 'Rare (guaranteed 5)', chance: 0.3 },
         { label: 'Special', chance: 0.035 },
       ],
     },
@@ -131,14 +135,14 @@ export const PACKS: Pack[] = [
     id: 'rare-players',
     name: 'Rare Players Pack',
     price: 25000,
-    size: 12,
+    size: 8,
     tiers: ['gold'],
-    guaranteedRare: 12,
+    guaranteedRare: 8,
     allRare: true,
     specialChance: 0.05,
     art: 'gold',
     odds: {
-      contents: '12 rare gold cars',
+      contents: '8 rare gold cars',
       rates: [
         { label: 'Rare gold', chance: 1 },
         { label: 'Special', chance: 0.05 },
@@ -149,16 +153,16 @@ export const PACKS: Pack[] = [
     id: 'mega',
     name: 'Mega Pack',
     price: 35000,
-    size: 30,
+    size: 18,
     tiers: ['gold'],
-    guaranteedRare: 8,
+    guaranteedRare: 6,
     specialChance: 0.06,
     art: 'gold',
     odds: {
-      contents: '30 gold cars, at least 8 rare',
+      contents: '18 gold cars, at least 6 rare',
       rates: [
         { label: 'Gold', chance: 1 },
-        { label: 'Rare (guaranteed 8)', chance: 0.3 },
+        { label: 'Rare (guaranteed 6)', chance: 0.3 },
         { label: 'Special', chance: 0.06 },
       ],
     },
@@ -167,14 +171,14 @@ export const PACKS: Pack[] = [
     id: 'prime-gold',
     name: 'Prime Gold Players Pack',
     price: 50000,
-    size: 12,
+    size: 10,
     tiers: ['gold'],
     guaranteedRare: 4,
     minOverall: 86,
     specialChance: 0.08,
     art: 'gold',
     odds: {
-      contents: '12 gold cars rated 86 or higher, at least 4 rare',
+      contents: '10 gold cars rated 86 or higher, at least 4 rare',
       rates: [
         { label: 'Gold 86+', chance: 1 },
         { label: 'Rare (guaranteed 4)', chance: 0.4 },
@@ -186,16 +190,16 @@ export const PACKS: Pack[] = [
     id: 'rare-mega',
     name: 'Rare Mega Pack',
     price: 55000,
-    size: 30,
+    size: 18,
     tiers: ['gold'],
-    guaranteedRare: 14,
+    guaranteedRare: 8,
     specialChance: 0.09,
     art: 'gold',
     odds: {
-      contents: '30 gold cars, at least 14 rare',
+      contents: '18 gold cars, at least 8 rare',
       rates: [
         { label: 'Gold', chance: 1 },
-        { label: 'Rare (guaranteed 14)', chance: 0.5 },
+        { label: 'Rare (guaranteed 8)', chance: 0.5 },
         { label: 'Special', chance: 0.09 },
       ],
     },
@@ -204,17 +208,17 @@ export const PACKS: Pack[] = [
     id: 'ultimate',
     name: 'Ultimate Pack',
     price: 125000,
-    size: 30,
+    size: 20,
     tiers: ['gold'],
-    guaranteedRare: 24,
+    guaranteedRare: 8,
     minOverall: 84,
     specialChance: 0.12,
     art: 'special',
     odds: {
-      contents: '30 gold cars rated 84 or higher, at least 24 rare',
+      contents: '20 gold cars rated 84 or higher, at least 8 rare',
       rates: [
         { label: 'Gold 84+', chance: 1 },
-        { label: 'Rare (guaranteed 24)', chance: 0.8 },
+        { label: 'Rare (guaranteed 8)', chance: 0.8 },
         { label: 'Special', chance: 0.12 },
       ],
     },
