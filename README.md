@@ -6,8 +6,6 @@ non-rare and rare, plus special cards for limited-edition machines.
 
 You start with **€10,000,000**.
 
-![bronze, silver, gold and special cards](public/cars/ferrari-f40.webp)
-
 ## Running it
 
 ```bash
