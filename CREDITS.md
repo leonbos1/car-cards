@@ -196,3 +196,82 @@ each card's detail view.
 | Iso Grifo | MrWalkr | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1968_Iso_Grifo_GL_365.jpg) |
 | Dodge Charger R/T | Sicnag | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1970_Dodge_Charger_RT.jpg) |
 | Pontiac GTO Judge | Xnatedawgx | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1970_Pontiac_GTO_The_Judge,_white,_front_left_side,_Golden_Super_Cruise_2026-07-04.jpg) |
+| Alfa Romeo Alfasud | Lexicar | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Caimano_Front.jpg) |
+| Alfa Romeo Alfasud Ti | Chelsea Jay | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1984_Alfa_Romeo_Alfasud_ti_105_1.5_Front.jpg) |
+| Alfa Romeo Giulietta | Zairon | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Arese_Museo_Storico_1955_Alfa_Romeo_Giulietta_Berlina,_front.jpg) |
+| Alfa Romeo 33 | Corvettec6r | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_33_Imola.JPG) |
+| Alfa Romeo 33 QV | Pava, Milano | CC BY-SA 3.0 it | [Commons](https://commons.wikimedia.org/wiki/File:%22_15_-_ITALY_Alfa_Romeo_Giulia_QV_2015_pre-series_at_Museo_Alfa_Romeo_Arese.jpg) |
+| Alfa Romeo Alfetta | sv1ambo | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1975_Alfa_Romeo_Alfetta_sedan_(6107865631).jpg) |
+| Alfa Romeo Alfetta 2.0 | Unknown | CC BY-SA 2.0 de | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Alfetta_159.jpg) |
+| Alfa Romeo Spider Duetto | Zairon | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Arese_Museo_Storico_Alfa_Romeo_1966_1600_Spider_Duetto_2.jpg) |
+| Alfa Romeo Spider | Vauxford | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1977_Alfa_Romeo_2000_Spider_Veloce_2.0_Front.jpg) |
+| Alfa Romeo GTV | Mr.choppers | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:1973-74_Alfa_Romeo_115.01_2000_GTV.jpg) |
+| Alfa Romeo GTV6 | Abehn | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_GTV6_front.jpg) |
+| Alfa Romeo Sprint | Tokumeigakarinoaoshima | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Giulietta_III_Sprint_at_night_front.JPG) |
+| Alfa Romeo 90 | Charles01 | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_90_Pza_Venezia.jpg) |
+| Alfa Romeo 75 | Corvettec6r | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_75_front.JPG) |
+| Alfa Romeo 75 Turbo | Corvettec6r | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1988_Alfa_Romeo_75_1.8_Turbo_America_front.jpg) |
+| Alfa Romeo 164 | Mr.choppers | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:1991_Alfa_Romeo_164L,_front_left_(Hershey_2019).jpg) |
+| Alfa Romeo 145 | Rudolf Stricker | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_145_front_20070326.jpg) |
+| Alfa Romeo 146 | Tokumeigakarinoaoshima | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Osaka_Motor_Show_2017_(146)_-_Alfa_Romeo_GIULIA_Quadrifoglio_(ABA-95229).jpg) |
+| Alfa Romeo 147 | Handelsgeselschaft | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_147_GTA_front.jpg) |
+| Alfa Romeo 147 GTA | Handelsgeselschaft | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_147_GTA_front.jpg) |
+| Alfa Romeo 155 | Rudolf Stricker | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_155_front_20070321.jpg) |
+| Alfa Romeo 155 Q4 | Dennis Elzinga | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_155_Q4_(40003203331).jpg) |
+| Alfa Romeo 156 | Corvettec6r | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:1999_Alfa_Romeo_156_1.9_JTD.jpg) |
+| Alfa Romeo 156 Sportwagon | Rudolf Stricker | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_156_Sportwagon_front_20071004.jpg) |
+| Alfa Romeo 159 | M 93 | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_159_ti_front.JPG) |
+| Alfa Romeo MiTo | M 93 | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_MiTo_20090603_front.JPG) |
+| Alfa Romeo Giulietta | Pava | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Giulietta_MARANGONI_2.jpg) |
+| Alfa Romeo Giulietta QV | Loadbeta | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Giulietta_Quadrifoglio_Verde_Launch_Edition_front_-_Tokyo_Auto_Salon_2015.jpg) |
+| Alfa Romeo Stelvio | Tokumeigakarinoaoshima | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_STELVIO_FIRST_EDITION_(ABA-94920)_front.jpg) |
+| Alfa Romeo Tonale | Alexander Migl | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Tonale_1X7A0313.jpg) |
+| Alfa Romeo Alfasud Sprint | No machine-readable author provided. Luc106 assumed (based on copyright claims). | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Alfa-Romeo_Alfasud-Sprint.JPG) |
+| Alfa Romeo Spider 2.0 | Corvettec6r | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Spider_2.0_JTS_facelift.JPG) |
+| Alfa Romeo Spider T.Spark | Vauxford | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1996_Alfa_Romeo_Spider_T_Spark_16V_2.0.jpg) |
+| Alfa Romeo GTV 2.0 Turbo | Mr.choppers | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:1985_Alfa_Romeo_GTV6_Callaway_Twin_Turbo,_front_right.jpg) |
+| Alfa Romeo Brera | Jeremy from Sydney, Australia | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:2007_Alfa_Romeo_Brera_V6_coupe_(23416268426).jpg) |
+| Alfa Romeo Brera S | John Lew | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Brera_S.jpg) |
+| Alfa Romeo 75 America | Corvettec6r | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1988_Alfa_Romeo_75_1.8_Turbo_America_front.jpg) |
+| Alfa Romeo 156 Selespeed | OSX | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:2002-2003_Alfa_Romeo_156_JTS_Selespeed_sedan_01.jpg) |
+| Alfa Romeo 159 Ti | M 93 | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_159_ti_front.JPG) |
+| Alfa Romeo 159 Ti Sport | Andrew Bone | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Alfa-Romeo_159_ti_Sport_Wagon_(2008-9)_(43771087884).jpg) |
+| Alfa Romeo 147 TS | Calreyn88 | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:2009_Alfa_Romeo_147_Collezione_TS.jpg) |
+| Alfa Romeo MiTo QV | Pava (Milano) | CC BY-SA 3.0 it | [Commons](https://commons.wikimedia.org/wiki/File:%2214_-_ITALY_-_Alfa_Romeo_MiTo_QV_-_red_coup%C3%A9_in_Milan_-_Quadrifoglio_Verde_sports_car_02.jpg) |
+| Alfa Romeo 4C Spider | Tyler de Noche | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_4C_Front.jpg) |
+| Alfa Romeo Giulia Quadrifoglio | Aciarium | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:DSC01160_Alfa_Romeo_Giulia,_Carabinieri_Nucleo_Operativo_Radiomobile,_Front_Right.jpg) |
+| Alfa Romeo Stelvio Quadrifoglio | Mr.choppers | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:2019_Alfa_Romeo_Stelvio_Quadrifoglio_4WD_(Vesuvio_Gray),_front_right.jpg) |
+| Alfa Romeo GTV 916 | Corvettec6r | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_GTV_916_coup%C3%A9.JPG) |
+| Alfa Romeo 159 Sportwagon Ti | Corvettec6r | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:2009_Alfa_Romeo_159_Sportwagon_TI.JPG) |
+| Alfa Romeo 8C Competizione | Rutger van der Maar | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_8C_Competizione_front.jpg) |
+| Alfa Romeo 8C Spider | Overlaet | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_8C_Spider_(front_quarter).jpg) |
+| Alfa Romeo Giulia GTA | MrWalkr | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Giulia_GTA.jpg) |
+| Alfa Romeo Giulia GTAm | Saggittarius A | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Giulia_GTAm_Milano.jpg) |
+| Alfa Romeo Giulia Ti Sport | HJUdall | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:19_Alfa_Romeo_Giulia_Ti_Sport.jpg) |
+| Alfa Romeo 159 JTS | Tokumeigakarinoaoshima | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_159_2.2_JTS_Villa_d%27ESTE_(ABA-93922)_front.jpg) |
+| Alfa Romeo Brera 3.2 V6 | hugh llewelyn | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:2006_Alfa_Romeo_Brera.jpg) |
+| Alfa Romeo Spider 4.3 V8 | Rutger van der Maar | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:2012_Alfa_Romeo_8C_Competizione_Spider_4.7_V8_(54203440586).jpg) |
+| Alfa Romeo TZ2 | _morgado2 | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Z_by_Zagato_in_Alfa_Romeo_Giulia_T22_-_1965.jpg) |
+| Alfa Romeo GTV 3.0 V6 | Tokumeigakarinoaoshima | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_GTV_3.0_V6_24V_front.JPG) |
+| Alfa Romeo 155 V6 Ti | Martin Lee from London, UK | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Alessandro_Nannini_-_Alfa_Corse_-_Alfa_Romeo_155_V6_TI_94_(46745279741).jpg) |
+| Alfa Romeo 164 Pro Car | richard | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_164_procar.jpg) |
+| Alfa Romeo 156 3.2 V6 | Rutger van der Maar | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:2003_Alfa_Romeo_156_Sport_Wagon_3.2_V6_GTA_front.jpg) |
+| Alfa Romeo 4C Competizione | Mr.choppers | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:2015_Alfa_Romeo_4C_Coup%C3%A9_in_Rosso_Competizione,_front_left.jpg) |
+| Alfa Romeo Giulietta Veloce | Vauxford | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2011_Alfa_Romeo_Giulietta_Veloce_JTDm-2_2.0_Front.jpg) |
+| Alfa Romeo Stelvio Ti | Calreyn88 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2020_Alfa_Romeo_Stelvio_Lusso_Ti_TB_AWD_Auto.jpg) |
+| Alfa Romeo Giulietta Sprint Speciale | Thesupermat | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Paris_-_Mondial_de_l%27automobile_2010_-_Alfa_Romeo_Giulietta_Sprint_speciale_-_001.jpg) |
+| Alfa Romeo 8C Monza | Mr.choppers | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Circa_1932_Alfa_Romeo_8C_2300_Monza_(maybe)_at_Lime_Rock.jpg) |
+| Alfa Romeo Tipo P3 | Hugh Lunnon from Brighton, UK | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Tipo_B.jpg) |
+| Alfa Romeo 33 Daytona | Unknown photographer | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:1968-05-05_Targa_Florio_Alfa_Romeo_33-2_%22Daytona%22.jpg) |
+| Alfa Romeo 2300B Racing | Unknown photographer | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:1939-08-20_Liege-Rome_Alfa_2300B_Touring_815092.jpg) |
+| Alfa Romeo Sprint Veloce | Charles from Port Chester, New York | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Giulia_Sprint_GT_Veloce_(1968)_(53998791287).jpg) |
+| Alfa Romeo Alfetta GTV | Niels de Wit from Lunteren, The Netherlands | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1979_Alfa_Romeo_Alfetta_GTV_2000_(9505122076).jpg) |
+| Alfa Romeo Spider Veloce | Dennis Elzinga | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Spider_2000_Veloce_(35502458906).jpg) |
+| Alfa Romeo 6 2.5 | TTTNIS | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_156_2.0_T._Spark.jpg) |
+| Alfa Romeo Alfasud Veloce | Spanish Coches | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1981_Alfa_Romeo_Alfasud_Sprint_Veloce_1.5_(6985703075).jpg) |
+| Alfa Romeo 164 Super | Rutger van der Maar | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1998_Alfa_Romeo_164_2.0_V6_TB_Turbo_Super.jpg) |
+| Alfa Romeo 147 16V | Calreyn88 | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:2008_Alfa_Romeo_147_Lusso_JTDM_16v_Ducati.jpg) |
+| Alfa Romeo Brera Crosswagon Q4 | Jacques-Louis David | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:David_-_The_Death_of_Socrates.jpg) |
+| Alfa Romeo GTV 3.2 V6 Selespeed | ALEXV6 at Italian Wikipedia | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_GTV_TB_V6_24v_243.jpg) |
+| Alfa Romeo Giulietta Sport 1.6 | David Villarreal Fernández | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Alfa-Romeo_Giulietta_front.jpg) |
+| Alfa Romeo Stelvio Veloce | Tokumeigakarinoaoshima | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_STELVIO_2.0_TURBO_Q4_VELOCE_(3BA-94920_0011)_front.jpg) |

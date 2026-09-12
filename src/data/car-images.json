@@ -1138,5 +1138,479 @@
     "artist": "Xnatedawgx",
     "license": "CC BY-SA 4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:1970_Pontiac_GTO_The_Judge,_white,_front_left_side,_Golden_Super_Cruise_2026-07-04.jpg"
+  },
+  "alfa-romeo-alfasud": {
+    "file": "alfa-romeo-alfasud.webp",
+    "artist": "Lexicar",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Caimano_Front.jpg"
+  },
+  "alfa-romeo-alfasud-ti": {
+    "file": "alfa-romeo-alfasud-ti.webp",
+    "artist": "Chelsea Jay",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1984_Alfa_Romeo_Alfasud_ti_105_1.5_Front.jpg"
+  },
+  "alfa-romeo-giulietta-classic": {
+    "file": "alfa-romeo-giulietta-classic.webp",
+    "artist": "Zairon",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arese_Museo_Storico_1955_Alfa_Romeo_Giulietta_Berlina,_front.jpg"
+  },
+  "alfa-romeo-33": {
+    "file": "alfa-romeo-33.webp",
+    "artist": "Corvettec6r",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_33_Imola.JPG"
+  },
+  "alfa-romeo-33-qv": {
+    "file": "alfa-romeo-33-qv.webp",
+    "artist": "Pava, Milano",
+    "license": "CC BY-SA 3.0 it",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%22_15_-_ITALY_Alfa_Romeo_Giulia_QV_2015_pre-series_at_Museo_Alfa_Romeo_Arese.jpg"
+  },
+  "alfa-romeo-alfetta": {
+    "file": "alfa-romeo-alfetta.webp",
+    "artist": "sv1ambo",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1975_Alfa_Romeo_Alfetta_sedan_(6107865631).jpg"
+  },
+  "alfa-romeo-alfetta-2.0": {
+    "file": "alfa-romeo-alfetta-2.0.webp",
+    "artist": "Unknown",
+    "license": "CC BY-SA 2.0 de",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Alfetta_159.jpg"
+  },
+  "alfa-romeo-spider-duetto-1966": {
+    "file": "alfa-romeo-spider-duetto-1966.webp",
+    "artist": "Zairon",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arese_Museo_Storico_Alfa_Romeo_1966_1600_Spider_Duetto_2.jpg"
+  },
+  "alfa-romeo-spider-1970s": {
+    "file": "alfa-romeo-spider-1970s.webp",
+    "artist": "Vauxford",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1977_Alfa_Romeo_2000_Spider_Veloce_2.0_Front.jpg"
+  },
+  "alfa-romeo-gtv-1974": {
+    "file": "alfa-romeo-gtv-1974.webp",
+    "artist": "Mr.choppers",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1973-74_Alfa_Romeo_115.01_2000_GTV.jpg"
+  },
+  "alfa-romeo-gtv6": {
+    "file": "alfa-romeo-gtv6.webp",
+    "artist": "Abehn",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_GTV6_front.jpg"
+  },
+  "alfa-romeo-sprint": {
+    "file": "alfa-romeo-sprint.webp",
+    "artist": "Tokumeigakarinoaoshima",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Giulietta_III_Sprint_at_night_front.JPG"
+  },
+  "alfa-romeo-90": {
+    "file": "alfa-romeo-90.webp",
+    "artist": "Charles01",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_90_Pza_Venezia.jpg"
+  },
+  "alfa-romeo-75": {
+    "file": "alfa-romeo-75.webp",
+    "artist": "Corvettec6r",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_75_front.JPG"
+  },
+  "alfa-romeo-75-turbo": {
+    "file": "alfa-romeo-75-turbo.webp",
+    "artist": "Corvettec6r",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1988_Alfa_Romeo_75_1.8_Turbo_America_front.jpg"
+  },
+  "alfa-romeo-164": {
+    "file": "alfa-romeo-164.webp",
+    "artist": "Mr.choppers",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1991_Alfa_Romeo_164L,_front_left_(Hershey_2019).jpg"
+  },
+  "alfa-romeo-145": {
+    "file": "alfa-romeo-145.webp",
+    "artist": "Rudolf Stricker",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_145_front_20070326.jpg"
+  },
+  "alfa-romeo-146": {
+    "file": "alfa-romeo-146.webp",
+    "artist": "Tokumeigakarinoaoshima",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Osaka_Motor_Show_2017_(146)_-_Alfa_Romeo_GIULIA_Quadrifoglio_(ABA-95229).jpg"
+  },
+  "alfa-romeo-147": {
+    "file": "alfa-romeo-147.webp",
+    "artist": "Handelsgeselschaft",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_147_GTA_front.jpg"
+  },
+  "alfa-romeo-147-gta": {
+    "file": "alfa-romeo-147-gta.webp",
+    "artist": "Handelsgeselschaft",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_147_GTA_front.jpg"
+  },
+  "alfa-romeo-155": {
+    "file": "alfa-romeo-155.webp",
+    "artist": "Rudolf Stricker",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_155_front_20070321.jpg"
+  },
+  "alfa-romeo-155-q4": {
+    "file": "alfa-romeo-155-q4.webp",
+    "artist": "Dennis Elzinga",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_155_Q4_(40003203331).jpg"
+  },
+  "alfa-romeo-156": {
+    "file": "alfa-romeo-156.webp",
+    "artist": "Corvettec6r",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1999_Alfa_Romeo_156_1.9_JTD.jpg"
+  },
+  "alfa-romeo-156-sportwagon": {
+    "file": "alfa-romeo-156-sportwagon.webp",
+    "artist": "Rudolf Stricker",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_156_Sportwagon_front_20071004.jpg"
+  },
+  "alfa-romeo-159": {
+    "file": "alfa-romeo-159.webp",
+    "artist": "M 93",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_159_ti_front.JPG"
+  },
+  "alfa-romeo-mito": {
+    "file": "alfa-romeo-mito.webp",
+    "artist": "M 93",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_MiTo_20090603_front.JPG"
+  },
+  "alfa-romeo-giulietta-2010": {
+    "file": "alfa-romeo-giulietta-2010.webp",
+    "artist": "Pava",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Giulietta_MARANGONI_2.jpg"
+  },
+  "alfa-romeo-giulietta-qv": {
+    "file": "alfa-romeo-giulietta-qv.webp",
+    "artist": "Loadbeta",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Giulietta_Quadrifoglio_Verde_Launch_Edition_front_-_Tokyo_Auto_Salon_2015.jpg"
+  },
+  "alfa-romeo-stelvio": {
+    "file": "alfa-romeo-stelvio.webp",
+    "artist": "Tokumeigakarinoaoshima",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_STELVIO_FIRST_EDITION_(ABA-94920)_front.jpg"
+  },
+  "alfa-romeo-tonale": {
+    "file": "alfa-romeo-tonale.webp",
+    "artist": "Alexander Migl",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Tonale_1X7A0313.jpg"
+  },
+  "alfa-romeo-alfasud-sprint": {
+    "file": "alfa-romeo-alfasud-sprint.webp",
+    "artist": "No machine-readable author provided. Luc106 assumed (based on copyright claims).",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa-Romeo_Alfasud-Sprint.JPG"
+  },
+  "alfa-romeo-spider-2.0": {
+    "file": "alfa-romeo-spider-2.0.webp",
+    "artist": "Corvettec6r",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Spider_2.0_JTS_facelift.JPG"
+  },
+  "alfa-romeo-spider-t-spark": {
+    "file": "alfa-romeo-spider-t-spark.webp",
+    "artist": "Vauxford",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1996_Alfa_Romeo_Spider_T_Spark_16V_2.0.jpg"
+  },
+  "alfa-romeo-gtv-2.0-turbo": {
+    "file": "alfa-romeo-gtv-2.0-turbo.webp",
+    "artist": "Mr.choppers",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1985_Alfa_Romeo_GTV6_Callaway_Twin_Turbo,_front_right.jpg"
+  },
+  "alfa-romeo-brera": {
+    "file": "alfa-romeo-brera.webp",
+    "artist": "Jeremy from Sydney, Australia",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2007_Alfa_Romeo_Brera_V6_coupe_(23416268426).jpg"
+  },
+  "alfa-romeo-brera-s": {
+    "file": "alfa-romeo-brera-s.webp",
+    "artist": "John Lew",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Brera_S.jpg"
+  },
+  "alfa-romeo-75-america": {
+    "file": "alfa-romeo-75-america.webp",
+    "artist": "Corvettec6r",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1988_Alfa_Romeo_75_1.8_Turbo_America_front.jpg"
+  },
+  "alfa-romeo-156-selespeed": {
+    "file": "alfa-romeo-156-selespeed.webp",
+    "artist": "OSX",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2002-2003_Alfa_Romeo_156_JTS_Selespeed_sedan_01.jpg"
+  },
+  "alfa-romeo-159-ti": {
+    "file": "alfa-romeo-159-ti.webp",
+    "artist": "M 93",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_159_ti_front.JPG"
+  },
+  "alfa-romeo-159-ti-sport": {
+    "file": "alfa-romeo-159-ti-sport.webp",
+    "artist": "Andrew Bone",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa-Romeo_159_ti_Sport_Wagon_(2008-9)_(43771087884).jpg"
+  },
+  "alfa-romeo-147-ts": {
+    "file": "alfa-romeo-147-ts.webp",
+    "artist": "Calreyn88",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2009_Alfa_Romeo_147_Collezione_TS.jpg"
+  },
+  "alfa-romeo-mito-quadrifoglio-verde": {
+    "file": "alfa-romeo-mito-quadrifoglio-verde.webp",
+    "artist": "Pava (Milano)",
+    "license": "CC BY-SA 3.0 it",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%2214_-_ITALY_-_Alfa_Romeo_MiTo_QV_-_red_coup%C3%A9_in_Milan_-_Quadrifoglio_Verde_sports_car_02.jpg"
+  },
+  "alfa-romeo-4c-spider": {
+    "file": "alfa-romeo-4c-spider.webp",
+    "artist": "Tyler de Noche",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_4C_Front.jpg"
+  },
+  "alfa-romeo-giulia-quadrifoglio-2016": {
+    "file": "alfa-romeo-giulia-quadrifoglio-2016.webp",
+    "artist": "Aciarium",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:DSC01160_Alfa_Romeo_Giulia,_Carabinieri_Nucleo_Operativo_Radiomobile,_Front_Right.jpg"
+  },
+  "alfa-romeo-stelvio-quadrifoglio": {
+    "file": "alfa-romeo-stelvio-quadrifoglio.webp",
+    "artist": "Mr.choppers",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2019_Alfa_Romeo_Stelvio_Quadrifoglio_4WD_(Vesuvio_Gray),_front_right.jpg"
+  },
+  "alfa-romeo-gtv-916": {
+    "file": "alfa-romeo-gtv-916.webp",
+    "artist": "Corvettec6r",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_GTV_916_coup%C3%A9.JPG"
+  },
+  "alfa-romeo-159-sportwagon-ti": {
+    "file": "alfa-romeo-159-sportwagon-ti.webp",
+    "artist": "Corvettec6r",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2009_Alfa_Romeo_159_Sportwagon_TI.JPG"
+  },
+  "alfa-romeo-8c-competizione": {
+    "file": "alfa-romeo-8c-competizione.webp",
+    "artist": "Rutger van der Maar",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_8C_Competizione_front.jpg"
+  },
+  "alfa-romeo-8c-spider": {
+    "file": "alfa-romeo-8c-spider.webp",
+    "artist": "Overlaet",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_8C_Spider_(front_quarter).jpg"
+  },
+  "alfa-romeo-giulia-gta": {
+    "file": "alfa-romeo-giulia-gta.webp",
+    "artist": "MrWalkr",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Giulia_GTA.jpg"
+  },
+  "alfa-romeo-giulia-gtam": {
+    "file": "alfa-romeo-giulia-gtam.webp",
+    "artist": "Saggittarius A",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Giulia_GTAm_Milano.jpg"
+  },
+  "alfa-romeo-giulia-ti-sport": {
+    "file": "alfa-romeo-giulia-ti-sport.webp",
+    "artist": "HJUdall",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:19_Alfa_Romeo_Giulia_Ti_Sport.jpg"
+  },
+  "alfa-romeo-159-jts": {
+    "file": "alfa-romeo-159-jts.webp",
+    "artist": "Tokumeigakarinoaoshima",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_159_2.2_JTS_Villa_d%27ESTE_(ABA-93922)_front.jpg"
+  },
+  "alfa-romeo-brera-3.2v6": {
+    "file": "alfa-romeo-brera-3.2v6.webp",
+    "artist": "hugh llewelyn",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2006_Alfa_Romeo_Brera.jpg"
+  },
+  "alfa-romeo-spider-4.3-v8": {
+    "file": "alfa-romeo-spider-4.3-v8.webp",
+    "artist": "Rutger van der Maar",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2012_Alfa_Romeo_8C_Competizione_Spider_4.7_V8_(54203440586).jpg"
+  },
+  "alfa-romeo-tz2": {
+    "file": "alfa-romeo-tz2.webp",
+    "artist": "_morgado2",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Z_by_Zagato_in_Alfa_Romeo_Giulia_T22_-_1965.jpg"
+  },
+  "alfa-romeo-gtv-3.0-v6": {
+    "file": "alfa-romeo-gtv-3.0-v6.webp",
+    "artist": "Tokumeigakarinoaoshima",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_GTV_3.0_V6_24V_front.JPG"
+  },
+  "alfa-romeo-155-v6-ti": {
+    "file": "alfa-romeo-155-v6-ti.webp",
+    "artist": "Martin Lee from London, UK",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alessandro_Nannini_-_Alfa_Corse_-_Alfa_Romeo_155_V6_TI_94_(46745279741).jpg"
+  },
+  "alfa-romeo-164-pro-car": {
+    "file": "alfa-romeo-164-pro-car.webp",
+    "artist": "richard",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_164_procar.jpg"
+  },
+  "alfa-romeo-156-3.2v6": {
+    "file": "alfa-romeo-156-3.2v6.webp",
+    "artist": "Rutger van der Maar",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2003_Alfa_Romeo_156_Sport_Wagon_3.2_V6_GTA_front.jpg"
+  },
+  "alfa-romeo-4c-competizione": {
+    "file": "alfa-romeo-4c-competizione.webp",
+    "artist": "Mr.choppers",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2015_Alfa_Romeo_4C_Coup%C3%A9_in_Rosso_Competizione,_front_left.jpg"
+  },
+  "alfa-romeo-giulietta-veloce": {
+    "file": "alfa-romeo-giulietta-veloce.webp",
+    "artist": "Vauxford",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2011_Alfa_Romeo_Giulietta_Veloce_JTDm-2_2.0_Front.jpg"
+  },
+  "alfa-romeo-stelvio-ti": {
+    "file": "alfa-romeo-stelvio-ti.webp",
+    "artist": "Calreyn88",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2020_Alfa_Romeo_Stelvio_Lusso_Ti_TB_AWD_Auto.jpg"
+  },
+  "alfa-romeo-giulietta-ss": {
+    "file": "alfa-romeo-giulietta-ss.webp",
+    "artist": "Thesupermat",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paris_-_Mondial_de_l%27automobile_2010_-_Alfa_Romeo_Giulietta_Sprint_speciale_-_001.jpg"
+  },
+  "alfa-romeo-8c-monza": {
+    "file": "alfa-romeo-8c-monza.webp",
+    "artist": "Mr.choppers",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Circa_1932_Alfa_Romeo_8C_2300_Monza_(maybe)_at_Lime_Rock.jpg"
+  },
+  "alfa-romeo-p3": {
+    "file": "alfa-romeo-p3.webp",
+    "artist": "Hugh Lunnon from Brighton, UK",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Tipo_B.jpg"
+  },
+  "alfa-romeo-33-daytona": {
+    "file": "alfa-romeo-33-daytona.webp",
+    "artist": "Unknown photographer",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1968-05-05_Targa_Florio_Alfa_Romeo_33-2_%22Daytona%22.jpg"
+  },
+  "alfa-romeo-2300b": {
+    "file": "alfa-romeo-2300b.webp",
+    "artist": "Unknown photographer",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1939-08-20_Liege-Rome_Alfa_2300B_Touring_815092.jpg"
+  },
+  "alfa-romeo-sprint-veloce": {
+    "file": "alfa-romeo-sprint-veloce.webp",
+    "artist": "Charles from Port Chester, New York",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Giulia_Sprint_GT_Veloce_(1968)_(53998791287).jpg"
+  },
+  "alfa-romeo-alfetta-gtv": {
+    "file": "alfa-romeo-alfetta-gtv.webp",
+    "artist": "Niels de Wit from Lunteren, The Netherlands",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1979_Alfa_Romeo_Alfetta_GTV_2000_(9505122076).jpg"
+  },
+  "alfa-romeo-spider-veloce": {
+    "file": "alfa-romeo-spider-veloce.webp",
+    "artist": "Dennis Elzinga",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Spider_2000_Veloce_(35502458906).jpg"
+  },
+  "alfa-romeo-6-2.5": {
+    "file": "alfa-romeo-6-2.5.webp",
+    "artist": "TTTNIS",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_156_2.0_T._Spark.jpg"
+  },
+  "alfa-romeo-alfasud-veloce": {
+    "file": "alfa-romeo-alfasud-veloce.webp",
+    "artist": "Spanish Coches",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1981_Alfa_Romeo_Alfasud_Sprint_Veloce_1.5_(6985703075).jpg"
+  },
+  "alfa-romeo-164-super": {
+    "file": "alfa-romeo-164-super.webp",
+    "artist": "Rutger van der Maar",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1998_Alfa_Romeo_164_2.0_V6_TB_Turbo_Super.jpg"
+  },
+  "alfa-romeo-147-16v": {
+    "file": "alfa-romeo-147-16v.webp",
+    "artist": "Calreyn88",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2008_Alfa_Romeo_147_Lusso_JTDM_16v_Ducati.jpg"
+  },
+  "alfa-romeo-brera-crosswagon-q4": {
+    "file": "alfa-romeo-brera-crosswagon-q4.webp",
+    "artist": "Jacques-Louis David",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:David_-_The_Death_of_Socrates.jpg"
+  },
+  "alfa-romeo-gtv-3.2v6-selespeed": {
+    "file": "alfa-romeo-gtv-3.2v6-selespeed.webp",
+    "artist": "ALEXV6 at Italian Wikipedia",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_GTV_TB_V6_24v_243.jpg"
+  },
+  "alfa-romeo-giulietta-sport-1.6": {
+    "file": "alfa-romeo-giulietta-sport-1.6.webp",
+    "artist": "David Villarreal Fernández",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa-Romeo_Giulietta_front.jpg"
+  },
+  "alfa-romeo-stelvio-veloce": {
+    "file": "alfa-romeo-stelvio-veloce.webp",
+    "artist": "Tokumeigakarinoaoshima",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_STELVIO_2.0_TURBO_Q4_VELOCE_(3BA-94920_0011)_front.jpg"
   }
 }
