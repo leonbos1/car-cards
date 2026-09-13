@@ -3,3 +3,11 @@ dist
 .DS_Store
 *.local
 *.tsbuildinfo
+
+# Android build artifacts
+android/.gradle
+android/local.properties
+android/.idea
+android/*.iml
+android/app/build
+android/build

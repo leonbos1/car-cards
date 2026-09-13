@@ -8,7 +8,11 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "fetch:images": "tsx scripts/fetch-images.ts"
+    "fetch:images": "tsx scripts/fetch-images.ts",
+    "apk:sync": "cap sync android",
+    "apk:debug": "npm run build && cap sync android && cd android && ./gradlew assembleDebug",
+    "apk:release": "npm run build && cap sync android && cd android && ./gradlew assembleRelease",
+    "apk:open": "cap open android"
   },
   "dependencies": {
     "framer-motion": "^11.15.0",
@@ -17,6 +21,9 @@
     "zustand": "^5.0.2"
   },
   "devDependencies": {
+    "@capacitor/android": "^8.5.2",
+    "@capacitor/cli": "^8.5.2",
+    "@capacitor/core": "^8.5.2",
     "@tailwindcss/vite": "^4.0.0",
     "@types/node": "^22.10.2",
     "@types/react": "^18.3.18",
