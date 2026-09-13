@@ -40,9 +40,9 @@ export function overall(stats: Stats): number {
 }
 
 /**
- * Tier cutoffs. Bronze < 70, Silver 70-78, Gold 79+.
- * This balances the tiers (~150 bronze, 50 silver, 100 gold) so packs
- * never exhaust a tier. A 320hp Civic Type R lands in silver; a 720S in gold.
+ * Tier cutoffs. Bronze < 41, Silver 41-54, Gold 55+.
+ * Calibrated to actual car distribution: 39% bronze, 34% silver, 27% gold, 9% special.
+ * A base economy car lands in bronze; a mid-performance car in silver; a sports car in gold.
  */
 export function tierOf(rating: number): Tier {
   if (rating < BRONZE_CEILING) return 'bronze'
@@ -50,8 +50,8 @@ export function tierOf(rating: number): Tier {
   return 'gold'
 }
 
-export const BRONZE_CEILING = 70
-export const GOLD_FLOOR = 79
+export const BRONZE_CEILING = 41
+export const GOLD_FLOOR = 55
 
 export function cardClassOf(car: Car, tier: Tier): CardClass {
   return car.special ? 'special' : tier
