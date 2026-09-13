@@ -14,8 +14,9 @@ export function overall(stats: Stats): number {
   // Acceleration: 20s = 1, 10s = 33, 5s = 66, 2.5s = 99
   const accScore = Math.min(99, Math.max(1, Math.round(99 - (stats.acc - 2.5) * 5.5)))
 
-  // Top speed: 100 km/h = 1, 200 km/h = 40, 300 km/h = 80, 500+ km/h = 99
-  const speedScore = Math.min(99, Math.max(1, Math.round(((stats.topspeed - 100) / 433) * 99)))
+  // Top speed: aggressive scaling so iconic high-speed cars get 90+
+  // 100 km/h = 5, 200 km/h = 32, 300 km/h = 60, 400+ km/h = 90, 500+ km/h = 99
+  const speedScore = Math.min(99, Math.max(1, Math.round(((stats.topspeed - 100) / 339) * 99)))
 
   // Weight matters less - lighter is better but not penalizing heavy performance cars
   // 1000 kg = 80, 1500 kg = 50, 2500 kg = 10
