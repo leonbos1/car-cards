@@ -19,6 +19,37 @@ npm run build        # production build
 npm run fetch:images # re-fetch car photos from Wikimedia Commons
 ```
 
+## Building for Android (APK)
+
+The app runs as a native Android app via [Capacitor](https://capacitorjs.com).
+
+### GitHub Actions (automatic)
+
+Every push to `main` or `claude/car-pack-opening-app-u3u8dw` triggers an APK build. Download APKs from:
+- **Actions** tab → latest workflow run → **Artifacts**
+- Both debug (`app-debug.apk`) and release (`app-release-unsigned.apk`) builds are generated
+- Main branch pushes also create GitHub Releases with APK downloads
+
+### Local builds
+
+Requires: Node.js, Android SDK, Java 17+
+
+```bash
+# Debug APK (faster, for testing)
+npm run apk:debug
+
+# Release APK (unsigned, for distribution)
+npm run apk:release
+
+# Just sync web changes to Android
+npm run apk:sync
+
+# Open Android Studio
+npm run apk:open
+```
+
+APKs are built to `android/app/build/outputs/apk/`.
+
 There is no backend and no account. Your balance and collection live in
 `localStorage`, so they survive a reload and stay on your machine.
 
