@@ -6,13 +6,14 @@ import { Garage } from './components/Garage'
 import { Objectives } from './components/Objectives'
 import { PackOpening } from './components/PackOpening'
 import { PackStore } from './components/PackStore'
+import { Quiz } from './components/Quiz'
 import { Settings } from './components/Settings'
 import { FREE_PACK_COOLDOWN_MS } from './game/economy'
 import { openPack } from './game/pack'
 import { useGame } from './store/useGame'
 import type { CardView, Pack, Pull } from './types'
 
-type Tab = 'store' | 'objectives' | 'garage' | 'catalog' | 'settings'
+type Tab = 'store' | 'quiz' | 'objectives' | 'garage' | 'catalog' | 'settings'
 
 interface Opening {
   pack: Pack
@@ -67,7 +68,7 @@ export function App() {
           </h1>
 
           <nav className="ml-2 flex gap-1">
-            {(['store', 'objectives', 'catalog', 'garage', 'settings'] as Tab[]).map((t) => (
+            {(['store', 'quiz', 'objectives', 'catalog', 'garage', 'settings'] as Tab[]).map((t) => (
               <button
                 key={t}
                 type="button"
@@ -93,6 +94,8 @@ export function App() {
           freeReadyIn={freeReadyIn}
           onBuy={handleBuy}
         />
+      ) : tab === 'quiz' ? (
+        <Quiz />
       ) : tab === 'objectives' ? (
         <Objectives />
       ) : tab === 'catalog' ? (

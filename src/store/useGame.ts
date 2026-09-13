@@ -2,7 +2,9 @@ import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import { FREE_PACK_COOLDOWN_MS, STARTING_BALANCE, quickSellValue } from '../game/economy'
 import { OBJECTIVES, objectiveProgress } from '../game/objectives'
+import { QUIZ_CATEGORY_BY_ID } from '../data/quiz'
 import { ALL_CARDS } from '../game/pack'
+import { QUIZ_COOLDOWN_MS, QUESTIONS_PER_RUN, rewardFor } from '../game/quiz'
 import type { CardView } from '../types'
 
 const CARD_BY_ID = new Map(ALL_CARDS.map((c) => [c.id, c]))
@@ -18,6 +20,8 @@ interface GameState {
   lastFreePackAt: number | null
   /** Objectives already paid out, so a reward is collected once. */
   claimedObjectives: string[]
+  /** Quiz category id -> when it was last played, as epoch ms. */
+  quizPlayedAt: Record<string, number>
 
   canAfford: (price: number) => boolean
   /** Spend and record an opening. Returns false if the balance is short. */
@@ -33,6 +37,10 @@ interface GameState {
   sellDuplicates: () => number
   /** Pay out a completed objective. Returns euros earned, or 0. */
   claimObjective: (id: string) => number
+  /** Milliseconds until a quiz category can be played again; 0 when ready. */
+  quizReadyIn: (categoryId: string, now?: number) => number
+  /** Bank a finished quiz run and start its cooldown. Returns euros earned. */
+  finishQuiz: (categoryId: string, correct: number) => number
   reset: () => void
 }
 
@@ -57,6 +65,7 @@ export const useGame = create<GameState>()(
       packsOpened: 0,
       lastFreePackAt: null,
       claimedObjectives: [],
+      quizPlayedAt: {},
 
       canAfford: (price) => get().balance >= price,
 
@@ -132,6 +141,29 @@ export const useGame = create<GameState>()(
         return objective.reward
       },
 
+      quizReadyIn: (categoryId, now = Date.now()) => {
+        const last = get().quizPlayedAt[categoryId]
+        if (last === undefined) return 0
+        // Clamp, so a clock that jumps backwards cannot lock a category away.
+        return Math.max(0, Math.min(QUIZ_COOLDOWN_MS, last + QUIZ_COOLDOWN_MS - now))
+      },
+
+      finishQuiz: (categoryId, correct) => {
+        // The cooldown is checked here rather than in the component, so the
+        // payout cannot be repeated by reopening the quiz. The reward is worked
+        // out here too, from the number of correct answers, so the amount paid
+        // is bounded by the category rather than by whatever the caller asks
+        // for.
+        const category = QUIZ_CATEGORY_BY_ID.get(categoryId)
+        if (!category || get().quizReadyIn(categoryId) > 0) return 0
+        const earned = rewardFor(category, Math.min(correct, QUESTIONS_PER_RUN))
+        set((s) => ({
+          balance: s.balance + earned,
+          quizPlayedAt: { ...s.quizPlayedAt, [categoryId]: Date.now() },
+        }))
+        return earned
+      },
+
       reset: () =>
         set({
           balance: STARTING_BALANCE,
@@ -139,6 +171,7 @@ export const useGame = create<GameState>()(
           packsOpened: 0,
           lastFreePackAt: null,
           claimedObjectives: [],
+          quizPlayedAt: {},
         }),
     }),
     // Bumped: the old save carried a 10,000,000 balance from before there was

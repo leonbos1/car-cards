@@ -9,7 +9,9 @@
  */
 import { PACKS, contentsLine } from '../src/data/packs'
 import { FREE_PACK_COOLDOWN_MS, STARTING_BALANCE, formatEuros, quickSellValue } from '../src/game/economy'
+import { TOTAL_OBJECTIVE_REWARD } from '../src/game/objectives'
 import { openPack, slotPool } from '../src/game/pack'
+import { MAX_DAILY_QUIZ_REWARD } from '../src/game/quiz'
 import type { Pack } from '../src/types'
 
 const RUNS = 20_000
@@ -60,10 +62,17 @@ function main() {
   for (const pack of PACKS) console.log(`  ${pack.name.padEnd(16)} ${contentsLine(pack)}`)
 
   const daily = expectedValue(PACKS.find((p) => p.free)!)
-  console.log(`\nDaily pack yields about ${formatEuros(Math.round(daily))} a day if sold whole.`)
+  // A player who answers everything correctly; a realistic run earns less.
+  const income = daily + MAX_DAILY_QUIZ_REWARD
+  console.log(
+    `\nDaily income: ${formatEuros(Math.round(daily))} from the free pack sold whole, ` +
+      `up to ${formatEuros(MAX_DAILY_QUIZ_REWARD)} from a clean sweep of the quiz ` +
+      `= ${formatEuros(Math.round(income))} a day.`,
+  )
+  console.log(`Objectives add ${formatEuros(TOTAL_OBJECTIVE_REWARD)} once, across the whole game.\n`)
   for (const pack of PACKS.filter((p) => p.price > 0)) {
     console.log(
-      `  ${(pack.price / daily).toFixed(1).padStart(5)} days of dailies to afford one ${pack.name}`,
+      `  ${(pack.price / income).toFixed(1).padStart(5)} days of income to afford one ${pack.name}`,
     )
   }
 }
