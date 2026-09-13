@@ -3,14 +3,16 @@ import { Balance } from './components/Balance'
 import { CardDetail } from './components/CardDetail'
 import { Catalog } from './components/Catalog'
 import { Garage } from './components/Garage'
+import { Objectives } from './components/Objectives'
 import { PackOpening } from './components/PackOpening'
 import { PackStore } from './components/PackStore'
 import { Settings } from './components/Settings'
+import { FREE_PACK_COOLDOWN_MS } from './game/economy'
 import { openPack } from './game/pack'
 import { useGame } from './store/useGame'
 import type { CardView, Pack, Pull } from './types'
 
-type Tab = 'store' | 'garage' | 'catalog' | 'settings'
+type Tab = 'store' | 'objectives' | 'garage' | 'catalog' | 'settings'
 
 interface Opening {
   pack: Pack
@@ -22,9 +24,17 @@ export function App() {
   const collection = useGame((s) => s.collection)
   const packsOpened = useGame((s) => s.packsOpened)
   const buy = useGame((s) => s.buy)
+  const claimFreePack = useGame((s) => s.claimFreePack)
+  const lastFreePackAt = useGame((s) => s.lastFreePackAt)
   const add = useGame((s) => s.add)
   const sellOne = useGame((s) => s.sellOne)
   const sellDuplicates = useGame((s) => s.sellDuplicates)
+
+  // Derived from the subscribed timestamp so the store re-renders when the
+  // free pack is taken, rather than reading a snapshot that never updates.
+  const freeReadyIn = lastFreePackAt
+    ? Math.max(0, Math.min(FREE_PACK_COOLDOWN_MS, lastFreePackAt + FREE_PACK_COOLDOWN_MS - Date.now()))
+    : 0
 
   const [tab, setTab] = useState<Tab>('store')
   const [opening, setOpening] = useState<Opening | null>(null)
@@ -32,7 +42,7 @@ export function App() {
 
   const handleBuy = useCallback(
     (pack: Pack) => {
-      if (!buy(pack.price)) return
+      if (pack.free ? !claimFreePack() : !buy(pack.price)) return
       const cards = openPack(pack)
       // Snapshot ownership before adding, so NEW badges reflect the pre-pack state.
       const before = useGame.getState().collection
@@ -45,7 +55,7 @@ export function App() {
       add(cards)
       setOpening({ pack, pulls })
     },
-    [buy, add],
+    [buy, add, claimFreePack],
   )
 
   return (
@@ -57,7 +67,7 @@ export function App() {
           </h1>
 
           <nav className="ml-2 flex gap-1">
-            {(['store', 'catalog', 'garage', 'settings'] as Tab[]).map((t) => (
+            {(['store', 'objectives', 'catalog', 'garage', 'settings'] as Tab[]).map((t) => (
               <button
                 key={t}
                 type="button"
@@ -66,7 +76,7 @@ export function App() {
                   tab === t ? 'bg-white/15 text-white' : 'text-white/45 hover:text-white/80'
                 }`}
               >
-                {t === 'store' ? 'Store' : t === 'catalog' ? 'Catalog' : t === 'garage' ? 'Garage' : '⚙️'}
+                {t === 'settings' ? '⚙️' : t[0].toUpperCase() + t.slice(1)}
               </button>
             ))}
           </nav>
@@ -78,7 +88,13 @@ export function App() {
       </header>
 
       {tab === 'store' ? (
-        <PackStore balance={balance} onBuy={handleBuy} />
+        <PackStore
+          balance={balance}
+          freeReadyIn={freeReadyIn}
+          onBuy={handleBuy}
+        />
+      ) : tab === 'objectives' ? (
+        <Objectives />
       ) : tab === 'catalog' ? (
         <Catalog collection={collection} onInspect={setInspecting} />
       ) : tab === 'settings' ? (
@@ -96,7 +112,9 @@ export function App() {
         <PackOpening
           pack={opening.pack}
           pulls={opening.pulls}
-          canAffordAnother={balance >= opening.pack.price}
+          canAffordAnother={
+            opening.pack.free ? false : balance >= opening.pack.price
+          }
           onOpenAnother={(pack) => {
             setOpening(null)
             handleBuy(pack)

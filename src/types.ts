@@ -70,32 +70,41 @@ export interface CardView extends Car {
   cardClass: CardClass
 }
 
-export interface PackOdds {
-  /** Human-readable contents line shown in the store. */
-  contents: string
-  /** Per-slot drop rates, keyed by what can come out. Rendered verbatim. */
-  rates: { label: string; chance: number }[]
-}
-
 export interface Pack {
   id: string
   name: string
   price: number
-  /** Number of cards in the pack. */
-  size: number
-  /** Tiers a slot can roll. */
+  /**
+   * The tier of each card the pack deals, in order — so the length is the pack
+   * size and the composition is the drop rate. The store reads its odds off
+   * this same array, which is why what is advertised cannot drift from what is
+   * dealt.
+   */
   tiers: Tier[]
   /** Minimum number of rare cards guaranteed. */
   guaranteedRare: number
+  /** Chance any remaining slot rolls rare. */
+  rareChance: number
   /** Chance per pack of one slot upgrading to a special card. */
   specialChance: number
-  /** Minimum overall rating for every card (Prime Gold's 82+ floor). */
+  /** Minimum overall rating for every card (the supercar packs' floor). */
   minOverall?: number
-  /** Every card must be rare (Rare Players Pack). */
+  /**
+   * Ceiling on every card's rating. This is what keeps the best cars rare: a
+   * cheap pack is capped so a hypercar cannot fall out of it no matter how
+   * lucky the roll, rather than relying on a small chance to keep it scarce.
+   */
+  maxOverall?: number
+  /** A floor on the best card only, so a big pack always has a headline car. */
+  headlinerMinOverall?: number
+  /** Every card must be rare. */
   allRare?: boolean
   /** Card class used for the pack artwork. */
   art: CardClass
-  odds: PackOdds
+  /** Openable once per cooldown rather than bought. */
+  free?: boolean
+  /** One line in the store saying what the pack is for. */
+  blurb: string
 }
 
 /** One card pulled from a pack, tagged with whether it was already owned. */

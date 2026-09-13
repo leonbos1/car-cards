@@ -153,7 +153,7 @@ export function PackOpening({ pack, pulls, onDone, onOpenAnother, canAffordAnoth
                   className="text-xs font-semibold"
                   style={{ color: pack.art === 'special' ? '#ffd9f4' : deep, opacity: 0.75 }}
                 >
-                  {pack.size} cars
+                  {pack.tiers.length} cars
                 </span>
               </div>
             </motion.div>

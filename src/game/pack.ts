@@ -42,14 +42,35 @@ export function poolFor(pack: Pack, rare: boolean): CardView[] {
     (c) =>
       pack.tiers.includes(c.tier) &&
       c.rare === rare &&
-      (pack.minOverall === undefined || c.overall >= pack.minOverall),
+      (pack.minOverall === undefined || c.overall >= pack.minOverall) &&
+      (pack.maxOverall === undefined || c.overall <= pack.maxOverall),
   )
 }
 
-/** Chance a non-guaranteed slot rolls rare, read off the pack's published odds. */
-function baseRareChance(pack: Pack): number {
-  const rare = pack.odds.rates.find((r) => r.label.startsWith('Rare'))
-  return rare ? rare.chance : 0
+/**
+ * Cards allowed in one particular slot.
+ *
+ * Each slot has its own tier, so a pack advertising three bronze and one gold
+ * deals exactly that. Treating `tiers` as a set instead — which is what this
+ * used to do — meant the free pack drew all eight cards from the combined pool,
+ * where gold outnumbers bronze seven to one, and a hypercar could fall out of
+ * the pack you get for nothing.
+ */
+export function slotPool(pack: Pack, slot: number, rare: boolean): CardView[] {
+  const tier = pack.tiers[slot]
+  // The last slot is the headline card, revealed last, so it can carry a floor.
+  const isLast = slot === pack.tiers.length - 1
+  const floor = Math.max(
+    pack.minOverall ?? 0,
+    isLast ? (pack.headlinerMinOverall ?? 0) : 0,
+  )
+  return NON_SPECIAL.filter(
+    (c) =>
+      c.tier === tier &&
+      c.rare === rare &&
+      c.overall >= floor &&
+      (pack.maxOverall === undefined || c.overall <= pack.maxOverall),
+  )
 }
 
 /**
@@ -58,23 +79,17 @@ function baseRareChance(pack: Pack): number {
  * pack. `rng` is injectable so tests are deterministic.
  */
 export function openPack(pack: Pack, rng: Rng = Math.random): CardView[] {
-  const rarePool = poolFor(pack, true)
-  const commonPool = poolFor(pack, false)
-
-  const rareChance = baseRareChance(pack)
   const cards: CardView[] = []
   const taken = new Set<string>()
 
-  for (let i = 0; i < pack.size; i++) {
+  for (let i = 0; i < pack.tiers.length; i++) {
     const guaranteed = i < pack.guaranteedRare
-    const wantRare = pack.allRare || guaranteed || rng() < rareChance
+    const wantRare = pack.allRare || guaranteed || rng() < pack.rareChance
+    const rares = slotPool(pack, i, true)
+    const commons = slotPool(pack, i, false)
     // An all-rare pack must never reach for a common; everything else may fall
     // back to the other pool rather than repeat a card it has already given.
-    const pools = pack.allRare
-      ? [rarePool]
-      : wantRare
-        ? [rarePool, commonPool]
-        : [commonPool, rarePool]
+    const pools = pack.allRare ? [rares] : wantRare ? [rares, commons] : [commons, rares]
     cards.push(draw(pools, taken, rng))
   }
 
