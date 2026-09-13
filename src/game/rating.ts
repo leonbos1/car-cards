@@ -5,21 +5,21 @@ import type { CardClass, Car, CardView, Stats, Tier } from '../types'
  * to a comparable scale where top speed and acceleration drive the rating.
  */
 export function overall(stats: Stats): number {
-  // Normalize real specs to 1-99 scale for calculation
-  // HP: typical range 50-1000, exotic up to 1500
-  const hpScore = Math.min(99, Math.max(1, Math.round((stats.hp / 10) * 0.8)))
+  // Normalize real specs to 1-99 scale for performance-driven scoring
+  // These ranges are calibrated so good sports cars hit 60+, hypercars hit 85+
 
-  // Acceleration: typical range 3-15 seconds, inverted (faster = higher score)
-  // 2.5s = 99, 15s = 1
-  const accScore = Math.min(99, Math.max(1, Math.round(99 - (stats.acc - 2.5) * 7)))
+  // HP: ~100 = 20, ~500 = 50, ~1000 = 79, ~2000 = 99
+  const hpScore = Math.min(99, Math.max(1, Math.round((stats.hp / 10) * 0.95)))
 
-  // Top speed: typical range 130-350 km/h
-  // 130 km/h = 20, 350 km/h = 99
-  const speedScore = Math.min(99, Math.max(1, Math.round(((stats.topspeed - 130) / 220) * 79 + 20)))
+  // Acceleration: 20s = 1, 10s = 33, 5s = 66, 2.5s = 99
+  const accScore = Math.min(99, Math.max(1, Math.round(99 - (stats.acc - 2.5) * 5.5)))
 
-  // Weight: typical range 800-2500 kg, inverted (lighter = higher score)
-  // 800 kg = 99, 2500 kg = 1
-  const weightScore = Math.min(99, Math.max(1, Math.round(99 - (stats.weight - 800) / 17)))
+  // Top speed: 100 km/h = 1, 200 km/h = 40, 300 km/h = 80, 500+ km/h = 99
+  const speedScore = Math.min(99, Math.max(1, Math.round(((stats.topspeed - 100) / 433) * 99)))
+
+  // Weight matters less - lighter is better but not penalizing heavy performance cars
+  // 1000 kg = 80, 1500 kg = 50, 2500 kg = 10
+  const weightScore = Math.min(99, Math.max(1, Math.round(Math.max(10, 99 - (stats.weight - 1000) / 20))))
 
   // Handling (1-99 subjective) - use directly
   const handlingScore = stats.handling
@@ -27,14 +27,14 @@ export function overall(stats: Stats): number {
   // Wow factor (1-99 subjective) - use directly
   const wowScore = stats.wowFactor
 
-  // Weight the normalized scores
+  // Weight the scores heavily toward speed and acceleration
   const weighted =
-    speedScore * 0.25 +
-    accScore * 0.25 +
-    hpScore * 0.2 +
-    handlingScore * 0.15 +
-    weightScore * 0.1 +
-    wowScore * 0.05
+    speedScore * 0.28 +
+    accScore * 0.28 +
+    hpScore * 0.22 +
+    handlingScore * 0.1 +
+    wowScore * 0.08 +
+    weightScore * 0.04
 
   return Math.round(weighted)
 }
