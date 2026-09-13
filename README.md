@@ -131,3 +131,4 @@ src/
   components/           cards, store, garage, the opening animation
 scripts/fetch-images.ts Wikimedia Commons image pipeline
 ```
+# APK builds are automated via GitHub Actions
