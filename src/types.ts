@@ -3,19 +3,19 @@ export type Tier = 'bronze' | 'silver' | 'gold'
 /** How a card is drawn. Specials get their own treatment on top of the three tiers. */
 export type CardClass = Tier | 'special'
 
-/** Realistic performance metrics derived from actual car specs */
+/** Realistic performance metrics from actual car specs */
 export interface Stats {
-  /** Horsepower (1-99 scale) */
+  /** Horsepower (actual HP from engine) */
   hp: number
-  /** Acceleration 0-100 km/h (1-99 scale, higher = faster) */
+  /** Acceleration: 0-100 km/h time in seconds */
   acc: number
-  /** Top speed (1-99 scale) */
+  /** Top speed in km/h */
   topspeed: number
-  /** Weight penalty (1-99 scale, higher = lighter) */
+  /** Weight in kg */
   weight: number
-  /** Handling / Agility (1-99 scale) */
+  /** Handling score (1-99 based on power-to-weight and suspension) */
   handling: number
-  /** Wow factor / Desirability (1-99 scale) */
+  /** Wow factor / Desirability (1-99 subjective) */
   wowFactor: number
 }
 
