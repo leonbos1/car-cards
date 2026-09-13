@@ -5,11 +5,12 @@ import { Catalog } from './components/Catalog'
 import { Garage } from './components/Garage'
 import { PackOpening } from './components/PackOpening'
 import { PackStore } from './components/PackStore'
+import { Settings } from './components/Settings'
 import { openPack } from './game/pack'
 import { useGame } from './store/useGame'
 import type { CardView, Pack, Pull } from './types'
 
-type Tab = 'store' | 'garage' | 'catalog'
+type Tab = 'store' | 'garage' | 'catalog' | 'settings'
 
 interface Opening {
   pack: Pack
@@ -56,7 +57,7 @@ export function App() {
           </h1>
 
           <nav className="ml-2 flex gap-1">
-            {(['store', 'catalog', 'garage'] as Tab[]).map((t) => (
+            {(['store', 'catalog', 'garage', 'settings'] as Tab[]).map((t) => (
               <button
                 key={t}
                 type="button"
@@ -65,7 +66,7 @@ export function App() {
                   tab === t ? 'bg-white/15 text-white' : 'text-white/45 hover:text-white/80'
                 }`}
               >
-                {t}
+                {t === 'store' ? 'Store' : t === 'catalog' ? 'Catalog' : t === 'garage' ? 'Garage' : '⚙️'}
               </button>
             ))}
           </nav>
@@ -80,6 +81,8 @@ export function App() {
         <PackStore balance={balance} onBuy={handleBuy} />
       ) : tab === 'catalog' ? (
         <Catalog collection={collection} onInspect={setInspecting} />
+      ) : tab === 'settings' ? (
+        <Settings onReset={() => setTab('store')} />
       ) : (
         <Garage
           collection={collection}
