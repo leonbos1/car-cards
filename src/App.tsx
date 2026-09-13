@@ -1,6 +1,7 @@
 import { useCallback, useState } from 'react'
 import { Balance } from './components/Balance'
 import { CardDetail } from './components/CardDetail'
+import { Catalog } from './components/Catalog'
 import { Garage } from './components/Garage'
 import { PackOpening } from './components/PackOpening'
 import { PackStore } from './components/PackStore'
@@ -8,7 +9,7 @@ import { openPack } from './game/pack'
 import { useGame } from './store/useGame'
 import type { CardView, Pack, Pull } from './types'
 
-type Tab = 'store' | 'garage'
+type Tab = 'store' | 'garage' | 'catalog'
 
 interface Opening {
   pack: Pack
@@ -55,7 +56,7 @@ export function App() {
           </h1>
 
           <nav className="ml-2 flex gap-1">
-            {(['store', 'garage'] as Tab[]).map((t) => (
+            {(['store', 'catalog', 'garage'] as Tab[]).map((t) => (
               <button
                 key={t}
                 type="button"
@@ -77,6 +78,8 @@ export function App() {
 
       {tab === 'store' ? (
         <PackStore balance={balance} onBuy={handleBuy} />
+      ) : tab === 'catalog' ? (
+        <Catalog collection={collection} onInspect={setInspecting} />
       ) : (
         <Garage
           collection={collection}
