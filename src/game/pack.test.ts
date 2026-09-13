@@ -181,13 +181,14 @@ describe('quick-sell', () => {
   it('is always positive and rises with rarity', () => {
     for (const card of ALL_CARDS) expect(quickSellValue(card)).toBeGreaterThan(0)
 
-    const bronze = ALL_CARDS.find((c) => c.tier === 'bronze' && !c.rare)!
-    const bronzeRare = ALL_CARDS.find((c) => c.tier === 'bronze' && c.rare)!
+    // Find example cards by tier and rarity (bronze may not exist with new tier boundaries)
+    const commonSilver = ALL_CARDS.find((c) => c.tier === 'silver' && !c.rare) || ALL_CARDS.find((c) => !c.rare && !c.special)!
+    const rareSilver = ALL_CARDS.find((c) => c.tier === 'silver' && c.rare) || ALL_CARDS.find((c) => c.rare && !c.special)!
     const gold = ALL_CARDS.find((c) => c.tier === 'gold' && !c.rare && !c.special)!
     const special = ALL_CARDS.find((c) => c.special)!
 
-    expect(quickSellValue(bronze)).toBeLessThan(quickSellValue(bronzeRare))
-    expect(quickSellValue(bronzeRare)).toBeLessThan(quickSellValue(gold))
+    expect(quickSellValue(commonSilver)).toBeLessThan(quickSellValue(rareSilver))
+    expect(quickSellValue(rareSilver)).toBeLessThan(quickSellValue(gold))
     expect(quickSellValue(gold)).toBeLessThan(quickSellValue(special))
   })
 })
