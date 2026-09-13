@@ -7,8 +7,8 @@ import type { CardClass, Car, CardView, Stats, Tier } from '../types'
  * Examples: Giulietta 1.4 (~76), Golf GTI (~81), Golf R (~85), Veyron (~95)
  */
 export function overall(stats: Stats): number {
-  // Start with base rating for an average car
-  const baseRating = 63
+  // Start with base rating for an average car; weak cars fall into bronze, normal cars into silver
+  const baseRating = 60
 
   // Top speed bonus: 100 km/h = 0, 200 = 4.5, 300 = 9, 400+ = 14
   const speedBonus = Math.min(14, Math.max(0, (stats.topspeed - 100) / 22))
