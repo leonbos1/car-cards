@@ -68,10 +68,12 @@ export function Catalog({ collection, onInspect }: Props) {
 
   const completion = Math.round((ownedCount / ALL_CARDS.length) * 100)
 
+  // Bucket by cardClass, not tier: a special carries tier 'gold', so counting
+  // by tier put every special in the gold total and left special at 0 / 0.
   const tierCounts = useMemo(() => {
     const counts = { bronze: 0, silver: 0, gold: 0, special: 0 }
     ALL_CARDS.forEach((c) => {
-      counts[c.tier as keyof typeof counts]++
+      counts[c.cardClass]++
     })
     return counts
   }, [])
@@ -79,7 +81,7 @@ export function Catalog({ collection, onInspect }: Props) {
   const tierOwned = useMemo(() => {
     const owned = { bronze: 0, silver: 0, gold: 0, special: 0 }
     allCars.forEach((c) => {
-      if (c.owned) owned[c.tier as keyof typeof owned]++
+      if (c.owned) owned[c.cardClass]++
     })
     return owned
   }, [allCars])
@@ -103,7 +105,8 @@ export function Catalog({ collection, onInspect }: Props) {
             { tier: 'special', label: 'Special' },
           ].map(({ tier, label }) => {
             const t = tier as keyof typeof tierCounts
-            const pct = Math.round((tierOwned[t] / tierCounts[t]) * 100)
+            // A tier can legitimately be empty while the roster is being tuned.
+            const pct = tierCounts[t] ? Math.round((tierOwned[t] / tierCounts[t]) * 100) : 0
             return (
               <div key={tier} className="rounded-lg bg-white/5 p-3">
                 <div className="text-xs font-bold text-white/70">{label}</div>

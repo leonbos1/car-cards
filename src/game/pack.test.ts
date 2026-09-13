@@ -181,14 +181,24 @@ describe('quick-sell', () => {
   it('is always positive and rises with rarity', () => {
     for (const card of ALL_CARDS) expect(quickSellValue(card)).toBeGreaterThan(0)
 
-    // Find example cards by tier and rarity (bronze may not exist with new tier boundaries)
-    const commonSilver = ALL_CARDS.find((c) => c.tier === 'silver' && !c.rare) || ALL_CARDS.find((c) => !c.rare && !c.special)!
-    const rareSilver = ALL_CARDS.find((c) => c.tier === 'silver' && c.rare) || ALL_CARDS.find((c) => c.rare && !c.special)!
-    const gold = ALL_CARDS.find((c) => c.tier === 'gold' && !c.rare && !c.special)!
-    const special = ALL_CARDS.find((c) => c.special)!
+    const pick = (tier: string, rare: boolean) =>
+      ALL_CARDS.find((c) => c.tier === tier && c.rare === rare && !c.special)!
 
-    expect(quickSellValue(commonSilver)).toBeLessThan(quickSellValue(rareSilver))
-    expect(quickSellValue(rareSilver)).toBeLessThan(quickSellValue(gold))
-    expect(quickSellValue(gold)).toBeLessThan(quickSellValue(special))
+    // Every rung of the ladder is populated, so the ordering can be checked end
+    // to end rather than from whichever tiers happen to have cards in them.
+    const ladder = [
+      pick('bronze', false),
+      pick('bronze', true),
+      pick('silver', false),
+      pick('silver', true),
+      pick('gold', false),
+      pick('gold', true),
+      ALL_CARDS.find((c) => c.special)!,
+    ]
+
+    for (const card of ladder) expect(card, 'every tier needs cards to draw from').toBeDefined()
+    for (let i = 1; i < ladder.length; i++) {
+      expect(quickSellValue(ladder[i - 1])).toBeLessThan(quickSellValue(ladder[i]))
+    }
   })
 })

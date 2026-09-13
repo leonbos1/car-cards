@@ -6264,10 +6264,10 @@ export const CARS: Car[] = [
   {
     id: 'hennessey-exorcist-2023',
     make: 'Chevrolet', model: 'Camaro ZL1', year: 2023, country: 'US',
-    stats: { hp: 1000, acc: 2.1, topspeed: 340, weight: 1490, handling: 65, wowFactor: 99 },
+    stats: { hp: 650, acc: 3.5, topspeed: 315, weight: 1740, handling: 48, wowFactor: 78 },
     rare: true,
-    specs: { hp: 1000, zeroToHundred: 2.1, topSpeed: 340, weightKg: 1490 },
-    imageQuery: 'Hennessey',
+    specs: { hp: 650, zeroToHundred: 3.5, topSpeed: 315, weightKg: 1740 },
+    imageQuery: 'Chevrolet Camaro ZL1',
   },
   {
     id: 'ford-gt-2023',
