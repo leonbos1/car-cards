@@ -12,7 +12,10 @@
     "apk:sync": "cap sync android",
     "apk:debug": "npm run build && cap sync android && cd android && ./gradlew assembleDebug",
     "apk:release": "npm run build && cap sync android && cd android && ./gradlew assembleRelease",
-    "apk:open": "cap open android"
+    "apk:open": "cap open android",
+    "audit:images": "tsx scripts/audit-images.ts",
+    "suggest:images": "tsx scripts/suggest-images.ts",
+    "contact-sheet": "tsx scripts/contact-sheet.ts"
   },
   "dependencies": {
     "framer-motion": "^11.15.0",

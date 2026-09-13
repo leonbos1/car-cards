@@ -72,7 +72,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'skoda-fabia',
-    make: 'koda', model: 'Fabia', year: 2021, country: 'CZ',
+    make: 'Škoda', model: 'Fabia', year: 2021, country: 'CZ',
     stats: { hp: 95, acc: 11.1, topspeed: 185, weight: 1130, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 95, zeroToHundred: 11.1, topSpeed: 185, weightKg: 1130 },
@@ -96,7 +96,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'citroen-c3',
-    make: 'Citron', model: 'C3', year: 2017, country: 'FR',
+    make: 'Citroën', model: 'C3', year: 2017, country: 'FR',
     stats: { hp: 82, acc: 12.8, topspeed: 174, weight: 1090, handling: 25, wowFactor: 30 },
     rare: false,
     specs: { hp: 82, zeroToHundred: 12.8, topSpeed: 174, weightKg: 1090 },
@@ -216,7 +216,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'citroen-2cv',
-    make: 'Citron', model: '2CV', year: 1970, country: 'FR',
+    make: 'Citroën', model: '2CV', year: 1970, country: 'FR',
     stats: { hp: 28, acc: 32, topspeed: 110, weight: 560, handling: 23, wowFactor: 40 },
     rare: true,
     specs: { hp: 28, zeroToHundred: 32, topSpeed: 110, weightKg: 560 },
@@ -304,7 +304,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'renault-megane-rs',
-    make: 'Renault', model: 'Mgane RS', year: 2019, country: 'FR',
+    make: 'Renault', model: 'Mégane RS', year: 2019, country: 'FR',
     stats: { hp: 280, acc: 5.8, topspeed: 255, weight: 1430, handling: 33, wowFactor: 55 },
     rare: false,
     specs: { hp: 280, zeroToHundred: 5.8, topSpeed: 255, weightKg: 1430 },
@@ -656,7 +656,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'lamborghini-huracan',
-    make: 'Lamborghini', model: 'Huracn EVO', year: 2019, country: 'IT',
+    make: 'Lamborghini', model: 'Huracán EVO', year: 2019, country: 'IT',
     stats: { hp: 640, acc: 2.9, topspeed: 325, weight: 1422, handling: 50, wowFactor: 99 },
     rare: true,
     specs: { hp: 640, zeroToHundred: 2.9, topSpeed: 325, weightKg: 1422 },
@@ -1034,7 +1034,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'skoda-105-120',
-    make: 'koda', model: '105/120', year: 1980, country: 'CZ',
+    make: 'Škoda', model: '105/120', year: 1980, country: 'CZ',
     stats: { hp: 50, acc: 15.2, topspeed: 140, weight: 785, handling: 24, wowFactor: 40 },
     rare: true,
     specs: { hp: 50, zeroToHundred: 15.2, topSpeed: 140, weightKg: 785 },
@@ -1122,11 +1122,11 @@ export const CARS: Car[] = [
   },
   {
     id: 'hyundai-stinger-gt',
-    make: 'Hyundai', model: 'Stinger GT', year: 2019, country: 'KR',
+    make: 'Kia', model: 'Stinger GT', year: 2019, country: 'KR',
     stats: { hp: 370, acc: 5.8, topspeed: 245, weight: 1780, handling: 34, wowFactor: 55 },
     rare: false,
     specs: { hp: 370, zeroToHundred: 5.8, topSpeed: 245, weightKg: 1780 },
-    imageQuery: 'Hyundai 2018 sedan',
+    imageQuery: 'Kia Stinger',
   },
   {
     id: 'nissan-skyline-gtr-r32',
@@ -1633,7 +1633,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'rimac-c-two',
-    make: 'Rimac', model: 'C_Two', year: 2021, country: 'HR',
+    make: 'Rimac', model: 'Nevera', year: 2021, country: 'HR',
     stats: { hp: 1914, acc: 1.85, topspeed: 412, weight: 1850, handling: 89, wowFactor: 95 },
     rare: true,
     special: { label: 'HYPERCAR', limitedTo: 150 },
@@ -2396,11 +2396,11 @@ export const CARS: Car[] = [
   },
   {
     id: 'alfa-romeo-brera-crosswagon-q4',
-    make: 'Alfa Romeo', model: 'Brera Crosswagon Q4', year: 2006, country: 'IT',
+    make: 'Alfa Romeo', model: '159 Sportwagon Q4', year: 2006, country: 'IT',
     stats: { hp: 260, acc: 6.6, topspeed: 250, weight: 1680, handling: 30, wowFactor: 55 },
     rare: false,
     specs: { hp: 260, zeroToHundred: 6.6, topSpeed: 250, weightKg: 1680 },
-    imageQuery: 'Alfa Romeo Brera Crosswagon Q4',
+    imageQuery: 'Alfa Romeo 159 Sportwagon',
   },
   {
     id: 'alfa-romeo-33-ty-racer',
@@ -2564,7 +2564,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'skoda-octavia',
-    make: 'koda', model: 'Octavia', year: 2023, country: 'CZ',
+    make: 'Škoda', model: 'Octavia', year: 2023, country: 'CZ',
     stats: { hp: 130, acc: 9.5, topspeed: 205, weight: 1330, handling: 27, wowFactor: 40 },
     rare: false,
     specs: { hp: 130, zeroToHundred: 9.5, topSpeed: 205, weightKg: 1330 },
@@ -2636,7 +2636,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'renault-megane-rs-mk3',
-    make: 'Renault', model: 'Mgane RS Mk3', year: 2014, country: 'FR',
+    make: 'Renault', model: 'Mégane RS Mk3', year: 2014, country: 'FR',
     stats: { hp: 275, acc: 6, topspeed: 245, weight: 1510, handling: 32, wowFactor: 65 },
     rare: true,
     specs: { hp: 275, zeroToHundred: 6, topSpeed: 245, weightKg: 1510 },
@@ -3013,7 +3013,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'skoda-citigo-e-iv',
-    make: 'koda', model: 'Citigo e IV', year: 2020, country: 'CZ',
+    make: 'Škoda', model: 'Citigo e IV', year: 2020, country: 'CZ',
     stats: { hp: 83, acc: 10.8, topspeed: 160, weight: 1060, handling: 25, wowFactor: 30 },
     rare: false,
     specs: { hp: 83, zeroToHundred: 10.8, topSpeed: 160, weightKg: 1060 },
@@ -3061,7 +3061,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'citroen-c1',
-    make: 'Citron', model: 'C1', year: 2021, country: 'FR',
+    make: 'Citroën', model: 'C1', year: 2021, country: 'FR',
     stats: { hp: 71, acc: 12.8, topspeed: 170, weight: 970, handling: 25, wowFactor: 30 },
     rare: false,
     specs: { hp: 71, zeroToHundred: 12.8, topSpeed: 170, weightKg: 970 },
@@ -3069,7 +3069,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'citroen-c2',
-    make: 'Citron', model: 'C2', year: 2008, country: 'FR',
+    make: 'Citroën', model: 'C2', year: 2008, country: 'FR',
     stats: { hp: 87, acc: 12.5, topspeed: 177, weight: 1030, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 87, zeroToHundred: 12.5, topSpeed: 177, weightKg: 1030 },
@@ -3205,7 +3205,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'chevrolet-enjoy-7-str',
-    make: 'Chevrolet', model: 'Enjoy 7 STr', year: 2021, country: 'IN',
+    make: 'Chevrolet', model: 'Tavera', year: 2021, country: 'IN',
     stats: { hp: 84, acc: 12.5, topspeed: 167, weight: 1095, handling: 25, wowFactor: 30 },
     rare: false,
     specs: { hp: 84, zeroToHundred: 12.5, topSpeed: 167, weightKg: 1095 },
@@ -3333,7 +3333,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'skoda-kodiaq',
-    make: 'koda', model: 'Kodiaq', year: 2023, country: 'CZ',
+    make: 'Škoda', model: 'Kodiaq', year: 2023, country: 'CZ',
     stats: { hp: 150, acc: 10.9, topspeed: 205, weight: 1650, handling: 26, wowFactor: 40 },
     rare: false,
     specs: { hp: 150, zeroToHundred: 10.9, topSpeed: 205, weightKg: 1650 },
@@ -3494,11 +3494,12 @@ export const CARS: Car[] = [
   },
   {
     id: 'nio-et6',
-    make: 'NIO', model: 'ET6', year: 2023, country: 'CN',
+    make: 'NIO', model: 'ET5', year: 2023, country: 'CN',
     stats: { hp: 384, acc: 5.1, topspeed: 255, weight: 1870, handling: 34, wowFactor: 65 },
     rare: true,
     specs: { hp: 384, zeroToHundred: 5.1, topSpeed: 255, weightKg: 1870 },
     imageQuery: 'NIO',
+    imageFile: 'NIO ET5 Motorworld Munich 1X7A0050.jpg',
   },
   {
     id: 'hyundai-bayon',
@@ -3614,7 +3615,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'mahindra-bolero-neo',
-    make: 'Mahindra', model: 'Bolero Neo', year: 2022, country: 'IN',
+    make: 'Mahindra', model: 'TUV300', year: 2022, country: 'IN',
     stats: { hp: 100, acc: 13, topspeed: 180, weight: 1330, handling: 25, wowFactor: 30 },
     rare: false,
     specs: { hp: 100, zeroToHundred: 13, topSpeed: 180, weightKg: 1330 },
@@ -3638,7 +3639,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'citroen-ds-21',
-    make: 'Citron', model: 'DS 21 Pallas', year: 1973, country: 'FR',
+    make: 'Citroën', model: 'DS 21 Pallas', year: 1973, country: 'FR',
     stats: { hp: 130, acc: 9.5, topspeed: 180, weight: 1330, handling: 27, wowFactor: 40 },
     rare: true,
     specs: { hp: 130, zeroToHundred: 9.5, topSpeed: 180, weightKg: 1330 },
@@ -4038,7 +4039,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'nio-et6-sedan',
-    make: 'NIO', model: 'ET6 Sedan', year: 2023, country: 'CN',
+    make: 'NIO', model: 'ET7', year: 2023, country: 'CN',
     stats: { hp: 300, acc: 6.8, topspeed: 240, weight: 1610, handling: 32, wowFactor: 55 },
     rare: false,
     specs: { hp: 300, zeroToHundred: 6.8, topSpeed: 240, weightKg: 1610 },
@@ -4059,6 +4060,7 @@ export const CARS: Car[] = [
     rare: false,
     specs: { hp: 150, zeroToHundred: 8.8, topSpeed: 200, weightKg: 1490 },
     imageQuery: 'Geometry C',
+    imageFile: 'Geometry C 001.jpg',
   },
   {
     id: 'mini-cooper-se',
@@ -4086,7 +4088,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'hyundai-avante-gls',
-    make: 'Hyundai', model: 'Avante GLS', year: 2023, country: 'KR',
+    make: 'Hyundai', model: 'Elantra GLS', year: 2023, country: 'KR',
     stats: { hp: 123, acc: 10.5, topspeed: 190, weight: 1305, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 123, zeroToHundred: 10.5, topSpeed: 190, weightKg: 1305 },
@@ -4326,7 +4328,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'bmw-7-series-m760i',
-    make: 'BMW', model: '7 Series M760i xDrive', year: 2023, country: 'DE',
+    make: 'BMW', model: '760i xDrive', year: 2023, country: 'DE',
     stats: { hp: 625, acc: 3.6, topspeed: 305, weight: 2035, handling: 40, wowFactor: 99 },
     rare: true,
     specs: { hp: 625, zeroToHundred: 3.6, topSpeed: 305, weightKg: 2035 },
@@ -4358,7 +4360,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'nissan-z-proto-470z',
-    make: 'Nissan', model: 'Z Proto 470Z', year: 2023, country: 'JP',
+    make: 'Nissan', model: 'Z RZ34', year: 2023, country: 'JP',
     stats: { hp: 400, acc: 4.2, topspeed: 270, weight: 1525, handling: 37, wowFactor: 65 },
     rare: true,
     specs: { hp: 400, zeroToHundred: 4.2, topSpeed: 270, weightKg: 1525 },
@@ -4438,7 +4440,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'mahindra-e20-plus',
-    make: 'Mahindra', model: 'e20 Plus', year: 2023, country: 'IN',
+    make: 'Mahindra', model: 'e2o Plus', year: 2023, country: 'IN',
     stats: { hp: 54, acc: 10.2, topspeed: 140, weight: 1090, handling: 23, wowFactor: 30 },
     rare: false,
     specs: { hp: 54, zeroToHundred: 10.2, topSpeed: 140, weightKg: 1090 },
@@ -4486,11 +4488,11 @@ export const CARS: Car[] = [
   },
   {
     id: 'toyota-wagonr-2022',
-    make: 'Toyota', model: 'Wagonr', year: 2022, country: 'IN',
+    make: 'Maruti', model: 'Wagon R VXi', year: 2022, country: 'IN',
     stats: { hp: 68, acc: 12.1, topspeed: 160, weight: 940, handling: 25, wowFactor: 30 },
     rare: false,
     specs: { hp: 68, zeroToHundred: 12.1, topSpeed: 160, weightKg: 940 },
-    imageQuery: 'Wagonr',
+    imageQuery: 'Maruti Wagon R',
   },
   {
     id: 'hyundai-venue-2023',
@@ -4710,7 +4712,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'skoda-slavia-2023',
-    make: 'Skoda', model: 'Slavia', year: 2023, country: 'CZ',
+    make: 'Škoda', model: 'Slavia', year: 2023, country: 'CZ',
     stats: { hp: 110, acc: 9.2, topspeed: 190, weight: 1185, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 110, zeroToHundred: 9.2, topSpeed: 190, weightKg: 1185 },
@@ -4782,7 +4784,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'skoda-kushaq-2023',
-    make: 'Skoda', model: 'Kushaq', year: 2023, country: 'CZ',
+    make: 'Škoda', model: 'Kushaq', year: 2023, country: 'CZ',
     stats: { hp: 110, acc: 9.3, topspeed: 185, weight: 1220, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 110, zeroToHundred: 9.3, topSpeed: 185, weightKg: 1220 },
@@ -4854,7 +4856,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'skoda-octavia-2023',
-    make: 'Skoda', model: 'Octavia', year: 2023, country: 'CZ',
+    make: 'Škoda', model: 'Octavia', year: 2023, country: 'CZ',
     stats: { hp: 190, acc: 7.9, topspeed: 220, weight: 1320, handling: 30, wowFactor: 40 },
     rare: false,
     specs: { hp: 190, zeroToHundred: 7.9, topSpeed: 220, weightKg: 1320 },
@@ -5406,7 +5408,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'mahindra-alturas-g4-2023',
-    make: 'Mahindra', model: 'Alturas G4', year: 2023, country: 'IN',
+    make: 'Mahindra', model: 'Scorpio N', year: 2023, country: 'IN',
     stats: { hp: 170, acc: 9.6, topspeed: 195, weight: 1880, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 170, zeroToHundred: 9.6, topSpeed: 195, weightKg: 1880 },
@@ -5798,7 +5800,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'lotus-type-62-2023',
-    make: 'Lotus', model: 'Type 62', year: 2023, country: 'GB',
+    make: 'Radford', model: 'Type 62-2', year: 2023, country: 'GB',
     stats: { hp: 612, acc: 2.8, topspeed: 330, weight: 980, handling: 62, wowFactor: 95 },
     rare: true,
     special: { label: 'SUPERCAR', limitedTo: 80 },
@@ -5975,7 +5977,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'mahindra-nuo-2023',
-    make: 'Mahindra', model: 'NUO', year: 2023, country: 'IN',
+    make: 'Mahindra', model: 'XUV400', year: 2023, country: 'IN',
     stats: { hp: 75, acc: 12.5, topspeed: 120, weight: 1700, handling: 23, wowFactor: 30 },
     rare: false,
     specs: { hp: 75, zeroToHundred: 12.5, topSpeed: 120, weightKg: 1700 },
@@ -6079,7 +6081,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'nio-et6-2023',
-    make: 'NIO', model: 'ET6', year: 2023, country: 'CN',
+    make: 'NIO', model: 'ET5', year: 2023, country: 'CN',
     stats: { hp: 536, acc: 4.5, topspeed: 220, weight: 1850, handling: 39, wowFactor: 80 },
     rare: true,
     specs: { hp: 536, zeroToHundred: 4.5, topSpeed: 220, weightKg: 1850 },
@@ -6261,7 +6263,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'hennessey-exorcist-2023',
-    make: 'Hennessey', model: 'Exorcist Camaro', year: 2023, country: 'US',
+    make: 'Chevrolet', model: 'Camaro ZL1', year: 2023, country: 'US',
     stats: { hp: 1000, acc: 2.1, topspeed: 340, weight: 1490, handling: 65, wowFactor: 99 },
     rare: true,
     specs: { hp: 1000, zeroToHundred: 2.1, topSpeed: 340, weightKg: 1490 },
@@ -6278,7 +6280,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'concept-car-hyperion-2023',
-    make: 'Hyperion', model: 'XP-1', year: 2023, country: 'US',
+    make: 'Pininfarina', model: 'Battista', year: 2023, country: 'US',
     stats: { hp: 1000, acc: 2.2, topspeed: 350, weight: 1113, handling: 80, wowFactor: 95 },
     rare: true,
     special: { label: 'CONCEPT', limitedTo: 5 },
@@ -6295,7 +6297,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'renault-megane-rs-2023',
-    make: 'Renault', model: 'Megane RS', year: 2023, country: 'FR',
+    make: 'Renault', model: 'Mégane RS', year: 2023, country: 'FR',
     stats: { hp: 280, acc: 5.8, topspeed: 250, weight: 1450, handling: 33, wowFactor: 65 },
     rare: true,
     specs: { hp: 280, zeroToHundred: 5.8, topSpeed: 250, weightKg: 1450 },
@@ -6439,7 +6441,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'skoda-fabia-rs-2023',
-    make: 'Skoda', model: 'Fabia RS', year: 2023, country: 'CZ',
+    make: 'Škoda', model: 'Fabia RS', year: 2023, country: 'CZ',
     stats: { hp: 245, acc: 6.2, topspeed: 235, weight: 1350, handling: 32, wowFactor: 65 },
     rare: true,
     specs: { hp: 245, zeroToHundred: 6.2, topSpeed: 235, weightKg: 1350 },
@@ -7064,7 +7066,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'rimac-c-two-2023',
-    make: 'Rimac', model: 'C_Two', year: 2023, country: 'HR',
+    make: 'Rimac', model: 'Nevera', year: 2023, country: 'HR',
     stats: { hp: 1914, acc: 1.85, topspeed: 415, weight: 1850, handling: 89, wowFactor: 99 },
     rare: true,
     specs: { hp: 1914, zeroToHundred: 1.85, topSpeed: 415, weightKg: 1850 },
@@ -7176,7 +7178,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'genesis-gv90-2024',
-    make: 'Genesis', model: 'GV90', year: 2024, country: 'KR',
+    make: 'Genesis', model: 'GV80', year: 2024, country: 'KR',
     stats: { hp: 409, acc: 5.8, topspeed: 200, weight: 2290, handling: 32, wowFactor: 60 },
     rare: false,
     specs: { hp: 409, zeroToHundred: 5.8, topSpeed: 200, weightKg: 2290 },
@@ -7301,6 +7303,7 @@ export const CARS: Car[] = [
     rare: false,
     specs: { hp: 150, zeroToHundred: 8.8, topSpeed: 190, weightKg: 1475 },
     imageQuery: 'Geometry',
+    imageFile: 'Geometry C 004.jpg',
   },
   {
     id: 'changan-uni-t-2023',
@@ -7464,7 +7467,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'lamborghini-revuelton-flagship',
-    make: 'Lamborghini', model: 'Revuelton', year: 2024, country: 'IT',
+    make: 'Lamborghini', model: 'Revuelto', year: 2024, country: 'IT',
     stats: { hp: 640, acc: 2.9, topspeed: 325, weight: 1422, handling: 50, wowFactor: 99 },
     rare: true,
     specs: { hp: 640, zeroToHundred: 2.9, topSpeed: 325, weightKg: 1422 },
@@ -7653,6 +7656,7 @@ export const CARS: Car[] = [
     rare: false,
     specs: { hp: 150, zeroToHundred: 9, topSpeed: 200, weightKg: 1500 },
     imageQuery: 'Seat Tarraco 2023',
+    imageFile: '2019 SEAT Tarraco SE Tech TDi 4Drive SA 2.0 Front.jpg',
   },
   {
     id: 'skoda-superb-2023',
@@ -7808,7 +7812,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'changhe-q36-2023',
-    make: 'Changhe Auto', model: 'Q36', year: 2023, country: 'CN',
+    make: 'Wuling', model: 'Hongguang S', year: 2023, country: 'CN',
     stats: { hp: 168, acc: 9.5, topspeed: 180, weight: 1400, handling: 28, wowFactor: 30 },
     rare: false,
     specs: { hp: 168, zeroToHundred: 9.5, topSpeed: 180, weightKg: 1400 },
@@ -7856,7 +7860,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'li-auto-two-2023',
-    make: 'Li Auto', model: 'Two', year: 2023, country: 'CN',
+    make: 'Zeekr', model: '001', year: 2023, country: 'CN',
     stats: { hp: 435, acc: 5, topspeed: 220, weight: 2050, handling: 34, wowFactor: 80 },
     rare: true,
     specs: { hp: 435, zeroToHundred: 5, topSpeed: 220, weightKg: 2050 },
@@ -7864,7 +7868,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'geely-geometry-s-2023',
-    make: 'Geely', model: 'Geometry S', year: 2023, country: 'CN',
+    make: 'Geely', model: 'Geometry E', year: 2023, country: 'CN',
     stats: { hp: 388, acc: 5.5, topspeed: 210, weight: 1680, handling: 35, wowFactor: 65 },
     rare: true,
     specs: { hp: 388, zeroToHundred: 5.5, topSpeed: 210, weightKg: 1680 },
@@ -7889,7 +7893,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'rolls-royce-vision-next-2024',
-    make: 'Rolls-Royce', model: 'Vision Next 100', year: 2024, country: 'GB',
+    make: 'Rolls-Royce', model: 'Spectre', year: 2024, country: 'GB',
     stats: { hp: 542, acc: 4.8, topspeed: 240, weight: 2400, handling: 35, wowFactor: 95 },
     rare: true,
     special: { label: 'LUXURY VISION', limitedTo: 2 },
@@ -8050,7 +8054,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'renault-megane-rs-2024',
-    make: 'Renault', model: 'Megane RS', year: 2024, country: 'FR',
+    make: 'Renault', model: 'Mégane RS', year: 2024, country: 'FR',
     stats: { hp: 280, acc: 5.7, topspeed: 250, weight: 1380, handling: 34, wowFactor: 65 },
     rare: true,
     specs: { hp: 280, zeroToHundred: 5.7, topSpeed: 250, weightKg: 1380 },
@@ -8616,7 +8620,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'bmw-x8-m-2024',
-    make: 'BMW', model: 'X8 M', year: 2024, country: 'DE',
+    make: 'BMW', model: 'XM', year: 2024, country: 'DE',
     stats: { hp: 750, acc: 3.8, topspeed: 250, weight: 2365, handling: 41, wowFactor: 90 },
     rare: true,
     specs: { hp: 750, zeroToHundred: 3.8, topSpeed: 250, weightKg: 2365 },

@@ -15,6 +15,7 @@ import { fileURLToPath } from 'node:url'
 import sharp from 'sharp'
 import { CARS } from '../src/data/cars'
 import type { Car, CarImage } from '../src/types'
+import { depicts } from './image-match'
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const OUT_DIR = path.join(ROOT, 'public', 'cars')
@@ -129,7 +130,15 @@ async function search(query: string): Promise<Candidate[]> {
   )
 }
 
-/** Higher is better. Negative scores are rejected outright. */
+/**
+ * Ranks candidates that have ALREADY been confirmed to show the right car.
+ *
+ * This is a beauty contest, not an identity check: `depicts()` decides whether a
+ * file is eligible at all. Scoring used to do both, and because a name match was
+ * only worth +12 against +18 for a landscape aspect ratio, a file matching
+ * nothing could still clear the bar — which is how a Jacques-Louis David
+ * painting ended up on the Alfa Romeo Brera card.
+ */
 function score(candidate: Candidate, car: Car): number {
   const title = candidate.title.replace(/^File:/, '')
   const { width = 0, height = 0 } = candidate.info
@@ -137,6 +146,9 @@ function score(candidate: Candidate, car: Car): number {
 
   for (const [re, penalty] of TITLE_PENALTIES) if (re.test(title)) total += penalty
   for (const [re, bonus] of TITLE_BONUSES) if (re.test(title)) total += bonus
+
+  // Prefer a file that names the exact year the card claims.
+  if (new RegExp(`\\b${car.year}\\b`).test(title)) total += 10
 
   // Every significant word of the make and model that shows up in the filename.
   const words = `${car.make} ${car.model}`
@@ -158,6 +170,58 @@ function score(candidate: Candidate, car: Car): number {
   return total
 }
 
+function describe(file: string, info: ImageInfo): CarImage {
+  return {
+    file,
+    artist: stripHtml(info.extmetadata?.Artist?.value ?? 'Unknown'),
+    license: info.extmetadata?.LicenseShortName?.value ?? 'Unknown',
+    sourceUrl: info.descriptionurl ?? '',
+  }
+}
+
+/**
+ * Commons relevance is unreliable for anything obscure, so try a few phrasings
+ * before giving up. Every candidate still has to pass `depicts()` — a car with
+ * no real photograph gets no photograph, rather than somebody else's.
+ */
+function queriesFor(car: Car): string[] {
+  const full = `${car.make} ${car.model}`
+  // Trim numbers even when they stand alone ('7 Series' -> '7'), so a search for
+  // an exact trim can fall back to the model line it belongs to.
+  const head = car.model.split(/\s+/).slice(0, 2).join(' ')
+  const first = car.model.split(/\s+/)[0]
+  return [...new Set([
+    car.imageQuery,
+    full,
+    `${full} ${car.year}`,
+    `${car.make} ${head}`,
+    `${car.make} ${first}`,
+    car.model,
+  ])].filter(Boolean)
+}
+
+async function findBest(car: Car): Promise<ImageInfo | undefined> {
+  const seen = new Set<string>()
+  const eligible: Candidate[] = []
+
+  for (const query of queriesFor(car)) {
+    for (const candidate of await search(query)) {
+      if (seen.has(candidate.title)) continue
+      seen.add(candidate.title)
+      const license = candidate.info.extmetadata?.LicenseShortName?.value ?? ''
+      if (!candidate.info.thumburl || !isAllowed(license)) continue
+      // The identity check is a gate, not a tiebreaker.
+      if (!depicts(candidate.title, car)) continue
+      eligible.push(candidate)
+    }
+    // A clearly good match this early means no need to keep hammering the API.
+    if (eligible.some((c) => score(c, car) >= 30)) break
+    await sleep(250)
+  }
+
+  return eligible.sort((a, b) => score(b, car) - score(a, car))[0]?.info
+}
+
 async function download(url: string, dest: string): Promise<void> {
   const res = await fetch(url, { headers: { 'User-Agent': UA } })
   if (!res.ok) throw new Error(`download failed: ${res.status}`)
@@ -175,53 +239,47 @@ async function main() {
     ? JSON.parse(await readFile(MANIFEST, 'utf8'))
     : {}
 
+  // `--only a,b,c` re-fetches just those cars, ignoring what is on disk.
+  const onlyArg = process.argv.find((a) => a.startsWith('--only='))
+  const only = onlyArg ? new Set(onlyArg.slice('--only='.length).split(',')) : undefined
+  const targets = only ? CARS.filter((c) => only.has(c.id)) : CARS
+
   const failed: string[] = []
 
-  for (const car of CARS) {
+  for (const car of targets) {
     const file = `${car.id}.webp`
     const dest = path.join(OUT_DIR, file)
-    if (existsSync(dest) && manifest[car.id]) {
+    if (!only && existsSync(dest) && manifest[car.id]) {
       console.log(`· ${car.id} (cached)`)
       continue
     }
 
     try {
-      const query = car.imageFile ? `insource:"${car.imageFile}"` : car.imageQuery
-      const results = await search(car.imageFile ?? car.imageQuery)
+      // A pinned file is an explicit human choice and is taken as authored.
+      if (car.imageFile) {
+        const pinnedResults = await search(car.imageFile)
+        const pinned = pinnedResults.find(
+          (c) => c.title.replace(/^File:/, '') === car.imageFile && c.info.thumburl,
+        )
+        if (pinned?.info.thumburl) {
+          await download(pinned.info.thumburl, dest)
+          manifest[car.id] = describe(file, pinned.info)
+          console.log(`✓ ${car.id}  (pinned) ${manifest[car.id].license}`)
+          await sleep(400)
+          continue
+        }
+        console.warn(`! ${car.id}: pinned file "${car.imageFile}" not found, searching`)
+      }
 
-      const allowed = results.filter((c) => {
-        const license = c.info.extmetadata?.LicenseShortName?.value ?? ''
-        return c.info.thumburl && isAllowed(license)
-      })
-
-      // A pinned file wins outright; otherwise take the best-scoring candidate.
-      const pinned = car.imageFile
-        ? allowed.find((c) => c.title.replace(/^File:/, '') === car.imageFile)
-        : undefined
-      const best =
-        pinned ??
-        allowed
-          .map((c) => ({ c, s: score(c, car) }))
-          .sort((a, b) => b.s - a.s)
-          .filter(({ s }) => s > 0)
-          .map(({ c }) => c)[0]
-
-      const usable = best?.info
-      void query
-
-      if (!usable?.thumburl) {
-        console.warn(`✗ ${car.id}: no usable image for "${car.imageQuery}"`)
+      const usable = await findBest(car)
+      if (!usable) {
+        console.warn(`✗ ${car.id}: nothing on Commons actually shows a ${car.make} ${car.model}`)
         failed.push(car.id)
         continue
       }
 
-      await download(usable.thumburl, dest)
-      manifest[car.id] = {
-        file,
-        artist: stripHtml(usable.extmetadata?.Artist?.value ?? 'Unknown'),
-        license: usable.extmetadata?.LicenseShortName?.value ?? 'Unknown',
-        sourceUrl: usable.descriptionurl ?? '',
-      }
+      await download(usable.thumburl!, dest)
+      manifest[car.id] = describe(file, usable)
       console.log(`✓ ${car.id}  ${manifest[car.id].license}`)
     } catch (err) {
       console.warn(`✗ ${car.id}: ${(err as Error).message}`)
@@ -229,6 +287,15 @@ async function main() {
     }
 
     await sleep(400)
+  }
+
+  // A car that found nothing keeps no stale entry pointing at the wrong photo.
+  for (const car of targets) {
+    if (failed.includes(car.id)) delete manifest[car.id]
+  }
+  // Cars dropped from the roster leave their manifest rows behind otherwise.
+  for (const id of Object.keys(manifest)) {
+    if (!CARS.some((c) => c.id === id)) delete manifest[id]
   }
 
   await writeFile(MANIFEST, `${JSON.stringify(manifest, null, 2)}\n`)
