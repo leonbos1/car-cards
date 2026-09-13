@@ -1,17 +1,17 @@
 import type { CardClass, Car, CardView, Stats, Tier } from '../types'
 
 /**
- * Weighted mean of the six stats. Speed, acceleration, power and handling carry
- * the weight; braking and style are the tiebreakers.
+ * Weighted mean of the six stats. Top speed and acceleration drive the overall rating,
+ * with horsepower and handling as secondary factors. Weight and wow factor round it out.
  */
 export function overall(stats: Stats): number {
   const weighted =
-    stats.spd * 0.2 +
-    stats.acc * 0.2 +
-    stats.pwr * 0.2 +
-    stats.han * 0.2 +
-    stats.brk * 0.1 +
-    stats.sty * 0.1
+    stats.topspeed * 0.25 +
+    stats.acc * 0.25 +
+    stats.hp * 0.2 +
+    stats.handling * 0.15 +
+    stats.weight * 0.1 +
+    stats.wowFactor * 0.05
   return Math.round(weighted)
 }
 
@@ -36,6 +36,7 @@ export function cardClassOf(car: Car, tier: Tier): CardClass {
 /** Resolve a car into everything the UI needs to draw it. */
 export function toCardView(car: Car): CardView {
   const rating = overall(car.stats)
-  const tier = tierOf(rating)
+  // Special cards always rate as gold, regardless of stats
+  const tier = car.special ? 'gold' : tierOf(rating)
   return { ...car, overall: rating, tier, cardClass: cardClassOf(car, tier) }
 }

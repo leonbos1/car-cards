@@ -23,12 +23,12 @@ export function glowFor(card: Pick<CardView, 'cardClass' | 'rare'>): string {
 }
 
 const STAT_LABELS: [keyof CardView['stats'], string][] = [
+  ['hp', 'HP'],
   ['acc', 'ACC'],
-  ['spd', 'SPD'],
-  ['pwr', 'PWR'],
-  ['han', 'HAN'],
-  ['brk', 'BRK'],
-  ['sty', 'STY'],
+  ['topspeed', 'SPD'],
+  ['weight', 'WGT'],
+  ['handling', 'HAN'],
+  ['wowFactor', 'WOW'],
 ]
 
 interface Props {

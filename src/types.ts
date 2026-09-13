@@ -3,20 +3,20 @@ export type Tier = 'bronze' | 'silver' | 'gold'
 /** How a card is drawn. Specials get their own treatment on top of the three tiers. */
 export type CardClass = Tier | 'special'
 
-/** The six-stat row, mirroring FIFA's PAC/SHO/PAS/DRI/DEF/PHY. */
+/** Realistic performance metrics derived from actual car specs */
 export interface Stats {
-  /** Acceleration */
+  /** Horsepower (1-99 scale) */
+  hp: number
+  /** Acceleration 0-100 km/h (1-99 scale, higher = faster) */
   acc: number
-  /** Top speed */
-  spd: number
-  /** Power-to-weight */
-  pwr: number
-  /** Handling */
-  han: number
-  /** Braking */
-  brk: number
-  /** Style / desirability */
-  sty: number
+  /** Top speed (1-99 scale) */
+  topspeed: number
+  /** Weight penalty (1-99 scale, higher = lighter) */
+  weight: number
+  /** Handling / Agility (1-99 scale) */
+  handling: number
+  /** Wow factor / Desirability (1-99 scale) */
+  wowFactor: number
 }
 
 export interface Specs {
