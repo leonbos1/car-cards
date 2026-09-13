@@ -1054,7 +1054,7 @@ export const CARS: Car[] = [
     stats: { hp: 200, acc: 6.7, topspeed: 230, weight: 1280, handling: 30, wowFactor: 40 },
     rare: false,
     specs: { hp: 200, zeroToHundred: 6.7, topSpeed: 230, weightKg: 1280 },
-    imageQuery: 'Volkswagen Polo GTI AW',
+    imageQuery: 'Volkswagen Polo GTI',
   },
   {
     id: 'opel-astra-opc',
@@ -1070,7 +1070,7 @@ export const CARS: Car[] = [
     stats: { hp: 270, acc: 6, topspeed: 245, weight: 1360, handling: 33, wowFactor: 55 },
     rare: false,
     specs: { hp: 270, zeroToHundred: 6, topSpeed: 245, weightKg: 1360 },
-    imageQuery: 'Peugeot 308 GTi T9X',
+    imageQuery: 'Peugeot 308 GTI',
   },
   {
     id: 'ford-mustang-ecoboost',
@@ -1126,7 +1126,7 @@ export const CARS: Car[] = [
     stats: { hp: 370, acc: 5.8, topspeed: 245, weight: 1780, handling: 34, wowFactor: 55 },
     rare: false,
     specs: { hp: 370, zeroToHundred: 5.8, topSpeed: 245, weightKg: 1780 },
-    imageQuery: 'Hyundai Stinger GT sedan',
+    imageQuery: 'Hyundai 2018 sedan',
   },
   {
     id: 'nissan-skyline-gtr-r32',
@@ -1190,7 +1190,7 @@ export const CARS: Car[] = [
     stats: { hp: 903, acc: 2.8, topspeed: 350, weight: 1369, handling: 64, wowFactor: 95 },
     rare: false,
     specs: { hp: 903, zeroToHundred: 2.8, topSpeed: 350, weightKg: 1369 },
-    imageQuery: 'McLaren P1 hypercar',
+    imageQuery: 'McLaren P1',
   },
   {
     id: 'porsche-918-spyder',
@@ -1347,7 +1347,7 @@ export const CARS: Car[] = [
     rare: true,
     special: { label: 'HYPERCAR', limitedTo: 10 },
     specs: { hp: 1244, zeroToHundred: 2.7, topSpeed: 435, weightKg: 1244 },
-    imageQuery: 'Hennessey Venom GT supercar',
+    imageQuery: 'Hennessey Venom GT',
   },
   {
     id: 'fiat-126',
@@ -1475,7 +1475,7 @@ export const CARS: Car[] = [
     stats: { hp: 298, acc: 5.8, topspeed: 240, weight: 1585, handling: 33, wowFactor: 55 },
     rare: false,
     specs: { hp: 298, zeroToHundred: 5.8, topSpeed: 240, weightKg: 1585 },
-    imageQuery: 'Infiniti G35 Coupe CV35',
+    imageQuery: 'Infiniti G35 Coupe',
   },
   {
     id: 'acura-rsx',
@@ -1507,7 +1507,7 @@ export const CARS: Car[] = [
     stats: { hp: 280, acc: 6.1, topspeed: 245, weight: 1480, handling: 33, wowFactor: 55 },
     rare: false,
     specs: { hp: 280, zeroToHundred: 6.1, topSpeed: 245, weightKg: 1480 },
-    imageQuery: 'Mazda6 MPS 2008',
+    imageQuery: 'Mazda6 MPS',
   },
   {
     id: 'bmw-335i',
@@ -1523,7 +1523,7 @@ export const CARS: Car[] = [
     stats: { hp: 354, acc: 4.6, topspeed: 250, weight: 1755, handling: 33, wowFactor: 55 },
     rare: false,
     specs: { hp: 354, zeroToHundred: 4.6, topSpeed: 250, weightKg: 1755 },
-    imageQuery: 'Audi S5 B8 coupe',
+    imageQuery: 'Audi S5',
   },
   {
     id: 'porsche-911-turbo-930',
@@ -1595,7 +1595,7 @@ export const CARS: Car[] = [
     stats: { hp: 430, acc: 5.3, topspeed: 280, weight: 1440, handling: 40, wowFactor: 80 },
     rare: true,
     specs: { hp: 430, zeroToHundred: 5.3, topSpeed: 280, weightKg: 1440 },
-    imageQuery: 'Chevrolet Corvette C3 L88',
+    imageQuery: 'Chevrolet Corvette C3',
   },
   {
     id: 'dodge-charger-rt-1970',
@@ -1620,7 +1620,7 @@ export const CARS: Car[] = [
     rare: true,
     special: { label: 'SUPERCAR', limitedTo: 25 },
     specs: { hp: 650, zeroToHundred: 3.2, topSpeed: 370, weightKg: 1227 },
-    imageQuery: 'Gemballa Mirage GT 2006',
+    imageQuery: 'Gemballa Mirage',
   },
   {
     id: 'marussia-b2',
@@ -1629,7 +1629,7 @@ export const CARS: Car[] = [
     rare: true,
     special: { label: 'HYPERCAR', limitedTo: 50 },
     specs: { hp: 563, zeroToHundred: 3.6, topSpeed: 310, weightKg: 1150 },
-    imageQuery: 'Marussia B2 sports car',
+    imageQuery: 'Marussia B2',
   },
   {
     id: 'rimac-c-two',
@@ -1638,7 +1638,7 @@ export const CARS: Car[] = [
     rare: true,
     special: { label: 'HYPERCAR', limitedTo: 150 },
     specs: { hp: 1914, zeroToHundred: 1.85, topSpeed: 412, weightKg: 1850 },
-    imageQuery: 'Rimac C Two electric hypercar',
+    imageQuery: 'Rimac C_Two',
   },
   {
     id: 'alfa-romeo-alfasud',
@@ -1982,7 +1982,7 @@ export const CARS: Car[] = [
     stats: { hp: 240, acc: 4.5, topspeed: 260, weight: 895, handling: 38, wowFactor: 55 },
     rare: false,
     specs: { hp: 240, zeroToHundred: 4.5, topSpeed: 260, weightKg: 895 },
-    imageQuery: 'Alfa Romeo 4C lightweight coupe',
+    imageQuery: 'Alfa Romeo 4C',
   },
   {
     id: 'alfa-romeo-4c-spider',
@@ -2022,7 +2022,7 @@ export const CARS: Car[] = [
     stats: { hp: 250, acc: 6, topspeed: 250, weight: 1420, handling: 32, wowFactor: 65 },
     rare: true,
     specs: { hp: 250, zeroToHundred: 6, topSpeed: 250, weightKg: 1420 },
-    imageQuery: 'Alfa Romeo 156 GTA Selespeed',
+    imageQuery: 'Alfa Romeo 156 GTA',
   },
   {
     id: 'alfa-romeo-159-sportwagon-ti',
@@ -2038,7 +2038,7 @@ export const CARS: Car[] = [
     stats: { hp: 140, acc: 9, topspeed: 205, weight: 1120, handling: 28, wowFactor: 40 },
     rare: false,
     specs: { hp: 140, zeroToHundred: 9, topSpeed: 205, weightKg: 1120 },
-    imageQuery: 'Alfa Romeo 145 Ti 16V',
+    imageQuery: 'Alfa Romeo 145',
   },
   {
     id: 'alfa-romeo-146-super',
@@ -2046,7 +2046,7 @@ export const CARS: Car[] = [
     stats: { hp: 129, acc: 9.4, topspeed: 200, weight: 1130, handling: 28, wowFactor: 30 },
     rare: false,
     specs: { hp: 129, zeroToHundred: 9.4, topSpeed: 200, weightKg: 1130 },
-    imageQuery: 'Alfa Romeo 146 Super',
+    imageQuery: 'Alfa Romeo 146',
   },
   {
     id: 'alfa-romeo-8c-competizione',
@@ -2086,7 +2086,7 @@ export const CARS: Car[] = [
     stats: { hp: 510, acc: 3.9, topspeed: 280, weight: 1450, handling: 43, wowFactor: 80 },
     rare: true,
     specs: { hp: 510, zeroToHundred: 3.9, topSpeed: 280, weightKg: 1450 },
-    imageQuery: 'Alfa Romeo Giulia Luna Rossa 2022',
+    imageQuery: 'Alfa Romeo Giulia Luna Rossa',
   },
   {
     id: 'alfa-romeo-giulia-ti-sport',
@@ -2110,7 +2110,7 @@ export const CARS: Car[] = [
     stats: { hp: 260, acc: 6.3, topspeed: 250, weight: 1430, handling: 32, wowFactor: 55 },
     rare: false,
     specs: { hp: 260, zeroToHundred: 6.3, topSpeed: 250, weightKg: 1430 },
-    imageQuery: 'Alfa Romeo 159 3.2 V6',
+    imageQuery: 'Alfa Romeo 159',
   },
   {
     id: 'alfa-romeo-159-tricolore',
@@ -2118,7 +2118,7 @@ export const CARS: Car[] = [
     stats: { hp: 260, acc: 6.1, topspeed: 250, weight: 1450, handling: 32, wowFactor: 65 },
     rare: true,
     specs: { hp: 260, zeroToHundred: 6.1, topSpeed: 250, weightKg: 1450 },
-    imageQuery: 'Alfa Romeo 159 Tricolore',
+    imageQuery: 'Alfa Romeo 159',
   },
   {
     id: 'alfa-romeo-brera-3.2v6',
@@ -2150,7 +2150,7 @@ export const CARS: Car[] = [
     stats: { hp: 250, acc: 6.5, topspeed: 250, weight: 1360, handling: 32, wowFactor: 65 },
     rare: true,
     specs: { hp: 250, zeroToHundred: 6.5, topSpeed: 250, weightKg: 1360 },
-    imageQuery: 'Alfa Romeo 75 Turbo Q-System',
+    imageQuery: 'Alfa Romeo 75',
   },
   {
     id: 'alfa-romeo-gtv-3.0-v6',
@@ -2214,7 +2214,7 @@ export const CARS: Car[] = [
     stats: { hp: 280, acc: 6.2, topspeed: 220, weight: 1600, handling: 32, wowFactor: 55 },
     rare: false,
     specs: { hp: 280, zeroToHundred: 6.2, topSpeed: 220, weightKg: 1600 },
-    imageQuery: 'Alfa Romeo Tonale Ibrida hybrid',
+    imageQuery: 'Alfa Romeo Tonale',
   },
   {
     id: 'alfa-romeo-tz-1',
@@ -2223,7 +2223,7 @@ export const CARS: Car[] = [
     rare: true,
     special: { label: 'RACING LEGEND', limitedTo: 112 },
     specs: { hp: 225, zeroToHundred: 5.8, topSpeed: 260, weightKg: 560 },
-    imageQuery: 'Alfa Romeo TZ1 race car 1963',
+    imageQuery: 'Alfa Romeo TZ1',
   },
   {
     id: 'alfa-romeo-giulietta-ss',
@@ -2277,7 +2277,7 @@ export const CARS: Car[] = [
     rare: true,
     special: { label: 'RACE CAR', limitedTo: 12 },
     specs: { hp: 480, zeroToHundred: 3.8, topSpeed: 320, weightKg: 1250 },
-    imageQuery: 'Alfa Romeo 164 race version',
+    imageQuery: 'Alfa Romeo 164',
   },
   {
     id: 'alfa-romeo-145-jtc',
@@ -2286,7 +2286,7 @@ export const CARS: Car[] = [
     rare: true,
     special: { label: 'TOURING CAR', limitedTo: 24 },
     specs: { hp: 350, zeroToHundred: 5, topSpeed: 290, weightKg: 1180 },
-    imageQuery: 'Alfa Romeo 145 JTCC touring car',
+    imageQuery: 'Alfa Romeo 145',
   },
   {
     id: 'alfa-romeo-spada-bertone',
@@ -2295,7 +2295,7 @@ export const CARS: Car[] = [
     rare: true,
     special: { label: 'CONCEPT', limitedTo: 2 },
     specs: { hp: 225, zeroToHundred: 6.4, topSpeed: 250, weightKg: 1300 },
-    imageQuery: 'Alfa Romeo Spada Bertone concept',
+    imageQuery: 'Alfa Romeo Spada',
   },
   {
     id: 'alfa-romeo-giulia-ev',
@@ -2304,7 +2304,7 @@ export const CARS: Car[] = [
     rare: true,
     special: { label: 'ELECTRIC', limitedTo: 500 },
     specs: { hp: 505, zeroToHundred: 3.6, topSpeed: 250, weightKg: 1600 },
-    imageQuery: 'Alfa Romeo Giulia electric EV 2024',
+    imageQuery: 'Alfa Romeo Giulia',
   },
   {
     id: 'alfa-romeo-sprint-veloce',
@@ -2320,7 +2320,7 @@ export const CARS: Car[] = [
     stats: { hp: 125, acc: 9, topspeed: 195, weight: 960, handling: 29, wowFactor: 30 },
     rare: false,
     specs: { hp: 125, zeroToHundred: 9, topSpeed: 195, weightKg: 960 },
-    imageQuery: 'Alfa Romeo Junior Z Bertone 1969',
+    imageQuery: 'Alfa Romeo JZ',
   },
   {
     id: 'alfa-romeo-alfetta-gtv',
@@ -2352,7 +2352,7 @@ export const CARS: Car[] = [
     stats: { hp: 100, acc: 10.8, topspeed: 175, weight: 960, handling: 27, wowFactor: 30 },
     rare: false,
     specs: { hp: 100, zeroToHundred: 10.8, topSpeed: 175, weightKg: 960 },
-    imageQuery: 'Alfa Romeo Giuletta Sprint 1954',
+    imageQuery: 'Alfa Romeo Giuletta Sprint',
   },
   {
     id: 'alfa-romeo-156-all-track',
@@ -2360,7 +2360,7 @@ export const CARS: Car[] = [
     stats: { hp: 177, acc: 8.2, topspeed: 230, weight: 1380, handling: 29, wowFactor: 40 },
     rare: false,
     specs: { hp: 177, zeroToHundred: 8.2, topSpeed: 230, weightKg: 1380 },
-    imageQuery: 'Alfa Romeo 156 All-Track',
+    imageQuery: 'Alfa Romeo 156',
   },
   {
     id: 'alfa-romeo-alfasud-veloce',
@@ -2392,7 +2392,7 @@ export const CARS: Car[] = [
     stats: { hp: 200, acc: 7.7, topspeed: 235, weight: 1440, handling: 29, wowFactor: 40 },
     rare: false,
     specs: { hp: 200, zeroToHundred: 7.7, topSpeed: 235, weightKg: 1440 },
-    imageQuery: 'Alfa Romeo 159 JTS Lusso',
+    imageQuery: 'Alfa Romeo 159',
   },
   {
     id: 'alfa-romeo-brera-crosswagon-q4',
@@ -2408,7 +2408,7 @@ export const CARS: Car[] = [
     stats: { hp: 450, acc: 4.9, topspeed: 300, weight: 1050, handling: 49, wowFactor: 80 },
     rare: true,
     specs: { hp: 450, zeroToHundred: 4.9, topSpeed: 300, weightKg: 1050 },
-    imageQuery: 'Alfa Romeo 33 TY race car',
+    imageQuery: 'Alfa Romeo 33',
   },
   {
     id: 'alfa-romeo-gtv-3.2v6-selespeed',
@@ -2424,7 +2424,7 @@ export const CARS: Car[] = [
     stats: { hp: 250, acc: 5.8, topspeed: 250, weight: 1410, handling: 32, wowFactor: 65 },
     rare: true,
     specs: { hp: 250, zeroToHundred: 5.8, topSpeed: 250, weightKg: 1410 },
-    imageQuery: 'Alfa Romeo 156 GTA Limited',
+    imageQuery: 'Alfa Romeo 156 GTA',
   },
   {
     id: 'alfa-romeo-147-jti-16v',
@@ -2432,7 +2432,7 @@ export const CARS: Car[] = [
     stats: { hp: 150, acc: 8.3, topspeed: 210, weight: 1170, handling: 29, wowFactor: 40 },
     rare: false,
     specs: { hp: 150, zeroToHundred: 8.3, topSpeed: 210, weightKg: 1170 },
-    imageQuery: 'Alfa Romeo 147 JTi',
+    imageQuery: 'Alfa Romeo 147',
   },
   {
     id: 'alfa-romeo-giulietta-sport-1.6',
@@ -2520,7 +2520,7 @@ export const CARS: Car[] = [
     stats: { hp: 83, acc: 12.4, topspeed: 175, weight: 980, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 83, zeroToHundred: 12.4, topSpeed: 175, weightKg: 980 },
-    imageQuery: 'Hyundai Aura 2023',
+    imageQuery: 'Hyundai Aura',
   },
   {
     id: 'toyota-corolla-sedan',
@@ -2568,7 +2568,7 @@ export const CARS: Car[] = [
     stats: { hp: 130, acc: 9.5, topspeed: 205, weight: 1330, handling: 27, wowFactor: 40 },
     rare: false,
     specs: { hp: 130, zeroToHundred: 9.5, topSpeed: 205, weightKg: 1330 },
-    imageQuery: 'koda Octavia 2023',
+    imageQuery: 'koda Octavia',
   },
   {
     id: 'volkswagen-jetta',
@@ -2592,7 +2592,7 @@ export const CARS: Car[] = [
     stats: { hp: 103, acc: 11.8, topspeed: 180, weight: 1155, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 103, zeroToHundred: 11.8, topSpeed: 180, weightKg: 1155 },
-    imageQuery: 'Maruti Ciaz 2023',
+    imageQuery: 'Maruti Ciaz',
   },
   {
     id: 'volkswagen-golf-gti-mk7',
@@ -2624,7 +2624,7 @@ export const CARS: Car[] = [
     stats: { hp: 280, acc: 6.2, topspeed: 245, weight: 1480, handling: 33, wowFactor: 65 },
     rare: true,
     specs: { hp: 280, zeroToHundred: 6.2, topSpeed: 245, weightKg: 1480 },
-    imageQuery: 'SEAT Len Cupra 280 2018',
+    imageQuery: 'SEAT Leon Cupra',
   },
   {
     id: 'opel-astra-opc-mk6',
@@ -2632,7 +2632,7 @@ export const CARS: Car[] = [
     stats: { hp: 280, acc: 6.7, topspeed: 235, weight: 1530, handling: 32, wowFactor: 65 },
     rare: true,
     specs: { hp: 280, zeroToHundred: 6.7, topSpeed: 235, weightKg: 1530 },
-    imageQuery: 'Opel Astra OPC Mk6 2012',
+    imageQuery: 'Opel Astra OPC',
   },
   {
     id: 'renault-megane-rs-mk3',
@@ -2640,7 +2640,7 @@ export const CARS: Car[] = [
     stats: { hp: 275, acc: 6, topspeed: 245, weight: 1510, handling: 32, wowFactor: 65 },
     rare: true,
     specs: { hp: 275, zeroToHundred: 6, topSpeed: 245, weightKg: 1510 },
-    imageQuery: 'Renault Mgane RS Mk3 2014',
+    imageQuery: 'Renault Megane RS',
   },
   {
     id: 'peugeot-308-gti-mk2',
@@ -2680,7 +2680,7 @@ export const CARS: Car[] = [
     stats: { hp: 228, acc: 6.4, topspeed: 228, weight: 1220, handling: 32, wowFactor: 65 },
     rare: true,
     specs: { hp: 228, zeroToHundred: 6.4, topSpeed: 228, weightKg: 1220 },
-    imageQuery: 'Subaru BRZ Gen2 2022',
+    imageQuery: 'Subaru BRZ',
   },
   {
     id: 'nissan-z-pro',
@@ -2688,7 +2688,7 @@ export const CARS: Car[] = [
     stats: { hp: 400, acc: 4.6, topspeed: 250, weight: 1540, handling: 37, wowFactor: 65 },
     rare: true,
     specs: { hp: 400, zeroToHundred: 4.6, topSpeed: 250, weightKg: 1540 },
-    imageQuery: 'Nissan Z Pro 2023',
+    imageQuery: 'Nissan Z Pro',
   },
   {
     id: 'chevrolet-corvette-c7',
@@ -2744,7 +2744,7 @@ export const CARS: Car[] = [
     stats: { hp: 354, acc: 4.8, topspeed: 250, weight: 1580, handling: 35, wowFactor: 65 },
     rare: true,
     specs: { hp: 354, zeroToHundred: 4.8, topSpeed: 250, weightKg: 1580 },
-    imageQuery: 'Audi S3 Sedan B9 2017',
+    imageQuery: 'Audi S3 Sedan',
   },
   {
     id: 'mercedes-amg-a45',
@@ -2776,7 +2776,7 @@ export const CARS: Car[] = [
     stats: { hp: 400, acc: 4.5, topspeed: 260, weight: 1700, handling: 36, wowFactor: 65 },
     rare: true,
     specs: { hp: 400, zeroToHundred: 4.5, topSpeed: 260, weightKg: 1700 },
-    imageQuery: 'Infiniti Q50 Red Sport 400 2018',
+    imageQuery: 'Infiniti Q50',
   },
   {
     id: 'porsche-911-turbo-s-992',
@@ -2825,7 +2825,7 @@ export const CARS: Car[] = [
     stats: { hp: 110, acc: 11, topspeed: 180, weight: 1030, handling: 27, wowFactor: 30 },
     rare: false,
     specs: { hp: 110, zeroToHundred: 11, topSpeed: 180, weightKg: 1030 },
-    imageQuery: 'Honda Jazz GK 2020',
+    imageQuery: 'Honda Jazz GK',
   },
   {
     id: 'maruti-swift-dzire',
@@ -2833,7 +2833,7 @@ export const CARS: Car[] = [
     stats: { hp: 83, acc: 12.2, topspeed: 173, weight: 895, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 83, zeroToHundred: 12.2, topSpeed: 173, weightKg: 895 },
-    imageQuery: 'Maruti Swift Dzire 2021',
+    imageQuery: 'Maruti Swift Dzire',
   },
   {
     id: 'hyundai-creta',
@@ -2881,7 +2881,7 @@ export const CARS: Car[] = [
     stats: { hp: 141, acc: 9.2, topspeed: 190, weight: 1512, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 141, zeroToHundred: 9.2, topSpeed: 190, weightKg: 1512 },
-    imageQuery: 'Tata Nexon EV Plus 2022',
+    imageQuery: 'Tata Nexon EV',
   },
   {
     id: 'renault-kwid',
@@ -2905,7 +2905,7 @@ export const CARS: Car[] = [
     stats: { hp: 56, acc: 16, topspeed: 156, weight: 795, handling: 25, wowFactor: 30 },
     rare: false,
     specs: { hp: 56, zeroToHundred: 16, topSpeed: 156, weightKg: 795 },
-    imageQuery: 'Hyundai Eon 2023',
+    imageQuery: 'Hyundai Eon',
   },
   {
     id: 'tata-altroz-xm',
@@ -2945,7 +2945,7 @@ export const CARS: Car[] = [
     stats: { hp: 102, acc: 11.8, topspeed: 175, weight: 950, handling: 27, wowFactor: 30 },
     rare: false,
     specs: { hp: 102, zeroToHundred: 11.8, topSpeed: 175, weightKg: 950 },
-    imageQuery: 'Perodua Myvi DJ 2023',
+    imageQuery: 'Perodua Myvi',
   },
   {
     id: 'proton-saga-fl',
@@ -2953,7 +2953,7 @@ export const CARS: Car[] = [
     stats: { hp: 104, acc: 11.5, topspeed: 178, weight: 1000, handling: 27, wowFactor: 30 },
     rare: false,
     specs: { hp: 104, zeroToHundred: 11.5, topSpeed: 178, weightKg: 1000 },
-    imageQuery: 'Proton Saga FL 2022',
+    imageQuery: 'Proton Saga FL',
   },
   {
     id: 'chevrolet-spark-gen3',
@@ -2961,7 +2961,7 @@ export const CARS: Car[] = [
     stats: { hp: 84, acc: 12.8, topspeed: 168, weight: 950, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 84, zeroToHundred: 12.8, topSpeed: 168, weightKg: 950 },
-    imageQuery: 'Chevrolet Spark Gen3 2016',
+    imageQuery: 'Chevrolet Spark',
   },
   {
     id: 'hyundai-atos-prime',
@@ -2977,7 +2977,7 @@ export const CARS: Car[] = [
     stats: { hp: 61, acc: 14.5, topspeed: 160, weight: 790, handling: 25, wowFactor: 30 },
     rare: false,
     specs: { hp: 61, zeroToHundred: 14.5, topSpeed: 160, weightKg: 790 },
-    imageQuery: 'Daewoo Matiz Classic 2010',
+    imageQuery: 'Daewoo Matiz Classic',
   },
   {
     id: 'datsun-go-t',
@@ -2985,7 +2985,7 @@ export const CARS: Car[] = [
     stats: { hp: 68, acc: 13.9, topspeed: 167, weight: 860, handling: 25, wowFactor: 30 },
     rare: false,
     specs: { hp: 68, zeroToHundred: 13.9, topSpeed: 167, weightKg: 860 },
-    imageQuery: 'Datsun GO T 2020',
+    imageQuery: 'Datsun GO T',
   },
   {
     id: 'maruti-s-presso',
@@ -2993,7 +2993,7 @@ export const CARS: Car[] = [
     stats: { hp: 67, acc: 13.5, topspeed: 164, weight: 815, handling: 25, wowFactor: 30 },
     rare: false,
     specs: { hp: 67, zeroToHundred: 13.5, topSpeed: 164, weightKg: 815 },
-    imageQuery: 'Maruti S-Presso 2023',
+    imageQuery: 'Maruti S-Presso',
   },
   {
     id: 'volkswagen-up-take-up',
@@ -3017,7 +3017,7 @@ export const CARS: Car[] = [
     stats: { hp: 83, acc: 10.8, topspeed: 160, weight: 1060, handling: 25, wowFactor: 30 },
     rare: false,
     specs: { hp: 83, zeroToHundred: 10.8, topSpeed: 160, weightKg: 1060 },
-    imageQuery: 'koda Citigo e IV 2020',
+    imageQuery: 'Skoda Citigo',
   },
   {
     id: 'ford-ka-6th',
@@ -3025,7 +3025,7 @@ export const CARS: Car[] = [
     stats: { hp: 85, acc: 12.6, topspeed: 170, weight: 1090, handling: 25, wowFactor: 30 },
     rare: false,
     specs: { hp: 85, zeroToHundred: 12.6, topSpeed: 170, weightKg: 1090 },
-    imageQuery: 'Ford Ka 6th Gen 2018',
+    imageQuery: 'Ford KA',
   },
   {
     id: 'fiat-500-hybrid',
@@ -3057,7 +3057,7 @@ export const CARS: Car[] = [
     stats: { hp: 110, acc: 10.9, topspeed: 190, weight: 1150, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 110, zeroToHundred: 10.9, topSpeed: 190, weightKg: 1150 },
-    imageQuery: 'Peugeot 208 Mk1 2018',
+    imageQuery: 'Peugeot 208',
   },
   {
     id: 'citroen-c1',
@@ -3065,7 +3065,7 @@ export const CARS: Car[] = [
     stats: { hp: 71, acc: 12.8, topspeed: 170, weight: 970, handling: 25, wowFactor: 30 },
     rare: false,
     specs: { hp: 71, zeroToHundred: 12.8, topSpeed: 170, weightKg: 970 },
-    imageQuery: 'Citron C1 2021',
+    imageQuery: 'Citron C1',
   },
   {
     id: 'citroen-c2',
@@ -3073,7 +3073,7 @@ export const CARS: Car[] = [
     stats: { hp: 87, acc: 12.5, topspeed: 177, weight: 1030, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 87, zeroToHundred: 12.5, topSpeed: 177, weightKg: 1030 },
-    imageQuery: 'Citron C2 2008',
+    imageQuery: 'Citroen C2',
   },
   {
     id: 'nissan-micra-k13',
@@ -3105,7 +3105,7 @@ export const CARS: Car[] = [
     stats: { hp: 122, acc: 10.7, topspeed: 180, weight: 1390, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 122, zeroToHundred: 10.7, topSpeed: 180, weightKg: 1390 },
-    imageQuery: 'Toyota Prius 4th Gen 2021',
+    imageQuery: 'Toyota Prius 4th Gen',
   },
   {
     id: 'hyundai-ioniq-5th',
@@ -3113,7 +3113,7 @@ export const CARS: Car[] = [
     stats: { hp: 141, acc: 10.8, topspeed: 190, weight: 1485, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 141, zeroToHundred: 10.8, topSpeed: 190, weightKg: 1485 },
-    imageQuery: 'Hyundai Ioniq 5th Gen 2022',
+    imageQuery: 'Hyundai Ioniq',
   },
   {
     id: 'kia-niro-hybrid',
@@ -3129,7 +3129,7 @@ export const CARS: Car[] = [
     stats: { hp: 95, acc: 11.2, topspeed: 188, weight: 1120, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 95, zeroToHundred: 11.2, topSpeed: 188, weightKg: 1120 },
-    imageQuery: 'Volkswagen Polo 5th Gen 2021',
+    imageQuery: 'Volkswagen Polo',
   },
   {
     id: 'ford-fiesta-mk8',
@@ -3137,7 +3137,7 @@ export const CARS: Car[] = [
     stats: { hp: 123, acc: 10, topspeed: 190, weight: 1160, handling: 27, wowFactor: 30 },
     rare: false,
     specs: { hp: 123, zeroToHundred: 10, topSpeed: 190, weightKg: 1160 },
-    imageQuery: 'Ford Fiesta Mk8 2019',
+    imageQuery: 'Ford Fiesta Mk8',
   },
   {
     id: 'hyundai-grand-i10',
@@ -3153,7 +3153,7 @@ export const CARS: Car[] = [
     stats: { hp: 111, acc: 11, topspeed: 180, weight: 1050, handling: 27, wowFactor: 30 },
     rare: false,
     specs: { hp: 111, zeroToHundred: 11, topSpeed: 180, weightKg: 1050 },
-    imageQuery: 'Maruti Ignis 2023',
+    imageQuery: 'Maruti Ignis',
   },
   {
     id: 'mahindra-bolero',
@@ -3161,7 +3161,7 @@ export const CARS: Car[] = [
     stats: { hp: 100, acc: 12.2, topspeed: 175, weight: 1200, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 100, zeroToHundred: 12.2, topSpeed: 175, weightKg: 1200 },
-    imageQuery: 'Mahindra Bolero 2023',
+    imageQuery: 'Mahindra Bolero',
   },
   {
     id: 'force-gurkha-3d',
@@ -3169,7 +3169,7 @@ export const CARS: Car[] = [
     stats: { hp: 91, acc: 12.8, topspeed: 172, weight: 1385, handling: 24, wowFactor: 30 },
     rare: false,
     specs: { hp: 91, zeroToHundred: 12.8, topSpeed: 172, weightKg: 1385 },
-    imageQuery: 'Force Motors Gurkha 3D 2023',
+    imageQuery: 'Force Gurkha',
   },
   {
     id: 'tata-punch',
@@ -3177,7 +3177,7 @@ export const CARS: Car[] = [
     stats: { hp: 110, acc: 11.2, topspeed: 177, weight: 1155, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 110, zeroToHundred: 11.2, topSpeed: 177, weightKg: 1155 },
-    imageQuery: 'Tata Punch 2023',
+    imageQuery: 'Tata Punch',
   },
   {
     id: 'tata-tigor-ev',
@@ -3185,7 +3185,7 @@ export const CARS: Car[] = [
     stats: { hp: 110, acc: 10.8, topspeed: 160, weight: 1263, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 110, zeroToHundred: 10.8, topSpeed: 160, weightKg: 1263 },
-    imageQuery: 'Tata Tigor EV 2023',
+    imageQuery: 'Tata Tigor EV',
   },
   {
     id: 'maruti-eeco',
@@ -3201,7 +3201,7 @@ export const CARS: Car[] = [
     stats: { hp: 83, acc: 12.3, topspeed: 175, weight: 995, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 83, zeroToHundred: 12.3, topSpeed: 175, weightKg: 995 },
-    imageQuery: 'Hyundai Santro ASM 2023',
+    imageQuery: 'Hyundai Santro',
   },
   {
     id: 'chevrolet-enjoy-7-str',
@@ -3209,7 +3209,7 @@ export const CARS: Car[] = [
     stats: { hp: 84, acc: 12.5, topspeed: 167, weight: 1095, handling: 25, wowFactor: 30 },
     rare: false,
     specs: { hp: 84, zeroToHundred: 12.5, topSpeed: 167, weightKg: 1095 },
-    imageQuery: 'Chevrolet Enjoy 7 2021',
+    imageQuery: 'Chevrolet Enjoy',
   },
   {
     id: 'renault-triber',
@@ -3233,7 +3233,7 @@ export const CARS: Car[] = [
     stats: { hp: 77, acc: 12.2, topspeed: 170, weight: 740, handling: 27, wowFactor: 40 },
     rare: true,
     specs: { hp: 77, zeroToHundred: 12.2, topSpeed: 170, weightKg: 740 },
-    imageQuery: 'MG Midget Mk3 1975',
+    imageQuery: 'MG Midget Mk3',
   },
   {
     id: 'triumph-tr6',
@@ -3265,7 +3265,7 @@ export const CARS: Car[] = [
     stats: { hp: 200, acc: 7.4, topspeed: 230, weight: 1400, handling: 30, wowFactor: 50 },
     rare: true,
     specs: { hp: 200, zeroToHundred: 7.4, topSpeed: 230, weightKg: 1400 },
-    imageQuery: 'Vauxhall Vectra B GSi 2000',
+    imageQuery: 'Vauxhall Vectra',
   },
   {
     id: 'rover-25-streetwise',
@@ -3273,7 +3273,7 @@ export const CARS: Car[] = [
     stats: { hp: 110, acc: 11.2, topspeed: 180, weight: 1160, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 110, zeroToHundred: 11.2, topSpeed: 180, weightKg: 1160 },
-    imageQuery: 'Rover 25 Streetwise 2003',
+    imageQuery: 'Rover 25 Streetwise',
   },
   {
     id: 'mgb-gt',
@@ -3337,7 +3337,7 @@ export const CARS: Car[] = [
     stats: { hp: 150, acc: 10.9, topspeed: 205, weight: 1650, handling: 26, wowFactor: 40 },
     rare: false,
     specs: { hp: 150, zeroToHundred: 10.9, topSpeed: 205, weightKg: 1650 },
-    imageQuery: 'koda Kodiaq 2023',
+    imageQuery: 'Skoda Kodiaq',
   },
   {
     id: 'volkswagen-taos',
@@ -3378,7 +3378,7 @@ export const CARS: Car[] = [
     stats: { hp: 228, acc: 6.6, topspeed: 225, weight: 1270, handling: 32, wowFactor: 65 },
     rare: true,
     specs: { hp: 228, zeroToHundred: 6.6, topSpeed: 225, weightKg: 1270 },
-    imageQuery: 'Nissan Fairlady Z Z31 1983',
+    imageQuery: 'Nissan Fairlady Z Z31',
   },
   {
     id: 'subaru-360',
@@ -3426,7 +3426,7 @@ export const CARS: Car[] = [
     stats: { hp: 126, acc: 6.4, topspeed: 195, weight: 735, handling: 31, wowFactor: 40 },
     rare: true,
     specs: { hp: 126, zeroToHundred: 6.4, topSpeed: 195, weightKg: 735 },
-    imageQuery: 'Lotus Elan S3 1972',
+    imageQuery: 'Lotus Elan S3',
   },
   {
     id: 'porsche-912',
@@ -3450,7 +3450,7 @@ export const CARS: Car[] = [
     stats: { hp: 207, acc: 6.2, topspeed: 240, weight: 1420, handling: 30, wowFactor: 65 },
     rare: true,
     specs: { hp: 207, zeroToHundred: 6.2, topSpeed: 240, weightKg: 1420 },
-    imageQuery: 'Volkswagen Polo GTI Mk9 2022',
+    imageQuery: 'Volkswagen Polo GTI',
   },
   {
     id: 'hyundai-i20-n',
@@ -3482,7 +3482,7 @@ export const CARS: Car[] = [
     stats: { hp: 131, acc: 10.7, topspeed: 195, weight: 1500, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 131, zeroToHundred: 10.7, topSpeed: 195, weightKg: 1500 },
-    imageQuery: 'Geely Emgrand GL Pro 2023',
+    imageQuery: 'Geely Emgrand',
   },
   {
     id: 'chery-tiggo-8-pro',
@@ -3498,7 +3498,7 @@ export const CARS: Car[] = [
     stats: { hp: 384, acc: 5.1, topspeed: 255, weight: 1870, handling: 34, wowFactor: 65 },
     rare: true,
     specs: { hp: 384, zeroToHundred: 5.1, topSpeed: 255, weightKg: 1870 },
-    imageQuery: 'NIO ET6 2023',
+    imageQuery: 'NIO',
   },
   {
     id: 'hyundai-bayon',
@@ -3530,7 +3530,7 @@ export const CARS: Car[] = [
     stats: { hp: 122, acc: 11.1, topspeed: 190, weight: 1420, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 122, zeroToHundred: 11.1, topSpeed: 190, weightKg: 1420 },
-    imageQuery: 'Toyota CH-R Hybrid 2023',
+    imageQuery: 'Toyota CH-R Hybrid',
   },
   {
     id: 'nissan-qashqai-e-power',
@@ -3602,7 +3602,7 @@ export const CARS: Car[] = [
     stats: { hp: 8, acc: 20, topspeed: 80, weight: 550, handling: 21, wowFactor: 30 },
     rare: false,
     specs: { hp: 8, zeroToHundred: 20, topSpeed: 80, weightKg: 550 },
-    imageQuery: 'Bajaj Auto Rickshaw 2023',
+    imageQuery: 'Bajaj Auto Rickshaw',
   },
   {
     id: 'piaggio-ape-city',
@@ -3610,7 +3610,7 @@ export const CARS: Car[] = [
     stats: { hp: 7, acc: 19, topspeed: 85, weight: 580, handling: 21, wowFactor: 30 },
     rare: false,
     specs: { hp: 7, zeroToHundred: 19, topSpeed: 85, weightKg: 580 },
-    imageQuery: 'Piaggio Ape City 2020',
+    imageQuery: 'Piaggio Ape City',
   },
   {
     id: 'mahindra-bolero-neo',
@@ -3618,7 +3618,7 @@ export const CARS: Car[] = [
     stats: { hp: 100, acc: 13, topspeed: 180, weight: 1330, handling: 25, wowFactor: 30 },
     rare: false,
     specs: { hp: 100, zeroToHundred: 13, topSpeed: 180, weightKg: 1330 },
-    imageQuery: 'Mahindra Bolero Neo 2022',
+    imageQuery: 'Mahindra Bolero Neo',
   },
   {
     id: 'tata-nano-genx',
@@ -3658,7 +3658,7 @@ export const CARS: Car[] = [
     stats: { hp: 120, acc: 7.8, topspeed: 185, weight: 790, handling: 30, wowFactor: 40 },
     rare: true,
     specs: { hp: 120, zeroToHundred: 7.8, topSpeed: 185, weightKg: 790 },
-    imageQuery: 'Fiat 124 Abarth 1971',
+    imageQuery: 'Fiat 124 Abarth',
   },
   {
     id: 'peugeot-505-turbo',
@@ -3666,7 +3666,7 @@ export const CARS: Car[] = [
     stats: { hp: 160, acc: 8.8, topspeed: 210, weight: 1350, handling: 28, wowFactor: 50 },
     rare: true,
     specs: { hp: 160, zeroToHundred: 8.8, topSpeed: 210, weightKg: 1350 },
-    imageQuery: 'Peugeot 505 Turbo 1985',
+    imageQuery: 'Peugeot 505 Turbo',
   },
   {
     id: 'toyota-ae86-levin',
@@ -3738,7 +3738,7 @@ export const CARS: Car[] = [
     stats: { hp: 110, acc: 10.3, topspeed: 190, weight: 1180, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 110, zeroToHundred: 10.3, topSpeed: 190, weightKg: 1180 },
-    imageQuery: 'SEAT Ibiza 2023',
+    imageQuery: 'SEAT Ibiza',
   },
   {
     id: 'opel-corsa-f',
@@ -3754,7 +3754,7 @@ export const CARS: Car[] = [
     stats: { hp: 83, acc: 12, topspeed: 175, weight: 1040, handling: 25, wowFactor: 30 },
     rare: false,
     specs: { hp: 83, zeroToHundred: 12, topSpeed: 175, weightKg: 1040 },
-    imageQuery: 'Hyundai Grand i10 Nios 2023',
+    imageQuery: 'Hyundai Grand i10 Nios',
   },
   {
     id: 'kia-picanto-gt-line',
@@ -3794,7 +3794,7 @@ export const CARS: Car[] = [
     stats: { hp: 184, acc: 7.3, topspeed: 200, weight: 1565, handling: 28, wowFactor: 30 },
     rare: false,
     specs: { hp: 184, zeroToHundred: 7.3, topSpeed: 200, weightKg: 1565 },
-    imageQuery: 'Mini Clubman SE 2023',
+    imageQuery: 'Mini Clubman SE',
   },
   {
     id: 'fiat-500-electric',
@@ -3826,7 +3826,7 @@ export const CARS: Car[] = [
     stats: { hp: 200, acc: 6.5, topspeed: 230, weight: 1220, handling: 31, wowFactor: 50 },
     rare: true,
     specs: { hp: 200, zeroToHundred: 6.5, topSpeed: 230, weightKg: 1220 },
-    imageQuery: 'Ford Fiesta ST Mk8 2023',
+    imageQuery: 'Ford Fiesta ST',
   },
   {
     id: 'peugeot-205-gti-1600',
@@ -3922,7 +3922,7 @@ export const CARS: Car[] = [
     stats: { hp: 170, acc: 8.6, topspeed: 210, weight: 1880, handling: 26, wowFactor: 40 },
     rare: false,
     specs: { hp: 170, zeroToHundred: 8.6, topSpeed: 210, weightKg: 1880 },
-    imageQuery: 'Audi Q4 Sportback 45 TDI 2023',
+    imageQuery: 'Audi Q4 Sportback',
   },
   {
     id: 'ford-mustang-mach-e-premium',
@@ -3930,7 +3930,7 @@ export const CARS: Car[] = [
     stats: { hp: 346, acc: 5.5, topspeed: 220, weight: 1850, handling: 32, wowFactor: 55 },
     rare: false,
     specs: { hp: 346, zeroToHundred: 5.5, topSpeed: 220, weightKg: 1850 },
-    imageQuery: 'Ford Mustang Mach-E Premium 2023',
+    imageQuery: 'Ford Mustang Mach-E Premium AWD',
   },
   {
     id: 'kia-niro-phev',
@@ -3978,7 +3978,7 @@ export const CARS: Car[] = [
     stats: { hp: 83, acc: 12, topspeed: 175, weight: 1040, handling: 25, wowFactor: 30 },
     rare: false,
     specs: { hp: 83, zeroToHundred: 12, topSpeed: 175, weightKg: 1040 },
-    imageQuery: 'Hyundai Exter SL 2023',
+    imageQuery: 'Hyundai Exter',
   },
   {
     id: 'tata-altroz-dark',
@@ -3986,7 +3986,7 @@ export const CARS: Car[] = [
     stats: { hp: 110, acc: 10.8, topspeed: 190, weight: 1050, handling: 27, wowFactor: 30 },
     rare: false,
     specs: { hp: 110, zeroToHundred: 10.8, topSpeed: 190, weightKg: 1050 },
-    imageQuery: 'Tata Altroz Dark 2023',
+    imageQuery: 'Tata Altroz',
   },
   {
     id: 'chevrolet-corvette-c8-z06',
@@ -4002,7 +4002,7 @@ export const CARS: Car[] = [
     stats: { hp: 425, acc: 3.3, topspeed: 260, weight: 2000, handling: 34, wowFactor: 80 },
     rare: true,
     specs: { hp: 425, zeroToHundred: 3.3, topSpeed: 260, weightKg: 2000 },
-    imageQuery: 'Dodge Charger Daytona EV 2023',
+    imageQuery: 'Dodge Charger Daytona EV',
   },
   {
     id: 'volkswagen-golf-gti-mk8',
@@ -4042,7 +4042,7 @@ export const CARS: Car[] = [
     stats: { hp: 300, acc: 6.8, topspeed: 240, weight: 1610, handling: 32, wowFactor: 55 },
     rare: false,
     specs: { hp: 300, zeroToHundred: 6.8, topSpeed: 240, weightKg: 1610 },
-    imageQuery: 'NIO ET6 Sedan 2023',
+    imageQuery: 'NIO Sedan',
   },
   {
     id: 'byd-song-plus-dm-i',
@@ -4058,7 +4058,7 @@ export const CARS: Car[] = [
     stats: { hp: 150, acc: 8.8, topspeed: 200, weight: 1490, handling: 27, wowFactor: 30 },
     rare: false,
     specs: { hp: 150, zeroToHundred: 8.8, topSpeed: 200, weightKg: 1490 },
-    imageQuery: 'Geely Geometry C 2023',
+    imageQuery: 'Geometry C',
   },
   {
     id: 'mini-cooper-se',
@@ -4074,7 +4074,7 @@ export const CARS: Car[] = [
     stats: { hp: 320, acc: 5.7, topspeed: 230, weight: 1545, handling: 34, wowFactor: 65 },
     rare: true,
     specs: { hp: 320, zeroToHundred: 5.7, topSpeed: 230, weightKg: 1545 },
-    imageQuery: 'Opel Manta Electric 2023',
+    imageQuery: 'Opel Manta Electric',
   },
   {
     id: 'kia-cerato-ex',
@@ -4090,7 +4090,7 @@ export const CARS: Car[] = [
     stats: { hp: 123, acc: 10.5, topspeed: 190, weight: 1305, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 123, zeroToHundred: 10.5, topSpeed: 190, weightKg: 1305 },
-    imageQuery: 'Hyundai Avante GLS 2023',
+    imageQuery: 'Hyundai Avante GLS',
   },
   {
     id: 'nissan-almera-vl',
@@ -4106,7 +4106,7 @@ export const CARS: Car[] = [
     stats: { hp: 82, acc: 12.5, topspeed: 170, weight: 980, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 82, zeroToHundred: 12.5, topSpeed: 170, weightKg: 980 },
-    imageQuery: 'Maruti Dzire ZXi 2023',
+    imageQuery: 'Maruti Dzire ZXi',
   },
   {
     id: 'chevrolet-silverado-ltx',
@@ -4114,7 +4114,7 @@ export const CARS: Car[] = [
     stats: { hp: 400, acc: 8.5, topspeed: 210, weight: 2100, handling: 33, wowFactor: 55 },
     rare: false,
     specs: { hp: 400, zeroToHundred: 8.5, topSpeed: 210, weightKg: 2100 },
-    imageQuery: 'Chevrolet Silverado 1500 LTX 2023',
+    imageQuery: 'Chevrolet Silverado',
   },
   {
     id: 'ram-1500-rebel',
@@ -4138,7 +4138,7 @@ export const CARS: Car[] = [
     stats: { hp: 148, acc: 11.5, topspeed: 185, weight: 1700, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 148, zeroToHundred: 11.5, topSpeed: 185, weightKg: 1700 },
-    imageQuery: 'Toyota Innova Crysta 2023',
+    imageQuery: 'Toyota Innova Crysta 2.4 Diesel',
   },
   {
     id: 'kia-carnival-sx',
@@ -4154,7 +4154,7 @@ export const CARS: Car[] = [
     stats: { hp: 114, acc: 9.8, topspeed: 160, weight: 1050, handling: 27, wowFactor: 30 },
     rare: false,
     specs: { hp: 114, zeroToHundred: 9.8, topSpeed: 160, weightKg: 1050 },
-    imageQuery: 'Tata Tiago EV 2023',
+    imageQuery: 'Tata Tiago EV',
   },
   {
     id: 'maruti-alto-k10-cng',
@@ -4162,7 +4162,7 @@ export const CARS: Car[] = [
     stats: { hp: 56, acc: 14.5, topspeed: 155, weight: 860, handling: 24, wowFactor: 30 },
     rare: false,
     specs: { hp: 56, zeroToHundred: 14.5, topSpeed: 155, weightKg: 860 },
-    imageQuery: 'Maruti Alto K10 CNG 2023',
+    imageQuery: 'Maruti Alto',
   },
   {
     id: 'hyundai-eon-delta-plus',
@@ -4170,7 +4170,7 @@ export const CARS: Car[] = [
     stats: { hp: 67, acc: 13.4, topspeed: 160, weight: 860, handling: 25, wowFactor: 30 },
     rare: false,
     specs: { hp: 67, zeroToHundred: 13.4, topSpeed: 160, weightKg: 860 },
-    imageQuery: 'Hyundai Eon Delta Plus 2023',
+    imageQuery: 'Hyundai Eon',
   },
   {
     id: 'suzuki-celerio-x',
@@ -4178,7 +4178,7 @@ export const CARS: Car[] = [
     stats: { hp: 83, acc: 12.2, topspeed: 175, weight: 910, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 83, zeroToHundred: 12.2, topSpeed: 175, weightKg: 910 },
-    imageQuery: 'Suzuki Celerio X 2023',
+    imageQuery: 'Suzuki Celerio',
   },
   {
     id: 'daihatsu-move-custom',
@@ -4210,7 +4210,7 @@ export const CARS: Car[] = [
     stats: { hp: 360, acc: 4.5, topspeed: 260, weight: 1535, handling: 36, wowFactor: 65 },
     rare: true,
     specs: { hp: 360, zeroToHundred: 4.5, topSpeed: 260, weightKg: 1535 },
-    imageQuery: 'Mitsubishi Lancer Evolution X FQ-360 2008',
+    imageQuery: 'Mitsubishi Lancer Evolution',
   },
   {
     id: 'mazda-3-turbo-premium-plus',
@@ -4226,7 +4226,7 @@ export const CARS: Car[] = [
     stats: { hp: 382, acc: 4.5, topspeed: 270, weight: 1825, handling: 34, wowFactor: 65 },
     rare: true,
     specs: { hp: 382, zeroToHundred: 4.5, topSpeed: 270, weightKg: 1825 },
-    imageQuery: 'BMW M440i xDrive Convertible 2023',
+    imageQuery: 'BMW M440i xDrive Convertible',
   },
   {
     id: 'audi-s5-cabriolet',
@@ -4306,7 +4306,7 @@ export const CARS: Car[] = [
     stats: { hp: 160, acc: 10.3, topspeed: 200, weight: 1680, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 160, zeroToHundred: 10.3, topSpeed: 200, weightKg: 1680 },
-    imageQuery: 'Geely Monjaro Plus 2023',
+    imageQuery: 'Geely Monjaro',
   },
   {
     id: 'bmw-m340i-xdrive-touring',
@@ -4330,7 +4330,7 @@ export const CARS: Car[] = [
     stats: { hp: 625, acc: 3.6, topspeed: 305, weight: 2035, handling: 40, wowFactor: 99 },
     rare: true,
     specs: { hp: 625, zeroToHundred: 3.6, topSpeed: 305, weightKg: 2035 },
-    imageQuery: 'BMW 7 Series M760i 2023',
+    imageQuery: 'BMW 760i',
   },
   {
     id: 'mercedes-benz-e63-amg',
@@ -4362,7 +4362,7 @@ export const CARS: Car[] = [
     stats: { hp: 400, acc: 4.2, topspeed: 270, weight: 1525, handling: 37, wowFactor: 65 },
     rare: true,
     specs: { hp: 400, zeroToHundred: 4.2, topSpeed: 270, weightKg: 1525 },
-    imageQuery: 'Nissan Z Proto 470Z 2023',
+    imageQuery: 'Nissan Z',
   },
   {
     id: 'hyundai-ioniq-5-n',
@@ -4418,7 +4418,7 @@ export const CARS: Car[] = [
     stats: { hp: 177, acc: 9.8, topspeed: 200, weight: 1480, handling: 28, wowFactor: 30 },
     rare: false,
     specs: { hp: 177, zeroToHundred: 9.8, topSpeed: 200, weightKg: 1480 },
-    imageQuery: 'Proton X50 1.5T 2023',
+    imageQuery: 'Proton X50',
   },
   {
     id: 'perodua-alza-1-5l',
@@ -4434,7 +4434,7 @@ export const CARS: Car[] = [
     stats: { hp: 90, acc: 9.2, topspeed: 170, weight: 1300, handling: 25, wowFactor: 30 },
     rare: false,
     specs: { hp: 90, zeroToHundred: 9.2, topSpeed: 170, weightKg: 1300 },
-    imageQuery: 'Bharat EV Plus 2023',
+    imageQuery: 'Bharat EV',
   },
   {
     id: 'mahindra-e20-plus',
@@ -4442,7 +4442,7 @@ export const CARS: Car[] = [
     stats: { hp: 54, acc: 10.2, topspeed: 140, weight: 1090, handling: 23, wowFactor: 30 },
     rare: false,
     specs: { hp: 54, zeroToHundred: 10.2, topSpeed: 140, weightKg: 1090 },
-    imageQuery: 'Mahindra e20 Plus 2023',
+    imageQuery: 'Mahindra electric car',
   },
   {
     id: 'tata-nexon-ev-prime',
@@ -4450,7 +4450,7 @@ export const CARS: Car[] = [
     stats: { hp: 156, acc: 9.2, topspeed: 180, weight: 1595, handling: 27, wowFactor: 30 },
     rare: false,
     specs: { hp: 156, zeroToHundred: 9.2, topSpeed: 180, weightKg: 1595 },
-    imageQuery: 'Tata Nexon EV Prime 2023',
+    imageQuery: 'Tata Nexon EV',
   },
   {
     id: 'hyundai-i10-nios',
@@ -4458,7 +4458,7 @@ export const CARS: Car[] = [
     stats: { hp: 83, acc: 10.9, topspeed: 160, weight: 1050, handling: 25, wowFactor: 30 },
     rare: false,
     specs: { hp: 83, zeroToHundred: 10.9, topSpeed: 160, weightKg: 1050 },
-    imageQuery: 'Hyundai i10 NIOS 2023',
+    imageQuery: 'Hyundai i10 NIOS',
   },
   {
     id: 'maruti-swift-2023',
@@ -4490,7 +4490,7 @@ export const CARS: Car[] = [
     stats: { hp: 68, acc: 12.1, topspeed: 160, weight: 940, handling: 25, wowFactor: 30 },
     rare: false,
     specs: { hp: 68, zeroToHundred: 12.1, topSpeed: 160, weightKg: 940 },
-    imageQuery: 'Toyota Wagonr 2022',
+    imageQuery: 'Wagonr',
   },
   {
     id: 'hyundai-venue-2023',
@@ -4594,7 +4594,7 @@ export const CARS: Car[] = [
     stats: { hp: 86, acc: 10.5, topspeed: 180, weight: 1050, handling: 25, wowFactor: 30 },
     rare: false,
     specs: { hp: 86, zeroToHundred: 10.5, topSpeed: 180, weightKg: 1050 },
-    imageQuery: 'Tata Tigor 2023',
+    imageQuery: 'Tata Tigor',
   },
   {
     id: 'maruti-dzire-2023',
@@ -4602,7 +4602,7 @@ export const CARS: Car[] = [
     stats: { hp: 68, acc: 10.9, topspeed: 175, weight: 990, handling: 25, wowFactor: 30 },
     rare: false,
     specs: { hp: 68, zeroToHundred: 10.9, topSpeed: 175, weightKg: 990 },
-    imageQuery: 'Maruti Dzire 2023',
+    imageQuery: 'Maruti Dzire',
   },
   {
     id: 'honda-amaze-2023',
@@ -4618,7 +4618,7 @@ export const CARS: Car[] = [
     stats: { hp: 83, acc: 10.6, topspeed: 175, weight: 1080, handling: 25, wowFactor: 30 },
     rare: false,
     specs: { hp: 83, zeroToHundred: 10.6, topSpeed: 175, weightKg: 1080 },
-    imageQuery: 'Hyundai Aura 2023',
+    imageQuery: 'Hyundai Aura',
   },
   {
     id: 'dacia-sandero-2023',
@@ -4658,7 +4658,7 @@ export const CARS: Car[] = [
     stats: { hp: 40, acc: 13.5, topspeed: 130, weight: 620, handling: 24, wowFactor: 30 },
     rare: false,
     specs: { hp: 40, zeroToHundred: 13.5, topSpeed: 130, weightKg: 620 },
-    imageQuery: 'Tata Nano EV 2023',
+    imageQuery: 'Tata Nano EV',
   },
   {
     id: 'mg-comet-ev-2023',
@@ -4714,7 +4714,7 @@ export const CARS: Car[] = [
     stats: { hp: 110, acc: 9.2, topspeed: 190, weight: 1185, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 110, zeroToHundred: 9.2, topSpeed: 190, weightKg: 1185 },
-    imageQuery: 'Skoda Slavia 2023',
+    imageQuery: 'Skoda Slavia',
   },
   {
     id: 'volkswagen-polo-2023',
@@ -4770,7 +4770,7 @@ export const CARS: Car[] = [
     stats: { hp: 75, acc: 11.2, topspeed: 160, weight: 1550, handling: 23, wowFactor: 30 },
     rare: false,
     specs: { hp: 75, zeroToHundred: 11.2, topSpeed: 160, weightKg: 1550 },
-    imageQuery: 'Mahindra Bolero 2023',
+    imageQuery: 'Mahindra Bolero',
   },
   {
     id: 'force-gurkha-2023',
@@ -4778,7 +4778,7 @@ export const CARS: Car[] = [
     stats: { hp: 91, acc: 11.8, topspeed: 160, weight: 1865, handling: 23, wowFactor: 30 },
     rare: false,
     specs: { hp: 91, zeroToHundred: 11.8, topSpeed: 160, weightKg: 1865 },
-    imageQuery: 'Force Gurkha 2023',
+    imageQuery: 'Force Gurkha',
   },
   {
     id: 'skoda-kushaq-2023',
@@ -4786,7 +4786,7 @@ export const CARS: Car[] = [
     stats: { hp: 110, acc: 9.3, topspeed: 185, weight: 1220, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 110, zeroToHundred: 9.3, topSpeed: 185, weightKg: 1220 },
-    imageQuery: 'Skoda Kushaq 2023',
+    imageQuery: 'Skoda Kushaq',
   },
   {
     id: 'volkswagen-tiguan-2023',
@@ -4818,7 +4818,7 @@ export const CARS: Car[] = [
     stats: { hp: 204, acc: 9.1, topspeed: 190, weight: 1920, handling: 27, wowFactor: 45 },
     rare: false,
     specs: { hp: 204, zeroToHundred: 9.1, topSpeed: 190, weightKg: 1920 },
-    imageQuery: 'Toyota Innova Crysta 2023',
+    imageQuery: 'Toyota Innova Crysta',
   },
   {
     id: 'kia-carnival-2023',
@@ -4914,7 +4914,7 @@ export const CARS: Car[] = [
     stats: { hp: 103, acc: 10, topspeed: 185, weight: 1195, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 103, zeroToHundred: 10, topSpeed: 185, weightKg: 1195 },
-    imageQuery: 'Maruti Ciaz 2023',
+    imageQuery: 'Maruti Ciaz',
   },
   {
     id: 'toyota-corolla-altis-2023',
@@ -5354,7 +5354,7 @@ export const CARS: Car[] = [
     stats: { hp: 316, acc: 5.8, topspeed: 210, weight: 1600, handling: 33, wowFactor: 55 },
     rare: false,
     specs: { hp: 316, zeroToHundred: 5.8, topSpeed: 210, weightKg: 1600 },
-    imageQuery: 'Xiaomi SU7 Electric Vehicle 2023',
+    imageQuery: 'Xiaomi EV SUV',
   },
   {
     id: 'nio-et5-2023',
@@ -5386,7 +5386,7 @@ export const CARS: Car[] = [
     stats: { hp: 430, acc: 4.8, topspeed: 210, weight: 1750, handling: 36, wowFactor: 80 },
     rare: true,
     specs: { hp: 430, zeroToHundred: 4.8, topSpeed: 210, weightKg: 1750 },
-    imageQuery: 'Huawei AITO M7 2023',
+    imageQuery: 'Huawei AITO',
   },
   {
     id: 'volkswagen-id-buzz-2023',
@@ -5410,7 +5410,7 @@ export const CARS: Car[] = [
     stats: { hp: 170, acc: 9.6, topspeed: 195, weight: 1880, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 170, zeroToHundred: 9.6, topSpeed: 195, weightKg: 1880 },
-    imageQuery: 'Mahindra Alturas G4 2023',
+    imageQuery: 'Mahindra Alturas G4',
   },
   {
     id: 'tata-punch-2023',
@@ -5418,7 +5418,7 @@ export const CARS: Car[] = [
     stats: { hp: 86, acc: 11, topspeed: 160, weight: 1060, handling: 25, wowFactor: 30 },
     rare: false,
     specs: { hp: 86, zeroToHundred: 11, topSpeed: 160, weightKg: 1060 },
-    imageQuery: 'Tata Punch 2023',
+    imageQuery: 'Tata Punch',
   },
   {
     id: 'mg-hector-2023',
@@ -5767,7 +5767,7 @@ export const CARS: Car[] = [
     rare: true,
     special: { label: 'HYPERCAR', limitedTo: 24 },
     specs: { hp: 1817, zeroToHundred: 2, topSpeed: 531, weightKg: 1385 },
-    imageQuery: 'Hennessey Venom F5 2023',
+    imageQuery: 'Hennessey Venom F5',
   },
   {
     id: 'bugatti-bolide-2023',
@@ -5785,7 +5785,7 @@ export const CARS: Car[] = [
     rare: true,
     special: { label: 'HYPERCAR', limitedTo: 100 },
     specs: { hp: 1750, zeroToHundred: 2.6, topSpeed: 531, weightKg: 1247 },
-    imageQuery: 'SSC Tuatara 2023',
+    imageQuery: 'SSC Tuatara',
   },
   {
     id: 'rimac-nevera-2023',
@@ -5803,7 +5803,7 @@ export const CARS: Car[] = [
     rare: true,
     special: { label: 'SUPERCAR', limitedTo: 80 },
     specs: { hp: 612, zeroToHundred: 2.8, topSpeed: 330, weightKg: 980 },
-    imageQuery: 'Lotus Type 62 2023',
+    imageQuery: 'Lotus Type 62',
   },
   {
     id: 'ford-f150-2023',
@@ -5875,7 +5875,7 @@ export const CARS: Car[] = [
     stats: { hp: 75, acc: 11.2, topspeed: 155, weight: 1550, handling: 23, wowFactor: 30 },
     rare: false,
     specs: { hp: 75, zeroToHundred: 11.2, topSpeed: 155, weightKg: 1550 },
-    imageQuery: 'Mahindra Bolero Pik-Up 2023',
+    imageQuery: 'Mahindra Bolero Pik-Up',
   },
   {
     id: 'tata-ace-2023',
@@ -5955,7 +5955,7 @@ export const CARS: Car[] = [
     stats: { hp: 92, acc: 12.5, topspeed: 120, weight: 2850, handling: 22, wowFactor: 30 },
     rare: false,
     specs: { hp: 92, zeroToHundred: 12.5, topSpeed: 120, weightKg: 2850 },
-    imageQuery: 'Tata 407 Truck 2023',
+    imageQuery: 'Tata 407',
   },
   {
     id: 'hyundai-h350-2023',
@@ -5979,7 +5979,7 @@ export const CARS: Car[] = [
     stats: { hp: 75, acc: 12.5, topspeed: 120, weight: 1700, handling: 23, wowFactor: 30 },
     rare: false,
     specs: { hp: 75, zeroToHundred: 12.5, topSpeed: 120, weightKg: 1700 },
-    imageQuery: 'Mahindra NUO Auto 2023',
+    imageQuery: 'Mahindra',
   },
   {
     id: 'bajaj-auto-2023',
@@ -5987,7 +5987,7 @@ export const CARS: Car[] = [
     stats: { hp: 8, acc: 25, topspeed: 80, weight: 350, handling: 22, wowFactor: 30 },
     rare: false,
     specs: { hp: 8, zeroToHundred: 25, topSpeed: 80, weightKg: 350 },
-    imageQuery: 'Bajaj Auto Rickshaw 2023',
+    imageQuery: 'Bajaj Auto',
   },
   {
     id: 'piaggio-ape-2023',
@@ -6003,7 +6003,7 @@ export const CARS: Car[] = [
     stats: { hp: 10, acc: 22, topspeed: 90, weight: 330, handling: 22, wowFactor: 30 },
     rare: false,
     specs: { hp: 10, zeroToHundred: 22, topSpeed: 90, weightKg: 330 },
-    imageQuery: 'TVS Auto Rickshaw 2023',
+    imageQuery: 'TVS Auto Rickshaw',
   },
   {
     id: 'vespa-scooter-2023',
@@ -6083,7 +6083,7 @@ export const CARS: Car[] = [
     stats: { hp: 536, acc: 4.5, topspeed: 220, weight: 1850, handling: 39, wowFactor: 80 },
     rare: true,
     specs: { hp: 536, zeroToHundred: 4.5, topSpeed: 220, weightKg: 1850 },
-    imageQuery: 'NIO ET6 2023',
+    imageQuery: 'NIO',
   },
   {
     id: 'byd-song-2023',
@@ -6257,7 +6257,7 @@ export const CARS: Car[] = [
     stats: { hp: 650, acc: 3, topspeed: 300, weight: 1199, handling: 56, wowFactor: 90 },
     rare: true,
     specs: { hp: 650, zeroToHundred: 3, topSpeed: 300, weightKg: 1199 },
-    imageQuery: 'Gumpert Apollo 2023',
+    imageQuery: 'Gumpert Apollo',
   },
   {
     id: 'hennessey-exorcist-2023',
@@ -6265,7 +6265,7 @@ export const CARS: Car[] = [
     stats: { hp: 1000, acc: 2.1, topspeed: 340, weight: 1490, handling: 65, wowFactor: 99 },
     rare: true,
     specs: { hp: 1000, zeroToHundred: 2.1, topSpeed: 340, weightKg: 1490 },
-    imageQuery: 'Hennessey Exorcist Camaro 2023',
+    imageQuery: 'Hennessey',
   },
   {
     id: 'ford-gt-2023',
@@ -6283,7 +6283,7 @@ export const CARS: Car[] = [
     rare: true,
     special: { label: 'CONCEPT', limitedTo: 5 },
     specs: { hp: 1000, zeroToHundred: 2.2, topSpeed: 350, weightKg: 1113 },
-    imageQuery: 'Hyperion XP-1 concept car',
+    imageQuery: 'Hyperion XP-1',
   },
   {
     id: 'volkswagen-golf-gti-2023',
@@ -6443,7 +6443,7 @@ export const CARS: Car[] = [
     stats: { hp: 245, acc: 6.2, topspeed: 235, weight: 1350, handling: 32, wowFactor: 65 },
     rare: true,
     specs: { hp: 245, zeroToHundred: 6.2, topSpeed: 235, weightKg: 1350 },
-    imageQuery: 'Skoda Fabia RS 2023',
+    imageQuery: 'Skoda Fabia RS',
   },
   {
     id: 'genesis-gv70-coupe-2023',
@@ -6451,7 +6451,7 @@ export const CARS: Car[] = [
     stats: { hp: 375, acc: 4.7, topspeed: 250, weight: 1600, handling: 36, wowFactor: 65 },
     rare: true,
     specs: { hp: 375, zeroToHundred: 4.7, topSpeed: 250, weightKg: 1600 },
-    imageQuery: 'Genesis GV70 Coupe 2023',
+    imageQuery: 'Genesis GV70',
   },
   {
     id: 'kia-stinger-2023',
@@ -6532,7 +6532,7 @@ export const CARS: Car[] = [
     stats: { hp: 355, acc: 5.5, topspeed: 240, weight: 2650, handling: 29, wowFactor: 65 },
     rare: true,
     specs: { hp: 355, zeroToHundred: 5.5, topSpeed: 240, weightKg: 2650 },
-    imageQuery: 'Chevrolet Tahoe RST 2023',
+    imageQuery: 'Chevrolet Tahoe RST',
   },
   {
     id: 'ford-mustang-dark-horse-2023',
@@ -6580,7 +6580,7 @@ export const CARS: Car[] = [
     stats: { hp: 150, acc: 8.9, topspeed: 200, weight: 1220, handling: 28, wowFactor: 30 },
     rare: false,
     specs: { hp: 150, zeroToHundred: 8.9, topSpeed: 200, weightKg: 1220 },
-    imageQuery: 'Seat Ibiza 2023',
+    imageQuery: 'Seat Ibiza',
   },
   {
     id: 'peugeot-208-2023',
@@ -6924,7 +6924,7 @@ export const CARS: Car[] = [
     stats: { hp: 170, acc: 8.5, topspeed: 195, weight: 1580, handling: 27, wowFactor: 30 },
     rare: false,
     specs: { hp: 170, zeroToHundred: 8.5, topSpeed: 195, weightKg: 1580 },
-    imageQuery: 'Chevrolet Equinox EX 2023',
+    imageQuery: 'Chevrolet Equinox',
   },
   {
     id: 'ford-edge-2023',
@@ -7068,7 +7068,7 @@ export const CARS: Car[] = [
     stats: { hp: 1914, acc: 1.85, topspeed: 415, weight: 1850, handling: 89, wowFactor: 99 },
     rare: true,
     specs: { hp: 1914, zeroToHundred: 1.85, topSpeed: 415, weightKg: 1850 },
-    imageQuery: 'Rimac C_Two 2023',
+    imageQuery: 'Rimac C_Two',
   },
   {
     id: 'aston-martin-valkyrie-2023',
@@ -7084,7 +7084,7 @@ export const CARS: Car[] = [
     stats: { hp: 918, acc: 2.5, topspeed: 345, weight: 1670, handling: 57, wowFactor: 99 },
     rare: true,
     specs: { hp: 918, zeroToHundred: 2.5, topSpeed: 345, weightKg: 1670 },
-    imageQuery: 'Porsche 918 Coupe 2023',
+    imageQuery: 'Porsche 918 Coupe',
   },
   {
     id: 'mercedes-amg-one-2023',
@@ -7156,7 +7156,7 @@ export const CARS: Car[] = [
     stats: { hp: 260, acc: 8.6, topspeed: 190, weight: 2170, handling: 28, wowFactor: 45 },
     rare: false,
     specs: { hp: 260, zeroToHundred: 8.6, topSpeed: 190, weightKg: 2170 },
-    imageQuery: 'Dodge Durango Diesel 2024',
+    imageQuery: 'Dodge Durango',
   },
   {
     id: 'infiniti-qx80-2024',
@@ -7268,7 +7268,7 @@ export const CARS: Car[] = [
     stats: { hp: 320, acc: 4.3, topspeed: 225, weight: 1810, handling: 32, wowFactor: 65 },
     rare: true,
     specs: { hp: 320, zeroToHundred: 4.3, topSpeed: 225, weightKg: 1810 },
-    imageQuery: 'Kia EV6 GS 2023',
+    imageQuery: 'Kia EV6',
   },
   {
     id: 'nio-et5-touring-2023',
@@ -7300,7 +7300,7 @@ export const CARS: Car[] = [
     stats: { hp: 150, acc: 8.8, topspeed: 190, weight: 1475, handling: 27, wowFactor: 30 },
     rare: false,
     specs: { hp: 150, zeroToHundred: 8.8, topSpeed: 190, weightKg: 1475 },
-    imageQuery: 'Geely Geometry C 2023',
+    imageQuery: 'Geometry',
   },
   {
     id: 'changan-uni-t-2023',
@@ -7396,7 +7396,7 @@ export const CARS: Car[] = [
     stats: { hp: 306, acc: 5.5, topspeed: 210, weight: 1850, handling: 31, wowFactor: 65 },
     rare: true,
     specs: { hp: 306, zeroToHundred: 5.5, topSpeed: 210, weightKg: 1850 },
-    imageQuery: 'Audi Q4 e-tron Coupe 2023',
+    imageQuery: 'Audi Q4',
   },
   {
     id: 'jaguar-i-pace-electric-2023',
@@ -7420,7 +7420,7 @@ export const CARS: Car[] = [
     stats: { hp: 516, acc: 4.6, topspeed: 240, weight: 2400, handling: 34, wowFactor: 80 },
     rare: true,
     specs: { hp: 516, zeroToHundred: 4.6, topSpeed: 240, weightKg: 2400 },
-    imageQuery: 'BMW i7 Luxury 2023',
+    imageQuery: 'BMW i7',
   },
   {
     id: 'dacia-sandero-budget-2023',
@@ -7428,7 +7428,7 @@ export const CARS: Car[] = [
     stats: { hp: 110, acc: 10.5, topspeed: 175, weight: 1200, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 110, zeroToHundred: 10.5, topSpeed: 175, weightKg: 1200 },
-    imageQuery: 'Dacia Sandero Budget 2023',
+    imageQuery: 'Dacia Sandero',
   },
   {
     id: 'dacia-duster-budget-suv',
@@ -7436,7 +7436,7 @@ export const CARS: Car[] = [
     stats: { hp: 110, acc: 10.9, topspeed: 180, weight: 1300, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 110, zeroToHundred: 10.9, topSpeed: 180, weightKg: 1300 },
-    imageQuery: 'Dacia Duster Budget 2023',
+    imageQuery: 'Dacia Duster',
   },
   {
     id: 'chevrolet-corvette-zr2-supercar',
@@ -7444,7 +7444,7 @@ export const CARS: Car[] = [
     stats: { hp: 495, acc: 2.8, topspeed: 299, weight: 1560, handling: 41, wowFactor: 80 },
     rare: true,
     specs: { hp: 495, zeroToHundred: 2.8, topSpeed: 299, weightKg: 1560 },
-    imageQuery: 'Chevrolet Corvette ZR2 2023',
+    imageQuery: 'Chevrolet Corvette ZR2',
   },
   {
     id: 'dodge-viper-acr-supercar',
@@ -7468,7 +7468,7 @@ export const CARS: Car[] = [
     stats: { hp: 640, acc: 2.9, topspeed: 325, weight: 1422, handling: 50, wowFactor: 99 },
     rare: true,
     specs: { hp: 640, zeroToHundred: 2.9, topSpeed: 325, weightKg: 1422 },
-    imageQuery: 'Lamborghini Revuelton 2024',
+    imageQuery: 'Lamborghini',
   },
   {
     id: 'mclaren-750s-supercar',
@@ -7476,7 +7476,7 @@ export const CARS: Car[] = [
     stats: { hp: 562, acc: 3.2, topspeed: 328, weight: 1213, handling: 51, wowFactor: 95 },
     rare: true,
     specs: { hp: 562, zeroToHundred: 3.2, topSpeed: 328, weightKg: 1213 },
-    imageQuery: 'McLaren 750S Supercar 2023',
+    imageQuery: 'McLaren 750S',
   },
   {
     id: 'maserati-mc20-supercar',
@@ -7492,7 +7492,7 @@ export const CARS: Car[] = [
     stats: { hp: 402, acc: 3.7, topspeed: 290, weight: 1405, handling: 39, wowFactor: 80 },
     rare: true,
     specs: { hp: 402, zeroToHundred: 3.7, topSpeed: 290, weightKg: 1405 },
-    imageQuery: 'Lotus Emira Sportscar 2023',
+    imageQuery: 'Lotus Emira',
   },
   {
     id: 'jeep-wrangler-rubicon-2023',
@@ -7548,7 +7548,7 @@ export const CARS: Car[] = [
     stats: { hp: 625, acc: 3.9, topspeed: 305, weight: 2200, handling: 39, wowFactor: 99 },
     rare: true,
     specs: { hp: 625, zeroToHundred: 3.9, topSpeed: 305, weightKg: 2200 },
-    imageQuery: 'BMW M760i 2023',
+    imageQuery: 'BMW M760i',
   },
   {
     id: 'audi-rs6-avant-performance',
@@ -7580,7 +7580,7 @@ export const CARS: Car[] = [
     stats: { hp: 986, acc: 2.5, topspeed: 340, weight: 1680, handling: 59, wowFactor: 99 },
     rare: true,
     specs: { hp: 986, zeroToHundred: 2.5, topSpeed: 340, weightKg: 1680 },
-    imageQuery: 'Ferrari SF90 XX 2023',
+    imageQuery: 'Ferrari SF90 XX',
   },
   {
     id: 'porsche-cayenne-turbo-gt-2023',
@@ -7612,7 +7612,7 @@ export const CARS: Car[] = [
     stats: { hp: 791, acc: 2.4, topspeed: 380, weight: 1050, handling: 70, wowFactor: 99 },
     rare: true,
     specs: { hp: 791, zeroToHundred: 2.4, topSpeed: 380, weightKg: 1050 },
-    imageQuery: 'Pagani Huayra BC Imola 2023',
+    imageQuery: 'Pagani Huayra',
   },
   {
     id: 'aspark-owl-2023-fastest',
@@ -7644,7 +7644,7 @@ export const CARS: Car[] = [
     stats: { hp: 290, acc: 6.9, topspeed: 190, weight: 1850, handling: 30, wowFactor: 45 },
     rare: false,
     specs: { hp: 290, zeroToHundred: 6.9, topSpeed: 190, weightKg: 1850 },
-    imageQuery: 'BYD Song QSDM 2023',
+    imageQuery: 'BYD Song',
   },
   {
     id: 'seat-tarraco-2023',
@@ -7756,7 +7756,7 @@ export const CARS: Car[] = [
     stats: { hp: 204, acc: 9, topspeed: 190, weight: 1500, handling: 29, wowFactor: 45 },
     rare: false,
     specs: { hp: 204, zeroToHundred: 9, topSpeed: 190, weightKg: 1500 },
-    imageQuery: 'Great Wall Haval H9 2023',
+    imageQuery: 'Great Wall Haval H9',
   },
   {
     id: 'mg-6-2023',
@@ -7772,7 +7772,7 @@ export const CARS: Car[] = [
     stats: { hp: 156, acc: 10.5, topspeed: 170, weight: 1380, handling: 28, wowFactor: 30 },
     rare: false,
     specs: { hp: 156, zeroToHundred: 10.5, topSpeed: 170, weightKg: 1380 },
-    imageQuery: 'BAIC D50 Plus 2023',
+    imageQuery: 'BAIC D50 Plus',
   },
   {
     id: 'jac-t8-2023',
@@ -7788,7 +7788,7 @@ export const CARS: Car[] = [
     stats: { hp: 188, acc: 9, topspeed: 185, weight: 1480, handling: 28, wowFactor: 30 },
     rare: false,
     specs: { hp: 188, zeroToHundred: 9, topSpeed: 185, weightKg: 1480 },
-    imageQuery: 'Dongfeng Aeolus AX5 2023',
+    imageQuery: 'Dongfeng Aeolus AX5',
   },
   {
     id: 'zotye-z200-2023',
@@ -7796,7 +7796,7 @@ export const CARS: Car[] = [
     stats: { hp: 110, acc: 12, topspeed: 155, weight: 1320, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 110, zeroToHundred: 12, topSpeed: 155, weightKg: 1320 },
-    imageQuery: 'Zotye Z200 2023',
+    imageQuery: 'Zotye Z200',
   },
   {
     id: 'lifan-x80-2023',
@@ -7812,7 +7812,7 @@ export const CARS: Car[] = [
     stats: { hp: 168, acc: 9.5, topspeed: 180, weight: 1400, handling: 28, wowFactor: 30 },
     rare: false,
     specs: { hp: 168, zeroToHundred: 9.5, topSpeed: 180, weightKg: 1400 },
-    imageQuery: 'Changhe Auto Q36 2023',
+    imageQuery: 'Changhe Auto Q36',
   },
   {
     id: 'changan-cs55-plus-2023',
@@ -7828,7 +7828,7 @@ export const CARS: Car[] = [
     stats: { hp: 192, acc: 8.8, topspeed: 190, weight: 1520, handling: 28, wowFactor: 30 },
     rare: false,
     specs: { hp: 192, zeroToHundred: 8.8, topSpeed: 190, weightKg: 1520 },
-    imageQuery: 'Maxus Euniq 6 Pro 2023',
+    imageQuery: 'Maxus Euniq',
   },
   {
     id: 'byd-song-max-dm-2023',
@@ -7844,7 +7844,7 @@ export const CARS: Car[] = [
     stats: { hp: 533, acc: 3.8, topspeed: 260, weight: 2180, handling: 36, wowFactor: 80 },
     rare: true,
     specs: { hp: 533, zeroToHundred: 3.8, topSpeed: 260, weightKg: 2180 },
-    imageQuery: 'NIO EC7 Touring 2023',
+    imageQuery: 'NIO EC7',
   },
   {
     id: 'xpeng-g6-max-2023',
@@ -7852,7 +7852,7 @@ export const CARS: Car[] = [
     stats: { hp: 502, acc: 4, topspeed: 250, weight: 2160, handling: 35, wowFactor: 80 },
     rare: true,
     specs: { hp: 502, zeroToHundred: 4, topSpeed: 250, weightKg: 2160 },
-    imageQuery: 'XPeng G6 Max 2023',
+    imageQuery: 'XPeng G6',
   },
   {
     id: 'li-auto-two-2023',
@@ -7868,7 +7868,7 @@ export const CARS: Car[] = [
     stats: { hp: 388, acc: 5.5, topspeed: 210, weight: 1680, handling: 35, wowFactor: 65 },
     rare: true,
     specs: { hp: 388, zeroToHundred: 5.5, topSpeed: 210, weightKg: 1680 },
-    imageQuery: 'Geely Geometry S 2023',
+    imageQuery: 'Geometry',
   },
   {
     id: 'byd-qin-plus-dm-2023',
@@ -7885,7 +7885,7 @@ export const CARS: Car[] = [
     rare: true,
     special: { label: 'TECHNOLOGY CONCEPT', limitedTo: 1 },
     specs: { hp: 650, zeroToHundred: 2.5, topSpeed: 280, weightKg: 1800 },
-    imageQuery: 'Apple car concept autonomous',
+    imageQuery: 'Apple Car',
   },
   {
     id: 'rolls-royce-vision-next-2024',
@@ -7894,7 +7894,7 @@ export const CARS: Car[] = [
     rare: true,
     special: { label: 'LUXURY VISION', limitedTo: 2 },
     specs: { hp: 542, zeroToHundred: 4.8, topSpeed: 240, weightKg: 2400 },
-    imageQuery: 'Rolls Royce vision next 100',
+    imageQuery: 'Rolls-Royce',
   },
   {
     id: 'mercedes-amg-gt-black-series-2024',
@@ -7939,7 +7939,7 @@ export const CARS: Car[] = [
     rare: true,
     special: { label: 'FINAL GENERATION', limitedTo: 99 },
     specs: { hp: 864, zeroToHundred: 2.7, topSpeed: 330, weightKg: 1280 },
-    imageQuery: 'Pagani Zonda Dominion',
+    imageQuery: 'Pagani Zonda',
   },
   {
     id: 'rimac-nevera-proto-2024',
@@ -7948,7 +7948,7 @@ export const CARS: Car[] = [
     rare: true,
     special: { label: 'EV HYPERCAR', limitedTo: 150 },
     specs: { hp: 1914, zeroToHundred: 1.85, topSpeed: 412, weightKg: 1445 },
-    imageQuery: 'Rimac Nevera prototype',
+    imageQuery: 'Rimac Nevera',
   },
   {
     id: 'aspark-owl-extreme-2024',
@@ -7957,7 +7957,7 @@ export const CARS: Car[] = [
     rare: true,
     special: { label: 'EXTREME EV PRO', limitedTo: 50 },
     specs: { hp: 1985, zeroToHundred: 1.69, topSpeed: 408, weightKg: 1480 },
-    imageQuery: 'Aspark Owl Extreme',
+    imageQuery: 'Aspark Owl',
   },
   {
     id: 'subaru-impreza-wrx-sti-2024',
@@ -7981,7 +7981,7 @@ export const CARS: Car[] = [
     stats: { hp: 364, acc: 6, topspeed: 215, weight: 1820, handling: 33, wowFactor: 65 },
     rare: true,
     specs: { hp: 364, zeroToHundred: 6, topSpeed: 215, weightKg: 1820 },
-    imageQuery: 'Mazda CX-90 S 2024',
+    imageQuery: 'Mazda CX-90 S',
   },
   {
     id: 'volkswagen-passat-cc-2024',
@@ -8030,7 +8030,7 @@ export const CARS: Car[] = [
     stats: { hp: 455, acc: 4.6, topspeed: 250, weight: 1900, handling: 36, wowFactor: 80 },
     rare: true,
     specs: { hp: 455, zeroToHundred: 4.6, topSpeed: 250, weightKg: 1900 },
-    imageQuery: 'Volvo S90 Polestar 2024',
+    imageQuery: 'Volvo S90',
   },
   {
     id: 'alfa-romeo-giulia-quadrifoglio-2024',
@@ -8046,7 +8046,7 @@ export const CARS: Car[] = [
     stats: { hp: 345, acc: 5.9, topspeed: 230, weight: 1180, handling: 39, wowFactor: 65 },
     rare: true,
     specs: { hp: 345, zeroToHundred: 5.9, topSpeed: 230, weightKg: 1180 },
-    imageQuery: 'Fiat Abarth 695 2024',
+    imageQuery: 'Fiat Abarth 695',
   },
   {
     id: 'renault-megane-rs-2024',
@@ -8062,7 +8062,7 @@ export const CARS: Car[] = [
     stats: { hp: 270, acc: 6, topspeed: 240, weight: 1340, handling: 33, wowFactor: 65 },
     rare: true,
     specs: { hp: 270, zeroToHundred: 6, topSpeed: 240, weightKg: 1340 },
-    imageQuery: 'Peugeot 308 GTi 2024',
+    imageQuery: 'Peugeot 308 GTi',
   },
   {
     id: 'seat-leon-cupra-2024',
@@ -8177,7 +8177,7 @@ export const CARS: Car[] = [
     rare: true,
     special: { label: 'LEGEND CLASSIC', limitedTo: 36 },
     specs: { hp: 300, zeroToHundred: 3.8, topSpeed: 280, weightKg: 1280 },
-    imageQuery: 'Ferrari 250 GTO vintage',
+    imageQuery: 'Ferrari 250 GTO',
   },
   {
     id: 'jaguar-e-type-vintage',
@@ -8547,7 +8547,7 @@ export const CARS: Car[] = [
     stats: { hp: 600, acc: 5, topspeed: 220, weight: 2300, handling: 37, wowFactor: 80 },
     rare: true,
     specs: { hp: 600, zeroToHundred: 5, topSpeed: 220, weightKg: 2300 },
-    imageQuery: 'Audi Q9 2024',
+    imageQuery: 'Audi Q9',
   },
   {
     id: 'porsche-cayenne-coupe-e-hybrid-2024',
@@ -8620,7 +8620,7 @@ export const CARS: Car[] = [
     stats: { hp: 750, acc: 3.8, topspeed: 250, weight: 2365, handling: 41, wowFactor: 90 },
     rare: true,
     specs: { hp: 750, zeroToHundred: 3.8, topSpeed: 250, weightKg: 2365 },
-    imageQuery: 'BMW X8 M 2024',
+    imageQuery: 'BMW X7 M',
   },
   {
     id: 'audi-sq7-tfsi-2024',
@@ -8652,7 +8652,7 @@ export const CARS: Car[] = [
     stats: { hp: 455, acc: 5.4, topspeed: 225, weight: 1860, handling: 36, wowFactor: 80 },
     rare: true,
     specs: { hp: 455, zeroToHundred: 5.4, topSpeed: 225, weightKg: 1860 },
-    imageQuery: 'Lexus NX 500h F Sport 2024',
+    imageQuery: 'Lexus NX',
   },
   {
     id: 'acura-mdx-type-s-2024',
@@ -8660,6 +8660,6 @@ export const CARS: Car[] = [
     stats: { hp: 355, acc: 5.8, topspeed: 210, weight: 1920, handling: 32, wowFactor: 65 },
     rare: true,
     specs: { hp: 355, zeroToHundred: 5.8, topSpeed: 210, weightKg: 1920 },
-    imageQuery: 'Acura MDX Type S 2024',
+    imageQuery: 'Acura MDX Type S',
   },
 ]
