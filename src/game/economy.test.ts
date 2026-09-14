@@ -129,6 +129,11 @@ describe('every faucet together', () => {
     // looked reasonable on its own while together they cut a top car from a
     // 28-day chase to six days. This is the assertion that would have caught
     // that, and the one to keep honest when the next faucet is added.
+    //
+    // Racing is deliberately not counted here. It has no cooldown, so it has no
+    // daily figure to add — what bounds it is how long a race takes, and
+    // race.test.ts holds that bound instead. This test is about what the game
+    // pays a player who turns up once a day and leaves.
     const free = PACKS.find((p) => p.free && !p.once)!
     let packValue = 0
     const runs = 2000

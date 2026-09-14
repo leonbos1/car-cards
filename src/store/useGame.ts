@@ -30,6 +30,9 @@ interface GameState {
   fulfilledContracts: string[]
   /** The welcome pack is a one-off, so it is remembered rather than timed. */
   welcomeClaimed: boolean
+  /** Races entered and won, for the garage header and the objectives. */
+  racesRun: number
+  racesWon: number
 
   canAfford: (price: number) => boolean
   /** Spend and record an opening. Returns false if the balance is short. */
@@ -63,6 +66,12 @@ interface GameState {
    * is paid. Returns euros earned, or 0 if the car does not qualify.
    */
   fulfilContract: (contractId: string, carId: string) => number
+  /**
+   * Bank a finished race. Unlike every other earner this has no cooldown and
+   * no limit — the car you enter and the time it takes are the only things
+   * bounding it.
+   */
+  finishRace: (payout: number, won: boolean) => void
   reset: () => void
 }
 
@@ -104,6 +113,8 @@ export const useGame = create<GameState>()(
       boughtListings: [],
       fulfilledContracts: [],
       welcomeClaimed: false,
+      racesRun: 0,
+      racesWon: 0,
 
       canAfford: (price) => get().balance >= price,
 
@@ -267,6 +278,13 @@ export const useGame = create<GameState>()(
         return contract.reward
       },
 
+      finishRace: (payout, won) =>
+        set((s) => ({
+          balance: s.balance + payout,
+          racesRun: s.racesRun + 1,
+          racesWon: s.racesWon + (won ? 1 : 0),
+        })),
+
       reset: () =>
         set({
           balance: STARTING_BALANCE,
@@ -278,6 +296,8 @@ export const useGame = create<GameState>()(
           boughtListings: [],
           fulfilledContracts: [],
           welcomeClaimed: false,
+          racesRun: 0,
+          racesWon: 0,
         }),
     }),
     // Bumped: the old save carried a 10,000,000 balance from before there was

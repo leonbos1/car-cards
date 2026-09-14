@@ -17,7 +17,8 @@
     "suggest:images": "tsx scripts/suggest-images.ts",
     "contact-sheet": "tsx scripts/contact-sheet.ts",
     "report:ratings": "tsx scripts/rating-report.ts",
-    "report:economy": "tsx scripts/economy-report.ts"
+    "report:economy": "tsx scripts/economy-report.ts",
+    "report:race": "tsx scripts/race-report.ts"
   },
   "dependencies": {
     "framer-motion": "^11.15.0",

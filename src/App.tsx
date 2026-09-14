@@ -8,13 +8,14 @@ import { Objectives } from './components/Objectives'
 import { PackOpening } from './components/PackOpening'
 import { PackStore } from './components/PackStore'
 import { Quiz } from './components/Quiz'
+import { Race } from './components/Race'
 import { Settings } from './components/Settings'
 import { FREE_PACK_COOLDOWN_MS } from './game/economy'
 import { openPack } from './game/pack'
 import { useGame } from './store/useGame'
 import type { CardView, Pack, Pull } from './types'
 
-type Tab = 'store' | 'market' | 'quiz' | 'objectives' | 'garage' | 'catalog' | 'settings'
+type Tab = 'store' | 'market' | 'race' | 'quiz' | 'objectives' | 'garage' | 'catalog' | 'settings'
 
 interface Opening {
   pack: Pack
@@ -76,7 +77,7 @@ export function App() {
           </h1>
 
           <nav className="ml-2 flex gap-1">
-            {(['store', 'market', 'quiz', 'objectives', 'catalog', 'garage', 'settings'] as Tab[]).map((t) => (
+            {(['store', 'market', 'race', 'quiz', 'objectives', 'catalog', 'garage', 'settings'] as Tab[]).map((t) => (
               <button
                 key={t}
                 type="button"
@@ -105,6 +106,8 @@ export function App() {
         />
       ) : tab === 'market' ? (
         <Market onInspect={setInspecting} />
+      ) : tab === 'race' ? (
+        <Race />
       ) : tab === 'quiz' ? (
         <Quiz />
       ) : tab === 'objectives' ? (
