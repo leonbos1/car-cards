@@ -71,18 +71,26 @@ export function App() {
   return (
     <div className="app-bg min-h-full">
       <header className="sticky top-0 z-30 border-b border-white/10 bg-[#04060b]/85 backdrop-blur">
+        {/* Eight tabs do not fit across a phone — they came to 633px against a
+            360px screen and scrolled the whole page sideways. So the nav takes
+            a row of its own below the title until there is room for it inline,
+            and wraps within that row rather than running off the edge. */}
         <div className="mx-auto flex w-full max-w-7xl flex-wrap items-center gap-x-4 gap-y-2 px-4 py-3">
-          <h1 className="text-lg font-black uppercase tracking-tight">
+          <h1 className="order-1 shrink-0 text-lg font-black uppercase tracking-tight">
             Car<span className="text-gold-2">Cards</span>
           </h1>
 
-          <nav className="ml-2 flex gap-1">
+          <div className="order-2 ml-auto shrink-0 xl:order-3">
+            <Balance amount={balance} />
+          </div>
+
+          <nav className="order-3 flex w-full flex-wrap gap-1 xl:order-2 xl:ml-2 xl:w-auto">
             {(['store', 'market', 'race', 'quiz', 'objectives', 'catalog', 'garage', 'settings'] as Tab[]).map((t) => (
               <button
                 key={t}
                 type="button"
                 onClick={() => setTab(t)}
-                className={`rounded-lg px-3 py-1.5 text-sm font-bold capitalize transition ${
+                className={`rounded-lg px-2.5 py-1.5 text-[13px] font-bold capitalize transition sm:px-3 sm:text-sm ${
                   tab === t ? 'bg-white/15 text-white' : 'text-white/45 hover:text-white/80'
                 }`}
               >
@@ -90,10 +98,6 @@ export function App() {
               </button>
             ))}
           </nav>
-
-          <div className="ml-auto shrink-0">
-            <Balance amount={balance} />
-          </div>
         </div>
       </header>
 
