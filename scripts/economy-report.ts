@@ -8,7 +8,13 @@
  * Run with `npm run report:economy`.
  */
 import { PACKS, contentsLine } from '../src/data/packs'
-import { FREE_PACK_COOLDOWN_MS, STARTING_BALANCE, formatEuros, quickSellValue } from '../src/game/economy'
+import {
+  FREE_PACK_COOLDOWN_MS,
+  QUICK_SELL_RATE,
+  STARTING_BALANCE,
+  formatEuros,
+} from '../src/game/economy'
+import { bidPrice } from '../src/game/market'
 import { TOTAL_OBJECTIVE_REWARD } from '../src/game/objectives'
 import { openPack, slotPool } from '../src/game/pack'
 import { MAX_DAILY_QUIZ_REWARD } from '../src/game/quiz'
@@ -27,16 +33,17 @@ function seeded(seed: number): () => number {
 export function expectedValue(pack: Pack, runs = RUNS): number {
   let total = 0
   for (let seed = 0; seed < runs; seed++) {
-    for (const card of openPack(pack, seeded(seed * 2654435761))) total += quickSellValue(card)
+    for (const card of openPack(pack, seeded(seed * 2654435761))) total += bidPrice(card, 0)
   }
   return total / runs
 }
 
 function main() {
   console.log(`starting balance ${formatEuros(STARTING_BALANCE)}`)
-  console.log(`free pack every ${FREE_PACK_COOLDOWN_MS / 3_600_000}h\n`)
+  console.log(`free pack every ${FREE_PACK_COOLDOWN_MS / 3_600_000}h`)
+  console.log(`quick-sell pays ${(QUICK_SELL_RATE * 100).toFixed(0)}% of book; the market pays far more\n`)
 
-  console.log('pack             price      sell value   return   best possible   smallest pool')
+  console.log('pack             price    market value   return   best possible   smallest pool')
   for (const pack of PACKS) {
     const ev = expectedValue(pack)
     const ret = pack.price ? ev / pack.price : Number.POSITIVE_INFINITY

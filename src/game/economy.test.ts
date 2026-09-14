@@ -1,9 +1,10 @@
 import { describe, expect, it } from 'vitest'
 import { PACKS } from '../data/packs'
 import { STARTING_BALANCE, quickSellValue } from './economy'
+import { bidPrice } from './market'
 import { OBJECTIVES } from './objectives'
 import { ALL_CARDS, openPack, slotPool } from './pack'
-import type { Pack } from '../types'
+import type { CardView, Pack } from '../types'
 
 function seeded(seed: number): () => number {
   let state = seed >>> 0
@@ -13,23 +14,40 @@ function seeded(seed: number): () => number {
   }
 }
 
-/** Average quick-sell value of everything a pack deals. */
+/**
+ * Average value of everything a pack deals, at the best price a player can get
+ * for it.
+ *
+ * That is the market, not quick-sell — and it has to be measured at the market's
+ * best day, since a patient player sells each car when its price is up rather
+ * than the moment it lands.
+ */
 function expectedValue(pack: Pack, runs = 4000): number {
   let total = 0
   for (let seed = 0; seed < runs; seed++) {
-    for (const card of openPack(pack, seeded(seed * 2654435761))) total += quickSellValue(card)
+    for (const card of openPack(pack, seeded(seed * 2654435761))) {
+      total += bestExit(card)
+    }
   }
   return total / runs
+}
+
+/** The most a card can be sold for, across the market's whole price cycle. */
+function bestExit(card: CardView): number {
+  let best = quickSellValue(card)
+  for (let day = 0; day < 40; day++) best = Math.max(best, bidPrice(card, day * 86_400_000))
+  return best
 }
 
 const PAID = PACKS.filter((p) => p.price > 0)
 
 describe('pack economics', () => {
   it('never sells a pack for less than its contents are worth', () => {
-    // The whole economy rests on this. If a pack's cards quick-sell for more
+    // The whole economy rests on this. If a pack's cards can be sold for more
     // than the pack costs, buy-open-sell-repeat prints unlimited money and
-    // nothing else in the game matters. The margin is deliberately wide so a
-    // price tweak cannot creep over the line unnoticed.
+    // nothing else in the game matters. Since the market pays better than
+    // quick-sell, it is the market that sets this bound. The margin is
+    // deliberately wide so a price tweak cannot creep over the line unnoticed.
     for (const pack of PAID) {
       const ev = expectedValue(pack)
       expect(

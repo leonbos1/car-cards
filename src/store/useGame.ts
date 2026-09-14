@@ -3,6 +3,7 @@ import { persist } from 'zustand/middleware'
 import { FREE_PACK_COOLDOWN_MS, STARTING_BALANCE, quickSellValue } from '../game/economy'
 import { OBJECTIVES, objectiveProgress } from '../game/objectives'
 import { QUIZ_CATEGORY_BY_ID } from '../data/quiz'
+import { bidPrice, listings, restockWindow } from '../game/market'
 import { ALL_CARDS } from '../game/pack'
 import { QUIZ_COOLDOWN_MS, QUESTIONS_PER_RUN, rewardFor } from '../game/quiz'
 import type { CardView } from '../types'
@@ -22,6 +23,8 @@ interface GameState {
   claimedObjectives: string[]
   /** Quiz category id -> when it was last played, as epoch ms. */
   quizPlayedAt: Record<string, number>
+  /** Listing ids already bought, so sold stock does not come back. */
+  boughtListings: string[]
 
   canAfford: (price: number) => boolean
   /** Spend and record an opening. Returns false if the balance is short. */
@@ -41,6 +44,10 @@ interface GameState {
   quizReadyIn: (categoryId: string, now?: number) => number
   /** Bank a finished quiz run and start its cooldown. Returns euros earned. */
   finishQuiz: (categoryId: string, correct: number) => number
+  /** Buy a listing off the market. Returns false if it is gone or unaffordable. */
+  buyListing: (listingId: string) => boolean
+  /** Sell one copy to the market at today's bid. Returns euros earned. */
+  sellToMarket: (carId: string) => number
   reset: () => void
 }
 
@@ -66,6 +73,7 @@ export const useGame = create<GameState>()(
       lastFreePackAt: null,
       claimedObjectives: [],
       quizPlayedAt: {},
+      boughtListings: [],
 
       canAfford: (price) => get().balance >= price,
 
@@ -164,6 +172,39 @@ export const useGame = create<GameState>()(
         return earned
       },
 
+      buyListing: (listingId) => {
+        const state = get()
+        if (state.boughtListings.includes(listingId)) return false
+        const listing = listings().find((l) => l.id === listingId)
+        if (!listing || state.balance < listing.price) return false
+
+        set((s) => ({
+          balance: s.balance - listing.price,
+          collection: { ...s.collection, [listing.card.id]: (s.collection[listing.card.id] ?? 0) + 1 },
+          // Only this window's sold listings matter; older ids can never
+          // reappear, so drop them rather than growing the save forever.
+          boughtListings: [...s.boughtListings, listingId].filter((id) =>
+            id.startsWith(`${restockWindow()}:`),
+          ),
+        }))
+        return true
+      },
+
+      sellToMarket: (carId) => {
+        const state = get()
+        const card = CARD_BY_ID.get(carId)
+        const owned = state.collection[carId] ?? 0
+        // Same rule as quick-sell: never sell the last copy out of a collection.
+        if (!card || owned < 2) return 0
+
+        const price = bidPrice(card)
+        set((s) => ({
+          balance: s.balance + price,
+          collection: { ...s.collection, [carId]: owned - 1 },
+        }))
+        return price
+      },
+
       reset: () =>
         set({
           balance: STARTING_BALANCE,
@@ -172,6 +213,7 @@ export const useGame = create<GameState>()(
           lastFreePackAt: null,
           claimedObjectives: [],
           quizPlayedAt: {},
+          boughtListings: [],
         }),
     }),
     // Bumped: the old save carried a 10,000,000 balance from before there was

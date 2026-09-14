@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { useMemo, useState } from 'react'
 import { ALL_CARDS } from '../game/pack'
 import type { CardView } from '../types'
+import { BrandBadge } from './BrandBadge'
 import { CarCard } from './CarCard'
 
 type Filter = 'all' | 'bronze' | 'silver' | 'gold' | 'special' | 'rare' | 'unowned'
@@ -23,6 +24,7 @@ interface Props {
 }
 
 export function Catalog({ collection, onInspect }: Props) {
+  const [view, setView] = useState<'cars' | 'brands'>('brands')
   const [filter, setFilter] = useState<Filter>('all')
   const [make, setMake] = useState('all')
   const [sort, setSort] = useState<Sort>('rating')
@@ -67,6 +69,21 @@ export function Catalog({ collection, onInspect }: Props) {
   )
 
   const completion = Math.round((ownedCount / ALL_CARDS.length) * 100)
+
+  const brands = useMemo(() => {
+    const byMake = new Map<string, { make: string; owned: number; total: number }>()
+    for (const car of allCars) {
+      const row = byMake.get(car.make) ?? { make: car.make, owned: 0, total: 0 }
+      row.total++
+      if (car.owned) row.owned++
+      byMake.set(car.make, row)
+    }
+    // Marques you have made a start on first, then the biggest collections to
+    // chase, so the grid opens on what is actually in progress.
+    return [...byMake.values()].sort(
+      (a, b) => b.owned - a.owned || b.total - a.total || a.make.localeCompare(b.make),
+    )
+  }, [allCars])
 
   // Bucket by cardClass, not tier: a special carries tier 'gold', so counting
   // by tier put every special in the gold total and left special at 0 / 0.
@@ -120,6 +137,62 @@ export function Catalog({ collection, onInspect }: Props) {
         </div>
       </div>
 
+      <div className="mb-5 flex gap-2">
+        {([['brands', 'By brand'], ['cars', 'All cars']] as const).map(([v, label]) => (
+          <button
+            key={v}
+            type="button"
+            onClick={() => setView(v)}
+            className={`rounded-xl px-4 py-2 text-sm font-bold transition ${
+              view === v ? 'bg-white/15 text-white' : 'bg-white/5 text-white/45 hover:text-white/80'
+            }`}
+          >
+            {label}
+          </button>
+        ))}
+      </div>
+
+      {view === 'brands' ? (
+        <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-4">
+          {brands.map(({ make: brand, owned, total }) => {
+            const pct = Math.round((owned / total) * 100)
+            const complete = owned === total
+            return (
+              <button
+                key={brand}
+                type="button"
+                onClick={() => {
+                  setMake(brand)
+                  setFilter('all')
+                  setView('cars')
+                }}
+                className={`rounded-2xl border p-3 text-left transition hover:border-white/25 hover:bg-white/[0.06] ${
+                  complete
+                    ? 'border-gold-2/50 bg-gold-2/[0.07]'
+                    : 'border-white/10 bg-white/[0.03]'
+                }`}
+              >
+                <div className="flex items-center gap-3">
+                  <BrandBadge make={brand} size={44} />
+                  <div className="min-w-0">
+                    <div className="truncate text-sm font-extrabold">{brand}</div>
+                    <div className="text-xs tabular-nums text-white/50">
+                      {owned} / {total}
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-white/10">
+                  <div
+                    className={`h-full rounded-full ${complete ? 'bg-gold-2' : 'bg-gold-2/60'}`}
+                    style={{ width: `${pct}%` }}
+                  />
+                </div>
+              </button>
+            )
+          })}
+        </div>
+      ) : (
+      <>
       {/* Controls */}
       <div className="mb-5 space-y-3 rounded-lg bg-white/5 p-4">
         <div className="flex flex-wrap gap-2">
@@ -200,6 +273,8 @@ export function Catalog({ collection, onInspect }: Props) {
       <div className="mt-8 text-center text-xs text-white/40">
         Showing {visible.length} of {ALL_CARDS.length} cars
       </div>
+      </>
+      )}
     </div>
   )
 }

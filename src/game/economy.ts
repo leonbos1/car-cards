@@ -10,11 +10,12 @@ export const STARTING_BALANCE = 3_000
 export const FREE_PACK_COOLDOWN_MS = 24 * 60 * 60 * 1000
 
 /**
- * What a duplicate fetches.
+ * What a car is worth on paper.
  *
  * Doubles roughly every nine rating points, so a 95 is worth about thirty times
- * a 50 rather than the flat 600 every gold used to bring. Pack prices key off
- * this curve, which is the only reason they can scale with what is inside.
+ * a 50 rather than the flat 600 every gold used to bring. Everything else in
+ * the economy is quoted against this: the market trades around it, quick-sell
+ * pays a fraction of it, and pack prices key off it.
  */
 function baseValue(overall: number): number {
   return 18 * 2 ** ((overall - 50) / 9)
@@ -25,9 +26,21 @@ const RARE_MULTIPLIER = 2.2
 /** Specials are the jackpot, and are priced to feel like one. */
 const SPECIAL_MULTIPLIER = 7
 
-export function quickSellValue(card: CardView): number {
+/** The car's book value, before any buyer's or seller's margin. */
+export function bookValue(card: CardView): number {
   const multiplier = card.special ? SPECIAL_MULTIPLIER : card.rare ? RARE_MULTIPLIER : 1
   return Math.max(1, Math.round(baseValue(card.overall) * multiplier))
+}
+
+/**
+ * Quick-sell is the button for when you cannot be bothered: instant, no
+ * haggling, and a bad price. Taking a car to the market is worth more than
+ * twice as much, which is the point — it gives the market a reason to exist.
+ */
+export const QUICK_SELL_RATE = 0.4
+
+export function quickSellValue(card: CardView): number {
+  return Math.max(1, Math.round(bookValue(card) * QUICK_SELL_RATE))
 }
 
 export function formatEuros(amount: number): string {
