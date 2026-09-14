@@ -55,8 +55,20 @@ export function poolFor(pack: Pack, rare: boolean): CardView[] {
  * used to do — meant the free pack drew all eight cards from the combined pool,
  * where gold outnumbers bronze seven to one, and a hypercar could fall out of
  * the pack you get for nothing.
+ *
+ * A marque pack narrows its first `makeSlots` slots to one brand; the slots
+ * after that stay open, which is what makes it *at least* three of the marque.
  */
 export function slotPool(pack: Pack, slot: number, rare: boolean): CardView[] {
+  // Pools are a pure function of the pack and the roster, and openPack asks for
+  // them once per slot per open — thousands of times over in the tests. Without
+  // this cache every one of those is a full scan of a thousand cards.
+  let cached = SLOT_POOLS.get(pack)
+  if (!cached) SLOT_POOLS.set(pack, (cached = new Map()))
+  const key = `${slot}:${rare}`
+  const hit = cached.get(key)
+  if (hit) return hit
+
   const tier = pack.tiers[slot]
   // The last slot is the headline card, revealed last, so it can carry a floor.
   const isLast = slot === pack.tiers.length - 1
@@ -64,14 +76,22 @@ export function slotPool(pack: Pack, slot: number, rare: boolean): CardView[] {
     pack.minOverall ?? 0,
     isLast ? (pack.headlinerMinOverall ?? 0) : 0,
   )
-  return NON_SPECIAL.filter(
+  const brandOnly = pack.make !== undefined && slot < (pack.makeSlots ?? 0)
+  const pool = NON_SPECIAL.filter(
     (c) =>
       c.tier === tier &&
       c.rare === rare &&
       c.overall >= floor &&
-      (pack.maxOverall === undefined || c.overall <= pack.maxOverall),
+      (pack.maxOverall === undefined || c.overall <= pack.maxOverall) &&
+      (!brandOnly || c.make === pack.make),
   )
+  cached.set(key, pool)
+  return pool
 }
+
+// Keyed on the pack object rather than its id, so a pack built on the fly in a
+// test can never collide with one in the ladder.
+const SLOT_POOLS = new WeakMap<Pack, Map<string, CardView[]>>()
 
 /**
  * Open a pack. Guaranteed rares are filled first, the rest are rolled against

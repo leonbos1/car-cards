@@ -97,6 +97,13 @@ export interface Pack {
   maxOverall?: number
   /** A floor on the best card only, so a big pack always has a headline car. */
   headlinerMinOverall?: number
+  /**
+   * The marque this pack is built around. Its first `makeSlots` cards are drawn
+   * only from that marque; the rest are open, so the pack deals *at least* that
+   * many of the brand rather than exactly that many.
+   */
+  make?: string
+  makeSlots?: number
   /** Every card must be rare. */
   allRare?: boolean
   /** Card class used for the pack artwork. */

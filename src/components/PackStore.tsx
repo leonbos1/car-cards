@@ -1,8 +1,19 @@
 import { motion } from 'framer-motion'
-import { useEffect, useState } from 'react'
-import { PACKS, contentsLine, tierBreakdown } from '../data/packs'
+import { useEffect, useMemo, useState } from 'react'
+import {
+  LADDER,
+  MARQUE_PACKS,
+  MARQUE_PACK_PRICE,
+  MARQUE_PACK_SIZE,
+  MARQUE_PACK_SLOTS,
+  contentsLine,
+  tierBreakdown,
+} from '../data/packs'
 import { formatCountdown, formatEuros } from '../game/economy'
+import { ALL_CARDS } from '../game/pack'
+import { useGame } from '../store/useGame'
 import type { Pack } from '../types'
+import { BrandBadge } from './BrandBadge'
 import { CLASS_COLORS } from './CarCard'
 
 interface Props {
@@ -31,7 +42,7 @@ export function PackStore({ balance, freeReadyIn, welcomeClaimed, onBuy }: Props
         cars are worth — they are how you find cars, not how you make money.
       </p>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {PACKS.filter((pack) => !(pack.once && welcomeClaimed)).map((pack) => (
+        {LADDER.filter((pack) => !(pack.once && welcomeClaimed)).map((pack) => (
           <PackTile
             key={pack.id}
             pack={pack}
@@ -41,7 +52,98 @@ export function PackStore({ balance, freeReadyIn, welcomeClaimed, onBuy }: Props
           />
         ))}
       </div>
+
+      <MarquePacks balance={balance} onBuy={onBuy} />
     </div>
+  )
+}
+
+/**
+ * One pack per marque, all at the same price.
+ *
+ * Shown apart from the ladder and as a list rather than as twenty more tiles:
+ * these are not steps up from each other, they are the same pack aimed at
+ * different brands, and the thing a player is choosing between is which brand
+ * they want — so the badge, the marque and how much of it you already hold are
+ * what each row leads with.
+ */
+function MarquePacks({ balance, onBuy }: { balance: number; onBuy: (p: Pack) => void }) {
+  const collection = useGame((s) => s.collection)
+  // Every marque pack is built from one template, so any of them describes all.
+  const spec = MARQUE_PACKS[0]
+
+  const rows = useMemo(
+    () =>
+      MARQUE_PACKS.map((pack) => {
+        const cars = ALL_CARDS.filter((c) => c.make === pack.make)
+        return {
+          pack,
+          total: cars.length,
+          owned: cars.filter((c) => (collection[c.id] ?? 0) > 0).length,
+          // What this pack can actually reach, which is not the marque's best
+          // car when its best car sits above the cap.
+          reach: Math.max(
+            ...cars
+              .filter((c) => !c.special && c.overall <= (pack.maxOverall ?? 99))
+              .map((c) => c.overall),
+          ),
+        }
+      }),
+    [collection],
+  )
+
+  return (
+    <section className="mt-10">
+      <h2 className="text-2xl font-extrabold tracking-tight">Marque packs</h2>
+      {/* Read off a real pack, so what is advertised here cannot drift from
+          what the packs deal — the same rule the odds panel above follows. */}
+      <p className="mb-1 mt-1 text-sm text-white/45">
+        {formatEuros(MARQUE_PACK_PRICE)} each. {MARQUE_PACK_SIZE} gold cars, at least{' '}
+        {MARQUE_PACK_SLOTS} of them from the marque. {spec.guaranteedRare} guaranteed rare, then{' '}
+        {(spec.rareChance * 100).toFixed(0)}% on the rest, one card rated{' '}
+        {spec.headlinerMinOverall}+, nothing above {spec.maxOverall}, and no specials.
+      </p>
+      <p className="mb-4 text-xs text-white/35">
+        The supercar marques have no pack — too few of their cars sit under the rating cap. Those
+        you buy on the market, one at a time.
+      </p>
+
+      <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
+        {rows.map(({ pack, owned, total, reach }) => {
+          const afford = balance >= pack.price
+          return (
+            <li key={pack.id}>
+              <button
+                type="button"
+                disabled={!afford}
+                onClick={() => onBuy(pack)}
+                className={`flex w-full items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.03] p-3 text-left transition ${
+                  afford ? 'hover:border-gold-2/50 hover:bg-white/[0.06]' : 'opacity-45'
+                }`}
+              >
+                <BrandBadge make={pack.make!} size={44} />
+                <span className="min-w-0 flex-1">
+                  <span className="block truncate text-sm font-bold">{pack.make}</span>
+                  <span className="block text-xs text-white/45">
+                    <span className="tabular-nums">
+                      {owned} of {total}
+                    </span>{' '}
+                    collected · best {reach}
+                  </span>
+                </span>
+                <span
+                  className={`shrink-0 rounded-lg px-2.5 py-1.5 text-xs font-extrabold tabular-nums ${
+                    afford ? 'bg-gold-2 text-black' : 'bg-white/10 text-white/40'
+                  }`}
+                >
+                  {formatEuros(pack.price)}
+                </span>
+              </button>
+            </li>
+          )
+        })}
+      </ul>
+    </section>
   )
 }
 

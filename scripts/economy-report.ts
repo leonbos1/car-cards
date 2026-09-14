@@ -65,7 +65,7 @@ function main() {
     }
 
     console.log(
-      `${pack.name.padEnd(16)} ${formatEuros(pack.price).padStart(11)}  ` +
+      `${pack.name.padEnd(20)} ${formatEuros(pack.price).padStart(11)}  ` +
         `${formatEuros(Math.round(ev)).padStart(13)}   ` +
         `${(pack.price ? `${(ret * 100).toFixed(0)}%` : '—').padStart(6)}   ` +
         `${String(ceiling).padStart(13)}   ${String(smallestPool).padStart(13)}`,
@@ -73,7 +73,7 @@ function main() {
   }
 
   console.log('\ncontents')
-  for (const pack of PACKS) console.log(`  ${pack.name.padEnd(16)} ${contentsLine(pack)}`)
+  for (const pack of PACKS) console.log(`  ${pack.name.padEnd(20)} ${contentsLine(pack)}`)
 
   // The repeatable pack is the daily one; the welcome pack is a one-off and
   // must not be mistaken for income.
