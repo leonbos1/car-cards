@@ -1,6 +1,12 @@
 import { motion } from 'framer-motion'
 import { useEffect, useMemo, useState } from 'react'
 import { bookValue, formatCountdown, formatEuros } from '../game/economy'
+import {
+  contracts,
+  matchesWant,
+  nextContractsIn,
+  type Contract,
+} from '../game/contracts'
 import { bidPrice, listings, nextRestockIn, pricingOf, priceMultiplier } from '../game/market'
 import { ALL_CARDS } from '../game/pack'
 import { useGame } from '../store/useGame'
@@ -9,7 +15,7 @@ import { CLASS_COLORS } from './CarCard'
 
 const CARD_BY_ID = new Map(ALL_CARDS.map((c) => [c.id, c]))
 
-type Side = 'buy' | 'sell'
+type Side = 'buy' | 'sell' | 'wanted'
 type Filter = 'all' | 'spares' | 'bronze' | 'silver' | 'gold' | 'rare' | 'special'
 type Sort = 'value' | 'rating' | 'name'
 
@@ -29,6 +35,8 @@ export function Market({ onInspect }: { onInspect: (card: CardView) => void }) {
   const boughtListings = useGame((s) => s.boughtListings)
   const buyListing = useGame((s) => s.buyListing)
   const sellToMarket = useGame((s) => s.sellToMarket)
+  const fulfilledContracts = useGame((s) => s.fulfilledContracts)
+  const fulfilContract = useGame((s) => s.fulfilContract)
 
   const [side, setSide] = useState<Side>('buy')
   const [filter, setFilter] = useState<Filter>('all')
@@ -69,6 +77,31 @@ export function Market({ onInspect }: { onInspect: (card: CardView) => void }) {
       })
   }, [collection, tick])
 
+  const open = useMemo(() => {
+    void tick
+    const done = new Set(fulfilledContracts)
+    return contracts().filter((c) => !done.has(c.id))
+  }, [fulfilledContracts, tick])
+
+  /**
+   * The cheapest car you own that fits each request.
+   *
+   * Handing over the cheapest qualifying car is the good play, so the row
+   * offers it directly rather than making you go and work it out.
+   */
+  const bestFor = useMemo(() => {
+    const map = new Map<string, { card: CardView; bid: number }>()
+    for (const contract of open) {
+      let best: { card: CardView; bid: number } | undefined
+      for (const row of stock) {
+        if (!matchesWant(row.card, contract.want)) continue
+        if (!best || row.bid < best.bid) best = { card: row.card, bid: row.bid }
+      }
+      if (best) map.set(contract.id, best)
+    }
+    return map
+  }, [open, stock])
+
   const sellable = useMemo(() => {
     const needle = query.trim().toLowerCase()
     const rows = stock.filter((row) => {
@@ -100,7 +133,7 @@ export function Market({ onInspect }: { onInspect: (card: CardView) => void }) {
       </p>
 
       <div className="mb-5 flex gap-2">
-        {(['buy', 'sell'] as Side[]).map((s) => (
+        {(['buy', 'sell', 'wanted'] as Side[]).map((s) => (
           <button
             key={s}
             type="button"
@@ -109,17 +142,45 @@ export function Market({ onInspect }: { onInspect: (card: CardView) => void }) {
               side === s ? 'bg-white/15 text-white' : 'bg-white/5 text-white/45 hover:text-white/80'
             }`}
           >
-            {s === 'buy' ? `Buy (${board.length})` : `Sell (${stock.length})`}
+            {s === 'buy'
+              ? `Buy (${board.length})`
+              : s === 'sell'
+                ? `Sell (${stock.length})`
+                : `Wanted (${open.length})`}
           </button>
         ))}
-        {side === 'buy' && (
+        {side !== 'sell' && (
           <span className="ml-auto self-center text-xs text-white/35">
-            New stock in {formatCountdown(nextRestockIn())}
+            {side === 'buy'
+              ? `New stock in ${formatCountdown(nextRestockIn())}`
+              : `New requests in ${formatCountdown(nextContractsIn())}`}
           </span>
         )}
       </div>
 
-      {side === 'buy' ? (
+      {side === 'wanted' ? (
+        open.length ? (
+          <>
+            <p className="mb-4 text-sm text-white/45">
+              Buyers pay over the odds for a car that fits. The car goes to them, so the trick is
+              working out the cheapest thing you own that still qualifies.
+            </p>
+            <ul className="space-y-2">
+              {open.map((contract) => (
+                <ContractRow
+                  key={contract.id}
+                  contract={contract}
+                  best={bestFor.get(contract.id)}
+                  onInspect={onInspect}
+                  onFulfil={(carId) => fulfilContract(contract.id, carId)}
+                />
+              ))}
+            </ul>
+          </>
+        ) : (
+          <Empty>Every request filled. New ones arrive in {formatCountdown(nextContractsIn())}.</Empty>
+        )
+      ) : side === 'buy' ? (
         board.length ? (
           <ul className="space-y-2">
             {board.map((listing) => {
@@ -277,6 +338,98 @@ export function Market({ onInspect }: { onInspect: (card: CardView) => void }) {
         </Empty>
       )}
     </div>
+  )
+}
+
+function ContractRow({
+  contract,
+  best,
+  onFulfil,
+  onInspect,
+}: {
+  contract: Contract
+  best?: { card: CardView; bid: number }
+  onFulfil: (carId: string) => void
+  onInspect: (card: CardView) => void
+}) {
+  const [confirming, setConfirming] = useState(false)
+  // Worth doing only if the fee beats what a dealer would pay for the same car.
+  const gain = best ? contract.reward - best.bid : 0
+
+  return (
+    <li className="rounded-xl border border-white/10 bg-white/[0.03] p-3">
+      <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
+        <div className="min-w-0 flex-1">
+          <div className="text-sm font-bold">{contract.label}</div>
+          <div className="text-xs text-white/45">
+            {best ? (
+              <>
+                you have{' '}
+                <button
+                  type="button"
+                  onClick={() => onInspect(best.card)}
+                  className="font-semibold text-white/70 underline decoration-white/20 underline-offset-2"
+                >
+                  {best.card.make} {best.card.model}
+                </button>{' '}
+                · worth {formatEuros(best.bid)} to a dealer
+              </>
+            ) : (
+              'nothing in your garage fits this one yet'
+            )}
+          </div>
+        </div>
+        <div className="flex shrink-0 flex-col items-end gap-1">
+          {confirming && best ? (
+            <div className="flex items-center gap-1.5">
+              <button
+                type="button"
+                onClick={() => {
+                  onFulfil(best.card.id)
+                  setConfirming(false)
+                }}
+                className="rounded-lg bg-gold-2 px-3 py-1.5 text-xs font-extrabold text-black transition hover:brightness-110"
+              >
+                Hand it over
+              </button>
+              <button
+                type="button"
+                onClick={() => setConfirming(false)}
+                className="rounded-lg bg-white/10 px-3 py-1.5 text-xs font-bold text-white/70 transition hover:bg-white/20"
+              >
+                Keep
+              </button>
+            </div>
+          ) : (
+            <>
+              <button
+                type="button"
+                disabled={!best}
+                onClick={() => setConfirming(true)}
+                className="rounded-lg bg-gold-2 px-3 py-1.5 text-xs font-extrabold tabular-nums text-black transition hover:brightness-110 disabled:cursor-not-allowed disabled:bg-white/10 disabled:text-white/40"
+              >
+                {formatEuros(contract.reward)}
+              </button>
+              {best && (
+                <span
+                  className={`text-[11px] font-bold tabular-nums ${
+                    gain > 0 ? 'text-emerald-400' : 'text-red-400'
+                  }`}
+                >
+                  {gain > 0 ? '+' : ''}
+                  {formatEuros(gain)} vs dealer
+                </span>
+              )}
+            </>
+          )}
+        </div>
+      </div>
+      {confirming && best && (
+        <p className="mt-2 text-xs text-amber-300">
+          Hands over your {best.card.make} {best.card.model}. It leaves your collection.
+        </p>
+      )}
+    </li>
   )
 }
 

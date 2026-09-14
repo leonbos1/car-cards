@@ -1,13 +1,17 @@
 import type { CardView } from '../types'
 
 /**
- * The stake you start with. Enough for a few cheap packs, not enough to skip
- * the game: everything after this has to be earned.
+ * The stake you start with. Enough to reach any pack below Premium Gold on the
+ * first tap — at €3.000 the store opened with half its shelves greyed out —
+ * without being enough to skip the game.
  */
-export const STARTING_BALANCE = 3_000
+export const STARTING_BALANCE = 5_000
 
-/** The free pack is the faucet, so it is the one thing on a clock. */
-export const FREE_PACK_COOLDOWN_MS = 24 * 60 * 60 * 1000
+/**
+ * The free pack is a faucet, so it stays on a clock — but a whole day between
+ * turns left a new player with about five minutes of game.
+ */
+export const FREE_PACK_COOLDOWN_MS = 8 * 60 * 60 * 1000
 
 /**
  * How many rating points it takes to double a car's value, by band.

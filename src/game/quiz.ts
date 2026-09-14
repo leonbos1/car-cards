@@ -4,21 +4,21 @@ import { QUIZ_CATEGORIES, type QuizCategory, type QuizQuestion } from '../data/q
 export const QUESTIONS_PER_RUN = 5
 
 /**
- * One run per category per day.
+ * Two runs per category per day.
  *
- * The quiz is a faucet, so like the daily pack it has to be on a clock. Without
- * this you could sit and answer the same eighteen questions until you could
- * afford a Hypercar Pack, and the economy would mean nothing.
+ * The quiz is a faucet, so like the free pack it has to be on a clock — without
+ * one you could answer the same eighteen questions until you could afford a
+ * hypercar. A full day between turns was simply too long to leave the player
+ * with nothing to do.
  */
-export const QUIZ_COOLDOWN_MS = 24 * 60 * 60 * 1000
+export const QUIZ_COOLDOWN_MS = 12 * 60 * 60 * 1000
 
 export type Rng = () => number
 
 /** The most a perfect run of every category can pay in one day. */
-export const MAX_DAILY_QUIZ_REWARD = QUIZ_CATEGORIES.reduce(
-  (sum, c) => sum + c.reward * QUESTIONS_PER_RUN,
-  0,
-)
+export const MAX_DAILY_QUIZ_REWARD =
+  QUIZ_CATEGORIES.reduce((sum, c) => sum + c.reward * QUESTIONS_PER_RUN, 0) *
+  (86_400_000 / QUIZ_COOLDOWN_MS)
 
 export interface QuizRun {
   category: QuizCategory

@@ -27,6 +27,8 @@ export function App() {
   const packsOpened = useGame((s) => s.packsOpened)
   const buy = useGame((s) => s.buy)
   const claimFreePack = useGame((s) => s.claimFreePack)
+  const claimWelcomePack = useGame((s) => s.claimWelcomePack)
+  const welcomeClaimed = useGame((s) => s.welcomeClaimed)
   const lastFreePackAt = useGame((s) => s.lastFreePackAt)
   const add = useGame((s) => s.add)
   const sellOne = useGame((s) => s.sellOne)
@@ -44,7 +46,12 @@ export function App() {
 
   const handleBuy = useCallback(
     (pack: Pack) => {
-      if (pack.free ? !claimFreePack() : !buy(pack.price)) return
+      const taken = pack.once
+        ? claimWelcomePack()
+        : pack.free
+          ? claimFreePack()
+          : buy(pack.price)
+      if (!taken) return
       const cards = openPack(pack)
       // Snapshot ownership before adding, so NEW badges reflect the pre-pack state.
       const before = useGame.getState().collection
@@ -57,7 +64,7 @@ export function App() {
       add(cards)
       setOpening({ pack, pulls })
     },
-    [buy, add, claimFreePack],
+    [buy, add, claimFreePack, claimWelcomePack],
   )
 
   return (
@@ -93,6 +100,7 @@ export function App() {
         <PackStore
           balance={balance}
           freeReadyIn={freeReadyIn}
+          welcomeClaimed={welcomeClaimed}
           onBuy={handleBuy}
         />
       ) : tab === 'market' ? (
@@ -118,9 +126,7 @@ export function App() {
         <PackOpening
           pack={opening.pack}
           pulls={opening.pulls}
-          canAffordAnother={
-            opening.pack.free ? false : balance >= opening.pack.price
-          }
+          canAffordAnother={opening.pack.free ? false : balance >= opening.pack.price}
           onOpenAnother={(pack) => {
             setOpening(null)
             handleBuy(pack)

@@ -31,8 +31,8 @@ const ratedAtLeast = (owned: CardView[], rating: number) =>
 
 const BRONZE_TOTAL = ALL_CARDS.filter((c) => c.cardClass === 'bronze').length
 
-/** Ordered easiest first, which is also the order the panel shows them in. */
-export const OBJECTIVES: Objective[] = [
+/** The milestone ladder: the big, memorable moments. */
+const MILESTONES: Objective[] = [
   {
     id: 'collect-10', name: 'Getting started', detail: 'Own 10 different cars',
     reward: 1_000, target: 10, progress: (s) => s.owned.length,
@@ -115,6 +115,76 @@ export const OBJECTIVES: Objective[] = [
     reward: 80_000, target: 500, progress: (s) => s.owned.length,
   },
 ]
+
+/**
+ * Goals generated from the roster, to keep one always within reach.
+ *
+ * The hand-written list above is a milestone ladder, and its rungs are far
+ * apart — a new player runs out of road at 58 cars with the next goal at 100.
+ * These fill the gaps. They are deliberately small rewards: there are a lot of
+ * them, and they are meant to give direction rather than to be the income.
+ */
+function generated(): Objective[] {
+  const tradeable = ALL_CARDS.filter((c) => !c.special)
+  const out: Objective[] = []
+
+  const countBy = <T,>(items: T[], key: (item: T) => string) => {
+    const counts = new Map<string, number>()
+    for (const item of items) counts.set(key(item), (counts.get(key(item)) ?? 0) + 1)
+    return counts
+  }
+
+  // A rung every so often through the middle of the collection, where the
+  // hand-written ladder jumps from 50 straight to 100 and then to 250.
+  for (const target of [75, 150, 200, 350, 400]) {
+    out.push({
+      id: `collect-${target}`,
+      name: `${target} in the garage`,
+      detail: `Own ${target} different cars`,
+      reward: target * 25,
+      target,
+      progress: (s) => s.owned.length,
+    })
+  }
+
+  // Marques big enough that collecting them is a real pursuit.
+  const perMake = countBy(tradeable, (c) => c.make)
+  const bigMakes = [...perMake.entries()]
+    .filter(([, n]) => n >= 12)
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+
+  for (const [make, total] of bigMakes) {
+    for (const target of [5, 15]) {
+      if (total < target) continue
+      out.push({
+        id: `make-${make.toLowerCase().replace(/[^a-z0-9]+/g, '-')}-${target}`,
+        name: make,
+        detail: `Own ${target} ${make} cars`,
+        reward: target * 220,
+        target,
+        progress: (s) => s.owned.filter((c) => c.make === make).length,
+      })
+    }
+  }
+
+  // Breadth rather than depth: one car from each of several countries.
+  for (const target of [5, 10, 15]) {
+    out.push({
+      id: `countries-${target}`,
+      name: 'Well travelled',
+      detail: `Own cars from ${target} different countries`,
+      reward: target * 600,
+      target,
+      progress: (s) => new Set(s.owned.map((c) => c.country)).size,
+    })
+  }
+
+  return out
+}
+
+export const OBJECTIVES: Objective[] = [...MILESTONES, ...generated()].sort(
+  (a, b) => a.reward - b.reward,
+)
 
 export const TOTAL_OBJECTIVE_REWARD = OBJECTIVES.reduce((sum, o) => sum + o.reward, 0)
 

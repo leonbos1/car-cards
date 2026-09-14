@@ -3,6 +3,7 @@ import { persist } from 'zustand/middleware'
 import { FREE_PACK_COOLDOWN_MS, STARTING_BALANCE, quickSellValue } from '../game/economy'
 import { OBJECTIVES, objectiveProgress } from '../game/objectives'
 import { QUIZ_CATEGORY_BY_ID } from '../data/quiz'
+import { contractWindow, contracts, matchesWant } from '../game/contracts'
 import { bidPrice, listings, restockWindow } from '../game/market'
 import { ALL_CARDS } from '../game/pack'
 import { QUIZ_COOLDOWN_MS, QUESTIONS_PER_RUN, rewardFor } from '../game/quiz'
@@ -25,12 +26,18 @@ interface GameState {
   quizPlayedAt: Record<string, number>
   /** Listing ids already bought, so sold stock does not come back. */
   boughtListings: string[]
+  /** Contract ids already filled, so a fee is paid once. */
+  fulfilledContracts: string[]
+  /** The welcome pack is a one-off, so it is remembered rather than timed. */
+  welcomeClaimed: boolean
 
   canAfford: (price: number) => boolean
   /** Spend and record an opening. Returns false if the balance is short. */
   buy: (price: number) => boolean
   /** Take the free pack if the cooldown has elapsed. */
   claimFreePack: () => boolean
+  /** Take the one-off welcome pack. Returns false if it is already spent. */
+  claimWelcomePack: () => boolean
   /** Milliseconds until the free pack is available; 0 when it is ready. */
   freePackReadyIn: (now?: number) => number
   add: (cards: CardView[]) => void
@@ -51,6 +58,11 @@ interface GameState {
    * Returns euros earned.
    */
   sellToMarket: (carId: string) => number
+  /**
+   * Hand a car to a buyer's request. The car leaves the collection and the fee
+   * is paid. Returns euros earned, or 0 if the car does not qualify.
+   */
+  fulfilContract: (contractId: string, carId: string) => number
   reset: () => void
 }
 
@@ -90,6 +102,8 @@ export const useGame = create<GameState>()(
       claimedObjectives: [],
       quizPlayedAt: {},
       boughtListings: [],
+      fulfilledContracts: [],
+      welcomeClaimed: false,
 
       canAfford: (price) => get().balance >= price,
 
@@ -109,6 +123,12 @@ export const useGame = create<GameState>()(
       claimFreePack: () => {
         if (get().freePackReadyIn() > 0) return false
         set((s) => ({ lastFreePackAt: Date.now(), packsOpened: s.packsOpened + 1 }))
+        return true
+      },
+
+      claimWelcomePack: () => {
+        if (get().welcomeClaimed) return false
+        set((s) => ({ welcomeClaimed: true, packsOpened: s.packsOpened + 1 }))
         return true
       },
 
@@ -223,6 +243,30 @@ export const useGame = create<GameState>()(
         return price
       },
 
+      fulfilContract: (contractId, carId) => {
+        const state = get()
+        if (state.fulfilledContracts.includes(contractId)) return 0
+
+        const contract = contracts().find((c) => c.id === contractId)
+        const card = CARD_BY_ID.get(carId)
+        if (!contract || !card) return 0
+        // Checked here rather than in the component, so the fee cannot be
+        // claimed with a car that does not actually meet the request.
+        if ((state.collection[carId] ?? 0) < 1) return 0
+        if (!matchesWant(card, contract.want)) return 0
+
+        set((s) => ({
+          balance: s.balance + contract.reward,
+          collection: withOneFewer(s.collection, carId),
+          // Only this window's ids can still match, so older ones are dropped
+          // rather than growing the save forever.
+          fulfilledContracts: [...s.fulfilledContracts, contractId].filter((id) =>
+            id.startsWith(`${contractWindow()}:`),
+          ),
+        }))
+        return contract.reward
+      },
+
       reset: () =>
         set({
           balance: STARTING_BALANCE,
@@ -232,6 +276,8 @@ export const useGame = create<GameState>()(
           claimedObjectives: [],
           quizPlayedAt: {},
           boughtListings: [],
+          fulfilledContracts: [],
+          welcomeClaimed: false,
         }),
     }),
     // Bumped: the old save carried a 10,000,000 balance from before there was

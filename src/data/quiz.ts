@@ -31,7 +31,7 @@ export const QUIZ_CATEGORIES: QuizCategory[] = [
     id: 'general',
     name: 'Cars in general',
     blurb: 'Badges, brands and the basics.',
-    reward: 120,
+    reward: 85,
     questions: [
       {
         id: 'g-star', prompt: 'Which marque uses a three-pointed star as its badge?',
@@ -130,7 +130,7 @@ export const QUIZ_CATEGORIES: QuizCategory[] = [
     id: 'alfa',
     name: 'Alfa Romeo',
     blurb: 'Milan, the cloverleaf and the serpent.',
-    reward: 150,
+    reward: 105,
     questions: [
       {
         id: 'a-city', prompt: 'In which city was Alfa Romeo founded?',
@@ -234,7 +234,7 @@ export const QUIZ_CATEGORIES: QuizCategory[] = [
     id: 'racing',
     name: 'Racing',
     blurb: 'Formula 1, IndyCar, Le Mans and rally.',
-    reward: 150,
+    reward: 105,
     questions: [
       {
         id: 'r-indy', prompt: 'Which race is nicknamed "The Greatest Spectacle in Racing"?',
@@ -343,7 +343,7 @@ export const QUIZ_CATEGORIES: QuizCategory[] = [
     id: 'mechanic',
     name: 'Mechanics',
     blurb: 'What the parts actually do.',
-    reward: 180,
+    reward: 125,
     questions: [
       {
         id: 'm-turbo', prompt: 'What spins the turbine in a turbocharger?',

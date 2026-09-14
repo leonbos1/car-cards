@@ -1,6 +1,9 @@
 import { useState } from 'react'
+import { PACK_BY_ID, contentsLine } from '../data/packs'
 import { ALL_CARDS } from '../game/pack'
 import { ownedCards, useGame } from '../store/useGame'
+
+const DAILY_PACK = PACK_BY_ID.get('daily-free')!
 
 interface Props {
   onReset: () => void
@@ -57,7 +60,7 @@ export function Settings({ onReset }: Props) {
               rare and exotic vehicles.
             </p>
             <p>
-              The free daily pack contains: <strong>1 Gold, 4 Silver, 3 Bronze</strong>
+              The free daily pack contains: <strong>{contentsLine(DAILY_PACK)}</strong>
             </p>
             <p>Gold cars are extremely rare - plan your collection carefully!</p>
             <div className="mt-4 rounded-lg border border-white/10 bg-white/5 p-3">

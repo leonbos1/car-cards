@@ -18,6 +18,24 @@ function slots(...groups: [count: number, tier: Tier][]): Tier[] {
  */
 export const PACKS: Pack[] = [
   {
+    // The first thing a new player ever sees. It exists because the game used
+    // to open on an empty garage with €3.000 and half the store greyed out —
+    // and because a starting collection is what makes the market and the
+    // buyers' requests usable in the first minute rather than on day three.
+    id: 'welcome',
+    name: 'Welcome Pack',
+    price: 0,
+    free: true,
+    once: true,
+    tiers: slots([8, 'bronze'], [9, 'silver'], [3, 'gold']),
+    guaranteedRare: 1,
+    rareChance: 0.12,
+    specialChance: 0,
+    maxOverall: 84,
+    art: 'gold',
+    blurb: 'Twenty cars to get you started. Once only.',
+  },
+  {
     id: 'daily-free',
     name: 'Daily Pack',
     price: 0,
@@ -29,7 +47,7 @@ export const PACKS: Pack[] = [
     // The free pack pays the bills; it does not hand out the good stuff.
     maxOverall: 84,
     art: 'silver',
-    blurb: 'Free every 24 hours. Sell what you do not want.',
+    blurb: 'Free every 8 hours. Sell what you do not want.',
   },
   {
     id: 'bronze',

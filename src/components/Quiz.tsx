@@ -70,7 +70,7 @@ export function Quiz() {
           <p className="mt-2 text-sm text-white/50">
             {correct === run.questions.length
               ? 'Perfect run.'
-              : `Back tomorrow for another go at ${run.category.name.toLowerCase()}.`}
+              : `Back in ${QUIZ_COOLDOWN_MS / 3_600_000} hours for another go at ${run.category.name.toLowerCase()}.`}
           </p>
           <button
             type="button"

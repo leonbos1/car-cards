@@ -103,6 +103,8 @@ export interface Pack {
   art: CardClass
   /** Openable once per cooldown rather than bought. */
   free?: boolean
+  /** Openable exactly once, ever. The welcome pack. */
+  once?: boolean
   /** One line in the store saying what the pack is for. */
   blurb: string
 }

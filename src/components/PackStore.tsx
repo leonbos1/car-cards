@@ -9,10 +9,12 @@ interface Props {
   balance: number
   /** Milliseconds until the free pack returns; 0 when it is ready. */
   freeReadyIn: number
+  /** The one-off welcome pack disappears once taken. */
+  welcomeClaimed: boolean
   onBuy: (pack: Pack) => void
 }
 
-export function PackStore({ balance, freeReadyIn, onBuy }: Props) {
+export function PackStore({ balance, freeReadyIn, welcomeClaimed, onBuy }: Props) {
   // The countdown has to move on its own, so tick while a pack is on cooldown.
   const [, setNow] = useState(0)
   useEffect(() => {
@@ -29,12 +31,12 @@ export function PackStore({ balance, freeReadyIn, onBuy }: Props) {
         cars are worth — they are how you find cars, not how you make money.
       </p>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-        {PACKS.map((pack) => (
+        {PACKS.filter((pack) => !(pack.once && welcomeClaimed)).map((pack) => (
           <PackTile
             key={pack.id}
             pack={pack}
-            locked={pack.free ? freeReadyIn > 0 : balance < pack.price}
-            waitLabel={pack.free && freeReadyIn > 0 ? formatCountdown(freeReadyIn) : null}
+            locked={pack.once ? false : pack.free ? freeReadyIn > 0 : balance < pack.price}
+            waitLabel={pack.free && !pack.once && freeReadyIn > 0 ? formatCountdown(freeReadyIn) : null}
             onBuy={onBuy}
           />
         ))}
@@ -57,7 +59,9 @@ function PackTile({
   const [showOdds, setShowOdds] = useState(false)
   const [deep, mid, light] = CLASS_COLORS[pack.art]
 
-  const buttonLabel = pack.free
+  const buttonLabel = pack.once
+    ? 'Open your welcome pack'
+    : pack.free
     ? waitLabel
       ? `Back in ${waitLabel}`
       : 'Open free pack'
