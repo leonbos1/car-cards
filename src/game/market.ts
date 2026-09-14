@@ -18,6 +18,20 @@ import type { CardView } from '../types'
 
 /** Bots buy at this fraction of book value — their margin for taking it. */
 export const BID_RATE = 0.92
+/**
+ * What a bot pays for a hypercar, as a fraction of book.
+ *
+ * A dealer will take a hot hatch off your hands at close to book because it
+ * sells next week; a seven-figure exotic sits on the forecourt for months, and
+ * the margin reflects that. It is also what stops supercar flipping becoming
+ * the only sensible way to play: at a flat 92% the best-case round trip on a
+ * €100.000 car returns about a quarter of its value, which dwarfs every other
+ * source of income in the game.
+ */
+export const EXOTIC_BID_RATE = 0.78
+/** The taper starts above the dearest card any pack can deal (a 92 rare). */
+const EXOTIC_FROM = 3_000
+const EXOTIC_FULL = 40_000
 /** The mid-point bots ask. Individual listings vary either side of it. */
 export const ASK_RATE = 1.12
 
@@ -36,13 +50,26 @@ export const LISTING_COUNT = 10
 /** New stock arrives this often, which is what paces trading profit. */
 export const RESTOCK_MS = 20 * 60 * 1000
 
-/** Deterministic hash, so a price depends only on the car and the day. */
+/**
+ * Deterministic hash, so a price depends only on the car and the day.
+ *
+ * The trailing avalanche is not optional. FNV alone propagates bits upward
+ * only, and this reads the top bits as a fraction — so keys differing in their
+ * last character, which is exactly how the slot keys are built, came out nearly
+ * equal. Every listing on a board ended up with the same markup: ten bargains,
+ * then ten traps, instead of a board worth reading.
+ */
 function hash(text: string): number {
   let h = 2166136261
   for (let i = 0; i < text.length; i++) {
     h ^= text.charCodeAt(i)
     h = Math.imul(h, 16777619)
   }
+  h ^= h >>> 16
+  h = Math.imul(h, 2246822507)
+  h ^= h >>> 13
+  h = Math.imul(h, 3266489909)
+  h ^= h >>> 16
   return (h >>> 0) / 0x100000000
 }
 
@@ -71,9 +98,39 @@ export function priceMultiplier(carId: string, now = Date.now()): number {
   return 1 + (hash(`${carId}@${marketDay(now)}`) * 2 - 1) * DAILY_SWING
 }
 
+/**
+ * The dealer's margin on one car, widening as the car gets dearer.
+ *
+ * Only ever lowers the bid, so the no-arbitrage rule — the keenest ask still
+ * beats the best bid — gets safer rather than riskier.
+ */
+export function bidRateFor(book: number): number {
+  const t = Math.min(1, Math.max(0, (book - EXOTIC_FROM) / (EXOTIC_FULL - EXOTIC_FROM)))
+  return BID_RATE - t * (BID_RATE - EXOTIC_BID_RATE)
+}
+
 /** What a bot pays you for this car right now. */
 export function bidPrice(card: CardView, now = Date.now()): number {
-  return Math.max(1, Math.round(bookValue(card) * priceMultiplier(card.id, now) * BID_RATE))
+  const book = bookValue(card)
+  return Math.max(1, Math.round(book * priceMultiplier(card.id, now) * bidRateFor(book)))
+}
+
+/**
+ * Where a listing's markup sits in the range that can actually occur.
+ *
+ * Every listing asks more than a dealer will pay — that is the spread, and it
+ * is the point. What varies is how much more: ASK_RATE * SKEW spans roughly -3%
+ * to +46% over a car's value today, so judging a listing against 0% would call
+ * nothing a bargain. These are the quartiles of what the board can produce.
+ */
+export const KEEN_MARKUP = 1.1
+export const STEEP_MARKUP = 1.33
+
+export type Pricing = 'keen' | 'fair' | 'steep'
+
+export function pricingOf(deal: number): Pricing {
+  if (deal < KEEN_MARKUP) return 'keen'
+  return deal > STEEP_MARKUP ? 'steep' : 'fair'
 }
 
 export interface Listing {
@@ -85,23 +142,34 @@ export interface Listing {
   deal: number
 }
 
-const TRADEABLE = ALL_CARDS
+const ORDINARY = ALL_CARDS.filter((c) => !c.special)
+const SPECIALS = ALL_CARDS.filter((c) => c.special)
+
+/**
+ * Chance any one slot holds a special rather than an ordinary car.
+ *
+ * Ten slots turning over every twenty minutes puts a special on the board about
+ * once every three hours. They used to be excluded entirely, on the grounds
+ * that they should be pulled rather than shopped for — but at a 0.4% pack drop
+ * that meant roughly €3.000.000 of packs per special, so in practice nobody was
+ * ever going to own one. Listing them rarely, at their full and enormous price,
+ * makes them the thing you save for instead of a lottery you cannot win.
+ */
+const SPECIAL_LISTING_CHANCE = 0.01
 
 /**
  * The cars on the board right now.
  *
  * Generated from the restock window so the board is the same every time it is
- * drawn, changes on its own schedule, and needs nothing saved. Specials are
- * excluded: the market would otherwise be a way to buy the rarest cards
- * outright, and they are supposed to be pulled, not shopped for.
+ * drawn, changes on its own schedule, and needs nothing saved.
  */
 export function listings(now = Date.now()): Listing[] {
   const window = restockWindow(now)
-  const pool = TRADEABLE.filter((c) => !c.special)
   const out: Listing[] = []
 
   for (let slot = 0; slot < LISTING_COUNT; slot++) {
     const seed = `${window}:${slot}`
+    const pool = hash(`rare:${seed}`) < SPECIAL_LISTING_CHANCE ? SPECIALS : ORDINARY
     const card = pool[Math.floor(hash(`car:${seed}`) * pool.length)]
     // Spread asks either side of the mid so the board holds both bargains and
     // traps, and reading which is which is the actual game. The floor is set so

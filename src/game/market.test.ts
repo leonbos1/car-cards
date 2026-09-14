@@ -8,6 +8,7 @@ import {
   bidPrice,
   listings,
   priceMultiplier,
+  pricingOf,
   restockWindow,
 } from './market'
 import { ALL_CARDS } from './pack'
@@ -79,14 +80,23 @@ describe('market listings', () => {
     expect(b.map((l) => l.card.id)).not.toEqual(a.map((l) => l.card.id))
   })
 
-  it('never lists a special', () => {
-    // Specials are meant to be pulled from a pack, not shopped for.
-    for (let window = 0; window < 300; window++) {
+  it('lists specials, but only rarely', () => {
+    // Specials are the dearest things in the game and cannot realistically be
+    // pulled (0.4% from a €12.000 pack), so the market is the only way anyone
+    // will ever own one. It still has to feel like catching one, not shopping.
+    let slots = 0
+    let specials = 0
+    for (let window = 0; window < 3000; window++) {
       for (const listing of listings(window * 20 * 60 * 1000)) {
-        expect(listing.card.special, `${listing.card.make} was listed`).toBeFalsy()
+        slots++
+        if (listing.card.special) specials++
       }
     }
+    const rate = specials / slots
+    expect(rate, 'specials should show up').toBeGreaterThan(0.003)
+    expect(rate, 'specials should stay rare').toBeLessThan(0.02)
   })
+
 
   it('offers both bargains and overpriced stock', () => {
     const deals: number[] = []
@@ -96,6 +106,21 @@ describe('market listings', () => {
     // A board of only bargains is free money; a board of only traps is pointless.
     expect(deals.some((d) => d < 1)).toBe(true)
     expect(deals.some((d) => d > 1.2)).toBe(true)
+  })
+
+  it('mixes keen and steep prices within a single board', () => {
+    // Checking the spread across many boards is not enough. The hash used to
+    // propagate bits upward only while this reads the top bits, so keys that
+    // differed in their last character — which is exactly how slot keys are
+    // built — came out nearly equal, and every listing on a board carried the
+    // same markup. Ten bargains, then ten traps, and nothing worth reading.
+    let boardsWithBothKinds = 0
+    const boards = 200
+    for (let window = 0; window < boards; window++) {
+      const kinds = new Set(listings(window * 20 * 60 * 1000).map((l) => pricingOf(l.deal)))
+      if (kinds.size > 1) boardsWithBothKinds++
+    }
+    expect(boardsWithBothKinds / boards).toBeGreaterThan(0.9)
   })
 
   it('prices every listing above zero and near book value', () => {

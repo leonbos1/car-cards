@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { useEffect, useMemo, useState } from 'react'
 import { bookValue, formatCountdown, formatEuros } from '../game/economy'
-import { bidPrice, listings, nextRestockIn, priceMultiplier } from '../game/market'
+import { bidPrice, listings, nextRestockIn, pricingOf, priceMultiplier } from '../game/market'
 import { ALL_CARDS } from '../game/pack'
 import { useGame } from '../store/useGame'
 import type { CardView } from '../types'
@@ -76,31 +76,36 @@ export function Market({ onInspect }: { onInspect: (card: CardView) => void }) {
             {board.map((listing) => {
               const today = Math.round(bookValue(listing.card) * priceMultiplier(listing.card.id))
               const over = Math.round((listing.deal - 1) * 100)
-              const bargain = listing.deal < 0.97
+              const pricing = pricingOf(listing.deal)
+              const tone =
+                pricing === 'keen'
+                  ? 'text-emerald-400'
+                  : pricing === 'steep'
+                    ? 'text-red-400'
+                    : 'text-white/40'
               return (
                 <Row
                   key={listing.id}
                   card={listing.card}
                   onInspect={onInspect}
-                  note={
-                    <>
-                      worth {formatEuros(today)} today ·{' '}
-                      {/* Spelling out the markup is the difference between a
-                          market you can read and a row of numbers. */}
-                      <span className={bargain ? 'font-bold text-emerald-400' : 'text-red-400'}>
+                  note={<>worth {formatEuros(today)} today</>}
+                  action={
+                    <div className="flex shrink-0 flex-col items-end gap-1">
+                      <button
+                        type="button"
+                        disabled={balance < listing.price}
+                        onClick={() => buyListing(listing.id)}
+                        className="rounded-lg bg-gold-2 px-3 py-1.5 text-xs font-extrabold tabular-nums text-black transition hover:brightness-110 disabled:cursor-not-allowed disabled:bg-white/10 disabled:text-white/40"
+                      >
+                        {formatEuros(listing.price)}
+                      </button>
+                      {/* The markup lives out here rather than in the note: it is
+                          the one thing this screen exists to tell you, and inside
+                          a truncating line a six-figure price would eat it. */}
+                      <span className={`text-[11px] font-bold tabular-nums ${tone}`}>
                         {over > 0 ? `+${over}%` : `${over}%`}
                       </span>
-                    </>
-                  }
-                  action={
-                    <button
-                      type="button"
-                      disabled={balance < listing.price}
-                      onClick={() => buyListing(listing.id)}
-                      className="shrink-0 rounded-lg bg-gold-2 px-3 py-1.5 text-xs font-extrabold text-black transition hover:brightness-110 disabled:cursor-not-allowed disabled:bg-white/10 disabled:text-white/40"
-                    >
-                      {formatEuros(listing.price)}
-                    </button>
+                    </div>
                   }
                 />
               )
@@ -119,22 +124,24 @@ export function Market({ onInspect }: { onInspect: (card: CardView) => void }) {
                 key={card.id}
                 card={card}
                 onInspect={onInspect}
-                note={
-                  <>
-                    {spare} spare ·{' '}
-                    <span className={move >= 0 ? 'text-emerald-400' : 'text-red-400'}>
+                note={<>{spare} spare</>}
+                action={
+                  <div className="flex shrink-0 flex-col items-end gap-1">
+                    <button
+                      type="button"
+                      onClick={() => sellToMarket(card.id)}
+                      className="rounded-lg bg-gold-2 px-3 py-1.5 text-xs font-extrabold tabular-nums text-black transition hover:brightness-110"
+                    >
+                      Sell {formatEuros(price)}
+                    </button>
+                    <span
+                      className={`text-[11px] font-bold tabular-nums ${
+                        move >= 0 ? 'text-emerald-400' : 'text-red-400'
+                      }`}
+                    >
                       {move >= 0 ? '▲' : '▼'} {Math.abs(move * 100).toFixed(0)}% today
                     </span>
-                  </>
-                }
-                action={
-                  <button
-                    type="button"
-                    onClick={() => sellToMarket(card.id)}
-                    className="shrink-0 rounded-lg bg-gold-2 px-3 py-1.5 text-xs font-extrabold text-black transition hover:brightness-110"
-                  >
-                    Sell {formatEuros(price)}
-                  </button>
+                  </div>
                 }
               />
             )

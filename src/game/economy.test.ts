@@ -92,7 +92,24 @@ describe('pack economics', () => {
     // purchase rather than something a pack might hand you.
     const dearestPack = Math.max(...PAID.map((p) => p.price))
     const topCar = Math.max(...ALL_CARDS.filter((c) => !c.special).map((c) => bookValue(c)))
-    expect(topCar).toBeGreaterThan(dearestPack / 2)
+    expect(topCar).toBeGreaterThan(dearestPack * 5)
+  })
+
+  it('never deals a single card worth more than the whole pack', () => {
+    // A rating ceiling is a proxy; this is the thing it stands for. If one card
+    // in a pack could be sold for more than the pack costs, the pack is a
+    // lottery ticket you can print money with, however unlikely that card is.
+    // Specials are exempt: they are the deliberate jackpot, capped at 0.4%.
+    for (const pack of PAID) {
+      for (let i = 0; i < pack.tiers.length; i++) {
+        for (const card of [...slotPool(pack, i, true), ...slotPool(pack, i, false)]) {
+          expect(
+            bookValue(card),
+            `${pack.name} can deal a ${card.make} ${card.model} worth more than its price`,
+          ).toBeLessThan(pack.price)
+        }
+      }
+    }
   })
 
   it('starts the player with less than the cheapest serious pack', () => {
@@ -118,12 +135,15 @@ describe('objectives', () => {
     }
   })
 
-  it('pays out enough to reach the top of the ladder', () => {
-    // Packs are all net-negative, so objectives are the real income. They need
-    // to cover the dearest pack several times over or the top tier is
-    // unreachable without months of daily packs.
+  it('pays for a top car, but not a garage full of them', () => {
+    // Packs are all net-negative, so objectives are the real income. Measured
+    // against a top car rather than a pack price: packs no longer reach the top
+    // of the roster, so pack prices say nothing about what the endgame costs.
     const total = OBJECTIVES.reduce((sum, o) => sum + o.reward, 0)
-    const dearest = Math.max(...PAID.map((p) => p.price))
-    expect(total).toBeGreaterThan(dearest * 3)
+    const topCar = Math.max(...ALL_CARDS.filter((c) => !c.special).map((c) => bookValue(c)))
+    expect(total, 'the whole objective pool cannot buy one top car').toBeGreaterThan(topCar)
+    expect(total, 'objectives alone should not bankroll a collection of them').toBeLessThan(
+      topCar * 10,
+    )
   })
 })

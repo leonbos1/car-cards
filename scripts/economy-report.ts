@@ -58,8 +58,8 @@ function main() {
     }
 
     console.log(
-      `${pack.name.padEnd(16)} ${formatEuros(pack.price).padStart(9)}  ` +
-        `${formatEuros(Math.round(ev)).padStart(10)}   ` +
+      `${pack.name.padEnd(16)} ${formatEuros(pack.price).padStart(11)}  ` +
+        `${formatEuros(Math.round(ev)).padStart(13)}   ` +
         `${(pack.price ? `${(ret * 100).toFixed(0)}%` : '—').padStart(6)}   ` +
         `${String(ceiling).padStart(13)}   ${String(smallestPool).padStart(13)}`,
     )

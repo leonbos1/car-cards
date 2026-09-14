@@ -99,8 +99,12 @@ export const OBJECTIVES: Objective[] = [
     reward: 30_000, target: 1, progress: (s) => ratedAtLeast(s.owned, 95),
   },
   {
-    id: 'first-special', name: 'One of one', detail: 'Own a special card',
-    reward: 25_000, target: 1, progress: (s) => s.owned.filter((c) => c.special).length,
+    // Rated 90+, because the market now lists specials and the cheapest of them
+    // is a €343 Rolls-Royce Phantom IV — a flat 'own any special' would pay out
+    // sixty times its own cost.
+    id: 'first-special', name: 'One of one', detail: 'Own a special card rated 90 or better',
+    reward: 25_000, target: 1,
+    progress: (s) => s.owned.filter((c) => c.special && c.overall >= 90).length,
   },
   {
     id: 'packs-200', name: 'Devoted', detail: 'Open 200 packs',

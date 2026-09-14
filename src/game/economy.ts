@@ -16,12 +16,19 @@ export const FREE_PACK_COOLDOWN_MS = 24 * 60 * 60 * 1000
  * a 60, which is nothing like how cars actually price: the step from a hot
  * hatch to a supercar dwarfs the step between two hatchbacks. So the curve
  * accelerates — gentle through everyday cars, steeper through performance cars,
- * and steepest above 88, where each point is worth a great deal of money.
+ * and near-vertical above 92.
+ *
+ * 92 is where it turns, because 92 is the highest rating any pack can deal. The
+ * 43 cars above it exist only on the market, and pricing them like the cars
+ * below made the rarest things in the game cost three days' income. Putting the
+ * break exactly on the pack ceiling is also what keeps this safe: no pack's
+ * expected value can move, because no pack can reach the band that changed.
  */
 const DOUBLING: { upTo: number; points: number }[] = [
   { upTo: 75, points: 9 }, // everyday cars
   { upTo: 88, points: 6.5 }, // performance cars
-  { upTo: Number.POSITIVE_INFINITY, points: 3.5 }, // supercars and up
+  { upTo: 92, points: 3.5 }, // flagships — as high as a pack goes
+  { upTo: Number.POSITIVE_INFINITY, points: 1.3 }, // market-only supercars
 ]
 
 const ANCHOR_RATING = 50

@@ -105,6 +105,10 @@ describe('quiz payouts', () => {
     const best = ALL_CARDS.filter((c) => !c.special).reduce((a, b) =>
       bookValue(b) > bookValue(a) ? b : a,
     )
-    expect(MAX_DAILY_QUIZ_REWARD).toBeLessThan(bookValue(best) / 3)
+    // Measured in days rather than as a fraction: a fraction of the top car's
+    // price stops meaning anything the moment that price moves, which is how
+    // this assertion nearly stopped guarding anything.
+    const daysOfPerfectQuizzing = bookValue(best) / MAX_DAILY_QUIZ_REWARD
+    expect(daysOfPerfectQuizzing).toBeGreaterThan(20)
   })
 })
