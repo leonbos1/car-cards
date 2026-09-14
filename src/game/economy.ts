@@ -10,15 +10,45 @@ export const STARTING_BALANCE = 3_000
 export const FREE_PACK_COOLDOWN_MS = 24 * 60 * 60 * 1000
 
 /**
+ * How many rating points it takes to double a car's value, by band.
+ *
+ * A single rate across the whole scale made a 99 worth only about twenty times
+ * a 60, which is nothing like how cars actually price: the step from a hot
+ * hatch to a supercar dwarfs the step between two hatchbacks. So the curve
+ * accelerates — gentle through everyday cars, steeper through performance cars,
+ * and steepest above 88, where each point is worth a great deal of money.
+ */
+const DOUBLING: { upTo: number; points: number }[] = [
+  { upTo: 75, points: 9 }, // everyday cars
+  { upTo: 88, points: 6.5 }, // performance cars
+  { upTo: Number.POSITIVE_INFINITY, points: 3.5 }, // supercars and up
+]
+
+const ANCHOR_RATING = 50
+const ANCHOR_VALUE = 18
+
+/**
  * What a car is worth on paper.
  *
- * Doubles roughly every nine rating points, so a 95 is worth about thirty times
- * a 50 rather than the flat 600 every gold used to bring. Everything else in
- * the economy is quoted against this: the market trades around it, quick-sell
- * pays a fraction of it, and pack prices key off it.
+ * Everything else in the economy is quoted against this: the market trades
+ * around it, quick-sell pays a fraction of it, and pack prices key off it.
  */
 function baseValue(overall: number): number {
-  return 18 * 2 ** ((overall - 50) / 9)
+  // Below the anchor the gentlest rate just keeps going; nothing down there
+  // needs its own band.
+  if (overall <= ANCHOR_RATING) {
+    return ANCHOR_VALUE * 2 ** ((overall - ANCHOR_RATING) / DOUBLING[0].points)
+  }
+
+  let value = ANCHOR_VALUE
+  let from = ANCHOR_RATING
+  for (const band of DOUBLING) {
+    const to = Math.min(overall, band.upTo)
+    if (to <= from) break
+    value *= 2 ** ((to - from) / band.points)
+    from = to
+  }
+  return value
 }
 
 /** A rare is worth more than a common of the same rating, never less. */

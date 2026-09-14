@@ -56,7 +56,7 @@ export const PACKS: Pack[] = [
   {
     id: 'gold',
     name: 'Gold Pack',
-    price: 3_000,
+    price: 3_500,
     tiers: slots([1, 'silver'], [4, 'gold']),
     guaranteedRare: 1,
     rareChance: 0.3,
@@ -68,7 +68,7 @@ export const PACKS: Pack[] = [
   {
     id: 'premium-gold',
     name: 'Premium Gold',
-    price: 7_500,
+    price: 12_000,
     tiers: slots([8, 'gold']),
     guaranteedRare: 3,
     rareChance: 0.4,
@@ -78,32 +78,13 @@ export const PACKS: Pack[] = [
     art: 'gold',
     blurb: 'Eight gold cars, three rare, one rated 86 or better.',
   },
-  {
-    id: 'supercar',
-    name: 'Supercar Pack',
-    price: 20_000,
-    tiers: slots([5, 'gold']),
-    guaranteedRare: 3,
-    rareChance: 0.5,
-    specialChance: 0.015,
-    minOverall: 88,
-    art: 'gold',
-    blurb: 'Five cars, none rated below 88. The cheapest route to a supercar.',
-  },
-  {
-    id: 'hypercar',
-    name: 'Hypercar Pack',
-    price: 60_000,
-    tiers: slots([5, 'gold']),
-    guaranteedRare: 0,
-    rareChance: 0,
-    allRare: true,
-    specialChance: 0.05,
-    minOverall: 93,
-    art: 'special',
-    blurb: 'Five rare cars, none rated below 93, and the best odds on a special.',
-  },
 ]
+
+// There is deliberately no supercar or hypercar pack. Once a 99 is worth five
+// figures, a pack that deals five of them cannot be priced: cheap enough to be
+// worth buying and it prints money, dear enough to be safe and nobody buys it.
+// Cars above the Premium Gold ceiling are bought on the market instead, one at
+// a time and at full price, which is what makes owning one mean something.
 
 export const PACK_BY_ID = new Map(PACKS.map((p) => [p.id, p]))
 

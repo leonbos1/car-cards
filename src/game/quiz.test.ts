@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { QUIZ_CATEGORIES } from '../data/quiz'
-import { PACKS } from '../data/packs'
+import { bookValue } from './economy'
+import { ALL_CARDS } from './pack'
 import { MAX_DAILY_QUIZ_REWARD, QUESTIONS_PER_RUN, buildRun, rewardFor } from './quiz'
 
 function seeded(seed: number): () => number {
@@ -96,11 +97,14 @@ describe('quiz payouts', () => {
     }
   })
 
-  it('cannot out-earn the pack ladder in a day', () => {
+  it('cannot buy a hypercar in a day', () => {
     // The quiz is a faucet on a 24h clock. It should make real progress feel
-    // possible without letting a player answer their way to the top of the
-    // ladder in an afternoon.
-    const dearest = Math.max(...PACKS.map((p) => p.price))
-    expect(MAX_DAILY_QUIZ_REWARD).toBeLessThan(dearest / 4)
+    // possible without letting a player answer their way to the best car in the
+    // game in an afternoon. Since no pack reaches the top any more, the thing
+    // worth measuring against is what a top car costs on the market.
+    const best = ALL_CARDS.filter((c) => !c.special).reduce((a, b) =>
+      bookValue(b) > bookValue(a) ? b : a,
+    )
+    expect(MAX_DAILY_QUIZ_REWARD).toBeLessThan(bookValue(best) / 3)
   })
 })

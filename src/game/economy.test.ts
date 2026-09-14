@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { PACKS } from '../data/packs'
-import { STARTING_BALANCE, quickSellValue } from './economy'
+import { STARTING_BALANCE, bookValue, quickSellValue } from './economy'
 import { bidPrice } from './market'
 import { OBJECTIVES } from './objectives'
 import { ALL_CARDS, openPack, slotPool } from './pack'
@@ -69,7 +69,11 @@ describe('pack economics', () => {
     }
   })
 
-  it('only lets the expensive packs reach the best cars', () => {
+  it('leaves the very best cars to the market', () => {
+    // No pack reaches the top of the roster. Once a 99 is worth five figures, a
+    // pack that could deal one cannot be priced: cheap enough to be worth
+    // buying and it prints money, dear enough to be safe and nobody buys it.
+    // Top cars are bought on the market, one at a time and at full price.
     const best = Math.max(...ALL_CARDS.filter((c) => !c.special).map((c) => c.overall))
 
     for (const pack of PACKS) {
@@ -79,13 +83,16 @@ describe('pack economics', () => {
           reach = Math.max(reach, card.overall)
         }
       }
-      // Anything that can deal a top-rated car has to cost real money.
-      if (reach >= best - 4) {
-        expect(pack.price, `${pack.name} reaches ${reach} for ${pack.price}`).toBeGreaterThanOrEqual(
-          20_000,
-        )
-      }
+      expect(reach, `${pack.name} can deal a ${reach}`).toBeLessThan(best - 5)
     }
+  })
+
+  it('makes a top car cost far more than the dearest pack', () => {
+    // The point of removing the supercar packs: the best cars are a serious
+    // purchase rather than something a pack might hand you.
+    const dearestPack = Math.max(...PAID.map((p) => p.price))
+    const topCar = Math.max(...ALL_CARDS.filter((c) => !c.special).map((c) => bookValue(c)))
+    expect(topCar).toBeGreaterThan(dearestPack / 2)
   })
 
   it('starts the player with less than the cheapest serious pack', () => {
