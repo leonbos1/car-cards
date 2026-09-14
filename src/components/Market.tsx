@@ -10,6 +10,18 @@ import { CLASS_COLORS } from './CarCard'
 const CARD_BY_ID = new Map(ALL_CARDS.map((c) => [c.id, c]))
 
 type Side = 'buy' | 'sell'
+type Filter = 'all' | 'spares' | 'bronze' | 'silver' | 'gold' | 'rare' | 'special'
+type Sort = 'value' | 'rating' | 'name'
+
+const FILTERS: [Filter, string][] = [
+  ['all', 'All'],
+  ['spares', 'Spares'],
+  ['bronze', 'Bronze'],
+  ['silver', 'Silver'],
+  ['gold', 'Gold'],
+  ['rare', 'Rare'],
+  ['special', 'Special'],
+]
 
 export function Market({ onInspect }: { onInspect: (card: CardView) => void }) {
   const balance = useGame((s) => s.balance)
@@ -19,6 +31,12 @@ export function Market({ onInspect }: { onInspect: (card: CardView) => void }) {
   const sellToMarket = useGame((s) => s.sellToMarket)
 
   const [side, setSide] = useState<Side>('buy')
+  const [filter, setFilter] = useState<Filter>('all')
+  const [sort, setSort] = useState<Sort>('value')
+  const [query, setQuery] = useState('')
+  /** Car id whose last-copy sale is awaiting confirmation. */
+  const [confirming, setConfirming] = useState<string | null>(null)
+
   // Re-render on the restock clock so the board and countdown stay honest.
   const [tick, setTick] = useState(0)
   useEffect(() => {
@@ -32,14 +50,45 @@ export function Market({ onInspect }: { onInspect: (card: CardView) => void }) {
     return listings().filter((l) => !sold.has(l.id))
   }, [boughtListings, tick])
 
-  const duplicates = useMemo(() => {
+  /**
+   * Everything owned, priced once.
+   *
+   * `bidPrice` hashes on every call, and this used to call it twice per car
+   * inside the sort comparator and again for each row — fine for a handful of
+   * duplicates, but this list now runs to every car you own, and it rebuilds
+   * every thirty seconds and after every sale.
+   */
+  const stock = useMemo(() => {
     void tick
     return Object.entries(collection)
-      .filter(([, n]) => n > 1)
-      .map(([id, n]) => ({ card: CARD_BY_ID.get(id)!, spare: n - 1 }))
-      .filter((row) => row.card)
-      .sort((a, b) => bidPrice(b.card) - bidPrice(a.card))
+      .filter(([, n]) => n > 0)
+      .flatMap(([id, copies]) => {
+        const card = CARD_BY_ID.get(id)
+        if (!card) return []
+        return [{ card, copies, bid: bidPrice(card), move: priceMultiplier(card.id) - 1 }]
+      })
   }, [collection, tick])
+
+  const sellable = useMemo(() => {
+    const needle = query.trim().toLowerCase()
+    const rows = stock.filter((row) => {
+      if (needle && !`${row.card.make} ${row.card.model}`.toLowerCase().includes(needle)) {
+        return false
+      }
+      if (filter === 'all') return true
+      if (filter === 'spares') return row.copies > 1
+      if (filter === 'rare') return row.card.rare
+      if (filter === 'special') return row.card.cardClass === 'special'
+      return row.card.tier === filter && row.card.cardClass !== 'special'
+    })
+    return rows.sort((a, b) => {
+      if (sort === 'rating') return b.card.overall - a.card.overall
+      if (sort === 'name') {
+        return `${a.card.make} ${a.card.model}`.localeCompare(`${b.card.make} ${b.card.model}`)
+      }
+      return b.bid - a.bid
+    })
+  }, [stock, filter, sort, query])
 
   return (
     <div className="mx-auto w-full max-w-4xl px-4 pb-24 pt-6">
@@ -60,7 +109,7 @@ export function Market({ onInspect }: { onInspect: (card: CardView) => void }) {
               side === s ? 'bg-white/15 text-white' : 'bg-white/5 text-white/45 hover:text-white/80'
             }`}
           >
-            {s === 'buy' ? `Buy (${board.length})` : `Sell (${duplicates.length})`}
+            {s === 'buy' ? `Buy (${board.length})` : `Sell (${stock.length})`}
           </button>
         ))}
         {side === 'buy' && (
@@ -114,42 +163,116 @@ export function Market({ onInspect }: { onInspect: (card: CardView) => void }) {
         ) : (
           <Empty>Every car on the board has been bought. New stock arrives shortly.</Empty>
         )
-      ) : duplicates.length ? (
-        <ul className="space-y-2">
-          {duplicates.map(({ card, spare }) => {
-            const price = bidPrice(card)
-            const move = priceMultiplier(card.id) - 1
-            return (
-              <Row
-                key={card.id}
-                card={card}
-                onInspect={onInspect}
-                note={<>{spare} spare</>}
-                action={
-                  <div className="flex shrink-0 flex-col items-end gap-1">
-                    <button
-                      type="button"
-                      onClick={() => sellToMarket(card.id)}
-                      className="rounded-lg bg-gold-2 px-3 py-1.5 text-xs font-extrabold tabular-nums text-black transition hover:brightness-110"
-                    >
-                      Sell {formatEuros(price)}
-                    </button>
-                    <span
-                      className={`text-[11px] font-bold tabular-nums ${
-                        move >= 0 ? 'text-emerald-400' : 'text-red-400'
-                      }`}
-                    >
-                      {move >= 0 ? '▲' : '▼'} {Math.abs(move * 100).toFixed(0)}% today
-                    </span>
-                  </div>
-                }
-              />
-            )
-          })}
-        </ul>
+      ) : stock.length ? (
+        <>
+          <div className="mb-4 flex flex-wrap items-center gap-2">
+            {FILTERS.map(([key, label]) => (
+              <button
+                key={key}
+                type="button"
+                onClick={() => setFilter(key)}
+                className={`rounded-full px-3.5 py-1.5 text-xs font-bold transition ${
+                  filter === key
+                    ? 'bg-gold-2 text-black'
+                    : 'bg-white/8 text-white/60 hover:bg-white/15'
+                }`}
+              >
+                {label}
+              </button>
+            ))}
+            <select
+              value={sort}
+              onChange={(e) => setSort(e.target.value as Sort)}
+              className="ml-auto rounded-lg bg-white/8 px-3 py-1.5 text-xs font-semibold text-white/80 outline-none"
+            >
+              <option value="value" className="bg-[#0b1120]">Value</option>
+              <option value="rating" className="bg-[#0b1120]">Rating</option>
+              <option value="name" className="bg-[#0b1120]">Name</option>
+            </select>
+          </div>
+
+          <input
+            type="search"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="Search your cars"
+            className="mb-4 w-full rounded-xl border border-white/10 bg-white/[0.04] px-4 py-2.5 text-sm text-white outline-none placeholder:text-white/30 focus:border-white/30"
+          />
+
+          {sellable.length ? (
+            <ul className="space-y-2">
+              {sellable.map(({ card, copies, bid, move }) => {
+                const last = copies === 1
+                const asking = confirming === card.id
+                return (
+                  <Row
+                    key={card.id}
+                    card={card}
+                    onInspect={onInspect}
+                    note={<>{last ? 'Your only copy' : `${copies} copies`}</>}
+                    footer={
+                      asking ? (
+                        <p className="mt-2 text-xs text-amber-300">
+                          This is your only {card.make} {card.model}. Selling it takes the car out
+                          of your collection.
+                        </p>
+                      ) : undefined
+                    }
+                    action={
+                      asking ? (
+                        <div className="flex shrink-0 items-center gap-1.5">
+                          <button
+                            type="button"
+                            onClick={() => {
+                              sellToMarket(card.id)
+                              setConfirming(null)
+                            }}
+                            className="rounded-lg bg-gold-2 px-3 py-1.5 text-xs font-extrabold tabular-nums text-black transition hover:brightness-110"
+                          >
+                            Sell anyway
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => setConfirming(null)}
+                            className="rounded-lg bg-white/10 px-3 py-1.5 text-xs font-bold text-white/70 transition hover:bg-white/20"
+                          >
+                            Keep
+                          </button>
+                        </div>
+                      ) : (
+                        <div className="flex shrink-0 flex-col items-end gap-1">
+                          <button
+                            type="button"
+                            // Selling a spare is one click. Parting with the only
+                            // copy you own is not something to do by mis-tap.
+                            onClick={() =>
+                              last ? setConfirming(card.id) : sellToMarket(card.id)
+                            }
+                            className="rounded-lg bg-gold-2 px-3 py-1.5 text-xs font-extrabold tabular-nums text-black transition hover:brightness-110"
+                          >
+                            Sell {formatEuros(bid)}
+                          </button>
+                          <span
+                            className={`text-[11px] font-bold tabular-nums ${
+                              move >= 0 ? 'text-emerald-400' : 'text-red-400'
+                            }`}
+                          >
+                            {move >= 0 ? '▲' : '▼'} {Math.abs(move * 100).toFixed(0)}% today
+                          </span>
+                        </div>
+                      )
+                    }
+                  />
+                )
+              })}
+            </ul>
+          ) : (
+            <Empty>No car you own matches that.</Empty>
+          )}
+        </>
       ) : (
         <Empty>
-          Nothing spare to sell. Duplicates from packs show up here — the market pays well over
+          Nothing to sell yet. Cars you pull from packs show up here — the market pays well over
           twice what quick-selling them does.
         </Empty>
       )}
@@ -161,35 +284,41 @@ function Row({
   card,
   note,
   action,
+  footer,
   onInspect,
 }: {
   card: CardView
   note: React.ReactNode
   action: React.ReactNode
+  /** Full-width line under the row, for anything that must not be truncated. */
+  footer?: React.ReactNode
   onInspect: (card: CardView) => void
 }) {
   const [, mid] = CLASS_COLORS[card.cardClass]
   return (
-    <li className="flex items-center gap-3 rounded-xl border border-white/10 bg-white/[0.03] p-2.5">
-      <button
-        type="button"
-        onClick={() => onInspect(card)}
-        className="flex min-w-0 flex-1 items-center gap-3 text-left"
-      >
-        <span
-          className="grid h-10 w-10 shrink-0 place-items-center rounded-lg text-sm font-black text-black"
-          style={{ background: mid }}
+    <li className="rounded-xl border border-white/10 bg-white/[0.03] p-2.5">
+      <div className="flex items-center gap-3">
+        <button
+          type="button"
+          onClick={() => onInspect(card)}
+          className="flex min-w-0 flex-1 items-center gap-3 text-left"
         >
-          {card.overall}
-        </span>
-        <span className="min-w-0">
-          <span className="block truncate text-sm font-bold">
-            {card.make} {card.model}
+          <span
+            className="grid h-10 w-10 shrink-0 place-items-center rounded-lg text-sm font-black text-black"
+            style={{ background: mid }}
+          >
+            {card.overall}
           </span>
-          <span className="block truncate text-xs text-white/45">{note}</span>
-        </span>
-      </button>
-      {action}
+          <span className="min-w-0">
+            <span className="block truncate text-sm font-bold">
+              {card.make} {card.model}
+            </span>
+            <span className="block truncate text-xs text-white/45">{note}</span>
+          </span>
+        </button>
+        {action}
+      </div>
+      {footer}
     </li>
   )
 }

@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { useGame } from '../store/useGame'
+import { ALL_CARDS } from '../game/pack'
+import { ownedCards, useGame } from '../store/useGame'
 
 interface Props {
   onReset: () => void
@@ -8,7 +9,10 @@ interface Props {
 export function Settings({ onReset }: Props) {
   const [confirming, setConfirming] = useState(false)
   const packsOpened = useGame((s) => s.packsOpened)
-  const collectionSize = Object.keys(useGame((s) => s.collection)).length
+  // Counted from cars actually owned rather than from the keys of the
+  // collection, and against the real roster size rather than a number typed by
+  // hand — both were wrong the moment a car could be sold down to nothing.
+  const collectionSize = ownedCards(useGame((s) => s.collection)).length
   const balance = useGame((s) => s.balance)
 
   const handleReset = () => {
@@ -39,7 +43,7 @@ export function Settings({ onReset }: Props) {
             </div>
             <div className="flex items-center justify-between rounded-lg bg-white/5 p-3">
               <span className="text-sm text-white/70">Unique Cars Collected</span>
-              <span className="font-extrabold">{collectionSize} / 1090</span>
+              <span className="font-extrabold">{collectionSize} / {ALL_CARDS.length}</span>
             </div>
           </div>
         </div>

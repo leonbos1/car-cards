@@ -46,14 +46,30 @@ interface GameState {
   finishQuiz: (categoryId: string, correct: number) => number
   /** Buy a listing off the market. Returns false if it is gone or unaffordable. */
   buyListing: (listingId: string) => boolean
-  /** Sell one copy to the market at today's bid. Returns euros earned. */
+  /**
+   * Sell one copy to the market at today's bid, including your last copy.
+   * Returns euros earned.
+   */
   sellToMarket: (carId: string) => number
   reset: () => void
 }
 
-/** Cards owned beyond the first copy of each car. */
-export function duplicateCount(collection: Record<string, number>): number {
-  return Object.values(collection).reduce((sum, n) => sum + Math.max(0, n - 1), 0)
+/**
+ * The collection with one copy of a car removed.
+ *
+ * A car sold down to nothing is dropped rather than left at zero: a zero entry
+ * is not ownership, and anything counting keys instead of values would go on
+ * reporting it forever.
+ */
+function withOneFewer(
+  collection: Record<string, number>,
+  carId: string,
+): Record<string, number> {
+  const next = { ...collection }
+  const left = (next[carId] ?? 0) - 1
+  if (left > 0) next[carId] = left
+  else delete next[carId]
+  return next
 }
 
 /** The distinct cars owned, resolved to cards. */
@@ -112,7 +128,7 @@ export const useGame = create<GameState>()(
           const value = quickSellValue(card)
           return {
             balance: s.balance + value,
-            collection: { ...s.collection, [carId]: owned - 1 },
+            collection: withOneFewer(s.collection, carId),
           }
         }),
 
@@ -194,13 +210,15 @@ export const useGame = create<GameState>()(
         const state = get()
         const card = CARD_BY_ID.get(carId)
         const owned = state.collection[carId] ?? 0
-        // Same rule as quick-sell: never sell the last copy out of a collection.
-        if (!card || owned < 2) return 0
+        // Unlike quick-sell, the market will take your only copy. This is where
+        // you come to trade deliberately; refusing to sell a car you no longer
+        // want made the market half a feature. The UI confirms a last copy.
+        if (!card || owned < 1) return 0
 
         const price = bidPrice(card)
         set((s) => ({
           balance: s.balance + price,
-          collection: { ...s.collection, [carId]: owned - 1 },
+          collection: withOneFewer(s.collection, carId),
         }))
         return price
       },

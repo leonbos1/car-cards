@@ -100,8 +100,9 @@ can fill with distinct cars, and no pack ever repeats a car.
 Every pack publishes its drop rates in the store, and the store renders the same
 `odds` object that the puller reads — a test asserts they cannot drift apart.
 
-Duplicates can be quick-sold from the garage, from €20 for a common bronze up to
-€15,000 for a special. Selling never takes your last copy of a car.
+Quick-sell, from the garage, pays 40% of a car's book value and only ever takes
+a spare. The market pays far more and will take any car you own, including your
+last copy of one — it asks first when that is what you are doing.
 
 ## Photos
 
