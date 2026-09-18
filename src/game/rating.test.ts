@@ -24,7 +24,7 @@ const ANCHORS: [name: string, target: number][] = [
   ['Volkswagen Polo', 67],
   ['Volkswagen Golf GTI Mk8', 80],
   ['Volkswagen Golf R', 84],
-  ['Porsche 911 GT3 RS', 91],
+  ['Porsche 911 GT3 RS', 92],
   ['Bugatti Veyron', 95],
   ['Bugatti Chiron Super Sport 300+', 97],
 ]
