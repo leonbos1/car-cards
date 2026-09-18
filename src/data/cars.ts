@@ -8002,7 +8002,7 @@ export const CARS: Car[] = [
   {
     id: 'lamborghini-revuelto-super-2024',
     make: 'Lamborghini', model: 'Revuelto Super', year: 2024, country: 'IT',
-    stats: { hp: 1001, acc: 3.2, topspeed: 350, weight: 1550, handling: 50, wowFactor: 95 },
+    stats: { hp: 1001, acc: 2.4, topspeed: 350, weight: 1550, handling: 60, wowFactor: 95 },
     rare: true,
     special: { label: 'SUPER HYBRID', limitedTo: 50 },
     specs: { hp: 1001, zeroToHundred: 2.4, topSpeed: 350, weightKg: 1550 },
