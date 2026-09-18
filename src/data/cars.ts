@@ -697,7 +697,7 @@ export const CARS: Car[] = [
   {
     id: 'porsche-911-gt3-rs',
     make: 'Porsche', model: '911 GT3 RS', year: 2023, country: 'DE',
-    stats: { hp: 525, acc: 3.2, topspeed: 296, weight: 1450, handling: 44, wowFactor: 80 },
+    stats: { hp: 525, acc: 3.2, topspeed: 296, weight: 1450, handling: 56, wowFactor: 80 },
     rare: true,
     specs: { hp: 525, zeroToHundred: 3.2, topSpeed: 296, weightKg: 1450 },
     imageQuery: 'Porsche 911 GT3 RS 992',
