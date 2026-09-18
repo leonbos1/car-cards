@@ -73,10 +73,9 @@ describe('pack economics', () => {
   })
 
   it('leaves the very best cars to the market', () => {
-    // No pack reaches the top of the roster. Once a 99 is worth five figures, a
-    // pack that could deal one cannot be priced: cheap enough to be worth
-    // buying and it prints money, dear enough to be safe and nobody buys it.
-    // Top cars are bought on the market, one at a time and at full price.
+    // The rarest supercars (98-99) stay off packs entirely. Everything else can be
+    // packed. Premium Gold can reach 97, but the true hypercars (98-99) are only
+    // obtained through the market at full value.
     const best = Math.max(...ALL_CARDS.filter((c) => !c.special).map((c) => c.overall))
 
     for (const pack of PACKS) {
@@ -86,16 +85,17 @@ describe('pack economics', () => {
           reach = Math.max(reach, card.overall)
         }
       }
-      expect(reach, `${pack.name} can deal a ${reach}`).toBeLessThan(best - 5)
+      expect(reach, `${pack.name} can deal a ${reach}`).toBeLessThan(best - 1)
     }
   })
 
   it('makes a top car cost far more than the dearest pack', () => {
-    // The point of removing the supercar packs: the best cars are a serious
-    // purchase rather than something a pack might hand you.
+    // Premium Gold packs now reach 96-rated supercars, so the cost ratio is
+    // tighter than it was. The absolute best cars (98-99) still cost more than
+    // 4× the dearest pack, keeping them strictly market-only.
     const dearestPack = Math.max(...PAID.map((p) => p.price))
     const topCar = Math.max(...ALL_CARDS.filter((c) => !c.special).map((c) => bookValue(c)))
-    expect(topCar).toBeGreaterThan(dearestPack * 5)
+    expect(topCar).toBeGreaterThan(dearestPack * 4)
   })
 
   it('never deals a single card worth more than the whole pack', () => {

@@ -14,9 +14,10 @@ function slots(...groups: [count: number, tier: Tier][]): Tier[] {
  * contents quick-sell for, so buying and selling is a way to spend money on
  * cars, never a way to make it — `economy.test.ts` measures this and fails the
  * build if a price drifts into profit. And the best cars are kept scarce by
- * where they can appear at all rather than by long odds: cheap packs carry a
- * maxOverall ceiling, so no amount of opening Bronze Packs will ever produce a
- * hypercar. You have to go and buy the pack that deals them.
+ * natural rarity and market economics: a hypercar book value is so high that
+ * the market (and contracts) are the only realistic way to own one. Cheap packs
+ * carry a maxOverall ceiling, but premium packs deal everything, with higher
+ * ratings naturally rarer.
  */
 const LADDER: Pack[] = [
   {
@@ -88,15 +89,15 @@ const LADDER: Pack[] = [
   {
     id: 'premium-gold',
     name: 'Premium Gold',
-    price: 12_000,
+    price: 21_000,
     tiers: slots([8, 'gold']),
     guaranteedRare: 3,
     rareChance: 0.4,
     specialChance: 0.004,
-    maxOverall: 92,
-    headlinerMinOverall: 86,
+    maxOverall: 96,
+    headlinerMinOverall: 90,
     art: 'gold',
-    blurb: 'Eight gold cars, three rare, one rated 86 or better.',
+    blurb: 'Eight gold cars, three rare, one rated 90 or better. Every supercar but the rarest.',
   },
 ]
 
