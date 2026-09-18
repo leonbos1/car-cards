@@ -26,7 +26,7 @@ const ANCHORS: [name: string, target: number][] = [
   ['Volkswagen Golf R', 84],
   ['Porsche 911 GT3 RS', 91],
   ['Bugatti Veyron', 95],
-  ['Bugatti Chiron Super Sport 300+', 98],
+  ['Bugatti Chiron Super Sport 300+', 97],
 ]
 
 describe('rating scale', () => {

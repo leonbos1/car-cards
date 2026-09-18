@@ -765,7 +765,7 @@ export const CARS: Car[] = [
   {
     id: 'bugatti-chiron-ss300',
     make: 'Bugatti', model: 'Chiron Super Sport 300+', year: 2019, country: 'FR',
-    stats: { hp: 1600, acc: 2.4, topspeed: 490, weight: 1995, handling: 73, wowFactor: 95 },
+    stats: { hp: 1600, acc: 2.4, topspeed: 490, weight: 1995, handling: 48, wowFactor: 95 },
     rare: true,
     special: { label: 'LIMITED EDITION', limitedTo: 30 },
     specs: { hp: 1600, zeroToHundred: 2.4, topSpeed: 490, weightKg: 1995 },
@@ -7195,7 +7195,7 @@ export const CARS: Car[] = [
   {
     id: 'bugatti-chiron-super-sport-300-2023',
     make: 'Bugatti', model: 'Chiron Super Sport 300+', year: 2023, country: 'FR',
-    stats: { hp: 1600, acc: 2.4, topspeed: 490, weight: 1995, handling: 73, wowFactor: 99 },
+    stats: { hp: 1600, acc: 2.4, topspeed: 490, weight: 1995, handling: 48, wowFactor: 99 },
     rare: true,
     specs: { hp: 1600, zeroToHundred: 2.4, topSpeed: 490, weightKg: 1995 },
     imageQuery: 'Bugatti Chiron Super Sport 300+ 2023',
