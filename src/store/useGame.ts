@@ -33,6 +33,13 @@ interface GameState {
   /** Races entered and won, for the garage header and the objectives. */
   racesRun: number
   racesWon: number
+  /** User settings. */
+  raceAnimationMs: number
+  /** Card stat overrides: carId -> override stats. */
+  cardOverrides: Record<string, Partial<Record<'hp' | 'acc' | 'topspeed' | 'weight' | 'handling' | 'wowFactor', number>>>
+  setRaceAnimationMs: (ms: number) => void
+  overrideCardStats: (carId: string, stats: Partial<Record<'hp' | 'acc' | 'topspeed' | 'weight' | 'handling' | 'wowFactor', number>>) => void
+  clearCardOverride: (carId: string) => void
 
   canAfford: (price: number) => boolean
   /** Spend and record an opening. Returns false if the balance is short. */
@@ -115,6 +122,8 @@ export const useGame = create<GameState>()(
       welcomeClaimed: false,
       racesRun: 0,
       racesWon: 0,
+      raceAnimationMs: 4600,
+      cardOverrides: {},
 
       canAfford: (price) => get().balance >= price,
 
@@ -285,6 +294,23 @@ export const useGame = create<GameState>()(
           racesWon: s.racesWon + (won ? 1 : 0),
         })),
 
+      setRaceAnimationMs: (ms) => set({ raceAnimationMs: ms }),
+
+      overrideCardStats: (carId, stats) =>
+        set((s) => ({
+          cardOverrides: {
+            ...s.cardOverrides,
+            [carId]: { ...s.cardOverrides[carId], ...stats },
+          },
+        })),
+
+      clearCardOverride: (carId) =>
+        set((s) => {
+          const next = { ...s.cardOverrides }
+          delete next[carId]
+          return { cardOverrides: next }
+        }),
+
       reset: () =>
         set({
           balance: STARTING_BALANCE,
@@ -298,6 +324,8 @@ export const useGame = create<GameState>()(
           welcomeClaimed: false,
           racesRun: 0,
           racesWon: 0,
+          raceAnimationMs: 4600,
+          cardOverrides: {},
         }),
     }),
     // Bumped: the old save carried a 10,000,000 balance from before there was

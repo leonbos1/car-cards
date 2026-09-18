@@ -19,21 +19,13 @@ import {
 import { ownedCards, useGame } from '../store/useGame'
 import type { CardView } from '../types'
 
-/**
- * How long the grid takes to run.
- *
- * This is not decoration: racing has no cooldown, so the length of a race is
- * the only thing setting what an hour of it pays. Shortening it without
- * re-running `npm run report:race` and the rate assertion in race.test.ts is
- * how the grind would quietly double.
- */
-const RACE_MS = 4_600
-
 const CLASS_ORDER = ['Rookie', 'Club', 'National', 'Elite', 'Open']
 
 export function Race() {
   const collection = useGame((s) => s.collection)
   const finishRace = useGame((s) => s.finishRace)
+  const raceAnimationMs = useGame((s) => s.raceAnimationMs)
+  const cardOverrides = useGame((s) => s.cardOverrides)
 
   const [event, setEvent] = useState<RaceEvent | null>(null)
   const [car, setCar] = useState<CardView | null>(null)
@@ -48,7 +40,22 @@ export function Race() {
     setCar(entry)
     setResult(null)
     setRunning(true)
-    const outcome = race(entry, on)
+    // Apply card stat overrides
+    const overrides = cardOverrides[entry.id]
+    const adjustedEntry: CardView = overrides
+      ? {
+          ...entry,
+          stats: {
+            hp: overrides.hp ?? entry.stats.hp,
+            acc: overrides.acc ?? entry.stats.acc,
+            topspeed: overrides.topspeed ?? entry.stats.topspeed,
+            weight: overrides.weight ?? entry.stats.weight,
+            handling: overrides.handling ?? entry.stats.handling,
+            wowFactor: overrides.wowFactor ?? entry.stats.wowFactor,
+          },
+        }
+      : entry
+    const outcome = race(adjustedEntry, on)
     // Banked at the flag, not at the click, so the money and the result you are
     // looking at are always the same race.
     window.setTimeout(() => {
@@ -56,7 +63,7 @@ export function Race() {
       setRunning(false)
       finishRace(outcome.payout, outcome.position === 1)
       setSession((s) => ({ races: s.races + 1, earned: s.earned + outcome.payout }))
-    }, RACE_MS)
+    }, raceAnimationMs)
   }
 
   if (event && car && (running || result)) {
