@@ -41,7 +41,7 @@ function histogram(values: number[]): void {
 }
 
 function main() {
-  const rated = CARS.filter((c) => !c.special).map((c) => ({ car: c, r: overall(c.stats) }))
+  const rated = CARS.filter((c) => !c.special).map((c) => ({ car: c, r: overall(c.stats, c.year) }))
   const values = rated.map((x) => x.r)
   const sorted = [...values].sort((a, b) => a - b)
   const at = (p: number) => sorted[Math.floor((sorted.length - 1) * p)]

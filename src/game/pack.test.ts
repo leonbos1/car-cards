@@ -16,7 +16,7 @@ function seeded(seed: number): () => number {
 describe('ratings', () => {
   it('derives each card tier from its own rating', () => {
     for (const card of ALL_CARDS) {
-      expect(card.overall).toBe(overall(card.stats))
+      expect(card.overall).toBe(overall(card.stats, card.year))
       // Special cards always tier as gold; others derive from their rating
       const expectedTier = card.special ? 'gold' : tierOf(card.overall)
       expect(card.tier).toBe(expectedTier)

@@ -30,6 +30,39 @@ body {
   font-family: var(--font-display);
   -webkit-font-smoothing: antialiased;
   overscroll-behavior: none;
+  /* No grey flash on tap, and no selection handles from a long press. */
+  -webkit-tap-highlight-color: transparent;
+}
+
+/*
+ * This is a game, not a document.
+ *
+ * On a phone every tap on a card lands on text, and a tap that lingers — which
+ * is most of them while a pack is opening and nothing is clickable yet — puts
+ * the browser into text selection: blue highlight, drag handles, and a
+ * copy/share bar over the reveal. Turning selection off across the app fixes
+ * the whole class of it rather than card by card.
+ */
+#root {
+  -webkit-user-select: none;
+  user-select: none;
+  /* Stops the long-press "copy image / open in new tab" sheet on car photos. */
+  -webkit-touch-callout: none;
+}
+
+/* Typing still needs a caret, a selection and a paste target. */
+input,
+textarea,
+select,
+[contenteditable] {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+/* A car photo dragged with the mouse should not tear off a ghost image. */
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
 }
 
 /* The stadium-ish backdrop every screen sits on. */

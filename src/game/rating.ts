@@ -60,6 +60,45 @@ const CURVE: readonly (readonly [index: number, rating: number])[] = [
   [1.19, 96], // Bugatti Chiron Super Sport 300+
 ]
 
+/**
+ * How much of a car's quoted performance survives the years.
+ *
+ * The index above measures a car against physics, which makes the rating
+ * era-blind: a 1967 pickup quoting 250 hp scored like a modern 250 hp car, and
+ * the roster came out with the 1970s rated *higher* than the 2020s. A 1987
+ * Civic, a 1967 C10 and a Mk1 Golf GTI were all gold cards.
+ *
+ * Three real things sit behind that, and they all point the same way. American
+ * figures before 1972 are gross — measured off an engine with no alternator,
+ * water pump or exhaust — and run about a fifth above the net numbers every
+ * modern car quotes. Period 0-100 times came from magazines with a clear
+ * interest in a good headline. And nothing in the index sees tyres, brakes or
+ * aerodynamics, which is where most of fifty years of progress actually went.
+ *
+ * So pace is discounted by age, at roughly a tenth of an index unit per decade,
+ * and zero from 2010 on — which leaves every control point below pinned exactly
+ * where it was measured.
+ *
+ * The discount is applied to the index rather than the rating so that the shape
+ * of the curve carries it: the curve is flattest at the top, so an icon loses
+ * two or three points where an ordinary saloon loses seven, and a GT40 stays an
+ * 87 while a 1967 C10 pickup falls out of gold. The curve is also brutally
+ * steep at the bottom, though, which is the other end of the same fact — left
+ * alone it took a Ford Model T from 33 to below zero. So the drop is capped at
+ * what it would cost in the middle of the scale: age costs a car the same
+ * points wherever it sits, except at the top, where it costs less.
+ */
+const ERA_FREE_FROM = 2010
+const ERA_RATE_PER_DECADE = 0.09
+
+/** Rating points per index unit around the gold threshold, where the curve is
+ * neither flattened for hypercars nor steepened for the very slow. */
+const MID_SLOPE = 18.6
+
+function eraPenalty(year: number): number {
+  return (ERA_RATE_PER_DECADE * Math.max(0, ERA_FREE_FROM - year)) / 10
+}
+
 /** Linear between control points, and along the end slopes beyond them. */
 function alongCurve(index: number): number {
   const segment = (i: number) => {
@@ -86,9 +125,14 @@ function characterAdjustment(stats: Stats): number {
   return handling * 1.5 + wow * 1.5
 }
 
-export function overall(stats: Stats): number {
-  const rating = alongCurve(performanceIndex(stats)) + characterAdjustment(stats)
-  return Math.round(Math.min(99, Math.max(1, rating)))
+export function overall(stats: Stats, year: number): number {
+  const index = performanceIndex(stats)
+  const penalty = eraPenalty(year)
+  const pace = Math.max(
+    alongCurve(index - penalty),
+    alongCurve(index) - penalty * MID_SLOPE,
+  )
+  return Math.round(Math.min(99, Math.max(1, pace + characterAdjustment(stats))))
 }
 
 /** Bronze below 65, silver 65-74, gold 75 and up. */
@@ -107,7 +151,7 @@ export function cardClassOf(car: Car, tier: Tier): CardClass {
 
 /** Resolve a car into everything the UI needs to draw it. */
 export function toCardView(car: Car): CardView {
-  const rating = overall(car.stats)
+  const rating = overall(car.stats, car.year)
   // Special cards always rate as gold, regardless of stats
   const tier = car.special ? 'gold' : tierOf(rating)
   return { ...car, overall: rating, tier, cardClass: cardClassOf(car, tier) }
