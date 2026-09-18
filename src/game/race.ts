@@ -24,7 +24,7 @@ export type Discipline = 'drag' | 'circuit' | 'topspeed' | 'concours'
 /** Which stats each discipline actually rewards, and how much. */
 const WEIGHTS: Record<Discipline, Partial<Record<Stat, number>>> = {
   drag: { hp: 0.4, acc: 0.42, weight: 0.18 },
-  circuit: { handling: 0.42, acc: 0.24, weight: 0.22, hp: 0.12 },
+  circuit: { handling: 0.50, acc: 0.20, weight: 0.18, hp: 0.12 },
   topspeed: { topspeed: 0.58, hp: 0.3, acc: 0.12 },
   concours: { wowFactor: 0.72, age: 0.28 },
 }
