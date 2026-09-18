@@ -14,6 +14,7 @@ export function Settings({ onReset }: Props) {
   const [editingCards, setEditingCards] = useState(false)
   const [selectedCardId, setSelectedCardId] = useState<string>('')
   const [editStats, setEditStats] = useState<Record<string, number>>({})
+  const [searchQuery, setSearchQuery] = useState<string>('')
   const packsOpened = useGame((s) => s.packsOpened)
   // Counted from cars actually owned rather than from the keys of the
   // collection, and against the real roster size rather than a number typed by
@@ -110,22 +111,52 @@ export function Settings({ onReset }: Props) {
                 </div>
               )}
               <div>
-                <label className="text-sm font-semibold text-white/80">Select a car to edit:</label>
-                <select
-                  value={selectedCardId}
-                  onChange={(e) => {
-                    setSelectedCardId(e.target.value)
-                    setEditStats({})
-                  }}
-                  className="mt-2 w-full rounded-lg bg-white/10 px-3 py-2 text-white"
-                >
-                  <option value="">Choose a car...</option>
-                  {ownedCars.map((car) => (
-                    <option key={car.id} value={car.id}>
-                      {car.make} {car.model} {car.year}
-                    </option>
-                  ))}
-                </select>
+                <label className="text-sm font-semibold text-white/80">Search and select a car to edit:</label>
+                <input
+                  type="text"
+                  placeholder="Search by make, model, or year..."
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  className="mt-2 w-full rounded-lg bg-white/10 px-3 py-2 text-white placeholder:text-white/30"
+                />
+                {searchQuery && (
+                  <div className="mt-2 max-h-48 overflow-y-auto rounded-lg bg-white/5 p-2 space-y-1">
+                    {ownedCars
+                      .filter((car) => {
+                        const query = searchQuery.toLowerCase()
+                        return (
+                          car.make.toLowerCase().includes(query) ||
+                          car.model.toLowerCase().includes(query) ||
+                          car.year.toString().includes(query)
+                        )
+                      })
+                      .slice(0, 50)
+                      .map((car) => (
+                        <button
+                          key={car.id}
+                          type="button"
+                          onClick={() => {
+                            setSelectedCardId(car.id)
+                            setEditStats({})
+                            setSearchQuery('')
+                          }}
+                          className="w-full text-left rounded px-2 py-1 text-sm text-white/70 hover:bg-white/10 hover:text-white transition"
+                        >
+                          {car.make} {car.model} {car.year}
+                        </button>
+                      ))}
+                    {ownedCars.filter((car) => {
+                      const query = searchQuery.toLowerCase()
+                      return (
+                        car.make.toLowerCase().includes(query) ||
+                        car.model.toLowerCase().includes(query) ||
+                        car.year.toString().includes(query)
+                      )
+                    }).length === 0 && (
+                      <p className="text-xs text-white/40 px-2 py-1">No cars found</p>
+                    )}
+                  </div>
+                )}
               </div>
 
               {selectedCardId && (
