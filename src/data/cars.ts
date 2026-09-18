@@ -4120,7 +4120,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'ram-1500-rebel',
-    make: 'RAM', model: '1500 TRX', year: 2023, country: 'US',
+    make: 'Ram', model: '1500 TRX', year: 2023, country: 'US',
     stats: { hp: 702, acc: 5, topspeed: 225, weight: 2380, handling: 40, wowFactor: 90 },
     rare: true,
     specs: { hp: 702, zeroToHundred: 5, topSpeed: 225, weightKg: 2380 },
@@ -6730,7 +6730,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'seat-ibiza-2023',
-    make: 'Seat', model: 'Ibiza', year: 2023, country: 'ES',
+    make: 'SEAT', model: 'Ibiza', year: 2023, country: 'ES',
     stats: { hp: 150, acc: 8.9, topspeed: 200, weight: 1220, handling: 28, wowFactor: 30 },
     rare: false,
     specs: { hp: 150, zeroToHundred: 8.9, topSpeed: 200, weightKg: 1220 },
@@ -7338,7 +7338,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'lada-vesta-2023',
-    make: 'LADA', model: 'Vesta', year: 2023, country: 'RU',
+    make: 'Lada', model: 'Vesta', year: 2023, country: 'RU',
     stats: { hp: 106, acc: 11.4, topspeed: 170, weight: 1240, handling: 26, wowFactor: 30 },
     rare: false,
     specs: { hp: 106, zeroToHundred: 11.4, topSpeed: 170, weightKg: 1240 },
@@ -7346,7 +7346,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'lada-granta-2023',
-    make: 'LADA', model: 'Granta', year: 2023, country: 'RU',
+    make: 'Lada', model: 'Granta', year: 2023, country: 'RU',
     stats: { hp: 82, acc: 12.2, topspeed: 160, weight: 1140, handling: 25, wowFactor: 30 },
     rare: false,
     specs: { hp: 82, zeroToHundred: 12.2, topSpeed: 160, weightKg: 1140 },
@@ -7426,7 +7426,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'nio-et5-touring-2023',
-    make: 'Nio', model: 'ET5 Touring', year: 2023, country: 'CN',
+    make: 'NIO', model: 'ET5 Touring', year: 2023, country: 'CN',
     stats: { hp: 315, acc: 4.6, topspeed: 225, weight: 1850, handling: 31, wowFactor: 65 },
     rare: true,
     specs: { hp: 315, zeroToHundred: 4.6, topSpeed: 225, weightKg: 1850 },
@@ -7803,7 +7803,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'seat-tarraco-2023',
-    make: 'Seat', model: 'Tarraco', year: 2023, country: 'ES',
+    make: 'SEAT', model: 'Tarraco', year: 2023, country: 'ES',
     stats: { hp: 150, acc: 9, topspeed: 200, weight: 1500, handling: 27, wowFactor: 30 },
     rare: false,
     specs: { hp: 150, zeroToHundred: 9, topSpeed: 200, weightKg: 1500 },
@@ -8230,7 +8230,7 @@ export const CARS: Car[] = [
   },
   {
     id: 'mini-cooper-se-jcw-2024',
-    make: 'MINI', model: 'Cooper SE JCW', year: 2024, country: 'GB',
+    make: 'Mini', model: 'Cooper SE JCW', year: 2024, country: 'GB',
     stats: { hp: 301, acc: 6.1, topspeed: 200, weight: 1410, handling: 34, wowFactor: 55 },
     rare: true,
     specs: { hp: 301, zeroToHundred: 6.1, topSpeed: 200, weightKg: 1410 },

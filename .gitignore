@@ -12,3 +12,5 @@ android/*.iml
 android/app/build
 android/build
 contact-sheet.html
+# Scratch sheet the image-picking scripts render for a human to look at.
+tesla-candidates.html
