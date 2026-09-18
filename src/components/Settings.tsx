@@ -120,7 +120,7 @@ export function Settings({ onReset }: Props) {
                   className="mt-2 w-full rounded-lg bg-white/10 px-3 py-2 text-white placeholder:text-white/30"
                 />
                 {searchQuery && (
-                  <div className="mt-2 max-h-48 overflow-y-auto rounded-lg bg-white/5 p-2 space-y-1">
+                  <div className="mt-2 max-h-64 overflow-y-auto rounded-lg bg-black/50 border border-white/10">
                     {ownedCars
                       .filter((car) => {
                         const query = searchQuery.toLowerCase()
@@ -140,9 +140,9 @@ export function Settings({ onReset }: Props) {
                             setEditStats({})
                             setSearchQuery('')
                           }}
-                          className="w-full text-left rounded px-2 py-1 text-sm text-white/70 hover:bg-white/10 hover:text-white transition"
+                          className="w-full text-left px-3 py-2 text-sm text-white hover:bg-white/20 transition border-b border-white/5 last:border-b-0"
                         >
-                          {car.make} {car.model} {car.year}
+                          {car.make} {car.model} <span className="text-white/60">({car.year})</span>
                         </button>
                       ))}
                     {ownedCars.filter((car) => {
@@ -153,7 +153,7 @@ export function Settings({ onReset }: Props) {
                         car.year.toString().includes(query)
                       )
                     }).length === 0 && (
-                      <p className="text-xs text-white/40 px-2 py-1">No cars found</p>
+                      <p className="text-xs text-white/40 px-3 py-2">No cars found</p>
                     )}
                   </div>
                 )}
