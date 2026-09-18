@@ -10,14 +10,12 @@ function slots(...groups: [count: number, tier: Tier][]): Tier[] {
 /**
  * The pack ladder.
  *
- * Two rules hold it together. Every paid pack is priced well above what its
- * contents quick-sell for, so buying and selling is a way to spend money on
- * cars, never a way to make it — `economy.test.ts` measures this and fails the
- * build if a price drifts into profit. And the best cars are kept scarce by
- * natural rarity and market economics: a hypercar book value is so high that
- * the market (and contracts) are the only realistic way to own one. Cheap packs
- * carry a maxOverall ceiling, but premium packs deal everything, with higher
- * ratings naturally rarer.
+ * Every pack deals what its tier allows. Cheap packs cap their rating so the
+ * exclusive high-tier cards don't hand out for nothing. Premium packs deal
+ * everything in their tier — even a hypercar is theoretically possible, but
+ * the natural rarity in the data makes it vanishingly unlikely. Higher ratings
+ * have fewer cards: only 10 exist at 98-99, only 2 at 96. Opening thousands of
+ * packs is the realistic path to owning a true hypercar; the market is faster.
  */
 const LADDER: Pack[] = [
   {
@@ -89,15 +87,14 @@ const LADDER: Pack[] = [
   {
     id: 'premium-gold',
     name: 'Premium Gold',
-    price: 21_000,
+    price: 12_000,
     tiers: slots([8, 'gold']),
     guaranteedRare: 3,
     rareChance: 0.4,
     specialChance: 0.004,
-    maxOverall: 96,
-    headlinerMinOverall: 90,
+    headlinerMinOverall: 86,
     art: 'gold',
-    blurb: 'Eight gold cars, three rare, one rated 90 or better. Every supercar but the rarest.',
+    blurb: 'Eight gold cars, three guaranteed rare. Anything possible, but supercars are vanishingly rare.',
   },
 ]
 
