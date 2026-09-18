@@ -19,6 +19,7 @@
     "report:ratings": "tsx scripts/rating-report.ts",
     "report:economy": "tsx scripts/economy-report.ts",
     "report:race": "tsx scripts/race-report.ts",
+    "audit:specs": "tsx scripts/spec-audit.ts",
     "check:mobile": "npm run build && node scripts/check-mobile.mjs"
   },
   "dependencies": {
