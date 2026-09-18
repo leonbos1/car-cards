@@ -17,6 +17,8 @@ import {
   type RaceResult,
 } from '../game/race'
 import { ownedCards, useGame } from '../store/useGame'
+import { applyShowroomBonus, featuredCars } from '../game/showroom'
+import { awardPoints } from '../game/championships'
 import type { CardView } from '../types'
 
 const CLASS_ORDER = ['Rookie', 'Club', 'National', 'Elite', 'Open']
@@ -26,6 +28,8 @@ export function Race() {
   const finishRace = useGame((s) => s.finishRace)
   const raceAnimationMs = useGame((s) => s.raceAnimationMs)
   const cardOverrides = useGame((s) => s.cardOverrides)
+  const championshipPoints = useGame((s) => s.championshipPoints)
+  const setChampionshipPoints = (pts: number) => useGame.setState({ championshipPoints: pts })
 
   const [event, setEvent] = useState<RaceEvent | null>(null)
   const [car, setCar] = useState<CardView | null>(null)
@@ -35,6 +39,7 @@ export function Race() {
   const [session, setSession] = useState({ races: 0, earned: 0 })
 
   const garage = useMemo(() => ownedCards(collection), [collection])
+  const featured = useMemo(() => featuredCars(), [])
 
   function start(entry: CardView, on: RaceEvent) {
     setCar(entry)
@@ -56,13 +61,23 @@ export function Race() {
         }
       : entry
     const outcome = race(adjustedEntry, on)
+
+    // Apply showroom bonus if car is featured
+    const showroomPayout = applyShowroomBonus(outcome.payout, entry.id)
+
+    // Award championship points
+    const points = awardPoints(outcome.position)
+
     // Banked at the flag, not at the click, so the money and the result you are
     // looking at are always the same race.
     window.setTimeout(() => {
-      setResult(outcome)
+      // Update result with adjusted payout for display
+      const adjustedResult = { ...outcome, payout: showroomPayout }
+      setResult(adjustedResult)
       setRunning(false)
-      finishRace(outcome.payout, outcome.position === 1)
-      setSession((s) => ({ races: s.races + 1, earned: s.earned + outcome.payout }))
+      finishRace(showroomPayout, outcome.position === 1)
+      setChampionshipPoints(championshipPoints + points)
+      setSession((s) => ({ races: s.races + 1, earned: s.earned + showroomPayout }))
     }, raceAnimationMs)
   }
 
@@ -115,34 +130,46 @@ export function Race() {
           </p>
         ) : (
           <ul className="grid gap-2 sm:grid-cols-2">
-            {mine.map((entry) => (
-              <li key={entry.id}>
-                <button
-                  type="button"
-                  onClick={() => start(entry, event)}
-                  className="flex w-full items-center gap-3 rounded-xl border border-white/10 bg-white/[0.03] p-3 text-left transition hover:border-gold-2/50 hover:bg-white/[0.06]"
-                >
-                  <span className="w-8 shrink-0 text-lg font-black tabular-nums text-gold-2">
-                    {entry.overall}
-                  </span>
-                  <span className="min-w-0 flex-1">
-                    <span className="block truncate text-sm font-bold">
-                      {entry.make} {entry.model}
+            {mine.map((entry) => {
+              const isFeatured = featured.some((f) => f.id === entry.id)
+              return (
+                <li key={entry.id}>
+                  <button
+                    type="button"
+                    onClick={() => start(entry, event)}
+                    className={`flex w-full items-center gap-3 rounded-xl border p-3 text-left transition ${
+                      isFeatured
+                        ? 'border-gold-2/50 bg-gold-2/[0.08] hover:border-gold-2/80 hover:bg-gold-2/[0.12]'
+                        : 'border-white/10 bg-white/[0.03] hover:border-gold-2/50 hover:bg-white/[0.06]'
+                    }`}
+                  >
+                    <span className="w-8 shrink-0 text-lg font-black tabular-nums text-gold-2">
+                      {entry.overall}
                     </span>
-                    {/* The numbers this event is decided on, not the rating —
-                        a 92 that weighs two tonnes loses a circuit race. */}
-                    <span className="flex flex-wrap gap-x-3 text-xs text-white/45">
-                      {DISCIPLINE_STATS[event.discipline].map((stat) => (
-                        <span key={stat} className="tabular-nums">
-                          {statValue(entry, stat)}{' '}
-                          <span className="text-white/30">{statLabel(stat)}</span>
-                        </span>
-                      ))}
+                    <span className="min-w-0 flex-1">
+                      <span className="block truncate text-sm font-bold">
+                        {entry.make} {entry.model}
+                      </span>
+                      {/* The numbers this event is decided on, not the rating —
+                          a 92 that weighs two tonnes loses a circuit race. */}
+                      <span className="flex flex-wrap gap-x-3 text-xs text-white/45">
+                        {DISCIPLINE_STATS[event.discipline].map((stat) => (
+                          <span key={stat} className="tabular-nums">
+                            {statValue(entry, stat)}{' '}
+                            <span className="text-white/30">{statLabel(stat)}</span>
+                          </span>
+                        ))}
+                      </span>
                     </span>
-                  </span>
-                </button>
-              </li>
-            ))}
+                    {isFeatured && (
+                      <span className="shrink-0 rounded-lg bg-gold-2/30 px-2 py-1 text-xs font-bold text-gold-2">
+                        ×1.5
+                      </span>
+                    )}
+                  </button>
+                </li>
+              )
+            })}
           </ul>
         )}
       </Shell>
@@ -157,6 +184,18 @@ export function Race() {
         right car: a drag strip and a concours lawn want completely different things, and a
         well-matched entry pays around ten times a lazy one.
       </p>
+
+      <div className="mb-6 rounded-lg border border-gold-2/30 bg-gold-2/[0.08] p-4">
+        <p className="text-xs font-bold uppercase tracking-widest text-gold-2/70">Today's featured cars (1.5× payout)</p>
+        <ul className="mt-3 flex gap-2 overflow-x-auto">
+          {featured.map((car) => (
+            <li key={car.id} className="flex shrink-0 items-center gap-2 rounded-lg bg-white/5 px-3 py-2 text-sm">
+              <span className="font-bold">{car.make}</span>
+              <span className="text-white/60">{car.model}</span>
+            </li>
+          ))}
+        </ul>
+      </div>
 
       {CLASS_ORDER.map((cls) => {
         const events = EVENTS.filter((e) => classOf(e) === cls)

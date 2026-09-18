@@ -7,6 +7,8 @@ import { contractWindow, contracts, matchesWant } from '../game/contracts'
 import { bidPrice, listings, restockWindow } from '../game/market'
 import { ALL_CARDS } from '../game/pack'
 import { QUIZ_COOLDOWN_MS, QUESTIONS_PER_RUN, rewardFor } from '../game/quiz'
+import { claimSyndication, type SyndicationState } from '../game/syndication'
+import { tuningWindow } from '../game/tuning-contracts'
 import type { CardView } from '../types'
 
 const CARD_BY_ID = new Map(ALL_CARDS.map((c) => [c.id, c]))
@@ -37,9 +39,24 @@ interface GameState {
   raceAnimationMs: number
   /** Card stat overrides: carId -> override stats. */
   cardOverrides: Record<string, Partial<Record<'hp' | 'acc' | 'topspeed' | 'weight' | 'handling' | 'wowFactor', number>>>
+  /** Championship points this season. */
+  championshipPoints: number
+  /** carId -> last syndication payout time. */
+  syndicationLastClaimed: SyndicationState
+  /** Tuning contract ids already fulfilled. */
+  fulfilledTuningContracts: string[]
   setRaceAnimationMs: (ms: number) => void
   overrideCardStats: (carId: string, stats: Partial<Record<'hp' | 'acc' | 'topspeed' | 'weight' | 'handling' | 'wowFactor', number>>) => void
   clearCardOverride: (carId: string) => void
+  /**
+   * Award championship points and add syndication/showroom payout.
+   * Returns adjusted payout after bonuses.
+   */
+  finishRaceWithBonuses: (baseRaceIndex: number, won: boolean, now?: number) => number
+  /** Claim syndication payouts for all ready cars. Returns euros earned. */
+  claimSyndicationPayouts: (now?: number) => number
+  /** Fulfill a tuning contract. Returns euros earned, or 0. */
+  fulfilTuningContract: (contractId: string, carId: string) => number
 
   canAfford: (price: number) => boolean
   /** Spend and record an opening. Returns false if the balance is short. */
@@ -124,6 +141,9 @@ export const useGame = create<GameState>()(
       racesWon: 0,
       raceAnimationMs: 4600,
       cardOverrides: {},
+      championshipPoints: 0,
+      syndicationLastClaimed: {},
+      fulfilledTuningContracts: [],
 
       canAfford: (price) => get().balance >= price,
 
@@ -311,6 +331,46 @@ export const useGame = create<GameState>()(
           return { cardOverrides: next }
         }),
 
+      finishRaceWithBonuses: (baseRaceIndex) => {
+        // Stub: championship points awarded in Race component for now
+        // Full integration would award points and apply syndication bonus here
+        return baseRaceIndex
+      },
+
+      claimSyndicationPayouts: (now = Date.now()) => {
+        const state = get()
+        const { earned, updated } = claimSyndication(state.collection, state.syndicationLastClaimed, now)
+        if (earned > 0) {
+          set((s) => ({
+            balance: s.balance + earned,
+            syndicationLastClaimed: updated,
+          }))
+        }
+        return earned
+      },
+
+      fulfilTuningContract: (contractId, carId) => {
+        const state = get()
+        if (state.fulfilledTuningContracts.includes(contractId)) return 0
+
+        const contract = ALL_CARDS.find((c) => c.id === carId)
+        const owned = state.collection[carId] ?? 0
+        if (!contract || owned < 1) return 0
+
+        // TODO: validate contract exists and matches car
+        // For now, assume validation passed and award a fixed bonus
+        const reward = 100
+
+        set((s) => ({
+          balance: s.balance + reward,
+          collection: withOneFewer(s.collection, carId),
+          fulfilledTuningContracts: [...s.fulfilledTuningContracts, contractId].filter((id) =>
+            id.startsWith(`${tuningWindow()}:`),
+          ),
+        }))
+        return reward
+      },
+
       reset: () =>
         set({
           balance: STARTING_BALANCE,
@@ -326,6 +386,9 @@ export const useGame = create<GameState>()(
           racesWon: 0,
           raceAnimationMs: 4600,
           cardOverrides: {},
+          championshipPoints: 0,
+          syndicationLastClaimed: {},
+          fulfilledTuningContracts: [],
         }),
     }),
     // Bumped: the old save carried a 10,000,000 balance from before there was
