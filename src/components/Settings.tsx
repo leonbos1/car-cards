@@ -121,7 +121,7 @@ export function Settings({ onReset }: Props) {
                 />
                 {searchQuery && (
                   <div className="mt-2 max-h-64 overflow-y-auto rounded-lg bg-black/50 border border-white/10">
-                    {ownedCars
+                    {ALL_CARDS
                       .filter((car) => {
                         const query = searchQuery.toLowerCase()
                         return (
@@ -131,21 +131,25 @@ export function Settings({ onReset }: Props) {
                         )
                       })
                       .slice(0, 50)
-                      .map((car) => (
-                        <button
-                          key={car.id}
-                          type="button"
-                          onClick={() => {
-                            setSelectedCardId(car.id)
-                            setEditStats({})
-                            setSearchQuery('')
-                          }}
-                          className="w-full text-left px-3 py-2 text-sm text-white hover:bg-white/20 transition border-b border-white/5 last:border-b-0"
-                        >
-                          {car.make} {car.model} <span className="text-white/60">({car.year})</span>
-                        </button>
-                      ))}
-                    {ownedCars.filter((car) => {
+                      .map((car) => {
+                        const isOwned = ownedCars.some((c) => c.id === car.id)
+                        return (
+                          <button
+                            key={car.id}
+                            type="button"
+                            onClick={() => {
+                              setSelectedCardId(car.id)
+                              setEditStats({})
+                              setSearchQuery('')
+                            }}
+                            className="w-full text-left px-3 py-2 text-sm text-white hover:bg-white/20 transition border-b border-white/5 last:border-b-0"
+                          >
+                            {car.make} {car.model} <span className="text-white/60">({car.year})</span>
+                            {!isOwned && <span className="text-white/40 text-xs ml-2">(not owned)</span>}
+                          </button>
+                        )
+                      })}
+                    {ALL_CARDS.filter((car) => {
                       const query = searchQuery.toLowerCase()
                       return (
                         car.make.toLowerCase().includes(query) ||
