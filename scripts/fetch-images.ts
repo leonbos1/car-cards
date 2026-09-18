@@ -15,7 +15,7 @@ import { fileURLToPath } from 'node:url'
 import sharp from 'sharp'
 import { CARS } from '../src/data/cars'
 import type { Car, CarImage } from '../src/types'
-import { depicts } from './image-match'
+import { depicts, modelYearOf } from './image-match'
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const OUT_DIR = path.join(ROOT, 'public', 'cars')
@@ -149,6 +149,15 @@ function score(candidate: Candidate, car: Car): number {
 
   // Prefer a file that names the exact year the card claims.
   if (new RegExp(`\\b${car.year}\\b`).test(title)) total += 10
+
+  // A filename that states its model year, close to the card's, is a
+  // confirmed generation; one that states none is only an unrefuted guess.
+  const named = modelYearOf(title)
+  if (named !== null) {
+    const [from, to] = named
+    const gap = car.year < from ? from - car.year : car.year > to ? car.year - to : 0
+    total += Math.max(0, 14 - gap * 3)
+  }
 
   // Every significant word of the make and model that shows up in the filename.
   const words = `${car.make} ${car.model}`

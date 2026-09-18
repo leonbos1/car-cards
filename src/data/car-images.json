@@ -91,9 +91,9 @@
   },
   "mazda-2": {
     "file": "mazda-2.webp",
-    "artist": "Tokumeigakarinoaoshima",
-    "license": "CC0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mazda_DEMIO_13S_(DJ)_rear.JPG"
+    "artist": "Alex Neman",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2019_Mazda_2_Hatchback_facelift_(front),_Malang_City_Point.jpg"
   },
   "vw-golf-mk4": {
     "file": "vw-golf-mk4.webp",
@@ -253,9 +253,9 @@
   },
   "mitsubishi-lancer-evo-vi": {
     "file": "mitsubishi-lancer-evo-vi.webp",
-    "artist": "Interesting.cars.insta",
+    "artist": "Calreyn88",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Lancer_Evolution_VI_Front.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2001_Mitsubishi_EVO_VI.jpg"
   },
   "toyota-celica-gt-four": {
     "file": "toyota-celica-gt-four.webp",
@@ -313,21 +313,15 @@
   },
   "ford-mustang-gt": {
     "file": "ford-mustang-gt.webp",
-    "artist": "Tobias \"ToMar\" Maier",
-    "license": "CC BY-SA 3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ford_Mustang_Fastback_2015_Model.jpg"
+    "artist": "Vauxford",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_Ford_Mustang_GT_5.0_Front.jpg"
   },
   "nissan-gtr-r35": {
     "file": "nissan-gtr-r35.webp",
     "artist": "Dinkun Chen",
     "license": "CC BY-SA 4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:NISSAN_GT-R_(R35)_China.jpg"
-  },
-  "jaguar-f-type-r": {
-    "file": "jaguar-f-type-r.webp",
-    "artist": "Liam Walker",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021_Jaguar_F-Type_R-Dynamic_facelift.jpg"
   },
   "maserati-granturismo": {
     "file": "maserati-granturismo.webp",
@@ -523,9 +517,9 @@
   },
   "audi-tts": {
     "file": "audi-tts.webp",
-    "artist": "BrokenSphere",
-    "license": "CC BY-SA 3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2009_white_Audi_TTS_Coupe_front.JPG"
+    "artist": "Tokumeigakarinoaoshima",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Audi_TTS_coup%C3%A9_(8J)_front.JPG"
   },
   "subaru-impreza-wrx-sti": {
     "file": "subaru-impreza-wrx-sti.webp",
@@ -608,8 +602,8 @@
   "hyundai-atos": {
     "file": "hyundai-atos.webp",
     "artist": "Corvettec6r",
-    "license": "Public domain",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2001_Hyundai_Atos_Prime_front.JPG"
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hyundai_Atos_Prime_front.JPG"
   },
   "daewoo-matiz": {
     "file": "daewoo-matiz.webp",
@@ -631,9 +625,9 @@
   },
   "datsun-go": {
     "file": "datsun-go.webp",
-    "artist": "Agratsa",
+    "artist": "Haysnawri10",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Datsun_redi-Go_(front).png"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_Datsun_Go_T_front.jpg"
   },
   "tata-nexon": {
     "file": "tata-nexon.webp",
@@ -664,12 +658,6 @@
     "artist": "Luftfahrrad",
     "license": "CC BY-SA 3.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Suzuki_Swift_front-1.jpg"
-  },
-  "maruti-wagon-r": {
-    "file": "maruti-wagon-r.webp",
-    "artist": "Andra Febrian",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2013_Maruti_Suzuki_Wagon_R_Stingray_VXi_front_view.jpg"
   },
   "geely-emgrand": {
     "file": "geely-emgrand.webp",
@@ -739,9 +727,9 @@
   },
   "morris-minor": {
     "file": "morris-minor.webp",
-    "artist": "sv1ambo",
+    "artist": "Sicnag",
     "license": "CC BY 2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1968_Morris_Minor_1000_sedan_-_Panda_car_replica_(6107359415).jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Morris_Minor_MM.jpg"
   },
   "trabant-601": {
     "file": "trabant-601.webp",
@@ -769,9 +757,9 @@
   },
   "seat-leon-cupra-280": {
     "file": "seat-leon-cupra-280.webp",
-    "artist": "Quird",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seat_Leon_5F_Cupra_300_(Phase_2).jpg"
+    "artist": "Ian S",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Len%27s_Seat_on_Lords_Lane_-_geograph.org.uk_-_5682862.jpg"
   },
   "opel-astra-opc": {
     "file": "opel-astra-opc.webp",
@@ -793,9 +781,9 @@
   },
   "chevrolet-camaro-ss": {
     "file": "chevrolet-camaro-ss.webp",
-    "artist": "MercurySable99",
+    "artist": "Damian B Oh",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1969_Chevrolet_Camaro_SS_Sport_Coupe,_front_left_(Cruisin%27_the_River_Lowellville_Car_Show,_July_10th,_2023).jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chevrolet_Camaro_SS_Alpha_Tuxedo_Black_(35).jpg"
   },
   "lexus-is-f": {
     "file": "lexus-is-f.webp",
@@ -817,9 +805,9 @@
   },
   "nissan-300zx-z32": {
     "file": "nissan-300zx-z32.webp",
-    "artist": "先従隗始",
-    "license": "CC0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nissan_E-GCZ32_Fairlady_Z_300ZX_Twin_Turbo_2_by_2_T-Bar_Roof_(22080710530).jpg"
+    "artist": "Rutger van der Maar",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1992_Nissan_300ZX_Twin_Turbo_Automatic.jpg"
   },
   "toyota-mr2-sw20": {
     "file": "toyota-mr2-sw20.webp",
@@ -835,9 +823,9 @@
   },
   "mazda-rx7-fc": {
     "file": "mazda-rx7-fc.webp",
-    "artist": "Tokumeigakarinoaoshima",
-    "license": "CC0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tuned_Mazda_SAVANNA_RX-7_GT-R_(E-FC3S)_at_night_front.jpg"
+    "artist": "Jeremy from Sydney, Australia",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1986_Mazda_RX-7_(FC)_coupe_(20671176604).jpg"
   },
   "jaguar-xj220": {
     "file": "jaguar-xj220.webp",
@@ -955,9 +943,9 @@
   },
   "lotus-esprit-v8": {
     "file": "lotus-esprit-v8.webp",
-    "artist": "Jackson lo2007",
-    "license": "CC BY 3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2000_Lotus_Esprit_V8_Twin_Turbo_Lightning_Pearl_Yellow.jpg"
+    "artist": "Calreyn88",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1996_Lotus_Esprit_V8_Turbo.jpg"
   },
   "fiat-126": {
     "file": "fiat-126.webp",
@@ -1153,15 +1141,9 @@
   },
   "alfa-romeo-33": {
     "file": "alfa-romeo-33.webp",
-    "artist": "Corvettec6r",
-    "license": "Public domain",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_33_Imola.JPG"
-  },
-  "alfa-romeo-33-qv": {
-    "file": "alfa-romeo-33-qv.webp",
-    "artist": "Pava, Milano",
-    "license": "CC BY-SA 3.0 it",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%22_15_-_ITALY_Alfa_Romeo_Giulia_QV_2015_pre-series_at_Museo_Alfa_Romeo_Arese.jpg"
+    "artist": "photobeppus",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_33_(34456002402).jpg"
   },
   "alfa-romeo-alfetta": {
     "file": "alfa-romeo-alfetta.webp",
@@ -1183,9 +1165,9 @@
   },
   "alfa-romeo-spider-1970s": {
     "file": "alfa-romeo-spider-1970s.webp",
-    "artist": "Vauxford",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1977_Alfa_Romeo_2000_Spider_Veloce_2.0_Front.jpg"
+    "artist": "Lothar Spurzem",
+    "license": "CC BY-SA 2.0 de",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Spider,_2._Gen_(2014-09-13_7140).JPG"
   },
   "alfa-romeo-gtv-1974": {
     "file": "alfa-romeo-gtv-1974.webp",
@@ -1201,27 +1183,21 @@
   },
   "alfa-romeo-sprint": {
     "file": "alfa-romeo-sprint.webp",
-    "artist": "Tokumeigakarinoaoshima",
-    "license": "CC0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Giulietta_III_Sprint_at_night_front.JPG"
+    "artist": "Dreddhk",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:FLS_Sprint_160.JPG"
   },
   "alfa-romeo-90": {
     "file": "alfa-romeo-90.webp",
-    "artist": "Charles01",
-    "license": "Public domain",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_90_Pza_Venezia.jpg"
+    "artist": "Tony Harrison from Farnborough, UK",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lancia_Motor_Club_AGM_2006_-_ALFA_90_2.5_IMG_8267_-_Flickr_-_tonylanciabeta.jpg"
   },
   "alfa-romeo-75": {
     "file": "alfa-romeo-75.webp",
-    "artist": "Corvettec6r",
-    "license": "CC0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_75_front.JPG"
-  },
-  "alfa-romeo-75-turbo": {
-    "file": "alfa-romeo-75-turbo.webp",
-    "artist": "Corvettec6r",
+    "artist": "Zairon",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1988_Alfa_Romeo_75_1.8_Turbo_America_front.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arese_Museo_Storico_Alfa_Romeo_1985_Alfa_75_1.jpg"
   },
   "alfa-romeo-164": {
     "file": "alfa-romeo-164.webp",
@@ -1237,9 +1213,9 @@
   },
   "alfa-romeo-146": {
     "file": "alfa-romeo-146.webp",
-    "artist": "Tokumeigakarinoaoshima",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Osaka_Motor_Show_2017_(146)_-_Alfa_Romeo_GIULIA_Quadrifoglio_(ABA-95229).jpg"
+    "artist": "Corvettec6r",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1995_Alfa_Romeo_146.JPG"
   },
   "alfa-romeo-147": {
     "file": "alfa-romeo-147.webp",
@@ -1297,9 +1273,9 @@
   },
   "alfa-romeo-giulietta-qv": {
     "file": "alfa-romeo-giulietta-qv.webp",
-    "artist": "Loadbeta",
-    "license": "CC0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Giulietta_Quadrifoglio_Verde_Launch_Edition_front_-_Tokyo_Auto_Salon_2015.jpg"
+    "artist": "NaBUru38",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Giulietta_QV_in_Punta_del_Este_02.JPG"
   },
   "alfa-romeo-stelvio": {
     "file": "alfa-romeo-stelvio.webp",
@@ -1321,9 +1297,9 @@
   },
   "alfa-romeo-spider-2.0": {
     "file": "alfa-romeo-spider-2.0.webp",
-    "artist": "Corvettec6r",
-    "license": "Public domain",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Spider_2.0_JTS_facelift.JPG"
+    "artist": "Chris Whippet",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vintage_1990_Alfa_Romeo_Spider,_Palmerston_Road,_Farnborough_(geograph_4713847).jpg"
   },
   "alfa-romeo-spider-t-spark": {
     "file": "alfa-romeo-spider-t-spark.webp",
@@ -1333,9 +1309,9 @@
   },
   "alfa-romeo-gtv-2.0-turbo": {
     "file": "alfa-romeo-gtv-2.0-turbo.webp",
-    "artist": "Mr.choppers",
-    "license": "CC BY-SA 3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1985_Alfa_Romeo_GTV6_Callaway_Twin_Turbo,_front_right.jpg"
+    "artist": "Ermell",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_GTV_1750_II-_P5201008.jpg"
   },
   "alfa-romeo-brera": {
     "file": "alfa-romeo-brera.webp",
@@ -1369,27 +1345,27 @@
   },
   "alfa-romeo-159-ti-sport": {
     "file": "alfa-romeo-159-ti-sport.webp",
-    "artist": "Andrew Bone",
-    "license": "CC BY 2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa-Romeo_159_ti_Sport_Wagon_(2008-9)_(43771087884).jpg"
+    "artist": "M 93",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_159_ti_front.JPG"
   },
   "alfa-romeo-147-ts": {
     "file": "alfa-romeo-147-ts.webp",
-    "artist": "Calreyn88",
-    "license": "CC0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2009_Alfa_Romeo_147_Collezione_TS.jpg"
+    "artist": "Charles from Port Chester, New York",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_147_1.6_TS_16V_(2006)_(53984690410).jpg"
   },
   "alfa-romeo-mito-quadrifoglio-verde": {
     "file": "alfa-romeo-mito-quadrifoglio-verde.webp",
-    "artist": "Pava (Milano)",
-    "license": "CC BY-SA 3.0 it",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%2214_-_ITALY_-_Alfa_Romeo_MiTo_QV_-_red_coup%C3%A9_in_Milan_-_Quadrifoglio_Verde_sports_car_02.jpg"
+    "artist": "Autoviva",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_MiTo_Geneva_2011.jpg"
   },
   "alfa-romeo-4c-spider": {
     "file": "alfa-romeo-4c-spider.webp",
-    "artist": "Tyler de Noche",
+    "artist": "Numobeer",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_4C_Front.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Motore_alfa_4c_spider.jpg"
   },
   "alfa-romeo-giulia-quadrifoglio-2016": {
     "file": "alfa-romeo-giulia-quadrifoglio-2016.webp",
@@ -1423,9 +1399,9 @@
   },
   "alfa-romeo-8c-spider": {
     "file": "alfa-romeo-8c-spider.webp",
-    "artist": "Overlaet",
-    "license": "CC BY-SA 3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_8C_Spider_(front_quarter).jpg"
+    "artist": "Gaurav",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_8C_Spyder.jpg"
   },
   "alfa-romeo-giulia-gta": {
     "file": "alfa-romeo-giulia-gta.webp",
@@ -1457,17 +1433,11 @@
     "license": "CC BY-SA 2.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:2006_Alfa_Romeo_Brera.jpg"
   },
-  "alfa-romeo-spider-4.3-v8": {
-    "file": "alfa-romeo-spider-4.3-v8.webp",
-    "artist": "Rutger van der Maar",
-    "license": "CC BY 2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2012_Alfa_Romeo_8C_Competizione_Spider_4.7_V8_(54203440586).jpg"
-  },
   "alfa-romeo-tz2": {
     "file": "alfa-romeo-tz2.webp",
-    "artist": "MrWalkr",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1966_Alfa_Romeo_Giulia_TZ2_Red.jpg"
+    "artist": "Eric della Faille",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1966-05-08_Targa_Florio_Alfa_TZ2.jpg"
   },
   "alfa-romeo-gtv-3.0-v6": {
     "file": "alfa-romeo-gtv-3.0-v6.webp",
@@ -1489,9 +1459,9 @@
   },
   "alfa-romeo-156-3.2v6": {
     "file": "alfa-romeo-156-3.2v6.webp",
-    "artist": "Rutger van der Maar",
-    "license": "CC BY 2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2003_Alfa_Romeo_156_Sport_Wagon_3.2_V6_GTA_front.jpg"
+    "artist": "Calreyn88",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2002_Alfa_Romeo156_GTA_3.2_V6.jpg"
   },
   "alfa-romeo-4c-competizione": {
     "file": "alfa-romeo-4c-competizione.webp",
@@ -1501,15 +1471,15 @@
   },
   "alfa-romeo-giulietta-veloce": {
     "file": "alfa-romeo-giulietta-veloce.webp",
-    "artist": "Vauxford",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2011_Alfa_Romeo_Giulietta_Veloce_JTDm-2_2.0_Front.jpg"
+    "artist": "Harvey Bold",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2013_Alfa_Romeo_Giulietta_Veloce_JTDM-2_-_1956cc_2.0_(140PS)_Diesel_-_Alfa_Red_-_02-2024,_Front.jpg"
   },
   "alfa-romeo-stelvio-ti": {
     "file": "alfa-romeo-stelvio-ti.webp",
-    "artist": "Calreyn88",
+    "artist": "MercurySable99",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2020_Alfa_Romeo_Stelvio_Lusso_Ti_TB_AWD_Auto.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_Alfa_Romeo_Stelvio_Ti_Q4.jpg"
   },
   "alfa-romeo-giulietta-ss": {
     "file": "alfa-romeo-giulietta-ss.webp",
@@ -1519,9 +1489,9 @@
   },
   "alfa-romeo-8c-monza": {
     "file": "alfa-romeo-8c-monza.webp",
-    "artist": "Mr.choppers",
-    "license": "CC BY-SA 3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Circa_1932_Alfa_Romeo_8C_2300_Monza_(maybe)_at_Lime_Rock.jpg"
+    "artist": "MrWalkr",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1932_Alfa_Romeo_8C_2600_Monza_StP21.jpg"
   },
   "alfa-romeo-p3": {
     "file": "alfa-romeo-p3.webp",
@@ -1535,17 +1505,11 @@
     "license": "Public domain",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:1968-05-05_Targa_Florio_Alfa_Romeo_33-2_%22Daytona%22.jpg"
   },
-  "alfa-romeo-2300b": {
-    "file": "alfa-romeo-2300b.webp",
-    "artist": "Unknown photographer",
-    "license": "Public domain",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1939-08-20_Liege-Rome_Alfa_2300B_Touring_815092.jpg"
-  },
   "alfa-romeo-sprint-veloce": {
     "file": "alfa-romeo-sprint-veloce.webp",
-    "artist": "Charles from Port Chester, New York",
-    "license": "CC BY 2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Giulia_Sprint_GT_Veloce_(1968)_(53998791287).jpg"
+    "artist": "Samihasib",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vespa_sprint_150.jpg"
   },
   "alfa-romeo-alfetta-gtv": {
     "file": "alfa-romeo-alfetta-gtv.webp",
@@ -1561,27 +1525,27 @@
   },
   "alfa-romeo-6-2.5": {
     "file": "alfa-romeo-6-2.5.webp",
-    "artist": "TTTNIS",
-    "license": "Public domain",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_156_2.0_T._Spark.jpg"
+    "artist": "Andrew Bone from Weymouth, England",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa-Romeo_Alfa_6_2.5_(1979)_(53348431047).jpg"
   },
   "alfa-romeo-alfasud-veloce": {
     "file": "alfa-romeo-alfasud-veloce.webp",
-    "artist": "Spanish Coches",
+    "artist": "Riley from Christchurch, New Zealand",
     "license": "CC BY 2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1981_Alfa_Romeo_Alfasud_Sprint_Veloce_1.5_(6985703075).jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1982_Alfa_Romeo_Alfasud_(37190094832).jpg"
   },
   "alfa-romeo-164-super": {
     "file": "alfa-romeo-164-super.webp",
-    "artist": "Rutger van der Maar",
+    "artist": "nakhon100",
     "license": "CC BY 2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1998_Alfa_Romeo_164_2.0_V6_TB_Turbo_Super.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_164_Super_(6783914600).jpg"
   },
   "alfa-romeo-147-16v": {
     "file": "alfa-romeo-147-16v.webp",
-    "artist": "Calreyn88",
-    "license": "CC0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2008_Alfa_Romeo_147_Lusso_JTDM_16v_Ducati.jpg"
+    "artist": "Charles from Port Chester, New York",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_147_1.9_JTD_16V_Multijet_(2004)_(52912375354).jpg"
   },
   "alfa-romeo-gtv-3.2v6-selespeed": {
     "file": "alfa-romeo-gtv-3.2v6-selespeed.webp",
@@ -1621,9 +1585,9 @@
   },
   "mazda-2-sport": {
     "file": "mazda-2-sport.webp",
-    "artist": "Zytonits",
-    "license": "CC BY-SA 2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mazda_3_Sport_GT_front_(21024486602).jpg"
+    "artist": "Calreyn88",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Mazda_MX-30_Sport_Lux.jpg"
   },
   "maruti-alto": {
     "file": "maruti-alto.webp",
@@ -1645,21 +1609,21 @@
   },
   "honda-amaze": {
     "file": "honda-amaze.webp",
-    "artist": "Captainmorlypogi1959",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Honda_Brio_Amaze_1.3_S_2017_(2).jpg"
+    "artist": "Charles from Port Chester, New York",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Honda_Amaze_1.2_Comfort_(2022)_(52716171755).jpg"
   },
   "toyota-corolla-sedan": {
     "file": "toyota-corolla-sedan.webp",
-    "artist": "LuvsMG481",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2016_Toyota_Corolla_Axio_Hybrid_sedan_front.jpg"
+    "artist": "Just a Man",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Toyota_Corolla_2.0_XEi_(Brazil).jpg"
   },
   "honda-civic-sedan": {
     "file": "honda-civic-sedan.webp",
-    "artist": "LukaCali",
+    "artist": "Elise240SX",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2007_Honda_Civic_Si_Sedan_in_Rallye_Red_Front.png"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Honda_Civic_Sport_Sedan_in_Rallye_Red,_Front_Left,_04-07-2023.jpg"
   },
   "hyundai-elantra": {
     "file": "hyundai-elantra.webp",
@@ -1681,15 +1645,15 @@
   },
   "volkswagen-jetta": {
     "file": "volkswagen-jetta.webp",
-    "artist": "MercurySable99",
+    "artist": "UltraTech66",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2016_Volkswagen_Jetta_S_TSI,_front_right,_09-02-2022.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Volkswagen_Jetta_GLI.jpg"
   },
   "hyundai-accent-sedan": {
     "file": "hyundai-accent-sedan.webp",
-    "artist": "Elise240SX",
+    "artist": "Dinkun Chen",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2002_Hyundai_Accent_GL_Sedan_in_Desert_Sand,_Front_Right,_07-08-2023.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:HYUNDAI_ACCENT_SEDAN_(MC)_China_(8).jpg"
   },
   "volkswagen-golf-gti-mk7": {
     "file": "volkswagen-golf-gti-mk7.webp",
@@ -1719,7 +1683,7 @@
     "file": "mitsubishi-evo-x-gsr.webp",
     "artist": "Calreyn88",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2008_Mitsubishi_Lancer_Evo_X_GSR_FQ300.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2008_Mitsubishi_EVO_X_GSR_FQ300.jpg"
   },
   "subaru-wrx-sti-va": {
     "file": "subaru-wrx-sti-va.webp",
@@ -1839,7 +1803,7 @@
     "file": "maruti-brezza.webp",
     "artist": "DriveSpark",
     "license": "CC BY 3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Maruti_Suzuki_Vitara_Brezza_1.5_ZXi%2B_(India)_front_view.png"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Maruti_Suzuki_Brezza_ZXi%2B_(India)_front_view_01.png"
   },
   "renault-kwid": {
     "file": "renault-kwid.webp",
@@ -1849,9 +1813,9 @@
   },
   "maruti-wagon-r-lxi": {
     "file": "maruti-wagon-r-lxi.webp",
-    "artist": "Ramakrishna Mission Vidyapith",
-    "license": "Public domain",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Maruti_Suzuki_Ertiga_LXi.jpg"
+    "artist": "Biswarup Ganguly",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maruti_Suzuki_-_WagonR_LXi_(front).JPG"
   },
   "tata-altroz-xm": {
     "file": "tata-altroz-xm.webp",
@@ -1971,7 +1935,7 @@
     "file": "morris-mini-1000.webp",
     "artist": "Sicnag",
     "license": "CC BY 2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1980_Leyland_Mini_LE_1000_Mk_IV_(46441102524).jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1969_Austin_Mini_Mk_II_Countryman_(22018127522).jpg"
   },
   "ford-cortina-mk3": {
     "file": "ford-cortina-mk3.webp",
@@ -2039,12 +2003,6 @@
     "license": "CC BY-SA 2.0 de",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Honda_S600_replica.jpg"
   },
-  "toyota-2000gt": {
-    "file": "toyota-2000gt.webp",
-    "artist": "Jeremy from Sydney, Australia",
-    "license": "CC BY 2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1967-1970_Toyota_2000GT_coupe_(16109105472).jpg"
-  },
   "subaru-360": {
     "file": "subaru-360.webp",
     "artist": "TTTNIS",
@@ -2092,12 +2050,6 @@
     "artist": "Jakub CA",
     "license": "CC BY-SA 4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hyundai_i20_(GB-IB;_2014).jpg"
-  },
-  "mazda-2-turbo": {
-    "file": "mazda-2-turbo.webp",
-    "artist": "Charles from Port Chester, New York",
-    "license": "CC BY 2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mazda_RX-7_Turbo_(1999)_(52571841121).jpg"
   },
   "byd-song-plus-dm": {
     "file": "byd-song-plus-dm.webp",
@@ -2359,9 +2311,9 @@
   },
   "volkswagen-id5-pro": {
     "file": "volkswagen-id5-pro.webp",
-    "artist": "Matti Blume",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Volkswagen_ID._Buzz_LWB_Pro,_IAA_Open_Space_2023,_Munich_(P1110975).jpg"
+    "artist": "Rutger van der Maar from Leiden, The Netherlands",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Volkswagen_ID.3_(48753643473).jpg"
   },
   "kia-niro-phev": {
     "file": "kia-niro-phev.webp",
@@ -2385,7 +2337,7 @@
     "file": "subaru-outback-turbo.webp",
     "artist": "Charles from Port Chester, New York",
     "license": "CC BY 2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Subaru_Outback_2.5i_(2004)_(52926156200).jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Subaru_Outback_Wilderness_(2023)_(53490053239).jpg"
   },
   "maruti-ertiga-vxi": {
     "file": "maruti-ertiga-vxi.webp",
@@ -2419,9 +2371,9 @@
   },
   "mercedes-amg-a45-s": {
     "file": "mercedes-amg-a45-s.webp",
-    "artist": "Calreyn88",
-    "license": "CC BY 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Mercedes_A45_S_AMG_4Matic_%2B_Auto.jpg"
+    "artist": "Charles from Port Chester, New York",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_GLA_45_AMG_4MATIC%2B_(H247,_2023)_(54871276318).jpg"
   },
   "byd-song-plus-dm-i": {
     "file": "byd-song-plus-dm-i.webp",
@@ -2467,9 +2419,9 @@
   },
   "daihatsu-move-custom": {
     "file": "daihatsu-move-custom.webp",
-    "artist": "TTTNIS",
+    "artist": "Tokumeigakarinoaoshima",
     "license": "CC0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2017-2023_Daihatsu_Move_Custom_RS.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Daihatsu_MOVE_CUSTOM_(LA100S%26LA175S)_front.JPG"
   },
   "honda-odyssey-ex": {
     "file": "honda-odyssey-ex.webp",
@@ -2485,9 +2437,9 @@
   },
   "mazda-3-turbo-premium-plus": {
     "file": "mazda-3-turbo-premium-plus.webp",
-    "artist": "Charles from Port Chester, New York",
-    "license": "CC BY 2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mazda_CX-90_3.3_Turbo_Preferred_Plus_(2024)_(53723983489).jpg"
+    "artist": "Captainmorlypogi1959",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mazda_3_2.0_Fastback_Sport_2023_(11).jpg"
   },
   "audi-s5-cabriolet": {
     "file": "audi-s5-cabriolet.webp",
@@ -2569,9 +2521,9 @@
   },
   "honda-civic-si": {
     "file": "honda-civic-si.webp",
-    "artist": "LukaCali",
+    "artist": "Tokumeigakarinoaoshima",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2007_Honda_Civic_Si_Sedan_in_Rallye_Red_Front.png"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tuned_Honda_Civic_SiR_(E-EG6)_front.jpg"
   },
   "hyundai-ioniq-5-n": {
     "file": "hyundai-ioniq-5-n.webp",
@@ -2593,9 +2545,9 @@
   },
   "smart-eq-fortwo-prime": {
     "file": "smart-eq-fortwo-prime.webp",
-    "artist": "Calreyn88",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_Smart_ForTwo_EQ_Prime_Premium.jpg"
+    "artist": "Daimler-Benz",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Daimler_smart_vision_EQ_fortwo_at_ESO_(image002-CC).tiff"
   },
   "peugeot-208-electric-gt": {
     "file": "peugeot-208-electric-gt.webp",
@@ -2611,9 +2563,9 @@
   },
   "perodua-alza-1-5l": {
     "file": "perodua-alza-1-5l.webp",
-    "artist": "LuvsMG481",
+    "artist": "Bindydad123",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2015_Perodua_Alza_front.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Perodua_Alza_1.5_X_in_Malaysia_(1).jpg"
   },
   "maruti-swift-2023": {
     "file": "maruti-swift-2023.webp",
@@ -2623,15 +2575,15 @@
   },
   "kia-picanto-2023": {
     "file": "kia-picanto-2023.webp",
-    "artist": "DieselFordMondeo",
+    "artist": "Vogue2Voke",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2006_Kia_Picanto_Date_-_1086cc_1.1_(64PS)_Petrol_-_Diamond_Blue_Metallic_-_03-12-2023,_Front_Right.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Kia_Picanto.jpg"
   },
   "chevrolet-spark-2022": {
     "file": "chevrolet-spark-2022.webp",
-    "artist": "MercurySable99",
+    "artist": "Elise240SX",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2015_Chevrolet_Spark_LS_front_right.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Chevrolet_Spark_1LT_in_Mystic_Blue,_Front_Right,_07-11-2023.jpg"
   },
   "hyundai-venue-2023": {
     "file": "hyundai-venue-2023.webp",
@@ -2671,15 +2623,15 @@
   },
   "toyota-glanza-2023": {
     "file": "toyota-glanza-2023.webp",
-    "artist": "Rutger van der Maar",
-    "license": "CC BY 2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1996_Toyota_Starlet_Glanza_(48420085536).jpg"
+    "artist": "先従隗始",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toyota_E-EP91_Starlet_GLANZA_V_(23052019020).jpg"
   },
   "hyundai-verna-2023": {
     "file": "hyundai-verna-2023.webp",
-    "artist": "Dinkun Chen",
+    "artist": "Benespit",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:HYUNDAI_VERNA_(HYUNDAI_ACCENT)_(RB,RC)_China_(7).jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:0_Hyundai_Verna_(MC)_2.jpg"
   },
   "toyota-vios-2023": {
     "file": "toyota-vios-2023.webp",
@@ -2707,9 +2659,9 @@
   },
   "honda-amaze-2023": {
     "file": "honda-amaze-2023.webp",
-    "artist": "Captainmorlypogi1959",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Honda_Brio_Amaze_1.3_S_2017_(2).jpg"
+    "artist": "Charles from Port Chester, New York",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Honda_Amaze_1.2_Comfort_(2022)_(52716171755).jpg"
   },
   "dacia-sandero-2023": {
     "file": "dacia-sandero-2023.webp",
@@ -2719,9 +2671,9 @@
   },
   "fiat-punto-2023": {
     "file": "fiat-punto-2023.webp",
-    "artist": "Just a Man",
+    "artist": "Aciarium",
     "license": "CC BY 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2016_Fiat_Punto_Sporting_1.6_16v_(Brazil,_front_view).jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:DSC00876_Fiat_Punto,_Carabinieri_Polizia_Militare,_Front_Left.jpg"
   },
   "chevrolet-beat-2023": {
     "file": "chevrolet-beat-2023.webp",
@@ -2857,9 +2809,9 @@
   },
   "volkswagen-jetta-2023": {
     "file": "volkswagen-jetta-2023.webp",
-    "artist": "Dairokkan9",
+    "artist": "Alexander Migl",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2014_Volkswagen_Jetta_Highline_TDI_front_view.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Volkswagen_Jetta_VII_GLI_IMG_3138.jpg"
   },
   "honda-accord-2023": {
     "file": "honda-accord-2023.webp",
@@ -2875,9 +2827,9 @@
   },
   "hyundai-sonata-2023": {
     "file": "hyundai-sonata-2023.webp",
-    "artist": "MercurySable99",
+    "artist": "Benespit",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2012_Hyundai_Sonata_Limited,_front_left,_05-09-2023.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:0_Hyundai_Sonata_(DN8)_1.jpg"
   },
   "kia-k5-2023": {
     "file": "kia-k5-2023.webp",
@@ -2917,9 +2869,9 @@
   },
   "ford-fiesta-2023": {
     "file": "ford-fiesta-2023.webp",
-    "artist": "DieselFordMondeo",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2006_Ford_Fiesta_Style_Climate_1.25_in_Moondust_Silver_Metallic_(Front).jpg"
+    "artist": "Charles from Port Chester, New York",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ford_Fiesta_ST_(2023)_(53943063418).jpg"
   },
   "peugeot-3008-2023": {
     "file": "peugeot-3008-2023.webp",
@@ -2951,23 +2903,17 @@
     "license": "CC BY-SA 4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024_Jeep_Wrangler,_front_NYIAS_2023.jpg"
   },
-  "land-rover-discovery-sport-2023": {
-    "file": "land-rover-discovery-sport-2023.webp",
-    "artist": "Ethan Llamas",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Land_Rover_Discovery_S_in_Santorini_Black_Metallic,_front_right.jpg"
-  },
   "audi-q3-2023": {
     "file": "audi-q3-2023.webp",
     "artist": "Dinkun Chen",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:AUDI_Q3_SPORTBACK_F3_China_(6).jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:AUDI_Q3_(Typ_8U)_China_(21).jpg"
   },
   "bmw-330i-2023": {
     "file": "bmw-330i-2023.webp",
-    "artist": "LuvsMG481",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2014_BMW_330i_Gran_Turismo_front.jpg"
+    "artist": "Charles from Port Chester, New York",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_3-Series_(G20)_330i_(2023)_(53490165475).jpg"
   },
   "mercedes-c-class-2023": {
     "file": "mercedes-c-class-2023.webp",
@@ -2977,9 +2923,9 @@
   },
   "audi-a4-2023": {
     "file": "audi-a4-2023.webp",
-    "artist": "Acgskup",
+    "artist": "Aciarium",
     "license": "CC BY 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Audi_A4_B9_Avant_Allroad_left_front_exterior_view.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:DSC00875_Unmarked_Audi_A4,_Polizia_di_Stato,_Front_Right.jpg"
   },
   "bmw-530i-2023": {
     "file": "bmw-530i-2023.webp",
@@ -3019,9 +2965,9 @@
   },
   "cadillac-cts-2023": {
     "file": "cadillac-cts-2023.webp",
-    "artist": "MercurySable99",
+    "artist": "Benespit",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2007_Cadillac_CTS_3.6L,_front_right,_07-12-2023.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:08_Cadillac_CTS_(2nd_generation)_1.jpg"
   },
   "acura-tlx-2023": {
     "file": "acura-tlx-2023.webp",
@@ -3049,9 +2995,9 @@
   },
   "maserati-ghibli-2023": {
     "file": "maserati-ghibli-2023.webp",
-    "artist": "MercurySable99",
+    "artist": "Alexander-93",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2015_Maserati_Ghibli,_front_left,_05-07-2023.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Maserati_Ghibli_III_Modena_S_1X7A7423.jpg"
   },
   "bmw-m340i-2023": {
     "file": "bmw-m340i-2023.webp",
@@ -3061,9 +3007,9 @@
   },
   "audi-s4-2023": {
     "file": "audi-s4-2023.webp",
-    "artist": "MercurySable99",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2005_Audi_S4_Avant_quattro,_front_right_(ISWC_meet,_July_15,_2023).jpg"
+    "artist": "HJUdall",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:22_Audi_S4_3.0T_quattro_Premium_Plus.jpg"
   },
   "mercedes-amg-c43-2023": {
     "file": "mercedes-amg-c43-2023.webp",
@@ -3073,9 +3019,9 @@
   },
   "dodge-charger-2023": {
     "file": "dodge-charger-2023.webp",
-    "artist": "MercurySable99",
+    "artist": "Calreyn88",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1987_Dodge_Charger,_front_left,_08-27-2023.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Dodge_Charger_Hellcat.jpg"
   },
   "chevrolet-corvette-2023": {
     "file": "chevrolet-corvette-2023.webp",
@@ -3139,39 +3085,39 @@
   },
   "mercedes-amg-e63-2023": {
     "file": "mercedes-amg-e63-2023.webp",
-    "artist": "Calreyn88",
+    "artist": "GTHO",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2006_Mercedes_E63_AMG_Auto.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes-Benz_E63_AMG_(W212)_of_Will_Davison_2015.jpg"
   },
   "audi-rs6-2023": {
     "file": "audi-rs6-2023.webp",
-    "artist": "MoCars",
-    "license": "CC0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Audi_RS6_Avant_in_Nardo_Grey_(Front).jpg"
+    "artist": "Calreyn88",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Audi_RS6_TFSi_MHEV_Quattro_Auto.jpg"
   },
   "jaguar-f-type-2023": {
     "file": "jaguar-f-type-2023.webp",
-    "artist": "MrWalkr",
+    "artist": "Alexander Migl",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2016_Jaguar_F-Type_Project_7_Blue.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2020_Jaguar_F-Type_coupe_IMG_5392.jpg"
   },
   "corvette-stingray-2023": {
     "file": "corvette-stingray-2023.webp",
     "artist": "MercurySable99",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1976_Chevrolet_Corvette_Stingray,_front_right_(2023_ARMCO_Park_Wheels_of_Steel_Car_Cruise).jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Chevrolet_Corvette_Stingray,_front_right,_06-01-2024.jpg"
   },
   "dodge-challenger-srt-2023": {
     "file": "dodge-challenger-srt-2023.webp",
-    "artist": "Denmark from United States",
-    "license": "CC BY 2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2009_Dodge_Challenger_SRT_(3076890168).jpg"
+    "artist": "Xnatedawgx",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2020%E2%80%932023_Dodge_Challenger_SRT_Hellcat,_2026_Hot_Wheels_Legends_Tour_-_Albuquerque,_NM_2026-08-22.jpg"
   },
   "pontiac-trans-am-2023": {
     "file": "pontiac-trans-am-2023.webp",
-    "artist": "MercurySable99",
+    "artist": "Leif Jørgensen",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1977_Pontiac_Firebird_Trans_Am,_front_left_(Cruisin%27_the_River_Lowellville_Car_Show,_June_19th,_2023).jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:For%C3%A5rsm%C3%B8nstring_af_veteranbiler_2023_-_Pontiac_Trans_Am_Firebird.jpg"
   },
   "subaru-wrx-sti-2023": {
     "file": "subaru-wrx-sti-2023.webp",
@@ -3205,9 +3151,9 @@
   },
   "mg-5-2023": {
     "file": "mg-5-2023.webp",
-    "artist": "JustAnotherCarDesigner",
+    "artist": "DeFacto",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:MG_5_Scorpio_002.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:MG_MGC_GT_1968.jpg"
   },
   "neta-v-2023": {
     "file": "neta-v-2023.webp",
@@ -3238,12 +3184,6 @@
     "artist": "Alexander Migl",
     "license": "CC BY-SA 4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Volkswagen_ID._Buzz_1X7A6256.jpg"
-  },
-  "chevrolet-trailblazer-2023": {
-    "file": "chevrolet-trailblazer-2023.webp",
-    "artist": "MercurySable99",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2004_Chevrolet_TrailBlazer_EXT_LS_4x4,_front_left,_03-24-2023.jpg"
   },
   "mg-hector-2023": {
     "file": "mg-hector-2023.webp",
@@ -3289,9 +3229,9 @@
   },
   "toyota-rav4-2023": {
     "file": "toyota-rav4-2023.webp",
-    "artist": "MercurySable99",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2011_Toyota_RAV4_4WD,_front_right,_07-09-2023.jpg"
+    "artist": "Harvey Bold",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Toyota_RAV4_Design_PHEV_-_2487cc_2.5_(306PS)_Petrol_Hybrid_-_Decuma_Grey_-_02-2024,_Front.jpg"
   },
   "ford-explorer-2023": {
     "file": "ford-explorer-2023.webp",
@@ -3301,21 +3241,21 @@
   },
   "chevrolet-equinox-2023": {
     "file": "chevrolet-equinox-2023.webp",
-    "artist": "Elise240SX",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2014_Chevrolet_Equinox_1LT_in_White_Diamond_Clearcoat,_Front_Left,_07-30-2023.jpg"
+    "artist": "Bull-Doser",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Chevrolet_Equinox_au_SIAM_2023.JPG"
   },
   "buick-enclave-2023": {
     "file": "buick-enclave-2023.webp",
-    "artist": "MercurySable99",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2014_Buick_Enclave_with_Leather_Group,_front_left,_09-26-2023.jpg"
+    "artist": "Bull-Doser",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Buick_Enclave_2023_au_SIAM_2023.JPG"
   },
   "cadillac-escalade-2023": {
     "file": "cadillac-escalade-2023.webp",
-    "artist": "MercurySable99",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2005_Cadillac_Escalade,_front_left,_06-04-2023.jpg"
+    "artist": "Bull-Doser",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Cadillac_Escalade_V_au_SIAM_2023.JPG"
   },
   "gmc-yukon-2023": {
     "file": "gmc-yukon-2023.webp",
@@ -3325,9 +3265,9 @@
   },
   "lincoln-navigator-2023": {
     "file": "lincoln-navigator-2023.webp",
-    "artist": "Elise240SX",
+    "artist": "Dinkun Chen",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_Lincoln_Navigator_Reserve_L_in_Black_Velvet,_Front_Left,_06-30-2023.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:LINCOLN_NAVIGATOR_FOURTH_GENERATION_China_(6).jpg"
   },
   "bmw-x7-2023": {
     "file": "bmw-x7-2023.webp",
@@ -3343,9 +3283,9 @@
   },
   "audi-q8-2023": {
     "file": "audi-q8-2023.webp",
-    "artist": "Corqe",
-    "license": "CC0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Denver_Auto_Show_Audi_Q8_e-tron_Front_Quarter_View.jpg"
+    "artist": "Ethan Llamas",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Audi_Q8_quattro,_06-02-2024.jpg"
   },
   "lexus-lx-2023": {
     "file": "lexus-lx-2023.webp",
@@ -3373,9 +3313,9 @@
   },
   "maybach-62-2023": {
     "file": "maybach-62-2023.webp",
-    "artist": "Tribalninja",
-    "license": "Public domain",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes_Maybach_57_and_62.jpg"
+    "artist": "Thomas Recke from New York City, USA",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black_Maybach_62_Steuben.jpg"
   },
   "classic-vw-beetle-1970": {
     "file": "classic-vw-beetle-1970.webp",
@@ -3415,9 +3355,9 @@
   },
   "classic-chevrolet-corvette-1963": {
     "file": "classic-chevrolet-corvette-1963.webp",
-    "artist": "Tokumeigakarinoaoshima",
-    "license": "CC0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1963_Chevrolet_Corvette_Stingray_(C2)_front.JPG"
+    "artist": "Rex Gray from Southern California",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1963_Chevrolet_Corvette_-_rvl.jpg"
   },
   "classic-lamborghini-miura-1966": {
     "file": "classic-lamborghini-miura-1966.webp",
@@ -3445,9 +3385,9 @@
   },
   "classic-bugatti-type-35-1924": {
     "file": "classic-bugatti-type-35-1924.webp",
-    "artist": "Sicnag",
-    "license": "CC BY 2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1930_Bugatti_Type_35B_Grand_Prix_(21647232829).jpg"
+    "artist": "Lothar Spurzem",
+    "license": "CC BY-SA 2.0 de",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bugatti_35,_Bj_1924,_M_Nicolosi_-_1976.jpg"
   },
   "classic-duesenberg-sj-1932": {
     "file": "classic-duesenberg-sj-1932.webp",
@@ -3463,15 +3403,15 @@
   },
   "modern-tesla-roadster-2023": {
     "file": "modern-tesla-roadster-2023.webp",
-    "artist": "Alden Jewell",
-    "license": "CC BY 2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2010_Tesla_Roadster_Sport_(50987702476).jpg"
+    "artist": "Harald Gallinnis",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Padborg_Park_EEC_20_9_2023_Tesla_Roadster_Schmidbauer.jpg"
   },
   "modern-hyperpolestar-1-2023": {
     "file": "modern-hyperpolestar-1-2023.webp",
-    "artist": "Calreyn88",
+    "artist": "Dylan Johnson",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Polestar_5.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2020_Polestar_1_PHEV_AWD_Automatic_2.0_Front.jpg"
   },
   "british-aston-martin-vantage-2023": {
     "file": "british-aston-martin-vantage-2023.webp",
@@ -3511,15 +3451,15 @@
   },
   "ford-f150-2023": {
     "file": "ford-f150-2023.webp",
-    "artist": "MercurySable99",
+    "artist": "RL GNZLZ",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2003_Ford_F-150_XLT_SuperCab_Flareside_4x4_with_XLT_Sport_Group,_front_left,_03-30-2023.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ford_F-150_Lariat_2023.jpg"
   },
   "chevrolet-silverado-2023": {
     "file": "chevrolet-silverado-2023.webp",
-    "artist": "MercurySable99",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2002_Chevrolet_Silverado_3500_LS_4x4_Crew_Cab_Big_Dooley,_front_right,_08-05-2023.jpg"
+    "artist": "Bull-Doser",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024_Chevrolet_Silverado_2500HD_au_SIAM_2023.JPG"
   },
   "dodge-ram-2023": {
     "file": "dodge-ram-2023.webp",
@@ -3541,9 +3481,9 @@
   },
   "ford-ranger-2023": {
     "file": "ford-ranger-2023.webp",
-    "artist": "MercurySable99",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2011_Ford_Ranger_XL_Regular_Cab_4x2,_front_left,_04-04-2023.jpg"
+    "artist": "Maxi-Napo-99",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Ford_Ranger_XLS.jpg"
   },
   "chevrolet-colorado-2023": {
     "file": "chevrolet-colorado-2023.webp",
@@ -3577,9 +3517,9 @@
   },
   "volkswagen-transporter-2023": {
     "file": "volkswagen-transporter-2023.webp",
-    "artist": "DieselFordMondeo",
+    "artist": "Tokumeigakarinoaoshima",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2002_Volkswagen_Transporter_-_1896cc_Diesel_-_White_-_05-07-2023,_Front_Right.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tuned_Volkswagen_Transporter_(T6)_front.jpg"
   },
   "ford-transit-2023": {
     "file": "ford-transit-2023.webp",
@@ -3595,9 +3535,9 @@
   },
   "renault-master-2023": {
     "file": "renault-master-2023.webp",
-    "artist": "Elise240SX",
+    "artist": "MB-one",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2016_Renault_Master_2.3_dCi_125_Double_Cab_4x4_in_Grey,_Front_Left,_08-12-2023.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Renault_Master,_Busworld_Europe_2023,_Brussels_(P1140367).jpg"
   },
   "iveco-daily-2023": {
     "file": "iveco-daily-2023.webp",
@@ -3637,9 +3577,9 @@
   },
   "harley-davidson-2023": {
     "file": "harley-davidson-2023.webp",
-    "artist": "Michael Barera",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Harley-Davidson_Museum_December_2023_63_(2000_XR-750--OHV_V-Twin).jpg"
+    "artist": "CapCase",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Harley-Davidson_Street_750_03.jpg"
   },
   "ducati-panigale-2023": {
     "file": "ducati-panigale-2023.webp",
@@ -3695,12 +3635,6 @@
     "license": "CC BY-SA 4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_MG_ZS_EV_AZS1_Essence_front.jpg"
   },
-  "wuling-mini-ev-2023": {
-    "file": "wuling-mini-ev-2023.webp",
-    "artist": "User3204",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021_Wuling_Hongguang_Mini_EV_Macaron_(front).jpg"
-  },
   "lamborghini-revuelto-2023": {
     "file": "lamborghini-revuelto-2023.webp",
     "artist": "Maxhdtenda",
@@ -3721,15 +3655,15 @@
   },
   "acura-nsx-2023": {
     "file": "acura-nsx-2023.webp",
-    "artist": "Charles from Port Chester, New York",
-    "license": "CC BY 2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Acura_NSX_(1991)_(52566154126).jpg"
+    "artist": "TaurusEmerald",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Acura_NSX_Grand_Prix_of_Long_Beach_2023.jpg"
   },
   "toyota-gr-yaris-2023": {
     "file": "toyota-gr-yaris-2023.webp",
-    "artist": "Mocarey15",
+    "artist": "MoCars",
     "license": "CC0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Toyota_Yaris_Cross_1.5_HEV_S_GR_Parts_(AC200)_(Front).jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Toyota_Yaris_1.5_HEV_S_GR_Parts_25012024_02.jpg"
   },
   "toyota-gr-corolla-2023": {
     "file": "toyota-gr-corolla-2023.webp",
@@ -3805,9 +3739,9 @@
   },
   "ford-gt-2023": {
     "file": "ford-gt-2023.webp",
-    "artist": "MercurySable99",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2005_Ford_Mustang_GT_Deluxe_Coupe,_front_right,_07-02-2023.jpg"
+    "artist": "Calreyn88",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Ford_GT_Holman_Moody_Heritage_Edition.jpg"
   },
   "volkswagen-golf-gti-2023": {
     "file": "volkswagen-golf-gti-2023.webp",
@@ -3841,9 +3775,9 @@
   },
   "mazda-mx-5-miata-2023": {
     "file": "mazda-mx-5-miata-2023.webp",
-    "artist": "Elise240SX",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2006_Mazda_MX-5_Miata_Grand_Touring_in_Marble_White,_Front_Right,_06-08-2023.jpg"
+    "artist": "Yaktatel",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021_Mazda_MX-5_Miata_RF_Club.jpg"
   },
   "toyota-86-2023": {
     "file": "toyota-86-2023.webp",
@@ -3859,9 +3793,9 @@
   },
   "mitsubishi-evo-x-2023": {
     "file": "mitsubishi-evo-x-2023.webp",
-    "artist": "Christian Collins",
+    "artist": "Shadman Samee from Dhaka, Bangladesh",
     "license": "CC BY-SA 2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Lancer_Evolution_-_2010_GSR_(30920176165).jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Evolution_X,_Bangladesh._(35554975066).jpg"
   },
   "subaru-brz-2023": {
     "file": "subaru-brz-2023.webp",
@@ -3907,21 +3841,21 @@
   },
   "mini-jcw-2023": {
     "file": "mini-jcw-2023.webp",
-    "artist": "Elise240SX",
+    "artist": "Alexander-93",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2020_Mini_John_Cooper_Works_Clubman_ALL4_in_Midnight_Black,_Front_Left,_07-12-2023.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mini_Hatch_(F56)_John_Cooper_Works_GP_1X7A7203.jpg"
   },
   "fiat-abarth-595-2023": {
     "file": "fiat-abarth-595-2023.webp",
     "artist": "Charles from Port Chester, New York",
     "license": "CC BY 2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Abarth_595_1.4_T-Jet_16V_(2018)_(52566154156).jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Abarth_595_1.4_T-Jet_16V_(2020)_(52566678583).jpg"
   },
   "smart-fortwo-brabus-2023": {
     "file": "smart-fortwo-brabus-2023.webp",
     "artist": "Calreyn88",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_Smart_ForTwo_Brabus_125_Auto.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Smart_ForTwo_EQ_Prime_Exclusive_Brabus_Cabriolet.jpg"
   },
   "kia-stinger-2023": {
     "file": "kia-stinger-2023.webp",
@@ -4027,21 +3961,21 @@
   },
   "fiat-500-2023": {
     "file": "fiat-500-2023.webp",
-    "artist": "MercurySable99",
+    "artist": "Leif Jørgensen",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2012_FIAT_500_Sport,_front_right,_09-09-2023.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:For%C3%A5rsm%C3%B8nstring_af_veteranbiler_2023_-_Fiat_500.jpg"
   },
   "mini-cooper-2023": {
     "file": "mini-cooper-2023.webp",
-    "artist": "MercurySable99",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2007_Mini_Cooper_S_Hardtop,_front_right,_09-09-2023.jpg"
+    "artist": "Calreyn88",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Mini_Cooper_JCW_1TO6_Edition.jpg"
   },
   "smart-fortwo-2023": {
     "file": "smart-fortwo-2023.webp",
-    "artist": "Elise240SX",
+    "artist": "Corvesprit",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2009_Smart_ForTwo_Passion_Coup%C3%A9_in_Silver_Metallic,_Front_Left,_03-22-2023.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Smart_fortwo_453_front.jpg"
   },
   "toyota-corolla-cross-2023": {
     "file": "toyota-corolla-cross-2023.webp",
@@ -4075,9 +4009,9 @@
   },
   "mitsubishi-outlander-2023": {
     "file": "mitsubishi-outlander-2023.webp",
-    "artist": "MercurySable99",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2004_Mitsubishi_Outlander_LS,_front_right,_09-24-2023.jpg"
+    "artist": "RL GNZLZ from Chile",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mitsubishi_Outlander_2.5_Limited_2023_(54463301954).jpg"
   },
   "nissan-qashqai-2023": {
     "file": "nissan-qashqai-2023.webp",
@@ -4189,15 +4123,15 @@
   },
   "ford-fusion-2023": {
     "file": "ford-fusion-2023.webp",
-    "artist": "Elise240SX",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2013_Ford_Fusion_SE_in_Oxford_White,_Front_Right,_04-21-2023.jpg"
+    "artist": "HJUdall",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:14_Ford_Fusion_S.jpg"
   },
   "chevrolet-malibu-2023": {
     "file": "chevrolet-malibu-2023.webp",
-    "artist": "MercurySable99",
+    "artist": "Calreyn88",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1975_Chevrolet_Chevelle_Malibu_wagon,_front_right_(ISWC_meet,_July_15,_2023).jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Chevrolet_Malibu_RS_Auto.jpg"
   },
   "lexus-es-2023": {
     "file": "lexus-es-2023.webp",
@@ -4207,21 +4141,21 @@
   },
   "acura-tsx-2023": {
     "file": "acura-tsx-2023.webp",
-    "artist": "Elise240SX",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2010_Acura_TSX_in_Grigio_Metallic,_Front_Left,_01-21-2023.jpg"
+    "artist": "Bull-Doser",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%2711-%2713_Acura_TSX_Wagon_--_Front.jpg"
   },
   "toyota-corolla-sedan-2023": {
     "file": "toyota-corolla-sedan-2023.webp",
-    "artist": "LuvsMG481",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2016_Toyota_Corolla_Axio_Hybrid_sedan_front.jpg"
+    "artist": "Just a Man",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Toyota_Corolla_2.0_XEi_(Brazil).jpg"
   },
   "honda-civic-sedan-2023": {
     "file": "honda-civic-sedan-2023.webp",
-    "artist": "LukaCali",
+    "artist": "Elise240SX",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2007_Honda_Civic_Si_Sedan_in_Rallye_Red_Front.png"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Honda_Civic_Sport_Sedan_in_Rallye_Red,_Front_Left,_04-07-2023.jpg"
   },
   "hyundai-tucson-2023": {
     "file": "hyundai-tucson-2023.webp",
@@ -4273,15 +4207,15 @@
   },
   "bentley-flying-spur-1952": {
     "file": "bentley-flying-spur-1952.webp",
-    "artist": "el.guy08_11",
-    "license": "CC BY 2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1959_Bentley_S_Continental_Flying_Spur_3_-_Bonhams_Paris_2015.jpg"
+    "artist": "RpM Tartar",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bentley_Flying_Spur_Mulliner_Hybrid_Side_view.jpg"
   },
   "rolls-royce-silver-cloud-1955": {
     "file": "rolls-royce-silver-cloud-1955.webp",
-    "artist": "Spurzem - Lothar Spurzem",
-    "license": "CC BY-SA 2.0 de",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rolls-Royce_Silver_Cloud_III,_Bj._1964_(ret).jpg"
+    "artist": "111 Emergency from New Zealand",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1955_Rolls_Royce_Silver_Cloud_-_Flickr_-_111_Emergency.jpg"
   },
   "austin-healey-3000-1959": {
     "file": "austin-healey-3000-1959.webp",
@@ -4297,9 +4231,9 @@
   },
   "morgan-plus-4-1950": {
     "file": "morgan-plus-4-1950.webp",
-    "artist": "Sicnag",
-    "license": "CC BY 2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1951_Morgan_Plus_4_Roadster_Series_I_(8416931751).jpg"
+    "artist": "dickinsonjohn02",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:197-365_Morgan_%2B4.jpg"
   },
   "ac-cobra-427-1963": {
     "file": "ac-cobra-427-1963.webp",
@@ -4309,21 +4243,15 @@
   },
   "lotus-elan-1962": {
     "file": "lotus-elan-1962.webp",
-    "artist": "Sicnag",
+    "artist": "Thomas's Pics",
     "license": "CC BY 2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1971_Lotus_Elan_Series_4.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lotus_Elan_Sprint_(8212549660).jpg"
   },
   "datsun-fairlady-z-1969": {
     "file": "datsun-fairlady-z-1969.webp",
     "artist": "Kazyakuruma",
     "license": "CC BY-SA 4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nissan_FAIRLADY_Z_(Z34)_Version_ST,_2022,_left-front.jpg"
-  },
-  "toyota-2000gt-1967": {
-    "file": "toyota-2000gt-1967.webp",
-    "artist": "先従隗始",
-    "license": "CC0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toyota_MF10_2000GT_Roadster_(22022009534).jpg"
   },
   "maserati-quattroporte-2023": {
     "file": "maserati-quattroporte-2023.webp",
@@ -4393,9 +4321,9 @@
   },
   "lincoln-navigator-2024": {
     "file": "lincoln-navigator-2024.webp",
-    "artist": "MercurySable99",
+    "artist": "Ethan Llamas",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_Lincoln_Navigator_Reserve,_front_left,_03-15-2024.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Lincoln_Navigator_L_Black_Label_in_Infinite_Black,_front_right,_07-27-2024.jpg"
   },
   "toyota-sequoia-2024": {
     "file": "toyota-sequoia-2024.webp",
@@ -4423,9 +4351,9 @@
   },
   "lexus-lx-2024": {
     "file": "lexus-lx-2024.webp",
-    "artist": "MercurySable99",
+    "artist": "Ethan Llamas",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2000_Lexus_LX_470,_front_right,_03-08-2024.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024_Lexus_LX_500d_F_Sport_in_Sonic_Titanium,_front_right.jpg"
   },
   "lada-vesta-2023": {
     "file": "lada-vesta-2023.webp",
@@ -4455,13 +4383,13 @@
     "file": "chevrolet-spark-2023.webp",
     "artist": "Elise240SX",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_Chevrolet_Spark_1LT_in_Silver_Ice,_Front_Left,_02-18-2023.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Chevrolet_Spark_1LT_in_Mystic_Blue,_Front_Right,_07-11-2023.jpg"
   },
   "daewoo-matiz-2023": {
     "file": "daewoo-matiz-2023.webp",
-    "artist": "Toreodor",
-    "license": "CC BY 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2007_Daewoo_Matiz_blue_front.jpg"
+    "artist": "Benespit",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:0_Daewoo_Matiz_(M250)_2.jpg"
   },
   "bmw-i3-2023": {
     "file": "bmw-i3-2023.webp",
@@ -4531,15 +4459,15 @@
   },
   "vw-beetle-original-1938": {
     "file": "vw-beetle-original-1938.webp",
-    "artist": "Palauenc05",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1957_Volkswagen_Beetle,_export_model,_in_front_of_Porta_Nigra_in_Trier_2023-05-01.jpg"
+    "artist": "Ralf Roletschek",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Volkswagen_Beetle_1938_in_Autostadt_Wolfsburg-12-01-03-by-RalfR-48.jpg"
   },
   "ford-f-150-raptor-2023": {
     "file": "ford-f-150-raptor-2023.webp",
-    "artist": "MercurySable99",
+    "artist": "Dinkun Chen",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2010_Ford_F-150_SVT_Raptor_SuperCab,_front_left,_04-04-2023.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:FORD_F-150_SVT_RAPTOR_China.jpg"
   },
   "chevrolet-silverado-ev-truck": {
     "file": "chevrolet-silverado-ev-truck.webp",
@@ -4591,9 +4519,9 @@
   },
   "ford-gt500-mustang": {
     "file": "ford-gt500-mustang.webp",
-    "artist": "MercurySable99",
+    "artist": "Calreyn88",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2008_Ford_Mustang_Shelby_GT500_Coupe,_front_right_(Cruisin%27_the_River_Lowellville_Car_Show,_June_19th,_2023).jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ford_Mustang_Shelby_GT500_4.jpg"
   },
   "maserati-mc20-supercar": {
     "file": "maserati-mc20-supercar.webp",
@@ -4621,9 +4549,9 @@
   },
   "rolls-royce-phantom-2023": {
     "file": "rolls-royce-phantom-2023.webp",
-    "artist": "Mr.choppers",
-    "license": "CC BY-SA 3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1937_Rolls_Royce_Phantom_III_Brewster_Newmarket_Faux_Cabriolet,_front_left_(Greenwich_2023).jpg"
+    "artist": "Calreyn88",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Rolls-Royce_Phantom.jpg"
   },
   "bentley-continental-gt-coupe": {
     "file": "bentley-continental-gt-coupe.webp",
@@ -4729,9 +4657,9 @@
   },
   "volkswagen-transporter-van-2023": {
     "file": "volkswagen-transporter-van-2023.webp",
-    "artist": "DieselFordMondeo",
+    "artist": "Tokumeigakarinoaoshima",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2002_Volkswagen_Transporter_-_1896cc_Diesel_-_White_-_05-07-2023,_Front_Right.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tuned_Volkswagen_Transporter_(T6)_front.jpg"
   },
   "ford-transit-van-2023": {
     "file": "ford-transit-van-2023.webp",
@@ -4753,9 +4681,9 @@
   },
   "ford-focus-st-2023": {
     "file": "ford-focus-st-2023.webp",
-    "artist": "Elise240SX",
+    "artist": "Calreyn88",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2013_Ford_Focus_ST_in_Oxford_White,_Front_Right,_03-18-2023.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Ford_Focus_ST_Line.jpg"
   },
   "geely-coolray-2023": {
     "file": "geely-coolray-2023.webp",
@@ -4783,9 +4711,9 @@
   },
   "lifan-x80-2023": {
     "file": "lifan-x80-2023.webp",
-    "artist": "User3204",
+    "artist": "Jengtingchen",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_Lifan_X80_2.0_TSI_(front).jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lifan_X80_002.jpg"
   },
   "changan-cs55-plus-2023": {
     "file": "changan-cs55-plus-2023.webp",
@@ -4813,9 +4741,9 @@
   },
   "bmw-m-hybrid-concept-2024": {
     "file": "bmw-m-hybrid-concept-2024.webp",
-    "artist": "WikiABG",
-    "license": "CC BY-SA 3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_Concept_Vision_Efficient_Dynamics_Front.JPG"
+    "artist": "Wikisympathisant",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024-Retro-S_BMW_M-Hybrid-V8.jpg"
   },
   "aston-martin-valkyrie-pro-2024": {
     "file": "aston-martin-valkyrie-pro-2024.webp",
@@ -4874,8 +4802,8 @@
   "alfa-romeo-giulia-quadrifoglio-2024": {
     "file": "alfa-romeo-giulia-quadrifoglio-2024.webp",
     "artist": "Calreyn88",
-    "license": "CC BY 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_Alfa_Romeo_Giulia_Quadrifoglio_Verde_Auto_2.jpg"
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Alfa_Romeo_Giulia_Quadrifoglio_Verde.jpg"
   },
   "renault-megane-rs-2024": {
     "file": "renault-megane-rs-2024.webp",
@@ -4886,8 +4814,8 @@
   "seat-leon-cupra-2024": {
     "file": "seat-leon-cupra-2024.webp",
     "artist": "Calreyn88",
-    "license": "CC BY 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2019_Seat_Leon_Cupra_R_ST_TSi_4Drive.jpg"
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021_Cupra_Leon_VZ1_TSi.jpg"
   },
   "mini-cooper-se-jcw-2024": {
     "file": "mini-cooper-se-jcw-2024.webp",
@@ -4945,9 +4873,9 @@
   },
   "ford-galaxy-2024": {
     "file": "ford-galaxy-2024.webp",
-    "artist": "Harvey Bold",
-    "license": "CC BY 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2007_Ford_Galaxy_Zetec_TDCi_-_1997cc_2.0_(140PS)_Diesel_-_White_Grape_-_05-2024,_Front.jpg"
+    "artist": "Thomas Vogt from Paderborn, Deutschland",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ford_Galaxy_500_(53432950312).jpg"
   },
   "toyota-alphard-2024": {
     "file": "toyota-alphard-2024.webp",
@@ -4965,7 +4893,7 @@
     "file": "jaguar-e-type-vintage.webp",
     "artist": "Lothar Spurzem",
     "license": "CC BY-SA 2.0 de",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jaguar_E-Type_V12,_Bj._1972_(2008-07-12).JPG"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jaguar_E-Type_Lightweight,_Bj._1962_(2009-08-07_Sp_r).JPG"
   },
   "aston-martin-db5-vintage": {
     "file": "aston-martin-db5-vintage.webp",
@@ -4987,9 +4915,9 @@
   },
   "porsche-911-rs-1973": {
     "file": "porsche-911-rs-1973.webp",
-    "artist": "Lothar Spurzem",
-    "license": "CC BY-SA 2.0 de",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Porsche_911_Carrera_RS,_Bj._1972-73,_Front_(2016-07-02_02_Sp).JPG"
+    "artist": "Handelsgeselschaft",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Porsche_911_RS_2,7L_1973,_Tour_Auto_2015,_Toulouse.jpg"
   },
   "bmw-m1-vintage": {
     "file": "bmw-m1-vintage.webp",
@@ -5109,7 +5037,7 @@
     "file": "porsche-959-1987.webp",
     "artist": "M 93",
     "license": "CC BY-SA 3.0 de",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Porsche_959_%E2%80%93_Innenraum,_21._M%C3%A4rz_2013,_D%C3%BCsseldorf.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Porsche_959_%E2%80%93_Frontansicht_(2),_21._M%C3%A4rz_2013,_D%C3%BCsseldorf.jpg"
   },
   "vector-w8-1989": {
     "file": "vector-w8-1989.webp",
@@ -5227,9 +5155,9 @@
   },
   "lamborghini-lm002-2024": {
     "file": "lamborghini-lm002-2024.webp",
-    "artist": "Charles from Port Chester, New York",
-    "license": "CC BY 2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lamborghini_LM002_American_(1990)_(53618558197).jpg"
+    "artist": "Berlin13407 at de.wikipedia",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lamborghini_LM002_at_Meilenwerk.JPG"
   },
   "ferrari-purosangue-2024": {
     "file": "ferrari-purosangue-2024.webp",
@@ -5260,12 +5188,6 @@
     "artist": "Calreyn88",
     "license": "CC BY 4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Jaguar_F-Pace_SVR_AWD_Auto.jpg"
-  },
-  "land-rover-defender-v8-2024": {
-    "file": "land-rover-defender-v8-2024.webp",
-    "artist": "Calreyn88",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2015_Land_Rover_Defender_Classic_V8_Works_Islay_Edition.jpg"
   },
   "audi-sq7-tfsi-2024": {
     "file": "audi-sq7-tfsi-2024.webp",
@@ -5323,9 +5245,9 @@
   },
   "audi-a5-s5": {
     "file": "audi-a5-s5.webp",
-    "artist": "Vauxford",
+    "artist": "Alexander-93",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_Audi_S5_TFSi_Quattro_Automatic_3.0_Front.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Audi_S5_Coup%C3%A9_F5_1X7A1873.jpg"
   },
   "corvette-c3-l88": {
     "file": "corvette-c3-l88.webp",
@@ -5345,29 +5267,23 @@
     "license": "CC BY-SA 3.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marussia_B2_photo03.jpg"
   },
-  "alfa-romeo-4c": {
-    "file": "alfa-romeo-4c.webp",
-    "artist": "Ank Kumar",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_4C,_GIMS_2014_(Ank_Kumar)_02.jpg"
-  },
   "alfa-romeo-giulia-luna-rossa": {
     "file": "alfa-romeo-giulia-luna-rossa.webp",
-    "artist": "Charles from Port Chester, New York",
-    "license": "CC0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Giulia_Quadrifoglio_Luna_Rossa_(2026)_(55078645846).jpg"
+    "artist": "Aciarium",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:DSC01160_Alfa_Romeo_Giulia,_Carabinieri_Nucleo_Operativo_Radiomobile,_Front_Right.jpg"
   },
   "alfa-romeo-tz-1": {
     "file": "alfa-romeo-tz-1.webp",
-    "artist": "Mr.choppers",
-    "license": "CC BY-SA 3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1963_Alfa_Romeo_Giulia_TZ1_(Auriana),_front_left_at_Greenwich_2019.jpg"
+    "artist": "Prova MO",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1965_Alfa_Romeo_TZ1_front_suspension_at_Pebble_Beach_Concours_2023.jpg"
   },
   "alfa-romeo-giuletta-sprint": {
     "file": "alfa-romeo-giuletta-sprint.webp",
-    "artist": "Falcon® Photography from France",
-    "license": "CC BY-SA 2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Giuletta_Sprint_Speciale_1961_(33475325353).jpg"
+    "artist": "Zairon",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Torino_Museo_Nazionale_dell%27Automobile_Alfa_Romeo_Giuletta_Sprint_1.jpg"
   },
   "hyundai-aura": {
     "file": "hyundai-aura.webp",
@@ -5389,9 +5305,9 @@
   },
   "nissan-z-pro": {
     "file": "nissan-z-pro.webp",
-    "artist": "TTTNIS",
-    "license": "CC0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024_Nissan_Dayz_Highway_Star_G_Turbo_Pro-Pilot_Edition_rear.jpg"
+    "artist": "Ethan Llamas",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024_Nissan_Z_Premium_AT_in_Everest_White,_front_right,_07-21-2024.jpg"
   },
   "honda-jazz-gk": {
     "file": "honda-jazz-gk.webp",
@@ -5425,9 +5341,9 @@
   },
   "datsun-go-t": {
     "file": "datsun-go-t.webp",
-    "artist": "Andra Febrian",
+    "artist": "Haysnawri10",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2015_Datsun_Go%2B_Panca_T_Option_(Indonesia)_front_view.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_Datsun_Go_T_front.jpg"
   },
   "maruti-s-presso": {
     "file": "maruti-s-presso.webp",
@@ -5533,9 +5449,9 @@
   },
   "mini-clubman-se": {
     "file": "mini-clubman-se.webp",
-    "artist": "先従隗始",
-    "license": "CC0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_3BA-JZJCWM_Mini_JOHN_COOPER_WORKS_CLUBMAN_(22121615280).jpg"
+    "artist": "DeFacto",
+    "license": "CC BY-SA 2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mini_Clubman_SRV4_Concept_1974.jpg"
   },
   "ford-mustang-mach-e-premium": {
     "file": "ford-mustang-mach-e-premium.webp",
@@ -5581,9 +5497,9 @@
   },
   "hyundai-i10-nios": {
     "file": "hyundai-i10-nios.webp",
-    "artist": "AIMHO'S REBELLION 8490s",
+    "artist": "Vijayanrajapuram",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021_Hyundai_Grand_i10_Nios_1.0AT_Standard_red_front_view_in_Brunei.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Car_hyundai_i10_nios_sports_fiery_red_model_2022.jpg"
   },
   "tata-tigor-2023": {
     "file": "tata-tigor-2023.webp",
@@ -5647,9 +5563,9 @@
   },
   "xiaomi-ev-suv-2023": {
     "file": "xiaomi-ev-suv-2023.webp",
-    "artist": "Ethan Llamas",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Xiaomi_YU7_Emerald_Green_Metallic.jpg"
+    "artist": "Xiaomi EV Limited.",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Xiaomi_EV_New.jpg"
   },
   "huawei-aito-2023": {
     "file": "huawei-aito-2023.webp",
@@ -5689,9 +5605,9 @@
   },
   "bajaj-auto-2023": {
     "file": "bajaj-auto-2023.webp",
-    "artist": "Richter Frank-Jurgen",
-    "license": "CC BY 2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rahul_Bajaj,_Chairman,_Bajaj_Auto,_during_the_opening_plenary,_at_the_Horasis_Global_India_Business_Meeting_2009_-_Flickr_-_Horasis.jpg"
+    "artist": "Sabung.hamster",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bajaj_Auto_Compilance_Plate,_Jakarta.jpg"
   },
   "tuk-tuk-2023": {
     "file": "tuk-tuk-2023.webp",
@@ -5719,15 +5635,15 @@
   },
   "seat-ibiza-2023": {
     "file": "seat-ibiza-2023.webp",
-    "artist": "Vauxford",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_SEAT_Ibiza_SE_Technology_MPi_1.0_Front.jpg"
+    "artist": "athinaf",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ibiza_rock_volcano_(747230830).jpg"
   },
   "porsche-918-coupe-2023": {
     "file": "porsche-918-coupe-2023.webp",
-    "artist": "Ank Kumar",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2012_Porsche_911_Turbo_S_Edition_918_Spyder_Coupe_(Ank_Kumar,_Infosys_Limited)_01.jpg"
+    "artist": "Miod Mark",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Porsche_918_Spyder_(61885717).jpeg"
   },
   "dodge-durango-diesel-2024": {
     "file": "dodge-durango-diesel-2024.webp",
@@ -5771,12 +5687,6 @@
     "license": "CC BY-SA 4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lotus_Emira.jpg"
   },
-  "bmw-m760i-performance": {
-    "file": "bmw-m760i-performance.webp",
-    "artist": "Nan Palmero from San Antonio, TX, USA",
-    "license": "CC BY 2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_M760i_XDrive_at_the_New_York_International_Auto_Show_NYIAS_(39516099000).jpg"
-  },
   "ferrari-sf90-xx-2023": {
     "file": "ferrari-sf90-xx-2023.webp",
     "artist": "Calreyn88",
@@ -5785,9 +5695,9 @@
   },
   "great-wall-haval-h9-2023": {
     "file": "great-wall-haval-h9-2023.webp",
-    "artist": "Kevauto",
+    "artist": "Jengtingchen",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2016_Great_Wall_Haval_H9,_front_8.12.18.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Haval_H9_facelift_001.jpg"
   },
   "dongfeng-aeolus-ax5-2023": {
     "file": "dongfeng-aeolus-ax5-2023.webp",
@@ -5815,9 +5725,9 @@
   },
   "peugeot-308-gti-2024": {
     "file": "peugeot-308-gti-2024.webp",
-    "artist": "Vauxford",
+    "artist": "Jakub \"Flyz1\" Maciejewski",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_Peugeot_308_GTi_Turbo_1.6_Front.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Peugeot_308_GTi_-_prz%C3%B3d_(MSP16).jpg"
   },
   "ferrari-250-gto-vintage": {
     "file": "ferrari-250-gto-vintage.webp",
@@ -5845,21 +5755,21 @@
   },
   "alfa-romeo-145-ti-16v": {
     "file": "alfa-romeo-145-ti-16v.webp",
-    "artist": "Cjp24",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_145_1.6_T.Spark_-_front_view.jpg"
+    "artist": "Kieran White from Manchester, England",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1996_Alfa_Romeo_145_2.0_Cloverleaf_(16982984479).jpg"
   },
   "alfa-romeo-146-super": {
     "file": "alfa-romeo-146-super.webp",
-    "artist": "Makizox",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1998_Alfa_Romeo_146_1.8_T.Spark_Front.jpg"
+    "artist": "Corvettec6r",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1997_Alfa_Romeo_146_red.jpg"
   },
   "alfa-romeo-159-3.2v6": {
     "file": "alfa-romeo-159-3.2v6.webp",
-    "artist": "Corvettec6r",
+    "artist": "OSX",
     "license": "Public domain",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2010_Alfa_Romeo_159_1750_TBi_front.JPG"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2007_Alfa_Romeo_159_JTS_Q4_sedan_(2015-08-07)_01.jpg"
   },
   "alfa-romeo-159-tricolore": {
     "file": "alfa-romeo-159-tricolore.webp",
@@ -5869,15 +5779,15 @@
   },
   "alfa-romeo-75-turbo-q-system": {
     "file": "alfa-romeo-75-turbo-q-system.webp",
-    "artist": "Corvettec6r",
+    "artist": "Merikanto",
     "license": "CC0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_75_front.JPG"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fictional_moon_system_4.png"
   },
   "alfa-romeo-tonale-ibrida": {
     "file": "alfa-romeo-tonale-ibrida.webp",
-    "artist": "Mr.choppers",
-    "license": "CC BY-SA 3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Alfa_Romeo_Tonale_Speciale_in_Verde_Montreal,_front_left_(NYIAS_2022).jpg"
+    "artist": "Calreyn88",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Alfa_Romeo_Tonale_Hybrid.jpg"
   },
   "alfa-romeo-164-v10-race": {
     "file": "alfa-romeo-164-v10-race.webp",
@@ -5887,9 +5797,9 @@
   },
   "alfa-romeo-145-jtc": {
     "file": "alfa-romeo-145-jtc.webp",
-    "artist": "Cjp24",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_145_1.6_T.Spark_-_front_view.jpg"
+    "artist": "Kieran White from Manchester, England",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1996_Alfa_Romeo_145_2.0_Cloverleaf_(16982984479).jpg"
   },
   "alfa-romeo-spada-bertone": {
     "file": "alfa-romeo-spada-bertone.webp",
@@ -5915,12 +5825,6 @@
     "license": "Public domain",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:2010_Alfa_Romeo_159_1750_TBi_front.JPG"
   },
-  "alfa-romeo-33-ty-racer": {
-    "file": "alfa-romeo-33-ty-racer.webp",
-    "artist": "Lothar Spurzem",
-    "license": "CC BY-SA 2.0 de",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1971-05-29_Nanni_Galli,_Alfa_Romeo_33.3.jpg"
-  },
   "alfa-romeo-156-gta-limited": {
     "file": "alfa-romeo-156-gta-limited.webp",
     "artist": "FotoSleuth",
@@ -5935,9 +5839,9 @@
   },
   "seat-leon-cupra-280-mk3": {
     "file": "seat-leon-cupra-280-mk3.webp",
-    "artist": "M 93",
-    "license": "CC BY-SA 3.0 de",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seat_Leon_Cupra_280_(III)_%E2%80%93_Frontansicht,_9._November_2014,_D%C3%BCsseldorf.jpg"
+    "artist": "Ian S",
+    "license": "CC BY-SA 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Len%27s_Seat_on_Lords_Lane_-_geograph.org.uk_-_5682862.jpg"
   },
   "opel-astra-opc-mk6": {
     "file": "opel-astra-opc-mk6.webp",
@@ -5947,9 +5851,9 @@
   },
   "renault-megane-rs-mk3": {
     "file": "renault-megane-rs-mk3.webp",
-    "artist": "Vauxford",
+    "artist": "Calreyn88",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2019_Renault_Megane_R.S._300_Trophy_1.8_Front.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2014_Renault_Megane_RS_Trophy.jpg"
   },
   "subaru-brz-gen2": {
     "file": "subaru-brz-gen2.webp",
@@ -5977,15 +5881,15 @@
   },
   "perodua-myvi-dj": {
     "file": "perodua-myvi-dj.webp",
-    "artist": "LuvsMG481",
+    "artist": "Bindydad123",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2016_Perodua_Myvi_1.5_SE_front.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Perodua_Myvi_and_Perodua_Bezza_in_Penang,_Malaysia_(1).jpg"
   },
   "chevrolet-spark-gen3": {
     "file": "chevrolet-spark-gen3.webp",
-    "artist": "Ethan Llamas",
+    "artist": "DestinationFearFan",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2011_Chevrolet_Spark_1.0_LS,_front_left,_06-23-2024.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2014_Chevrolet_Spark.jpg"
   },
   "skoda-citigo-e-iv": {
     "file": "skoda-citigo-e-iv.webp",
@@ -6019,9 +5923,9 @@
   },
   "volkswagen-polo-5th": {
     "file": "volkswagen-polo-5th.webp",
-    "artist": "User3204",
-    "license": "CC BY 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2006_SAIC-Volkswagen_Polo_Jinqu_(front).jpg"
+    "artist": "Alexander Migl",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Volkswagen_Polo_VI_(2021)_IMG_5322.jpg"
   },
   "force-gurkha-3d": {
     "file": "force-gurkha-3d.webp",
@@ -6061,21 +5965,15 @@
   },
   "seat-ibiza-mk5": {
     "file": "seat-ibiza-mk5.webp",
-    "artist": "Vauxford",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_SEAT_Ibiza_SE_Technology_MPi_1.0_Front.jpg"
+    "artist": "Mike McBey",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:SEAT_Ibiza_ST_(28916107668).jpg"
   },
   "ford-fiesta-st-mk8": {
     "file": "ford-fiesta-st-mk8.webp",
-    "artist": "Vauxford",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_Ford_Fiesta_ST_1.5_Front.jpg"
-  },
-  "audi-q4-sportback-45-tdi": {
-    "file": "audi-q4-sportback-45-tdi.webp",
-    "artist": "Alexander Migl",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Audi_Q4_Sportback_e-tron_IAA_2021_1X7A0159.jpg"
+    "artist": "Thesupermat",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ford_Fiesta_ST_-_Mondial_de_l%27Automobile_de_Paris_2014_-_003.jpg"
   },
   "hyundai-exter-sl": {
     "file": "hyundai-exter-sl.webp",
@@ -6109,9 +6007,9 @@
   },
   "suzuki-celerio-x": {
     "file": "suzuki-celerio-x.webp",
-    "artist": "Vauxford",
+    "artist": "El monty",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2017_Suzuki_Celerio_SZ4_Automatic_1.0_Front.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Suzuki_Celerio_(1).JPG"
   },
   "mitsubishi-lancer-evolution-x-fq-360": {
     "file": "mitsubishi-lancer-evolution-x-fq-360.webp",
@@ -6225,19 +6123,19 @@
     "file": "lexus-nx-500h-f-sport-2024.webp",
     "artist": "Alexander Migl",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lexus_LF-NX_IAA_2013.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lexus_NX_300_(AGZ10)_IMG_4832.jpg"
   },
   "toyota-wagonr-2022": {
     "file": "toyota-wagonr-2022.webp",
-    "artist": "Andra Febrian",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2013_Maruti_Suzuki_Wagon_R_Stingray_VXi_front_view.jpg"
+    "artist": "Riding Hub",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2020_Maruti_Suzuki_Wagon_R_VXi_(O)_(India)_front_view.png"
   },
   "audi-q4-etron-coupe-2023": {
     "file": "audi-q4-etron-coupe-2023.webp",
     "artist": "Alexander Migl",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Audi_Q4_Sportback_e-tron_IAA_2021_1X7A0159.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Audi_Q4_e-tron_IAA_2021_1X7A0224.jpg"
   },
   "hyundai-stinger-gt": {
     "file": "hyundai-stinger-gt.webp",
@@ -6313,9 +6211,9 @@
   },
   "hyundai-avante-gls": {
     "file": "hyundai-avante-gls.webp",
-    "artist": "U.S. National Highway Traffic Safety Administration",
-    "license": "Public domain",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2004_Hyundai_Elantra_sedan_--_NHTSA.jpg"
+    "artist": "Avante2025",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_White_Hyundai_ELANTRA_(CN7)_GLS_1.5_MPi_FACELIFT_China_001.jpg"
   },
   "bmw-7-series-m760i": {
     "file": "bmw-7-series-m760i.webp",
@@ -6359,12 +6257,6 @@
     "license": "CC BY-SA 4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024_Lamborghini_Revuelto_6.jpg"
   },
-  "baic-d50-plus-2023": {
-    "file": "baic-d50-plus-2023.webp",
-    "artist": "Kevauto",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2015_BAIC_Senova_D50,_front_8.9.18.jpg"
-  },
   "geely-geometry-s-2023": {
     "file": "geely-geometry-s-2023.webp",
     "artist": "User3204",
@@ -6377,12 +6269,6 @@
     "license": "CC BY-SA 4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mahindra_Scorpio_2014.JPG"
   },
-  "lotus-type-62-2023": {
-    "file": "lotus-type-62-2023.webp",
-    "artist": "Calreyn88",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Radford_Type_62-2.jpg"
-  },
   "mahindra-nuo-2023": {
     "file": "mahindra-nuo-2023.webp",
     "artist": "Ank Kumar",
@@ -6391,9 +6277,9 @@
   },
   "hennessey-exorcist-2023": {
     "file": "hennessey-exorcist-2023.webp",
-    "artist": "Sarah Larson from Ann Arbor, MI, USA",
-    "license": "CC BY 2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2012_Chevrolet_Camaro_ZL1.jpg"
+    "artist": "Oleg Yunakov",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2020_Chevrolet_Camaro_ZL1_-_01.jpg"
   },
   "concept-car-hyperion-2023": {
     "file": "concept-car-hyperion-2023.webp",
@@ -6409,15 +6295,15 @@
   },
   "changhe-q36-2023": {
     "file": "changhe-q36-2023.webp",
-    "artist": "User3204",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_Wuling_Hongguang_S_(front).jpg"
+    "artist": "Rutger van der Maar",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wuling_Hongguang_S_front.jpg"
   },
   "li-auto-two-2023": {
     "file": "li-auto-two-2023.webp",
-    "artist": "Matti Blume",
+    "artist": "JustAnotherCarDesigner",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mobileye_Zeekr_001,_IAA_Summit_2023,_Munich_(P1120233-RR).jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zeekr_001_002.jpg"
   },
   "rolls-royce-vision-next-2024": {
     "file": "rolls-royce-vision-next-2024.webp",
@@ -6430,5 +6316,113 @@
     "artist": "Alexander-93",
     "license": "CC BY-SA 4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_XM_1X7A6874.jpg"
+  },
+  "maruti-wagon-r": {
+    "file": "maruti-wagon-r.webp",
+    "artist": "Alex Neman",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2019_Suzuki_Karimun_Wagon_R_GS_(front),_West_Surabaya.jpg"
+  },
+  "alfa-romeo-33-qv": {
+    "file": "alfa-romeo-33-qv.webp",
+    "artist": "Riley from Christchurch, New Zealand",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1986_Alfa_Romeo_33_QV_(27334651342).jpg"
+  },
+  "alfa-romeo-75-turbo": {
+    "file": "alfa-romeo-75-turbo.webp",
+    "artist": "Tokumeigakarinoaoshima",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tuned_Alfa_Romeo_75_Turbo_Evoluzione_(162B1E)_front.jpg"
+  },
+  "alfa-romeo-4c": {
+    "file": "alfa-romeo-4c.webp",
+    "artist": "Calreyn88",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2014_Alfa_Romeo_4C_7.jpg"
+  },
+  "alfa-romeo-spider-4.3-v8": {
+    "file": "alfa-romeo-spider-4.3-v8.webp",
+    "artist": "Travelarz",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Spider_(3)_Travelarz.JPG"
+  },
+  "alfa-romeo-2300b": {
+    "file": "alfa-romeo-2300b.webp",
+    "artist": "Unknown photographer",
+    "license": "Public domain",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1939-08-20_Liege-Rome_Alfa_2300B_Touring_815092.jpg"
+  },
+  "alfa-romeo-33-ty-racer": {
+    "file": "alfa-romeo-33-ty-racer.webp",
+    "artist": "Lothar Spurzem",
+    "license": "CC BY-SA 2.0 de",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1971-05-29_Nanni_Galli,_Alfa_Romeo_33.3.jpg"
+  },
+  "toyota-2000gt": {
+    "file": "toyota-2000gt.webp",
+    "artist": "Jeremy from Sydney, Australia",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1967-1970_Toyota_2000GT_coupe_(16109105472).jpg"
+  },
+  "mazda-2-turbo": {
+    "file": "mazda-2-turbo.webp",
+    "artist": "Ethan Llamas",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mazda_CX-9_2.5_Turbo_%27Black_Edition%27_2023.jpg"
+  },
+  "audi-q4-sportback-45-tdi": {
+    "file": "audi-q4-sportback-45-tdi.webp",
+    "artist": "Alexander Migl",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Audi_Q4_Sportback_e-tron_IAA_2021_1X7A0159.jpg"
+  },
+  "land-rover-discovery-sport-2023": {
+    "file": "land-rover-discovery-sport-2023.webp",
+    "artist": "Ethan Llamas",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Land_Rover_Discovery_S_in_Santorini_Black_Metallic,_front_right.jpg"
+  },
+  "chevrolet-trailblazer-2023": {
+    "file": "chevrolet-trailblazer-2023.webp",
+    "artist": "Elise240SX",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Chevrolet_Trailblazer_RS_AWD_in_Fountain_Blue,_Front_Right,_07-11-2023.jpg"
+  },
+  "lotus-type-62-2023": {
+    "file": "lotus-type-62-2023.webp",
+    "artist": "Calreyn88",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Radford_Type_62-2.jpg"
+  },
+  "wuling-mini-ev-2023": {
+    "file": "wuling-mini-ev-2023.webp",
+    "artist": "User3204",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021_Wuling_Hongguang_Mini_EV_Macaron_(front).jpg"
+  },
+  "toyota-2000gt-1967": {
+    "file": "toyota-2000gt-1967.webp",
+    "artist": "Charles from Port Chester, New York",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toyota_2000_GT_(1967)_(52874136267).jpg"
+  },
+  "bmw-m760i-performance": {
+    "file": "bmw-m760i-performance.webp",
+    "artist": "Nan Palmero from San Antonio, TX, USA",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:BMW_M760i_XDrive_at_the_New_York_International_Auto_Show_NYIAS_(39516099000).jpg"
+  },
+  "land-rover-defender-v8-2024": {
+    "file": "land-rover-defender-v8-2024.webp",
+    "artist": "Calreyn88",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Land_Rover_Defender_90_V8.jpg"
+  },
+  "jaguar-f-type-r": {
+    "file": "jaguar-f-type-r.webp",
+    "artist": "Liam Walker",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021_Jaguar_F-Type_R-Dynamic_facelift.jpg"
   }
 }

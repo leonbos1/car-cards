@@ -261,4 +261,4 @@ export function CarCard({ card, scale = 1, animateStats = false, onClick, classN
 }
 
 /** Used by the garage to sort without recomputing ratings. */
-export const cardRating = (c: CardView) => c.overall ?? overall(c.stats)
+export const cardRating = (c: CardView) => c.overall ?? overall(c.stats, c.year)
