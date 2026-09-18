@@ -69,6 +69,9 @@ const TITLE_PENALTIES: [RegExp, number][] = [
 const TITLE_BONUSES: [RegExp, number][] = [
   [/\bfront\b/i, 14],
   [/\b(3\/4|three[- ]quarter)\b/i, 10],
+  // A car photographed outdoors, in the open, rather than on a stand between
+  // two other cars under strip lighting.
+  [/\b(road|street|highway|coast|mountain|desert|parked outside)\b/i, 8],
 ]
 
 function isAllowed(license: string): boolean {
@@ -173,8 +176,13 @@ function score(candidate: Candidate, car: Car): number {
   else if (ratio > 2.2) total -= 10
   else total -= 25
 
-  if (width >= 1600) total += 8
-  if (width < 800) total -= 20
+  // Resolution is most of what separates a picture that holds up on a card
+  // from one that does not, so it is worth more than the old +8.
+  if (width >= 3000) total += 20
+  else if (width >= 2000) total += 14
+  else if (width >= 1440) total += 8
+  if (width < 1200) total -= 12
+  if (width < 800) total -= 30
 
   return total
 }
@@ -235,9 +243,11 @@ async function download(url: string, dest: string): Promise<void> {
   const res = await fetch(url, { headers: { 'User-Agent': UA } })
   if (!res.ok) throw new Error(`download failed: ${res.status}`)
   const buf = Buffer.from(await res.arrayBuffer())
+  // 1440 wide rather than 960: a card is only ~240 CSS px across, but on a
+  // phone at 3x that is 720 real pixels, and the old size was visibly soft.
   await sharp(buf)
-    .resize(960, 640, { fit: 'cover', position: 'centre' })
-    .webp({ quality: 82 })
+    .resize(1440, 960, { fit: 'cover', position: 'centre' })
+    .webp({ quality: 86 })
     .toFile(dest)
 }
 

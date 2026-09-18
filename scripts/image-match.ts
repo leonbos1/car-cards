@@ -82,6 +82,12 @@ const NOT_A_CAR = [
   // on the Xiaomi card.
   /\bvisits?\b|\bdirector general\b|\bchairman\b|\bceo\b|\bpress conference\b/i,
   /\bceremony\b|\bsigning\b|\bdelegation\b|\bsummit\b|\bplenary\b|\bexhibition stand\b/i,
+  // A wreck is the right car and still the wrong photograph. This was only a
+  // scoring penalty, which loses to nothing at all: a Model X that had been
+  // driven into a lamp post, cones and all, won the Long Range card because it
+  // was the only candidate left standing.
+  /\bcrash(ed)?\b|\bwreck(ed|age)?\b|\bcollision\b|\baccident\b|\bburn(t|ed)\b|\bfire\b/i,
+  /\bdamaged\b|\bsalvage\b|\bscrap(yard|ped)?\b|\bjunk(yard)?\b|\btotaled\b|\bunfall\b/i,
 ]
 
 export function looksLikeACar(title: string): boolean {
@@ -284,6 +290,17 @@ export function modelYearOf(title: string): [from: number, to: number] | null {
  */
 const YEAR_TOLERANCE = 4
 
+/**
+ * Words that name a line rather than a car.
+ *
+ * Long enough to look distinctive and useless for telling two cars apart: every
+ * Tesla filename says 'Model', so matching on it counted as proof and let a
+ * Model X Plaid photo settle onto the Model X Long Range card. They still count
+ * as a match — they are part of the name — just never as the strong kind that
+ * outranks a sibling named in the same filename.
+ */
+const WEAK_NAMES = new Set(['model', 'series', 'class', 'type', 'clase', 'serie'])
+
 export interface Match {
   make: boolean
   model: boolean
@@ -325,7 +342,7 @@ export function matchCar(title: string, car: Car): Match {
     // Commons writes it — 'Mazda 2', 'SJ Duesenberg'.
     n.length <= 2 ? words.has(n) || followsTheMake(n, car, flat) : present(n, words, flat)
   const model = modelNames.some(hit)
-  const modelStrong = modelNames.some((n) => n.length >= 3 && hit(n))
+  const modelStrong = modelNames.some((n) => n.length >= 3 && !WEAK_NAMES.has(n) && hit(n))
 
   // Uploaders often drop the marque when the model name already says it —
   // 'Mk6 And Mk7 Fiesta's', '71 Corvette ZR-2'. A long, unambiguous model name

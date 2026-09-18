@@ -125,7 +125,7 @@ each card's detail view.
 | Nissan Leaf | Tokumeigakarinoaoshima | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Nissan_LEAF_e%2B_AUTECH_(ZAA-ZE1)_front.jpg) |
 | Renault Zoe | Damian B Oh | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Renault_Zoe_Highland_Silver_(2).jpg) |
 | Hyundai Kona Electric | Alexander-93 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Hyundai_Kona_Electric_(SX2)_Auto_Zuerich_2023_1X7A1021.jpg) |
-| Tesla Model 3 | Alexander-93 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Tesla_Model_3_1X7A6940.jpg) |
+| Tesla Model 3 Long Range | Calreyn88 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2021_Tesla_Model_3_Long_Range_AWD.jpg) |
 | Holden FE | Museumsfotografierer | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Holden_FE_1956_01.jpg) |
 | Austin Mini | Vauxford | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1962_Austin_Mini_%27Twini%27_Moke_850cc_Front.jpg) |
 | Ford Anglia | No machine-readable author provided. THORtenerife~commonswiki assumed (based on copyright claims). | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Ford-Anglia-Tenerife.JPG) |
@@ -654,7 +654,25 @@ each card's detail view.
 | McLaren 570S | Calreyn88 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2019_McLaren_570S_Spider.jpg) |
 | Nissan GT-R NISMO | Tokumeigakarinoaoshima | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Nissan_GT-R_NISMO_Special_edition_(4BA-R35)_front.jpg) |
 | BMW i8 | Bill Abbott | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:BMW_i8_eDrive_electric_sports_car_flat_black_left_port_front_quarter_IMG_4550_(52668099974).jpg) |
-| Tesla Model S Plaid | Calreyn88 | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Tesla_Model_S_Plaid.jpg) |
+| Tesla Model S Plaid | Alexander-93 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Tesla_Model_S_Plaid_Autofr%C3%BChling_Ulm_IMG_9278_(cropped).jpg) |
+| Tesla Roadster | Rutger van der Maar | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:2008_Tesla_Roadster_front.jpg) |
+| Tesla Roadster Sport | Winning Automotive Photography | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Tesla_Roadster_Photography.jpg) |
+| Tesla Model S 85 | Fiver, der Hellseher | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Black_Tesla_Model_S_85_in_Norway_(front).jpg) |
+| Tesla Model S P85D | Jeremy from Sydney, Australia | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:2015_Tesla_Model_S_P85D_hatchback_(24308858991).jpg) |
+| Tesla Model S P100D | Calreyn88 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2018_Tesla_Model_S_100D.jpg) |
+| Tesla Model S Long Range | Dllu | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2021_Tesla_Model_S_P2_Long_Range_front_right_view.jpg) |
+| Tesla Model X P100D | Vauxford | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2017_Tesla_Model_X_100D_Front.jpg) |
+| Tesla Model X Long Range | Alexander Migl | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Tesla_Model_X_100D_1X7A6736.jpg) |
+| Tesla Model X Plaid | HJUdall | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:23_Tesla_Model_X_Plaid.jpg) |
+| Tesla Model 3 Standard Range | Ethan Llamas | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2019_Tesla_Model_3_Standard_Range_Plus_RWD_in_Pearl_White_Multi-Coat,_front_left.jpg) |
+| Tesla Model 3 Long Range | Kazyakuruma | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Tesla_Model_3_(2023),_long_range,_Japan,_left-front.jpg) |
+| Tesla Model 3 RWD | LuvsMG481 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Tesla_Model_3_RWD_front.jpg) |
+| Tesla Model 3 Performance Highland | Chanokchon | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2024_Tesla_Model_3_Highland_Performance_AWD.jpg) |
+| Tesla Model Y RWD | Calreyn88 | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Tesla_Model_Y_RWD.jpg) |
+| Tesla Model Y Long Range | Kevauto | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Tesla_Model_Y,_front_11.11.23.jpg) |
+| Tesla Cybertruck RWD | Oleg Yunakov | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Tesla_Cybertruck_(grey)_-_01.jpg) |
+| Tesla Cybertruck AWD | Missvain | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Tesla_Cybertruck_-_April_2024_-_Sarah_Stierch_01.jpg) |
+| Tesla Cybertruck Cyberbeast | Dllu | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Foundation_series_Cybertruck_at_dusk_in_San_Jose_dllu.jpg) |
 | Porsche Taycan Turbo S | Kirill Borisenko | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Porsche_Taycan_turbo_S.jpg) |
 | BMW M5 | Calreyn88 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2022_BMW_M5.jpg) |
 | Mercedes-AMG E63 | GTHO | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Mercedes-Benz_E63_AMG_(W212)_of_Will_Davison_2015.jpg) |
@@ -715,7 +733,7 @@ each card's detail view.
 | Bugatti Type 35 | Lothar Spurzem | CC BY-SA 2.0 de | [Commons](https://commons.wikimedia.org/wiki/File:Bugatti_35,_Bj_1924,_M_Nicolosi_-_1976.jpg) |
 | Duesenberg SJ | Jim1138 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:SJ_Duesenberg_1932_model.jpg) |
 | Cord 812 | Stephen Foskett (Wikipedia User: sfoskett) | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:1937_Cord_812.JPG) |
-| Tesla Roadster | Harald Gallinnis | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Padborg_Park_EEC_20_9_2023_Tesla_Roadster_Schmidbauer.jpg) |
+| Tesla Roadster | Thomas Vogt from Paderborn, Deutschland | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Tesla_Roadster_(53440533362).jpg) |
 | Polestar 1 | Dylan Johnson | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2020_Polestar_1_PHEV_AWD_Automatic_2.0_Front.jpg) |
 | Aston Martin Vantage | MercurySable99 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2019_Aston_Martin_Vantage_coupe,_front_right_(Wings-n-Wheels_2023).jpg) |
 | Lotus Emira | Alexander-93 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Lotus_Emira_IMG_8023.jpg) |
@@ -772,8 +790,8 @@ each card's detail view.
 | Toyota GR Corolla | Kevauto | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Toyota_GR_Corolla,_front_NYIAS_2022.jpg) |
 | Subaru WRX | MercurySable99 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2022_Subaru_WRX,_front_right,_06-19-2023.jpg) |
 | Ford Mustang Mach-E | Corqe | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Denver_Auto_Show_Ford_Mustang_Mach-E_front_left_quarter.jpg) |
-| Tesla Model 3 | Alexander-93 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Tesla_Model_3_1X7A6940.jpg) |
-| Tesla Model Y | Kevauto | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Tesla_Model_Y_and_Model_3,_front_8.1.20.jpg) |
+| Tesla Model 3 Performance | iMoD Official | CC BY 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:2024_Tesla_Model_3_Performance_front_view_01.png) |
+| Tesla Model Y Performance | Chanokchon | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2022_Tesla_Model_Y_Performance.jpg) |
 | BMW iX xDrive50 | 先従隗始 | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:BMW_ZAA-22CF89A_iX_xDrive50_(23091714245).jpg) |
 | Genesis Electrified GV70 | Alexander Migl | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Genesis_Electrified_GV70_1X7A6390.jpg) |
 | Fisker Ocean | Mr.choppers | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Fisker_Ocean_One_in_Marine_Layer_(rideshare),_front_left.jpg) |

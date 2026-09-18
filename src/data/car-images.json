@@ -703,9 +703,9 @@
   },
   "tesla-model-3": {
     "file": "tesla-model-3.webp",
-    "artist": "Alexander-93",
+    "artist": "Calreyn88",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tesla_Model_3_1X7A6940.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021_Tesla_Model_3_Long_Range_AWD.jpg"
   },
   "holden-fe": {
     "file": "holden-fe.webp",
@@ -3067,9 +3067,9 @@
   },
   "tesla-model-s-plaid-2023": {
     "file": "tesla-model-s-plaid-2023.webp",
-    "artist": "Calreyn88",
-    "license": "CC0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Tesla_Model_S_Plaid.jpg"
+    "artist": "Alexander-93",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tesla_Model_S_Plaid_Autofr%C3%BChling_Ulm_IMG_9278_(cropped).jpg"
   },
   "porsche-taycan-turbo-s-2023": {
     "file": "porsche-taycan-turbo-s-2023.webp",
@@ -3403,9 +3403,9 @@
   },
   "modern-tesla-roadster-2023": {
     "file": "modern-tesla-roadster-2023.webp",
-    "artist": "Harald Gallinnis",
-    "license": "CC0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Padborg_Park_EEC_20_9_2023_Tesla_Roadster_Schmidbauer.jpg"
+    "artist": "Thomas Vogt from Paderborn, Deutschland",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tesla_Roadster_(53440533362).jpg"
   },
   "modern-hyperpolestar-1-2023": {
     "file": "modern-hyperpolestar-1-2023.webp",
@@ -3685,15 +3685,15 @@
   },
   "tesla-model-3-2023": {
     "file": "tesla-model-3-2023.webp",
-    "artist": "Alexander-93",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tesla_Model_3_1X7A6940.jpg"
+    "artist": "iMoD Official",
+    "license": "CC BY 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024_Tesla_Model_3_Performance_front_view_01.png"
   },
   "tesla-model-y-2023": {
     "file": "tesla-model-y-2023.webp",
-    "artist": "Kevauto",
+    "artist": "Chanokchon",
     "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tesla_Model_Y_and_Model_3,_front_8.1.20.jpg"
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Tesla_Model_Y_Performance.jpg"
   },
   "bmw-ix-xdrive50-2023": {
     "file": "bmw-ix-xdrive50-2023.webp",
@@ -6424,5 +6424,113 @@
     "artist": "Liam Walker",
     "license": "CC BY-SA 4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021_Jaguar_F-Type_R-Dynamic_facelift.jpg"
+  },
+  "tesla-roadster-2008": {
+    "file": "tesla-roadster-2008.webp",
+    "artist": "Rutger van der Maar",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2008_Tesla_Roadster_front.jpg"
+  },
+  "tesla-roadster-sport-2010": {
+    "file": "tesla-roadster-sport-2010.webp",
+    "artist": "Winning Automotive Photography",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tesla_Roadster_Photography.jpg"
+  },
+  "tesla-model-s-85-2012": {
+    "file": "tesla-model-s-85-2012.webp",
+    "artist": "Fiver, der Hellseher",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black_Tesla_Model_S_85_in_Norway_(front).jpg"
+  },
+  "tesla-model-s-p85d-2015": {
+    "file": "tesla-model-s-p85d-2015.webp",
+    "artist": "Jeremy from Sydney, Australia",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2015_Tesla_Model_S_P85D_hatchback_(24308858991).jpg"
+  },
+  "tesla-model-s-p100d-2017": {
+    "file": "tesla-model-s-p100d-2017.webp",
+    "artist": "Calreyn88",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2018_Tesla_Model_S_100D.jpg"
+  },
+  "tesla-model-s-lr-2023": {
+    "file": "tesla-model-s-lr-2023.webp",
+    "artist": "Dllu",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021_Tesla_Model_S_P2_Long_Range_front_right_view.jpg"
+  },
+  "tesla-model-x-p100d-2017": {
+    "file": "tesla-model-x-p100d-2017.webp",
+    "artist": "Vauxford",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2017_Tesla_Model_X_100D_Front.jpg"
+  },
+  "tesla-model-x-lr-2023": {
+    "file": "tesla-model-x-lr-2023.webp",
+    "artist": "Alexander Migl",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tesla_Model_X_100D_1X7A6736.jpg"
+  },
+  "tesla-model-x-plaid-2023": {
+    "file": "tesla-model-x-plaid-2023.webp",
+    "artist": "HJUdall",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:23_Tesla_Model_X_Plaid.jpg"
+  },
+  "tesla-model-3-sr-2019": {
+    "file": "tesla-model-3-sr-2019.webp",
+    "artist": "Ethan Llamas",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2019_Tesla_Model_3_Standard_Range_Plus_RWD_in_Pearl_White_Multi-Coat,_front_left.jpg"
+  },
+  "tesla-model-3-lr-2023": {
+    "file": "tesla-model-3-lr-2023.webp",
+    "artist": "Kazyakuruma",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tesla_Model_3_(2023),_long_range,_Japan,_left-front.jpg"
+  },
+  "tesla-model-3-rwd-2024": {
+    "file": "tesla-model-3-rwd-2024.webp",
+    "artist": "LuvsMG481",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Tesla_Model_3_RWD_front.jpg"
+  },
+  "tesla-model-3-perf-2024": {
+    "file": "tesla-model-3-perf-2024.webp",
+    "artist": "Chanokchon",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024_Tesla_Model_3_Highland_Performance_AWD.jpg"
+  },
+  "tesla-model-y-rwd-2023": {
+    "file": "tesla-model-y-rwd-2023.webp",
+    "artist": "Calreyn88",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Tesla_Model_Y_RWD.jpg"
+  },
+  "tesla-model-y-lr-2023": {
+    "file": "tesla-model-y-lr-2023.webp",
+    "artist": "Kevauto",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Tesla_Model_Y,_front_11.11.23.jpg"
+  },
+  "tesla-cybertruck-rwd-2025": {
+    "file": "tesla-cybertruck-rwd-2025.webp",
+    "artist": "Oleg Yunakov",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tesla_Cybertruck_(grey)_-_01.jpg"
+  },
+  "tesla-cybertruck-awd-2024": {
+    "file": "tesla-cybertruck-awd-2024.webp",
+    "artist": "Missvain",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tesla_Cybertruck_-_April_2024_-_Sarah_Stierch_01.jpg"
+  },
+  "tesla-cyberbeast-2024": {
+    "file": "tesla-cyberbeast-2024.webp",
+    "artist": "Dllu",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Foundation_series_Cybertruck_at_dusk_in_San_Jose_dllu.jpg"
   }
 }
