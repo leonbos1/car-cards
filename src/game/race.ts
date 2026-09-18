@@ -217,48 +217,34 @@ const ELIGIBLE = new WeakMap<RaceEvent, CardView[]>()
 /**
  * How well a car suits an event, from 0 to 1.
  *
- * Measured against the rest of the field rather than against the whole roster:
- * a 1.100 kg car is light for a national circuit race and heavy for the
- * Featherweight Cup, and the same car should score differently in each. So each
- * stat becomes the fraction of the eligible pool it beats, and the discipline's
- * weights combine those.
+ * Fitness is based on absolute normalized stats, not pool percentiles. This
+ * ensures that a car's suitability is stable regardless of other entrants, and
+ * that higher-rated cars intuitively outperform lower-rated ones.
  */
 export function fitness(card: CardView, event: RaceEvent): number {
-  const ranks = ranksFor(event)
   let total = 0
   for (const [stat, weight] of Object.entries(WEIGHTS[event.discipline]) as [Stat, number][]) {
-    total += weight * percentile(statOf(card, stat), ranks[stat]!, LOWER_IS_BETTER.includes(stat))
+    const normalized = normalizedStat(statOf(card, stat), stat, LOWER_IS_BETTER.includes(stat))
+    total += weight * normalized
   }
   return total
 }
 
-type Ranks = Partial<Record<Stat, number[]>>
-const RANKS = new WeakMap<RaceEvent, Ranks>()
-
-function ranksFor(event: RaceEvent): Ranks {
-  const hit = RANKS.get(event)
-  if (hit) return hit
-  const pool = eligible(event)
-  const ranks: Ranks = {}
-  for (const stat of Object.keys(WEIGHTS[event.discipline]) as Stat[]) {
-    ranks[stat] = pool.map((c) => statOf(c, stat)).sort((a, b) => a - b)
+/** Normalize a stat to 0–1 based on realistic ranges. */
+function normalizedStat(value: number, stat: Stat, lowerIsBetter: boolean): number {
+  const ranges: Record<Stat, [number, number]> = {
+    hp: [50, 1500],
+    acc: [1.5, 25],
+    topspeed: [120, 450],
+    weight: [700, 2500],
+    handling: [0, 99],
+    wowFactor: [0, 99],
+    age: [0, 100],
   }
-  RANKS.set(event, ranks)
-  return ranks
-}
-
-/** Fraction of `sorted` this value beats, flipped when smaller is better. */
-function percentile(value: number, sorted: number[], lowerIsBetter: boolean): number {
-  if (sorted.length < 2) return 0.5
-  let lo = 0
-  let hi = sorted.length
-  while (lo < hi) {
-    const mid = (lo + hi) >> 1
-    if (sorted[mid] < value) lo = mid + 1
-    else hi = mid
-  }
-  const below = lo / (sorted.length - 1)
-  return lowerIsBetter ? 1 - below : below
+  const [min, max] = ranges[stat]
+  const clamped = Math.max(min, Math.min(max, value))
+  const normalized = (clamped - min) / (max - min)
+  return lowerIsBetter ? 1 - normalized : normalized
 }
 
 export interface Entrant {

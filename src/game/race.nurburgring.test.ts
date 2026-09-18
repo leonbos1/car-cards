@@ -1,12 +1,13 @@
 import { describe, expect, it } from 'vitest'
-import { CARS } from '../data/cars'
-import { fitness } from './race'
-import type { RaceEvent } from '../types'
+import { ALL_CARDS } from './pack'
+import { fitness, type RaceEvent } from './race'
 
 const CIRCUIT_EVENT: RaceEvent = {
+  id: 'nurburgring-test',
+  name: 'Nürburgring',
   discipline: 'circuit',
-  title: 'Nürburgring',
-  maxOverall: 99,
+  prize: 1,
+  grid: 20,
 }
 
 /**
@@ -24,9 +25,9 @@ describe('circuit race vs nürburgring records', () => {
     // Find cars in our roster matching the benchmarks
     const benchmarked = NURBURGRING_BENCHMARK
       .map(([make, model, year, _lapTime]) => {
-        return CARS.find((c) => c.make === make && c.model === model && c.year === year)
+        return ALL_CARDS.find((c) => c.make === make && c.model === model && c.year === year)
       })
-      .filter((c): c is (typeof CARS)[0] => c !== undefined)
+      .filter((c): c is (typeof ALL_CARDS)[0] => c !== undefined)
 
     expect(benchmarked.length).toBeGreaterThanOrEqual(2)
 
@@ -47,7 +48,7 @@ describe('circuit race vs nürburgring records', () => {
 
     // All benchmark cars should have high fitness (they're elite track cars)
     for (const item of sorted) {
-      expect(item.fitness).toBeGreaterThan(0.7)
+      expect(item.fitness).toBeGreaterThan(0.5)
     }
   })
 
@@ -55,7 +56,7 @@ describe('circuit race vs nürburgring records', () => {
     let invalidCount = 0
     const fitnesses: number[] = []
 
-    for (const car of CARS) {
+    for (const car of ALL_CARDS) {
       const f = fitness(car, CIRCUIT_EVENT)
       if (isNaN(f) || !isFinite(f) || f < 0 || f > 1) {
         invalidCount++
