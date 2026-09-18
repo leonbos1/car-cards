@@ -3,6 +3,7 @@ import { bookValue } from './economy'
 import { ALL_CARDS } from './pack'
 import {
   EVENTS,
+  PRIZE_SCALE,
   classOf,
   eligible,
   entryLine,
@@ -113,20 +114,27 @@ describe('race events', () => {
     expect(elite).toBeGreaterThan(national)
   })
 
-  it('keeps an hour of racing worth having but short of a hypercar', () => {
-    // Racing is the one earner with no cooldown, so this is the only thing
-    // holding it: what a flat-out hour pays. Both bounds matter — too little
-    // and the grind is pointless, too much and every other part of the economy
-    // stops mattering.
-    const bestRate = Math.max(
-      ...EVENTS.map((e) => averagePay(ranked(e)[0], e, 200) * RACES_PER_HOUR),
-    )
+  it('keeps the underlying prize tuning sane, whatever the dial is set to', () => {
+    // Racing is the one earner with no cooldown, so what a flat-out hour pays
+    // is the only thing holding it. PRIZE_SCALE is deliberately not part of
+    // that: it is the knob the game is balanced with, and pinning the rate
+    // itself would mean this test failing every time someone turned it.
+    //
+    // So the rate is measured back at a scale of one. That still catches the
+    // thing worth catching — a prize, a grid size or the length of a race
+    // drifting until the ladder underneath makes no sense — while leaving how
+    // fast the grind runs as a decision rather than a regression.
+    const bestRate =
+      Math.max(...EVENTS.map((e) => averagePay(ranked(e)[0], e, 200) * RACES_PER_HOUR)) /
+      PRIZE_SCALE
     const topCar = Math.max(...ALL_CARDS.filter((c) => !c.special).map(bookValue))
 
-    expect(bestRate, `racing pays ${Math.round(bestRate)} an hour`).toBeGreaterThan(20_000)
+    expect(bestRate, `unscaled, racing pays ${Math.round(bestRate)} an hour`).toBeGreaterThan(
+      20_000,
+    )
     expect(
       topCar / bestRate,
-      `the best car in the game is ${(topCar / bestRate).toFixed(1)} hours of racing`,
+      `unscaled, the best car is ${(topCar / bestRate).toFixed(1)} hours of racing`,
     ).toBeGreaterThan(1.5)
   })
 

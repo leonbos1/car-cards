@@ -90,14 +90,19 @@ const FINISHER_PAYOUT = 0.1
  * The dial on the whole thing.
  *
  * Racing has no cooldown, so what it pays per hour is set by the prize and by
- * how long a race takes to run — nothing else bounds it. At 1.0 and the
- * seven seconds a race takes to watch and tap again, a starter garage earns
- * about €7.000 an hour and a deep one about €35.000, which puts the best car
- * in the game somewhere between three and fifteen hours of racing. Turn this
- * up to make the grind faster, down to make it a longer chase; nothing else
- * needs to change.
+ * how long a race takes to run — nothing else bounds it. At 1.0 and the seven
+ * seconds a race takes to watch and tap again, a starter garage earned about
+ * €7.000 an hour and a deep one about €35.000, which put the best car in the
+ * game somewhere between three and fifteen hours of racing.
+ *
+ * Set to 10 deliberately. That makes racing roughly seventy thousand a day for
+ * a new garage and a third of a million an hour for a full one, so the best
+ * car in the game is about twenty minutes of racing rather than three hours,
+ * and every other way of earning — packs, the quiz, the contract board, the
+ * market — is now rounding error beside it. That is the intended trade, not
+ * drift: turn it back down to make the rest of the economy matter again.
  */
-export const PRIZE_SCALE = 1
+export const PRIZE_SCALE = 10
 
 /**
  * How much luck is in a race.
