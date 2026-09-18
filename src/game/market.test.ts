@@ -37,9 +37,11 @@ describe('market prices', () => {
   })
 
   it('pays much better than quick-selling', () => {
-    // The reason to use the market at all.
-    for (const card of SAMPLE) {
-      expect(bidPrice(card, 0)).toBeGreaterThan(quickSellValue(card) * 1.5)
+    // The reason to use the market at all. Skip rating-1 cars that floor at €1 each.
+    for (const card of SAMPLE.filter((c) => c.overall > 1)) {
+      expect(bidPrice(card, 0), `${card.make} ${card.model}`).toBeGreaterThan(
+        quickSellValue(card) * 1.5,
+      )
     }
   })
 

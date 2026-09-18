@@ -22,7 +22,7 @@ const rate = (stats: Stats, year = NOW) => overall(stats, year)
  */
 const ANCHORS: [name: string, target: number][] = [
   ['Volkswagen Polo', 67],
-  ['Volkswagen Golf GTI', 80],
+  ['Volkswagen Golf GTI Mk8', 80],
   ['Volkswagen Golf R', 84],
   ['Porsche 911 GT3 RS', 91],
   ['Bugatti Veyron', 95],

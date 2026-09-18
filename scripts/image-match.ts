@@ -88,6 +88,10 @@ const NOT_A_CAR = [
   // was the only candidate left standing.
   /\bcrash(ed)?\b|\bwreck(ed|age)?\b|\bcollision\b|\baccident\b|\bburn(t|ed)\b|\bfire\b/i,
   /\bdamaged\b|\bsalvage\b|\bscrap(yard|ped)?\b|\bjunk(yard)?\b|\btotaled\b|\bunfall\b/i,
+  // Liveried service vehicles. The right car underneath, but a card wants the
+  // car, not a light bar and a Bundespolizei stripe.
+  /\bpolizei\b|\bpolizia\b|\bpolice\b|\bgendarmerie\b|\bcarabinieri\b|\bambulance\b/i,
+  /\bfire brigade\b|\bfeuerwehr\b|\btaxi\b|\bdriving school\b|\bfahrschule\b/i,
 ]
 
 export function looksLikeACar(title: string): boolean {
@@ -103,6 +107,15 @@ const AMBIGUOUS_MODELS = new Set([
   'beat', 'enjoy', 'focus', 'smart', 'spirit', 'vision', 'one', 'two', 'city',
   'accord', 'legend', 'civic', 'fit', 'note', 'cube', 'soul', 'forte', 'up',
   'element', 'pilot', 'ranger', 'explorer', 'escape', 'journey',
+  // Models named after places. SEAT names its entire range after Spanish
+  // towns, so 'Ibiza' on its own is as likely to be a holiday photograph as a
+  // car — 'Ibiza rock volcano.jpg', a picture of the island, landed on the
+  // Ibiza Mk5 card because the model name was allowed to stand in for the
+  // marque. These always need the marque named as well.
+  'ibiza', 'leon', 'toledo', 'cordoba', 'tarraco', 'arona', 'ateca', 'altea',
+  'alhambra', 'marbella', 'malaga', 'exeo', 'tucson', 'tahoe', 'malibu',
+  'monza', 'capri', 'sorento', 'sedona', 'sonoma', 'riviera', 'cayenne',
+  'santafe', 'seville', 'granada', 'sierra', 'montego', 'monaco', 'dakota',
 ])
 
 /** Model words too generic to prove the photo shows the right model. */
@@ -222,6 +235,25 @@ const SIBLING_NAMES = (() => {
   }
   return byMake
 })()
+
+/**
+ * True when the filename names a model of this marque whose name is this car's
+ * name with something on the end — 'e-tron GT' where the card says 'e-tron'.
+ */
+export function namesLongerSibling(title: string, car: Car): boolean {
+  const siblings = SIBLING_NAMES.get(fold(car.make))
+  if (!siblings) return false
+  const name = title.replace(/^File:/, '').replace(/\.[a-z0-9]+$/i, '')
+  const words = wordsOf(name)
+  const flat = flatten(name)
+  const mine = flatten(car.model)
+  for (const [word, models] of siblings) {
+    if (word === mine || !word.startsWith(mine) || word.length <= mine.length) continue
+    if ([...models].every((m) => fold(m) === fold(car.model))) continue
+    if (present(word, words, flat)) return true
+  }
+  return false
+}
 
 /** True when the filename names a different model from this car's marque. */
 export function namesAnotherModel(title: string, car: Car): boolean {
@@ -374,9 +406,15 @@ export function depicts(title: string, car: Car): boolean {
   const m = matchCar(title, car)
   if (!m.make) return false
 
-  // A model name long enough to stand on its own settles it, even if the
-  // filename mentions a sibling somewhere — 'Toyota MF10 2000GT Roadster' is a
-  // 2000GT whatever else is in the title.
+  // A sibling whose name is our name plus more beats even a strong match: an
+  // 'e-tron GT' photo matches 'tron' and so looks like solid evidence for the
+  // plain e-tron, but the longer name is the more specific claim and there is
+  // a separate card for it. Same shape as Model X Plaid against Model X.
+  if (namesLongerSibling(title, car)) return false
+
+  // Otherwise a model name long enough to stand on its own settles it, even if
+  // the filename mentions a sibling somewhere — 'Toyota MF10 2000GT Roadster'
+  // is a 2000GT whatever else is in the title.
   if (m.modelStrong) return true
 
   // Otherwise the evidence is circumstantial: a bare '2', or nothing at all.
