@@ -649,7 +649,7 @@ export const CARS: Car[] = [
   {
     id: 'ferrari-488-gtb',
     make: 'Ferrari', model: '488 GTB', year: 2016, country: 'IT',
-    stats: { hp: 670, acc: 3, topspeed: 330, weight: 1475, handling: 50, wowFactor: 99 },
+    stats: { hp: 670, acc: 3, topspeed: 330, weight: 1475, handling: 50, wowFactor: 97 },
     rare: true,
     specs: { hp: 670, zeroToHundred: 3, topSpeed: 330, weightKg: 1475 },
     imageQuery: 'Ferrari 488 GTB',
@@ -657,7 +657,7 @@ export const CARS: Car[] = [
   {
     id: 'lamborghini-huracan',
     make: 'Lamborghini', model: 'Huracán EVO', year: 2019, country: 'IT',
-    stats: { hp: 640, acc: 2.9, topspeed: 325, weight: 1422, handling: 50, wowFactor: 99 },
+    stats: { hp: 640, acc: 2.9, topspeed: 325, weight: 1422, handling: 50, wowFactor: 97 },
     rare: true,
     specs: { hp: 640, zeroToHundred: 2.9, topSpeed: 325, weightKg: 1422 },
     imageQuery: 'Lamborghini Huracn EVO',
@@ -665,7 +665,7 @@ export const CARS: Car[] = [
   {
     id: 'mclaren-720s',
     make: 'McLaren', model: '720S', year: 2018, country: 'GB',
-    stats: { hp: 720, acc: 2.9, topspeed: 341, weight: 1419, handling: 54, wowFactor: 99 },
+    stats: { hp: 720, acc: 2.9, topspeed: 341, weight: 1419, handling: 54, wowFactor: 97 },
     rare: true,
     specs: { hp: 720, zeroToHundred: 2.9, topSpeed: 341, weightKg: 1419 },
     imageQuery: 'McLaren 720S',
@@ -705,7 +705,7 @@ export const CARS: Car[] = [
   {
     id: 'lamborghini-aventador-svj',
     make: 'Lamborghini', model: 'Aventador SVJ', year: 2019, country: 'IT',
-    stats: { hp: 770, acc: 2.8, topspeed: 350, weight: 1525, handling: 54, wowFactor: 99 },
+    stats: { hp: 770, acc: 2.8, topspeed: 350, weight: 1525, handling: 54, wowFactor: 97 },
     rare: true,
     specs: { hp: 770, zeroToHundred: 2.8, topSpeed: 350, weightKg: 1525 },
     imageQuery: 'Lamborghini Aventador SVJ',
@@ -713,7 +713,7 @@ export const CARS: Car[] = [
   {
     id: 'ferrari-f8-tributo',
     make: 'Ferrari', model: 'F8 Tributo', year: 2020, country: 'IT',
-    stats: { hp: 720, acc: 2.9, topspeed: 340, weight: 1435, handling: 53, wowFactor: 99 },
+    stats: { hp: 720, acc: 2.9, topspeed: 340, weight: 1435, handling: 53, wowFactor: 97 },
     rare: true,
     specs: { hp: 720, zeroToHundred: 2.9, topSpeed: 340, weightKg: 1435 },
     imageQuery: 'Ferrari F8 Tributo',
@@ -1299,7 +1299,7 @@ export const CARS: Car[] = [
   {
     id: 'mclaren-mp4-12c',
     make: 'McLaren', model: 'MP4-12C', year: 2012, country: 'GB',
-    stats: { hp: 625, acc: 3.1, topspeed: 333, weight: 1339, handling: 51, wowFactor: 99 },
+    stats: { hp: 625, acc: 3.1, topspeed: 333, weight: 1339, handling: 51, wowFactor: 97 },
     rare: true,
     specs: { hp: 625, zeroToHundred: 3.1, topSpeed: 333, weightKg: 1339 },
     imageQuery: 'McLaren MP4-12C coupe',
@@ -2756,7 +2756,7 @@ export const CARS: Car[] = [
   {
     id: 'porsche-911-turbo-s-992',
     make: 'Porsche', model: '911 Turbo S 992', year: 2021, country: 'DE',
-    stats: { hp: 640, acc: 2.7, topspeed: 330, weight: 1650, handling: 46, wowFactor: 99 },
+    stats: { hp: 640, acc: 2.7, topspeed: 330, weight: 1650, handling: 46, wowFactor: 97 },
     rare: true,
     specs: { hp: 640, zeroToHundred: 2.7, topSpeed: 330, weightKg: 1650 },
     imageQuery: 'Porsche 911 Turbo S 992 2021',
@@ -2773,7 +2773,7 @@ export const CARS: Car[] = [
   {
     id: 'ferrari-296-gtb',
     make: 'Ferrari', model: '296 GTB', year: 2022, country: 'IT',
-    stats: { hp: 818, acc: 2.9, topspeed: 330, weight: 1570, handling: 55, wowFactor: 99 },
+    stats: { hp: 818, acc: 2.9, topspeed: 330, weight: 1570, handling: 55, wowFactor: 97 },
     rare: true,
     specs: { hp: 818, zeroToHundred: 2.9, topSpeed: 330, weightKg: 1570 },
     imageQuery: 'Ferrari 296 GTB 2022',
@@ -2781,7 +2781,7 @@ export const CARS: Car[] = [
   {
     id: 'mclaren-750s',
     make: 'McLaren', model: '750S', year: 2023, country: 'GB',
-    stats: { hp: 740, acc: 2.8, topspeed: 330, weight: 1540, handling: 52, wowFactor: 99 },
+    stats: { hp: 740, acc: 2.8, topspeed: 330, weight: 1540, handling: 52, wowFactor: 97 },
     rare: true,
     specs: { hp: 740, zeroToHundred: 2.8, topSpeed: 330, weightKg: 1540 },
     imageQuery: 'McLaren 750S 2023',
@@ -3269,7 +3269,7 @@ export const CARS: Car[] = [
   {
     id: 'bentley-continental-gt-speed',
     make: 'Bentley', model: 'Continental GT Speed', year: 2014, country: 'GB',
-    stats: { hp: 626, acc: 3.5, topspeed: 330, weight: 2385, handling: 37, wowFactor: 99 },
+    stats: { hp: 626, acc: 3.5, topspeed: 330, weight: 2385, handling: 37, wowFactor: 97 },
     rare: true,
     specs: { hp: 626, zeroToHundred: 3.5, topSpeed: 330, weightKg: 2385 },
     imageQuery: 'Bentley Continental GT Speed 2014',
@@ -3831,7 +3831,7 @@ export const CARS: Car[] = [
   {
     id: 'cadillac-cts-v',
     make: 'Cadillac', model: 'CTS-V', year: 2019, country: 'US',
-    stats: { hp: 640, acc: 3.7, topspeed: 320, weight: 1700, handling: 45, wowFactor: 99 },
+    stats: { hp: 640, acc: 3.7, topspeed: 320, weight: 1700, handling: 45, wowFactor: 97 },
     rare: true,
     specs: { hp: 640, zeroToHundred: 3.7, topSpeed: 320, weightKg: 1700 },
     imageQuery: 'Cadillac CTS-V 2019',
@@ -3943,7 +3943,7 @@ export const CARS: Car[] = [
   {
     id: 'chevrolet-corvette-c8-z06',
     make: 'Chevrolet', model: 'Corvette C8 Z06', year: 2023, country: 'US',
-    stats: { hp: 670, acc: 2.6, topspeed: 330, weight: 1630, handling: 47, wowFactor: 99 },
+    stats: { hp: 670, acc: 2.6, topspeed: 330, weight: 1630, handling: 47, wowFactor: 97 },
     rare: true,
     specs: { hp: 670, zeroToHundred: 2.6, topSpeed: 330, weightKg: 1630 },
     imageQuery: 'Chevrolet Corvette C8 Z06 2023',
@@ -4272,7 +4272,7 @@ export const CARS: Car[] = [
   {
     id: 'bmw-7-series-m760i',
     make: 'BMW', model: '760i xDrive', year: 2023, country: 'DE',
-    stats: { hp: 625, acc: 3.6, topspeed: 305, weight: 2035, handling: 40, wowFactor: 99 },
+    stats: { hp: 625, acc: 3.6, topspeed: 305, weight: 2035, handling: 40, wowFactor: 97 },
     rare: true,
     specs: { hp: 625, zeroToHundred: 3.6, topSpeed: 305, weightKg: 2035 },
     imageQuery: 'BMW 760i',
@@ -4280,7 +4280,7 @@ export const CARS: Car[] = [
   {
     id: 'mercedes-benz-e63-amg',
     make: 'Mercedes-Benz', model: 'E63 AMG', year: 2023, country: 'DE',
-    stats: { hp: 641, acc: 3.4, topspeed: 320, weight: 2145, handling: 40, wowFactor: 99 },
+    stats: { hp: 641, acc: 3.4, topspeed: 320, weight: 2145, handling: 40, wowFactor: 97 },
     rare: true,
     specs: { hp: 641, zeroToHundred: 3.4, topSpeed: 320, weightKg: 2145 },
     imageQuery: 'Jaguar XJ220 1992',
@@ -5024,7 +5024,7 @@ export const CARS: Car[] = [
   {
     id: 'lamborghini-huracan-2023',
     make: 'Lamborghini', model: 'Huracán', year: 2023, country: 'IT',
-    stats: { hp: 631, acc: 2.9, topspeed: 325, weight: 1382, handling: 50, wowFactor: 99 },
+    stats: { hp: 631, acc: 2.9, topspeed: 325, weight: 1382, handling: 50, wowFactor: 97 },
     rare: true,
     specs: { hp: 631, zeroToHundred: 2.9, topSpeed: 325, weightKg: 1382 },
     imageQuery: 'Lamborghini Huracan 2023',
@@ -5032,7 +5032,7 @@ export const CARS: Car[] = [
   {
     id: 'ferrari-roma-2023',
     make: 'Ferrari', model: 'Roma', year: 2023, country: 'IT',
-    stats: { hp: 612, acc: 3.4, topspeed: 320, weight: 1472, handling: 48, wowFactor: 99 },
+    stats: { hp: 612, acc: 3.4, topspeed: 320, weight: 1472, handling: 48, wowFactor: 97 },
     rare: true,
     specs: { hp: 612, zeroToHundred: 3.4, topSpeed: 320, weightKg: 1472 },
     imageQuery: 'Ferrari Roma 2023',
@@ -5232,7 +5232,7 @@ export const CARS: Car[] = [
   {
     id: 'bmw-m5-2023',
     make: 'BMW', model: 'M5', year: 2023, country: 'DE',
-    stats: { hp: 625, acc: 3.3, topspeed: 305, weight: 1700, handling: 45, wowFactor: 99 },
+    stats: { hp: 625, acc: 3.3, topspeed: 305, weight: 1700, handling: 45, wowFactor: 97 },
     rare: true,
     specs: { hp: 625, zeroToHundred: 3.3, topSpeed: 305, weightKg: 1700 },
     imageQuery: 'BMW M5 2023',
@@ -6890,7 +6890,7 @@ export const CARS: Car[] = [
   {
     id: 'ferrari-f8-tributo-final-2023',
     make: 'Ferrari', model: 'F8 Tributo', year: 2023, country: 'IT',
-    stats: { hp: 710, acc: 2.9, topspeed: 340, weight: 1405, handling: 54, wowFactor: 99 },
+    stats: { hp: 710, acc: 2.9, topspeed: 340, weight: 1405, handling: 54, wowFactor: 97 },
     rare: true,
     specs: { hp: 710, zeroToHundred: 2.9, topSpeed: 340, weightKg: 1405 },
     imageQuery: 'Ferrari F8 Tributo 2023',
@@ -6906,7 +6906,7 @@ export const CARS: Car[] = [
   {
     id: 'porsche-918-coupe-2023',
     make: 'Porsche', model: '918 Coupe', year: 2023, country: 'DE',
-    stats: { hp: 918, acc: 2.5, topspeed: 345, weight: 1670, handling: 57, wowFactor: 99 },
+    stats: { hp: 918, acc: 2.5, topspeed: 345, weight: 1670, handling: 57, wowFactor: 97 },
     rare: true,
     specs: { hp: 918, zeroToHundred: 2.5, topSpeed: 345, weightKg: 1670 },
     imageQuery: 'Porsche 918 Coupe',
@@ -7226,7 +7226,7 @@ export const CARS: Car[] = [
   {
     id: 'dodge-viper-acr-supercar',
     make: 'Dodge', model: 'Viper ACR', year: 2023, country: 'US',
-    stats: { hp: 645, acc: 2.97, topspeed: 330, weight: 1500, handling: 49, wowFactor: 99 },
+    stats: { hp: 645, acc: 2.97, topspeed: 330, weight: 1500, handling: 49, wowFactor: 97 },
     rare: true,
     specs: { hp: 645, zeroToHundred: 2.97, topSpeed: 330, weightKg: 1500 },
     imageQuery: 'Dodge Viper ACR 2023',
@@ -7242,7 +7242,7 @@ export const CARS: Car[] = [
   {
     id: 'maserati-mc20-supercar',
     make: 'Maserati', model: 'MC20', year: 2023, country: 'IT',
-    stats: { hp: 630, acc: 2.9, topspeed: 325, weight: 1200, handling: 55, wowFactor: 99 },
+    stats: { hp: 630, acc: 2.9, topspeed: 325, weight: 1200, handling: 55, wowFactor: 97 },
     rare: true,
     specs: { hp: 630, zeroToHundred: 2.9, topSpeed: 325, weightKg: 1200 },
     imageQuery: 'Maserati MC20 Supercar 2023',
@@ -7282,7 +7282,7 @@ export const CARS: Car[] = [
   {
     id: 'bentley-continental-gt-coupe',
     make: 'Bentley', model: 'Continental GT Coupe', year: 2023, country: 'GB',
-    stats: { hp: 626, acc: 3.7, topspeed: 333, weight: 2270, handling: 38, wowFactor: 99 },
+    stats: { hp: 626, acc: 3.7, topspeed: 333, weight: 2270, handling: 38, wowFactor: 97 },
     rare: true,
     specs: { hp: 626, zeroToHundred: 3.7, topSpeed: 333, weightKg: 2270 },
     imageQuery: 'Bentley Continental GT Coupe 2023',
@@ -7298,7 +7298,7 @@ export const CARS: Car[] = [
   {
     id: 'bmw-m760i-performance',
     make: 'BMW', model: 'M760i', year: 2023, country: 'DE',
-    stats: { hp: 625, acc: 3.9, topspeed: 305, weight: 2200, handling: 39, wowFactor: 99 },
+    stats: { hp: 625, acc: 3.9, topspeed: 305, weight: 2200, handling: 39, wowFactor: 97 },
     rare: true,
     specs: { hp: 625, zeroToHundred: 3.9, topSpeed: 305, weightKg: 2200 },
     imageQuery: 'BMW M760i',
@@ -7322,7 +7322,7 @@ export const CARS: Car[] = [
   {
     id: 'lamborghini-urus-s-2023',
     make: 'Lamborghini', model: 'Urus S', year: 2023, country: 'IT',
-    stats: { hp: 641, acc: 3.6, topspeed: 305, weight: 2200, handling: 39, wowFactor: 99 },
+    stats: { hp: 641, acc: 3.6, topspeed: 305, weight: 2200, handling: 39, wowFactor: 97 },
     rare: true,
     specs: { hp: 641, zeroToHundred: 3.6, topSpeed: 305, weightKg: 2200 },
     imageQuery: 'Lamborghini Urus S 2023',
@@ -7330,7 +7330,7 @@ export const CARS: Car[] = [
   {
     id: 'ferrari-sf90-xx-2023',
     make: 'Ferrari', model: 'SF90 XX', year: 2023, country: 'IT',
-    stats: { hp: 986, acc: 2.5, topspeed: 340, weight: 1680, handling: 59, wowFactor: 99 },
+    stats: { hp: 986, acc: 2.5, topspeed: 340, weight: 1680, handling: 59, wowFactor: 97 },
     rare: true,
     specs: { hp: 986, zeroToHundred: 2.5, topSpeed: 340, weightKg: 1680 },
     imageQuery: 'Ferrari SF90 XX',
@@ -7346,7 +7346,7 @@ export const CARS: Car[] = [
   {
     id: 'aston-martin-db11-amr-2023',
     make: 'Aston Martin', model: 'DB11 AMR', year: 2023, country: 'GB',
-    stats: { hp: 630, acc: 3.5, topspeed: 320, weight: 1740, handling: 44, wowFactor: 99 },
+    stats: { hp: 630, acc: 3.5, topspeed: 320, weight: 1740, handling: 44, wowFactor: 97 },
     rare: true,
     specs: { hp: 630, zeroToHundred: 3.5, topSpeed: 320, weightKg: 1740 },
     imageQuery: 'Aston Martin DB11 AMR 2023',
@@ -8239,7 +8239,7 @@ export const CARS: Car[] = [
   {
     id: 'bentley-bentayga-speed-2024',
     make: 'Bentley', model: 'Bentayga Speed', year: 2024, country: 'GB',
-    stats: { hp: 635, acc: 3.8, topspeed: 306, weight: 2395, handling: 38, wowFactor: 99 },
+    stats: { hp: 635, acc: 3.8, topspeed: 306, weight: 2395, handling: 38, wowFactor: 97 },
     rare: true,
     specs: { hp: 635, zeroToHundred: 3.8, topSpeed: 306, weightKg: 2395 },
     imageQuery: 'Bentley Bentayga Speed 2024',
