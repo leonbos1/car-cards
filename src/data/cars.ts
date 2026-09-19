@@ -6904,14 +6904,6 @@ export const CARS: Car[] = [
     imageQuery: 'Aston Martin Valkyrie 2023',
   },
   {
-    id: 'porsche-918-coupe-2023',
-    make: 'Porsche', model: '918 Coupe', year: 2023, country: 'DE',
-    stats: { hp: 918, acc: 2.5, topspeed: 345, weight: 1670, handling: 57, wowFactor: 97 },
-    rare: true,
-    specs: { hp: 918, zeroToHundred: 2.5, topSpeed: 345, weightKg: 1670 },
-    imageQuery: 'Porsche 918 Coupe',
-  },
-  {
     id: 'mercedes-amg-one-2023',
     make: 'Mercedes-AMG', model: 'One', year: 2023, country: 'DE',
     stats: { hp: 1063, acc: 2.73, topspeed: 352, weight: 1711, handling: 61, wowFactor: 99 },
