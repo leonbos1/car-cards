@@ -7613,15 +7613,6 @@ export const CARS: Car[] = [
     imageQuery: 'BYD Qin Plus DM 2023',
   },
   {
-    id: 'concept-apple-vehicle-2024',
-    make: 'Apple', model: 'Vehicle Concept', year: 2024, country: 'US',
-    stats: { hp: 650, acc: 2.5, topspeed: 280, weight: 1800, handling: 44, wowFactor: 95 },
-    rare: true,
-    special: { label: 'TECHNOLOGY CONCEPT', limitedTo: 1 },
-    specs: { hp: 650, zeroToHundred: 2.5, topSpeed: 280, weightKg: 1800 },
-    imageQuery: 'Apple Car',
-  },
-  {
     id: 'rolls-royce-vision-next-2024',
     make: 'Rolls-Royce', model: 'Spectre', year: 2024, country: 'GB',
     stats: { hp: 542, acc: 4.8, topspeed: 240, weight: 2400, handling: 35, wowFactor: 95 },
@@ -8088,10 +8079,10 @@ export const CARS: Car[] = [
   {
     id: 'vector-w8-1989',
     make: 'Vector', model: 'W8', year: 1989, country: 'US',
-    stats: { hp: 625, acc: 3.2, topspeed: 350, weight: 1361, handling: 58, wowFactor: 95 },
+    stats: { hp: 625, acc: 4.2, topspeed: 350, weight: 1361, handling: 58, wowFactor: 95 },
     rare: true,
     special: { label: 'WEDGE SUPERCAR', limitedTo: 17 },
-    specs: { hp: 625, zeroToHundred: 3.2, topSpeed: 350, weightKg: 1361 },
+    specs: { hp: 625, zeroToHundred: 4.2, topSpeed: 350, weightKg: 1361 },
     imageQuery: 'Vector W8',
   },
   {
