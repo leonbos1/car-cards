@@ -56,9 +56,15 @@ export function Clicker() {
 
         <button
           onClick={handleClick}
-          className="mx-auto mb-4 flex h-32 w-32 items-center justify-center rounded-full bg-gradient-to-br from-red-600 to-red-800 text-6xl font-black text-white shadow-lg transition hover:scale-105 active:scale-95"
+          className="mx-auto mb-4 flex h-32 w-32 items-center justify-center rounded-full bg-gradient-to-br from-red-600 to-red-800 shadow-lg transition hover:scale-105 active:scale-95"
         >
-          Ⓜ
+          <svg viewBox="0 0 100 120" className="h-20 w-20" fill="none">
+            {/* Shield outline */}
+            <path d="M 50 10 L 80 25 L 80 60 Q 50 90 50 90 Q 50 90 20 60 L 20 25 Z" fill="white" stroke="white" strokeWidth="1"/>
+            {/* Red cross (Savoy cross) */}
+            <rect x="40" y="35" width="20" height="50" fill="#DC143B"/>
+            <rect x="25" y="55" width="50" height="20" fill="#DC143B"/>
+          </svg>
         </button>
 
         <div className="text-sm font-bold text-gold-2">
