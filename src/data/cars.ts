@@ -8088,10 +8088,10 @@ export const CARS: Car[] = [
   {
     id: 'vector-w8-1989',
     make: 'Vector', model: 'W8', year: 1989, country: 'US',
-    stats: { hp: 625, acc: 3.4, topspeed: 345, weight: 1361, handling: 51, wowFactor: 95 },
+    stats: { hp: 625, acc: 3.2, topspeed: 350, weight: 1361, handling: 58, wowFactor: 95 },
     rare: true,
     special: { label: 'WEDGE SUPERCAR', limitedTo: 17 },
-    specs: { hp: 625, zeroToHundred: 3.4, topSpeed: 345, weightKg: 1361 },
+    specs: { hp: 625, zeroToHundred: 3.2, topSpeed: 350, weightKg: 1361 },
     imageQuery: 'Vector W8',
   },
   {
