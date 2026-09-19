@@ -6640,5 +6640,29 @@
     "artist": "This picture has been taken by Oleg Yunakov. Contact e-mail: yunakovgmail.com. Image can be used in accordance with the terms of the СС-BY-SA license. Other photos can be seen here.",
     "license": "CC BY-SA 4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:2025_Audi_RS6_Avant_GT.jpg"
+  },
+  "koenigsegg-gemera-2020": {
+    "file": "koenigsegg-gemera-2020.webp",
+    "artist": "Liam Walker",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2020_Koenigsegg_Gemera_2.0.jpg"
+  },
+  "koenigsegg-regera-2015": {
+    "file": "koenigsegg-regera-2015.webp",
+    "artist": "MrWalkr",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Koenigsegg_Regera_Front.jpg"
+  },
+  "bugatti-tourbillon-2024": {
+    "file": "bugatti-tourbillon-2024.webp",
+    "artist": "Calreyn88",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024_Bugatti_Tourbillon.jpg"
+  },
+  "pininfarina-battista-2023": {
+    "file": "pininfarina-battista-2023.webp",
+    "artist": "Calreyn88",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Pininfarina_Battista_Edizione_Nino_Farina.jpg"
   }
 }

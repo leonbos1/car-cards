@@ -719,6 +719,10 @@ each card's detail view.
 | Bugatti Bolide | Ron Frazier | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Bugatti_Bolide_Extreme_Hypercar_Drops_Jaws_at_Monterey_Car_Week.jpg) |
 | SSC Tuatara | Mr.choppers | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:2024_SSC_Tuatara_Striker_in_Dark_Olive_Green_and_Vibrant_Orange,_front_left.jpg) |
 | Rimac Nevera | Matti Blume | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Rimac_Nevera,_IAA_Open_Space_2023,_Munich_(P1120126).jpg) |
+| Koenigsegg Gemera | Liam Walker | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2020_Koenigsegg_Gemera_2.0.jpg) |
+| Koenigsegg Regera | MrWalkr | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Koenigsegg_Regera_Front.jpg) |
+| Bugatti Tourbillon | Calreyn88 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2024_Bugatti_Tourbillon.jpg) |
+| Pininfarina Battista | Calreyn88 | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Pininfarina_Battista_Edizione_Nino_Farina.jpg) |
 | Radford Type 62-2 | Calreyn88 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Radford_Type_62-2.jpg) |
 | Ford F-150 | RL GNZLZ | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Ford_F-150_Lariat_2023.jpg) |
 | Chevrolet Silverado | Bull-Doser | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:2024_Chevrolet_Silverado_2500HD_au_SIAM_2023.JPG) |
@@ -861,7 +865,6 @@ each card's detail view.
 | Alfa Romeo Giulia | Alexander-93 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Giulia_(2023)_IMG_8308.jpg) |
 | Ferrari F8 Tributo | Calreyn88 | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2020_Ferrari_F8_Tributo_1.jpg) |
 | Aston Martin Valkyrie | MrWalkr | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Aston_Martin_Valkyrie_0441.jpg) |
-| Porsche 918 Coupe | Miod Mark | CC BY 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Porsche_918_Spyder_(61885717).jpeg) |
 | Mercedes-AMG One | Alexander-93 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Mercedes-AMG_One_IAA_2023_1X7A0454.jpg) |
 | Lamborghini Sian | John Bauld from Toronto, Canada | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Lamborghini_Sian_(52692710847).jpg) |
 | Bugatti Chiron Super Sport 300+ | Dylan Johnson | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2020_Bugatti_Chiron_Super_Sport_300%2B_Prototype_Front.jpg) |
