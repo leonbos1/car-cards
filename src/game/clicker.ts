@@ -1,5 +1,5 @@
 /** Base money earned per click. */
-const BASE_CLICK_VALUE = 1
+const BASE_CLICK_VALUE = 0.05
 
 /** Upgrades available in the clicker. */
 export interface ClickerUpgrade {
@@ -20,50 +20,29 @@ export const CLICKER_UPGRADES: ClickerUpgrade[] = [
     id: 'click-multiplier-1',
     name: 'Faster Reflexes',
     description: '+50% per click',
-    cost: 5,
+    cost: 10,
     effect: 0.5,
   },
   {
     id: 'click-multiplier-2',
     name: 'Professional Driver',
     description: '+100% per click',
-    cost: 50,
+    cost: 100,
     effect: 1.0,
-  },
-  {
-    id: 'click-multiplier-3',
-    name: 'Champion',
-    description: '+200% per click',
-    cost: 500,
-    effect: 2.0,
   },
   {
     id: 'combo-multiplier-1',
     name: 'Rhythm',
-    description: 'Consecutive clicks earn 2× per combo',
-    cost: 25,
-    effect: 1.0,
-  },
-  {
-    id: 'combo-multiplier-2',
-    name: 'Flow State',
-    description: 'Consecutive clicks earn 3× per combo',
-    cost: 250,
-    effect: 2.0,
+    description: 'Consecutive clicks earn 1.5× per combo',
+    cost: 50,
+    effect: 0.5,
   },
   {
     id: 'auto-click-1',
     name: 'Power Steering',
-    description: 'Earn €0.50 per second',
-    cost: 100,
-    effect: 0.5,
-  },
-  {
-    id: 'auto-click-2',
-    name: 'Turbo Engine',
-    description: 'Earn €2 per second',
-    cost: 1000,
-    effect: 2.0,
+    description: 'Earn €0.01 per second',
+    cost: 200,
+    effect: 0.01,
   },
 ]
 
