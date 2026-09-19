@@ -167,7 +167,6 @@ each card's detail view.
 | Porsche Carrera RS 2.7 | Lothar Spurzem | CC BY-SA 2.0 de | [Commons](https://commons.wikimedia.org/wiki/File:Porsche_911_Carrera_RS,_Bj._1972-73,_Front_(2016-07-02_02_Sp).JPG) |
 | Ferrari 288 GTO Evoluzione | Calreyn88 | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Ferrari_288_GTO_Evoluzione.jpg) |
 | McLaren MP4-12C | Tokumeigakarinoaoshima | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:McLaren_MP4-12C_coupe.JPG) |
-| Ferrari 250 GTO | SG2012 | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Ferrari_250_GTO_1962-1963_Replica.jpg) |
 | Porsche 911 Speedster 1989 | Mr.choppers | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:1989_Porsche_911_Speedster_Turbo-Look_in_Silver,_front_right.jpg) |
 | Lamborghini Diablo SE30 | MrWalkr | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1996_Lamborghini_Diablo_SE30_Silver.jpg) |
 | Lotus Esprit V8 | Calreyn88 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1996_Lotus_Esprit_V8_Turbo.jpg) |
@@ -469,7 +468,6 @@ each card's detail view.
 | Opel Corsa F | Alexander Migl | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2020_Opel_Corsa_F.jpg) |
 | Hyundai Grand i10 Nios | AIMHO'S REBELLION 8490s | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2021_Hyundai_Grand_i10_Nios_1.0AT_Standard_red_front_view_in_Brunei.jpg) |
 | Kia Picanto GT-Line | Charles from Port Chester, New York | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Kia_Picanto_GT_Line_(2020)_(52920493311).jpg) |
-| NIO ET5 | JustAnotherCarDesigner | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:NIO_ET5_012.jpg) |
 | XPeng G9 | Zotyefan | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:XPeng_G9_IMG009.jpg) |
 | Li Auto Mega | Gaganrawat6374 | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Li_Auto_Mega_front_quarter,_Guangzhou,_202311171312.jpg) |
 | Mini Clubman SE | DeFacto | CC BY-SA 2.5 | [Commons](https://commons.wikimedia.org/wiki/File:Mini_Clubman_SRV4_Concept_1974.jpg) |
@@ -558,22 +556,17 @@ each card's detail view.
 | Kia Picanto | Vogue2Voke | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Kia_Picanto.jpg) |
 | Chevrolet Spark | Elise240SX | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2022_Chevrolet_Spark_1LT_in_Mystic_Blue,_Front_Right,_07-11-2023.jpg) |
 | Maruti Wagon R VXi | Riding Hub | CC BY 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:2020_Maruti_Suzuki_Wagon_R_VXi_(O)_(India)_front_view.png) |
-| Hyundai Venue | Elise240SX | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2022_Hyundai_Venue_Preferred_in_Polar_White,_Front_Right,_09-12-2023.jpg) |
 | Tata Altroz | Dairokkan9 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Tata_Altroz_front_20230617.jpg) |
 | Renault KWID | Autosdeprimera | CC BY 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Renault_Kwid_Iconic_(Colombia)_front_view_01.png) |
 | Maruti Baleno | Milind Kwatra | CC BY 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:2022_Maruti_Suzuki_Baleno_Alpha_(India)_front_view.jpg) |
-| Hyundai i20 | Alexander Migl | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Hyundai_i20_(BC3)_1X7A6488.jpg) |
 | Honda Jazz | Alexander-93 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Honda_Jazz_(4th_generation)_hybrid_Advance_Sport_1X7A7464.jpg) |
 | Toyota Glanza | 先従隗始 | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Toyota_E-EP91_Starlet_GLANZA_V_(23052019020).jpg) |
 | Hyundai Verna | Benespit | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:0_Hyundai_Verna_(MC)_2.jpg) |
 | Toyota Vios | Dinkun Chen | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:TOYOTA_VIOS_XP150_China_(7).jpg) |
-| Nissan Sunny | Dinkun Chen | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:NISSAN_SUNNY_(N17)_China_(4).jpg) |
 | Mitsubishi Mirage | Ethan Llamas | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Mitsubishi_Mirage_1.2_GLS_2014.jpg) |
 | Kia Soluto | Captainmorlypogi1959 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Kia_Soluto_1.4_LX_2023.jpg) |
 | Tata Tigor | Prabhat114 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:TATA_Tigor_at_Shillong_Peak_View.jpg) |
 | Maruti Dzire | Biswarup Ganguly | CC BY 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Maruti_Suzuki_Dzire_VXi_VVT_(front).JPG) |
-| Honda Amaze | Charles from Port Chester, New York | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Honda_Amaze_1.2_Comfort_(2022)_(52716171755).jpg) |
-| Hyundai Aura | Auto Zuto | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2020_Hyundai_Aura_Front.png) |
 | Dacia Sandero | Mihnea Lazăr | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Dacia_Sandero_2023_Front_1.jpg) |
 | Fiat Punto | 先従隗始 | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:FIAT_ABA-199141_Grande_Punto_1.4_16V_Sport_(23070917001).jpg) |
 | Chevrolet Beat | --Jimbo[online] | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Chevrolet_Beat_concept_front.jpg) |
@@ -584,15 +577,11 @@ each card's detail view.
 | Nissan Magnite | Charles from Port Chester, New York | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Nissan_Magnite_1.0_Acenta_(2022)_(52722361030).jpg) |
 | Renault Kiger | Dairokkan9 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Renault_Kiger_front_20230602.jpg) |
 | Kia Sonet | Chanokchon | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2022_Kia_Sonet.jpg) |
-| Maruti Vitara Brezza | Ank Kumar | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Maruti_Suzuki%27s_Vitara_Brezza_ZDi_Plus_compact_SUV_(Ank_Kumar,_Infosys_Limited)_01.jpg) |
 | Škoda Slavia | Athira Murali | CC BY 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:2021_%C5%A0koda_Slavia_1.5_TSI_Style_(India)_front_view.png) |
 | Volkswagen Polo | Autosdeprimera | CC BY 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Volkswagen_Polo_Track_(Colombia)_front_view.png) |
 | Ford Figo | DestinationFearFan | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Ford_Figo_001.jpg) |
-| Hyundai Creta | Dairokkan9 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2021_Hyundai_Creta_SX(O)_CRDi_(India)_front_view.jpg) |
-| Kia Seltos | Elise240SX | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2024_Kia_Seltos_LX_in_Fusion_Black,_Front_Left,_05-23-2023.jpg) |
 | Mahindra XUV700 | LuvsMG481 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Mahindra_XUV700_AX7L_front.jpg) |
 | Tata Safari | Sabung.hamster | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Tata_Safari_Storme_(front),_Denpasar.jpg) |
-| Mahindra Bolero | Ominae | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Mahindra_Bolero_GLX_Front.JPG) |
 | Force Gurkha | Shubhay (Hari) Kudchadkar | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Force_Gurkha_Competition_Vehicles.jpg) |
 | Škoda Kushaq | DriveSpark | CC BY 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:2021_%C5%A0koda_Kushaq_(India)_front_view.png) |
 | Volkswagen Tiguan | Alexander Migl | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Volkswagen_Tiguan_R_1X7A0362.jpg) |
@@ -601,20 +590,16 @@ each card's detail view.
 | Toyota Innova Crysta | Premnath Kudva | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Toyota_Innova_Crysta_2.4_Z_front_right.jpg) |
 | Kia Carnival | MercurySable99 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Kia_Carnival_LX,_front_right,_02-06-2023.jpg) |
 | Mazda CX-5 | Dinkun Chen | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:MAZDA_CX-5_(KF)_China_(2).jpg) |
-| Hyundai Elantra | Dinkun Chen | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:HYUNDAI_ELANTRA_LANGDONG_China_(8).jpg) |
 | Kia Forte | Elise240SX | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Kia_Forte_LX_in_Hyper_Blue,_Front_Left,_03-22-2023.jpg) |
-| Škoda Octavia | Alexander Migl | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Skoda_Octavia_IV_Scout_1X7A6518.jpg) |
 | Volkswagen Jetta | Alexander Migl | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Volkswagen_Jetta_VII_GLI_IMG_3138.jpg) |
 | Honda Accord | deathpallie325 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Honda_Accord_front_view.jpg) |
 | Toyota Camry | Gaganrawat6374 | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Toyota_Camry_IX_front_quarter,_Guangzhou,202311191646.jpg) |
 | Hyundai Sonata | Benespit | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:0_Hyundai_Sonata_(DN8)_1.jpg) |
 | Kia K5 | MercurySable99 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2021_Kia_K5_GT-Line,_front_left,_09-09-2023.jpg) |
 | Nissan Altima | MercurySable99 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2022_Nissan_Altima_SV,_front_left,_05-03-2023.jpg) |
-| Maruti Ciaz | Cars 4 You | CC BY 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:2021_Maruti_Suzuki_Ciaz_Alpha_Smart_Hybrid.jpg) |
 | Toyota Corolla Altis | JustAnotherCarDesigner | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Toyota_Corolla_Altis_GR_Sport_(front).jpg) |
 | Honda Civic | Alexander Migl | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Honda_Civic_Hybrid_(2022,_Europe)_1X7A6073.jpg) |
 | Kia Forte GT Line | Kevauto | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2020_Kia_Forte_GT-Line,_rear_12.27.23.jpg) |
-| Hyundai i20 N | Jakub CA | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Hyundai_i20_(GB-IB;_2014).jpg) |
 | Ford Fiesta | Harvey Bold | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Ford_Fiesta_Titanium_EcoBoost_-_999cc_1.0_(100PS)_Petrol_-_Agate_Black_-_02-2025,_Front.jpg) |
 | Peugeot 3008 | Dinkun Chen | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:PEUGEOT_3008_(T84)_China_(3).jpg) |
 | Citroën C5 Aircross | Dinkun Chen | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:CITROEN_C5_AIRCROSS_China_(4).jpg) |
@@ -683,13 +668,11 @@ each card's detail view.
 | MG MG 5 | DeFacto | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:MG_MGC_GT_1968.jpg) |
 | NETA V | User3204 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2022_Hozon_Neta_V_(front).jpg) |
 | Xiaomi EV SUV | Xiaomi EV Limited. | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Xiaomi_EV_New.jpg) |
-| NIO ET5 | JustAnotherCarDesigner | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:NIO_ET5_012.jpg) |
 | XPeng P7 | User3204 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2021_XPeng_P7_(front).jpg) |
 | Li Auto ONE | User3204 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2020_Lixiang_ONE_(front).jpg) |
 | Huawei AITO | Pancho507 | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Aito_9_front_view.jpg) |
 | Chevrolet Trailblazer | Elise240SX | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Chevrolet_Trailblazer_RS_AWD_in_Fountain_Blue,_Front_Right,_07-11-2023.jpg) |
 | Mahindra Scorpio N | Ask27 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Mahindra_Scorpio_2014.JPG) |
-| Tata Punch | Athira Murali | CC BY 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:2021_Tata_Punch_Creative_(India)_front_view_01.png) |
 | MG Hector | Ank Kumar | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:MG(Morris_Garages)_Hector_SUV_in_Jamshedpur,_Jharkhand,_India_(Ank_Kumar,_Infosys_Limited))_02.jpg) |
 | Isuzu MU-X | Chanokchon | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Isuzu_MU-X_3.0_Ultimate_4WD_Phantom_Collection.jpg) |
 | Honda HR-V | MercurySable99 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Honda_HR-V_LX_AWD,_front_right,_11-13-2022.jpg) |
@@ -744,7 +727,6 @@ each card's detail view.
 | Nissan Titan | Bull-Doser | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Nissan_Titan_LC_Connect.jpeg) |
 | Ford Ranger | Maxi-Napo-99 | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Ford_Ranger_XLS.jpg) |
 | Chevrolet Colorado | Kevauto | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2021_Chevrolet_Colorado_Z71,_front_4.16.23.jpg) |
-| Isuzu D-Max | Captainmorlypogi1959 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Isuzu_D-Max_4x2_LSA_2023.jpg) |
 | Mahindra Bolero Pik-Up | Oleg Yunakov | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Mahindra_Bolero_Pik-Up.jpg) |
 | Tata Ace | Matti Blume | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Tata_Ace,_Korle-Klottey_(P1100226).jpg) |
 | Force Traveller | OnkelFordTaunus | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:ForceTravellerfront.JPG) |
@@ -771,7 +753,6 @@ each card's detail view.
 | Hyundai Ioniq 5 | Alexander-93 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Hyundai_Ioniq_5_1X7A7085.jpg) |
 | Kia EV9 | Car and Driver España | CC BY 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Kia_EV9_front_view.png) |
 | Lucid Air | ToyGTone | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Lucid_Air_Bahrain_Front.jpg) |
-| NIO ET5 | Alexander-93 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:NIO_ET5_1X7A7324.jpg) |
 | BYD Song | Quzhouliulian | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:BYD_Song_Pro_DM-i_2023_facelift_001.jpg) |
 | MG ZS EV | LuvsMG481 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_MG_ZS_EV_AZS1_Essence_front.jpg) |
 | Wuling Mini EV | User3204 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2021_Wuling_Hongguang_Mini_EV_Macaron_(front).jpg) |
@@ -780,7 +761,6 @@ each card's detail view.
 | Porsche 918 Spyder | Alexander Nie | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Porsche_918_Spyder_(16788941595).jpg) |
 | Acura NSX | TaurusEmerald | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Acura_NSX_Grand_Prix_of_Long_Beach_2023.jpg) |
 | Toyota GR Yaris | MoCars | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Toyota_Yaris_1.5_HEV_S_GR_Parts_25012024_02.jpg) |
-| Toyota GR Corolla | Kevauto | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Toyota_GR_Corolla,_front_NYIAS_2022.jpg) |
 | Subaru WRX | MercurySable99 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2022_Subaru_WRX,_front_right,_06-19-2023.jpg) |
 | Ford Mustang Mach-E | Corqe | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Denver_Auto_Show_Ford_Mustang_Mach-E_front_left_quarter.jpg) |
 | Tesla Model 3 Performance | iMoD Official | CC BY 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:2024_Tesla_Model_3_Performance_front_view_01.png) |
@@ -830,7 +810,6 @@ each card's detail view.
 | Oldsmobile Cutlass | Greg Gjerdingen from Willmar, USA | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1970_Oldsmobile_Cutlass_S_(19651871729).jpg) |
 | Dodge Charger | Bull-Doser | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:%2769_Dodge_Charger_(Byward_Auto_Classic).jpg) |
 | Pontiac GTO | Vauxford | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1970_Pontiac_GTO_6.6_Front.jpg) |
-| Plymouth Road Runner | AlfvanBeem | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:1970_Plymouth_Road_Runner_Superbird.JPG) |
 | SEAT Ibiza 1.5 TSI FR Mk5 | Calreyn88 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Seat_Ibiza_FR.jpg) |
 | Peugeot 208 | Maxi-Napo-99 | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Peugeot_208_1.6_VTi_Style,_front.jpg) |
 | Opel Corsa | Johannes Maximilian | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Opel_Corsa_B_2023_03_18_JM.jpg) |
@@ -840,20 +819,15 @@ each card's detail view.
 | Smart Fortwo | Calreyn88 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Smart_ForTwo_EQ_Prime_Exclusive_Brabus_Cabriolet.jpg) |
 | Toyota Corolla Cross | JustAnotherCarDesigner | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Toyota_Corolla_Cross_GR_Sport_(front).jpg) |
 | Toyota Venza | Zotyefan | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Toyota_Venza_II_(front).jpg) |
-| Honda HR-V | MercurySable99 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Honda_HR-V_LX_AWD,_front_right,_11-13-2022.jpg) |
-| Kia Seltos | Elise240SX | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2024_Kia_Seltos_LX_in_Fusion_Black,_Front_Left,_05-23-2023.jpg) |
 | Hyundai Kona | Corqe | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Denver_Auto_Show_Hyundai_Kona_N_front_quarter.jpg) |
 | Mitsubishi Outlander | RL GNZLZ from Chile | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Mitsubishi_Outlander_2.5_Limited_2023_(54463301954).jpg) |
 | Nissan Qashqai | Elise240SX | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Nissan_Qashqai_SL_AWD_in_Caspian_Blue_Metallic,_front_left,_2025-05-18.jpg) |
-| Škoda Kodiaq | Aciarium | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:DSC04943_%C5%A0koda_Kodiaq,_Bereitschaftseinheit,_Bundespolizei_%C3%96sterreich,_Front_Right,_2023-10.jpg) |
 | Jeep Cherokee | MercurySable99 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2019_Jeep_Cherokee_Latitude_4x4,_front_left,_02-17-2023.jpg) |
 | Chevrolet Traverse | Kevauto | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2022_Chevrolet_Traverse_LT_(facelift),_front_4.5.23.jpg) |
 | Ford Bronco | MercurySable99 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2022_Ford_Bronco_4-Door_Outer_Banks_with_Sasquatch_Package,_front_left,_02-09-2023.jpg) |
-| Ram 1500 | MercurySable99 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2022_Ram_1500_Limited_Crew_Cab_4x4,_front_left,_05-09-2023.jpg) |
 | GMC Sierra | deathpallie325 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_GMC_Sierra_front_view.jpg) |
 | Pontiac GTO | Xnatedawgx | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1966_Pontiac_GTO,_front_right_side,_Bombs_on_the_Rockies_2026-07-25.jpg) |
 | Chevrolet Chevelle SS | MercurySable99 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1970_Chevrolet_Chevelle_SS_396_Sport_Coupe,_front_left,_06-08-2024.jpg) |
-| Ford Mustang Boss 429 | Simon Davison from Los Gatos, United States | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1970_Ford_Mustang_Boss_429.jpg) |
 | Dodge Super Bee | Bull-Doser | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:%2770_Dodge_Super_Bee_(Orange_Julep).jpg) |
 | Buick GSX | Mopar89 | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:1970_Buick_GSX_in_Saturn_Yellow.JPG) |
 | Jaguar E-Type | SG2012 | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Jaguar_E-Type_Series_3_Roadster_(1971)_-_27443759585.jpg) |
@@ -867,11 +841,8 @@ each card's detail view.
 | Lexus ES | Dinkun Chen | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:LEXUS_ES_200_(XV60)_China_(24).jpg) |
 | Acura TSX | Bull-Doser | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:%2711-%2713_Acura_TSX_Wagon_--_Front.jpg) |
 | Toyota Corolla | Just a Man | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Toyota_Corolla_2.0_XEi_(Brazil).jpg) |
-| Honda Civic | Elise240SX | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Honda_Civic_Sport_Sedan_in_Rallye_Red,_Front_Left,_04-07-2023.jpg) |
-| Hyundai Tucson | JustAnotherCarDesigner | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Hyundai_Tucson_facelift_(front).jpg) |
 | Kia Sportage | MercurySable99 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Kia_Sportage_X-Line_AWD,_front_right,_12-08-2022.jpg) |
 | Subaru Outback | MercurySable99 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Subaru_Outback_Premium,_front_right,_09-09-2023.jpg) |
-| Mazda CX-5 | Dinkun Chen | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:MAZDA_CX-5_(KF)_China_(2).jpg) |
 | Honda CR-V | MercurySable99 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Honda_CR-V_EX-L_AWD,_front_right,_11-13-2022.jpg) |
 | Nissan Rogue | Elise240SX | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2021_Nissan_Rogue_SV_in_Boulder_Grey_Pearl,_Front_Right,_04-28-2023.jpg) |
 | Chevrolet Equinox EX | JustAnotherCarDesigner | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Chevrolet_Equinox_III_facelift_002.jpg) |
@@ -889,10 +860,6 @@ each card's detail view.
 | Maserati Quattroporte | Interesting.cars.insta | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Maserati_Quattroporte_IV_Forestgreen_01_Front.jpg) |
 | Alfa Romeo Giulia | Alexander-93 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Giulia_(2023)_IMG_8308.jpg) |
 | Ferrari F8 Tributo | Calreyn88 | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2020_Ferrari_F8_Tributo_1.jpg) |
-| Lamborghini Revuelto | Alexander-93 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Lamborghini_Revuelto_IMG_0562.jpg) |
-| Pagani Huayra | UltraTech66 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Pagani_Huayra_Roadster_Blue_Illinois.jpg) |
-| Koenigsegg Jesko | Charles from Port Chester, New York | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Koenigsegg_Jesko_(2022)_(52570942832).jpg) |
-| Rimac Nevera | Mr.choppers | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Rimac_Nevera_in_Bridgehampton,_front_right.jpg) |
 | Aston Martin Valkyrie | MrWalkr | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Aston_Martin_Valkyrie_0441.jpg) |
 | Porsche 918 Coupe | Miod Mark | CC BY 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Porsche_918_Spyder_(61885717).jpeg) |
 | Mercedes-AMG One | Alexander-93 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Mercedes-AMG_One_IAA_2023_1X7A0454.jpg) |
@@ -910,7 +877,6 @@ each card's detail view.
 | Lada Vesta | Throwawayacc222 | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Lada_Vesta_sedan_white_front.jpg) |
 | Lada Granta | Throwawayacc222 | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Lada_Granta_Drive_Active_liftback_white_front.jpg) |
 | Tata Nexon | Dairokkan9 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Tata_Nexon_XZA%2B_front_view.jpg) |
-| Mahindra XUV500 | RL GNZLZ from Chile | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Mahindra_XUV_500_W8_2018_(53306266930).jpg) |
 | Chevrolet Spark | Elise240SX | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2022_Chevrolet_Spark_1LT_in_Mystic_Blue,_Front_Right,_07-11-2023.jpg) |
 | Daewoo Matiz | Benespit | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:0_Daewoo_Matiz_(M250)_2.jpg) |
 | BMW i3 | (G)jabz | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:BMW_i3_-_Front_View.jpg) |
@@ -919,11 +885,8 @@ each card's detail view.
 | Nissan Leaf | Mr.choppers | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Nissan_Leaf_in_White,_front_left_(NYIAS_2022).jpg) |
 | Kia EV6 GS | Alexander Migl | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Kia_EV6_Automesse_Ludwigsburg_2022_1X7A5931.jpg) |
 | NIO ET5 Touring | User3204 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_NIO_ET5_Touring_(front).jpg) |
-| XPeng G9 | Zotyefan | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:XPeng_G9_IMG009.jpg) |
 | Li Auto One | User3204 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2020_Lixiang_ONE_(front).jpg) |
-| Geely Geometry C | Jengtingchen | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Geometry_C_004.jpg) |
 | Changan Uni-T | Quzhouliulian | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Changan_UNI-T_IMG01.jpg) |
-| MG ZS EV | LuvsMG481 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_MG_ZS_EV_AZS1_Essence_front.jpg) |
 | Great Wall Haval H6 | User3204 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2022_Great_Wall_Haval_H6_PHEV_(front).jpg) |
 | Ford Model T | Richard Smith | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1928_Model_A_Ford.jpg) |
 | Volkswagen Beetle | Ralf Roletschek | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Volkswagen_Beetle_1938_in_Autostadt_Wolfsburg-12-01-03-by-RalfR-48.jpg) |
@@ -937,15 +900,10 @@ each card's detail view.
 | Jaguar I-PACE | Ethan Llamas | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Jaguar_I-Pace_R-Dynamic_HSE_in_Portofino_Blue_Metallic,_front_left.jpg) |
 | Porsche Taycan | Damian B Oh | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Porsche_Taycan_4S_Volcano_Grey_Metallic_(2).jpg) |
 | BMW i7 | Alexander-93 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:BMW_i7_xDrive60_1X7A6822.jpg) |
-| Dacia Sandero | Vauxford | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2019_Dacia_Sandero_Stepway_Techroad_Front.jpg) |
-| Dacia Duster | Alexander Migl | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Dacia_Duster_1X7A6302.jpg) |
 | Chevrolet Corvette ZR2 | Chevrolet pre-1978 | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:71_Corvette_ZR-2.jpg) |
 | Dodge Viper ACR | Alexandre Prevot from Nancy, France | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Dodge_Viper_ACR_Extreme_(54404345377).jpg) |
 | Ford Mustang GT500 | Calreyn88 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Ford_Mustang_Shelby_GT500_4.jpg) |
-| Lamborghini Revuelto | Calreyn88 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2024_Lamborghini_Revuelto_6.jpg) |
-| McLaren 750S | Aos.1905 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:McLaren_750S_JC96_(front_three-quarter_view1)_at_Japan_Mobility_Show_Kansai_2025.jpg) |
 | Maserati MC20 | Aos.1905 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Maserati_MC20_(front_three-quarter_view)_at_TOKYO_SUPERCAR_DAY_2023_OSAKA_COMIC_CON.jpg) |
-| Lotus Emira | MrWalkr | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Lotus_Emira.jpg) |
 | Jeep Wrangler Rubicon | Autosdeprimera | CC BY 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:2024_Jeep_Wrangler_Unlimited_Rubicon_(United_States)_front_view.png) |
 | Hummer H1 | Greg Gjerdingen | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Hummer_H1_red_front.jpg) |
 | Land Rover Range Rover Sport | Damian B Oh | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Land_Rover_Range_Rover_Sport_L461_Varesine_Blue_(6).jpg) |
@@ -962,21 +920,17 @@ each card's detail view.
 | Bugatti Divo | MrWalkr | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2020_Bugatti_Divo.jpg) |
 | Pagani Huayra BC Imola | Clément Bucco-Lechat | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Geneva_MotorShow_2013_-_Pagani_Huayra_blue_front_lights.jpg) |
 | Aspark Owl | Tokumeigakarinoaoshima | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:ASPARK_OWL.jpg) |
-| Pininfarina Battista | Alexander-93 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Pininfarina_Battista_Auto_Zuerich_2023_1X7A1447.jpg) |
 | GAC Aion V | User3204 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2021_GAC_Aion_V_Plus_front.jpg) |
 | BYD Song QSDM | Jengtingchen | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:BYD_Song_facelift_001.jpg) |
 | SEAT Tarraco 1.5 TSI | Vauxford | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2019_SEAT_Tarraco_SE_Tech_TDi_4Drive_SA_2.0_Front.jpg) |
 | Škoda Superb | Ssu | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Skoda_Superb_LK.jpg) |
-| Peugeot 5008 | Dinkun Chen | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:PEUGEOT_5008_China_(4).jpg) |
 | Fiat Ducato | Aciarium | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:DSC00720_Fiat_Ducato_Esercito_Italiano,_Front_Right.jpg) |
 | Peugeot Boxer | Cutlass | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Peugeot_Boxer,_front_left,_06-05-2025.jpg) |
 | Mercedes-Benz Sprinter Van | Aciarium | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:DSC05462_2x_RTW_Johanniter_Wien,_Mercedes-Benz_Sprinter,_Front_Left,_2023-10.jpg) |
 | Ford Transit Van | Aciarium | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:DSC06499_Ford_Transit,_Gesundheitsdienst_Stadt_Wien,_Front_Right,_2023-10.jpg) |
-| Hyundai i20 N | Jakub CA | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Hyundai_i20_(GB-IB;_2014).jpg) |
 | Volkswagen Golf R Variant | Elise240SX | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Volkswagen_Golf_R_in_Deep_Black_Pearl,_Front_Right,_05-14-2023.jpg) |
 | Ford Focus ST | Calreyn88 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Ford_Focus_ST_Line.jpg) |
 | Geely Coolray | Ominae | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Coolray_Front.jpg) |
-| Chery Tiggo 8 Pro | Throwawayacc222 | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Chery_Tiggo8_Pro_Max_(LV%D0%A2)_silver_front.jpg) |
 | Great Wall Haval H9 | Jengtingchen | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Haval_H9_facelift_001.jpg) |
 | MG 6 | Dinkun Chen | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:MG_6_SECOND_GENERATION_China_(3).jpg) |
 | JAC T8 | Alexander-93 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:JAC_T8_1X7A7303.jpg) |
@@ -1027,15 +981,10 @@ each card's detail view.
 | Ford Galaxy | Thomas Vogt from Paderborn, Deutschland | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Ford_Galaxy_500_(53432950312).jpg) |
 | Toyota Alphard | メイド理世 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Toyota_Alphard_HK_(front)_9_July_2024.jpg) |
 | Lexus LM | Ethan Llamas | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2024_Lexus_LM_350h_AWD_in_Sonic_Titanium,_front_right,_05-12-2024.jpg) |
-| Ferrari 250 GTO | Lothar Spurzem | CC BY-SA 2.0 de | [Commons](https://commons.wikimedia.org/wiki/File:Ferrari_250_GTO,_CMC-Modell_(T%C3%BCr_offen_2017-02-14).JPG) |
-| Jaguar E-Type | Lothar Spurzem | CC BY-SA 2.0 de | [Commons](https://commons.wikimedia.org/wiki/File:Jaguar_E-Type_Lightweight,_Bj._1962_(2009-08-07_Sp_r).JPG) |
 | Aston Martin DB5 | Vauxford | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1964_Aston_Martin_DB5_4.0_Front.jpg) |
 | Shelby Mustang GT500 | BrokenSphere | CC BY 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:1967-68_red_Shelby_Mustang_GT500_side_2.JPG) |
-| Dodge Charger R/T | Diego Delso | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Dodge_Charger_Magnum_Six-Pack_de_1970,_Helsinki,_Finlandia,_2012-08-14,_DD_01.JPG) |
 | Porsche 911 RS | Handelsgeselschaft | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Porsche_911_RS_2,7L_1973,_Tour_Auto_2015,_Toulouse.jpg) |
 | BMW M1 | Mr.choppers | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:BMW_M1_(E26)_front_high.jpg) |
-| Lamborghini Miura | Andrew Bossi | CC BY-SA 2.5 | [Commons](https://commons.wikimedia.org/wiki/File:6274_-_Luzern_-_Verkehrshaus_-_Lamborghini_Miura.JPG) |
-| Ford GT40 | Norbert Schnitzler | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Ford_GT40_h.jpg) |
 | Rolls-Royce Phantom IV | Usien | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Rolls_Royce_Phantom_IV_1952.JPG) |
 | Maserati MC12 | MrWalkr | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2004_Maserati_MC12_HCC23.jpg) |
 | BMW 325i E30 | nakhon100 | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:BMW_325i_E30_(15904737342).jpg) |
