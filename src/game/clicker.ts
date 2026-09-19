@@ -19,30 +19,23 @@ export const CLICKER_UPGRADES: ClickerUpgrade[] = [
   {
     id: 'click-multiplier-1',
     name: 'Faster Reflexes',
-    description: '+50% per click',
-    cost: 10,
-    effect: 0.5,
+    description: '+25% per click',
+    cost: 15,
+    effect: 0.25,
   },
   {
     id: 'click-multiplier-2',
     name: 'Professional Driver',
-    description: '+100% per click',
-    cost: 100,
-    effect: 1.0,
-  },
-  {
-    id: 'combo-multiplier-1',
-    name: 'Rhythm',
-    description: 'Consecutive clicks earn 1.5× per combo',
-    cost: 50,
+    description: '+50% per click',
+    cost: 150,
     effect: 0.5,
   },
   {
     id: 'auto-click-1',
     name: 'Power Steering',
-    description: 'Earn €0.01 per second',
-    cost: 200,
-    effect: 0.01,
+    description: 'Earn €0.005 per second',
+    cost: 300,
+    effect: 0.005,
   },
 ]
 
@@ -70,11 +63,10 @@ export const DEFAULT_CLICKER_STATE: ClickerState = {
 
 /**
  * Calculate total multiplier from all purchased upgrades.
- * Returns {clickMultiplier, comboMultiplier, autoClickPerSec}
+ * Returns {clickMultiplier, autoClickPerSec}
  */
 export function calculateClickerMultipliers(boughtUpgrades: Record<string, number>) {
   let clickMultiplier = BASE_CLICK_VALUE
-  let comboMultiplier = 1
   let autoClickPerSec = 0
 
   for (const [upgradeId, level] of Object.entries(boughtUpgrades)) {
@@ -85,19 +77,17 @@ export function calculateClickerMultipliers(boughtUpgrades: Record<string, numbe
 
     if (upgradeId.startsWith('click-multiplier')) {
       clickMultiplier += totalEffect
-    } else if (upgradeId.startsWith('combo-multiplier')) {
-      comboMultiplier += totalEffect
     } else if (upgradeId.startsWith('auto-click')) {
       autoClickPerSec += totalEffect
     }
   }
 
-  return { clickMultiplier, comboMultiplier, autoClickPerSec }
+  return { clickMultiplier, autoClickPerSec }
 }
 
 /**
  * Process a click and return euros earned.
- * Handles combo streaks with a 2-second timeout.
+ * Handles combo streaks with a 2-second timeout. Combo bonus is 1% per combo level.
  */
 export function processClick(
   state: ClickerState,
@@ -108,14 +98,12 @@ export function processClick(
 
   // Reset combo if timeout exceeded
   const newCombo =
-    timeSinceLastClick > comboTimeout ? 1 : Math.min(state.comboStreak + 1, 100)
+    timeSinceLastClick > comboTimeout ? 1 : Math.min(state.comboStreak + 1, 50)
 
-  const { clickMultiplier, comboMultiplier } = calculateClickerMultipliers(
-    state.boughtUpgrades,
-  )
+  const { clickMultiplier } = calculateClickerMultipliers(state.boughtUpgrades)
 
-  // Base earn is multiplied by combo multiplier (1 + comboMultiplier effect * combo bonus)
-  const comboBonus = newCombo > 1 ? 1 + (comboMultiplier - 1) * (newCombo - 1) : 1
+  // Combo gives 1% bonus per level (so 50 combo = 50% bonus max)
+  const comboBonus = 1 + (newCombo - 1) * 0.01
   const earned = Math.round(clickMultiplier * comboBonus * 100) / 100
 
   return {

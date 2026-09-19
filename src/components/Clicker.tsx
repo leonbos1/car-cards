@@ -15,7 +15,7 @@ export function Clicker() {
   const buyClickerUpgrade = useGame((s) => s.buyClickerUpgrade)
   const click = useGame((s) => s.click)
 
-  const { clickMultiplier, comboMultiplier, autoClickPerSec } = calculateClickerMultipliers(
+  const { clickMultiplier, autoClickPerSec } = calculateClickerMultipliers(
     clickerState.boughtUpgrades,
   )
 
@@ -64,9 +64,7 @@ export function Clicker() {
         <div className="text-sm font-bold text-gold-2">
           +{formatEuros(clickMultiplier)} per click
         </div>
-        {comboMultiplier > 1 && (
-          <div className="text-xs text-white/60">×{comboMultiplier.toFixed(1)} combo bonus</div>
-        )}
+        <div className="text-xs text-white/60">Combo: +1% per level (max 50)</div>
         {autoClickPerSec > 0 && (
           <div className="mt-2 text-xs text-white/60">
             +{formatEuros(autoClickPerSec)}/sec automatic
