@@ -9,6 +9,7 @@ import { ALL_CARDS } from '../game/pack'
 import { QUIZ_COOLDOWN_MS, QUESTIONS_PER_RUN, rewardFor } from '../game/quiz'
 import { claimSyndication, type SyndicationState } from '../game/syndication'
 import { tuningWindow } from '../game/tuning-contracts'
+import { DEFAULT_CLICKER_STATE, CLICKER_UPGRADES, nextUpgradeCost, type ClickerState } from '../game/clicker'
 import type { CardView } from '../types'
 
 const CARD_BY_ID = new Map(ALL_CARDS.map((c) => [c.id, c]))
@@ -45,6 +46,8 @@ interface GameState {
   syndicationLastClaimed: SyndicationState
   /** Tuning contract ids already fulfilled. */
   fulfilledTuningContracts: string[]
+  /** Clicker game state. */
+  clickerState: ClickerState
   setRaceAnimationMs: (ms: number) => void
   overrideCardStats: (carId: string, stats: Partial<Record<'hp' | 'acc' | 'topspeed' | 'weight' | 'handling' | 'wowFactor', number>>) => void
   clearCardOverride: (carId: string) => void
@@ -96,6 +99,12 @@ interface GameState {
    * bounding it.
    */
   finishRace: (payout: number, won: boolean) => void
+  /** Process a clicker tap. */
+  click: (newState: ClickerState) => void
+  /** Buy a clicker upgrade. Returns false if unaffordable. */
+  buyClickerUpgrade: (upgradeId: string) => boolean
+  /** Add balance directly (for clicking earnings). */
+  addBalance: (amount: number) => void
   reset: () => void
 }
 
@@ -144,6 +153,7 @@ export const useGame = create<GameState>()(
       championshipPoints: 0,
       syndicationLastClaimed: {},
       fulfilledTuningContracts: [],
+      clickerState: DEFAULT_CLICKER_STATE,
 
       canAfford: (price) => get().balance >= price,
 
@@ -371,6 +381,38 @@ export const useGame = create<GameState>()(
         return reward
       },
 
+      click: (newState: ClickerState) => {
+        set({ clickerState: newState })
+      },
+
+      buyClickerUpgrade: (upgradeId: string) => {
+        const upgrade = CLICKER_UPGRADES.find((u) => u.id === upgradeId)
+        if (!upgrade) return false
+
+        const currentLevel = get().clickerState.boughtUpgrades[upgradeId] ?? 0
+        const cost = nextUpgradeCost(upgrade, currentLevel)
+
+        if (!get().canAfford(cost)) return false
+
+        set((s) => ({
+          balance: s.balance - cost,
+          clickerState: {
+            ...s.clickerState,
+            boughtUpgrades: {
+              ...s.clickerState.boughtUpgrades,
+              [upgradeId]: currentLevel + 1,
+            },
+          },
+        }))
+        return true
+      },
+
+      addBalance: (amount: number) => {
+        set((s) => ({
+          balance: Math.round((s.balance + amount) * 100) / 100,
+        }))
+      },
+
       reset: () =>
         set({
           balance: STARTING_BALANCE,
@@ -389,6 +431,7 @@ export const useGame = create<GameState>()(
           championshipPoints: 0,
           syndicationLastClaimed: {},
           fulfilledTuningContracts: [],
+          clickerState: DEFAULT_CLICKER_STATE,
         }),
     }),
     // Bumped: the old save carried a 10,000,000 balance from before there was

@@ -2,6 +2,7 @@ import { useCallback, useState } from 'react'
 import { Balance } from './components/Balance'
 import { CardDetail } from './components/CardDetail'
 import { Catalog } from './components/Catalog'
+import { Clicker } from './components/Clicker'
 import { Garage } from './components/Garage'
 import { Market } from './components/Market'
 import { Objectives } from './components/Objectives'
@@ -15,7 +16,7 @@ import { openPack } from './game/pack'
 import { useGame } from './store/useGame'
 import type { CardView, Pack, Pull } from './types'
 
-type Tab = 'store' | 'market' | 'race' | 'quiz' | 'objectives' | 'garage' | 'catalog' | 'settings'
+type Tab = 'store' | 'market' | 'race' | 'quiz' | 'objectives' | 'garage' | 'catalog' | 'clicker' | 'settings'
 
 interface Opening {
   pack: Pack
@@ -85,7 +86,7 @@ export function App() {
           </div>
 
           <nav className="order-3 flex w-full flex-wrap gap-1 xl:order-2 xl:ml-2 xl:w-auto">
-            {(['store', 'market', 'race', 'quiz', 'objectives', 'catalog', 'garage', 'settings'] as Tab[]).map((t) => (
+            {(['store', 'market', 'race', 'quiz', 'clicker', 'objectives', 'catalog', 'garage', 'settings'] as Tab[]).map((t) => (
               <button
                 key={t}
                 type="button"
@@ -114,6 +115,8 @@ export function App() {
         <Race />
       ) : tab === 'quiz' ? (
         <Quiz />
+      ) : tab === 'clicker' ? (
+        <Clicker />
       ) : tab === 'objectives' ? (
         <Objectives />
       ) : tab === 'catalog' ? (
