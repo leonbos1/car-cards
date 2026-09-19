@@ -58,12 +58,21 @@ export function Clicker() {
           onClick={handleClick}
           className="mx-auto mb-4 flex h-32 w-32 items-center justify-center rounded-full bg-gradient-to-br from-red-600 to-red-800 shadow-lg transition hover:scale-105 active:scale-95"
         >
-          <svg viewBox="0 0 100 120" className="h-20 w-20" fill="none">
-            {/* Shield outline */}
-            <path d="M 50 10 L 80 25 L 80 60 Q 50 90 50 90 Q 50 90 20 60 L 20 25 Z" fill="white" stroke="white" strokeWidth="1"/>
-            {/* Red cross (Savoy cross) */}
-            <rect x="40" y="35" width="20" height="50" fill="#DC143B"/>
-            <rect x="25" y="55" width="50" height="20" fill="#DC143B"/>
+          <svg viewBox="0 0 100 120" className="h-24 w-24" fill="none">
+            {/* Shield shape - more ornate */}
+            <defs>
+              <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" style={{ stopColor: '#ffffff', stopOpacity: 1 }} />
+                <stop offset="100%" style={{ stopColor: '#f0f0f0', stopOpacity: 1 }} />
+              </linearGradient>
+            </defs>
+            <path d="M 50 8 C 50 8 75 22 75 45 C 75 70 50 105 50 105 C 50 105 25 70 25 45 C 25 22 50 8 50 8 Z" fill="url(#shieldGrad)" stroke="#333" strokeWidth="1.5"/>
+
+            {/* Savoy cross - red cross on white background */}
+            {/* Vertical bar */}
+            <rect x="42" y="30" width="16" height="60" fill="#E31C1C" rx="2"/>
+            {/* Horizontal bar */}
+            <rect x="28" y="52" width="44" height="16" fill="#E31C1C" rx="2"/>
           </svg>
         </button>
 
