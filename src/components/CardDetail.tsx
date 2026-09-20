@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from 'framer-motion'
 import IMAGES from '../data/car-images.json'
 import { formatEuros, quickSellValue } from '../game/economy'
+import { deriveOffroadSpecs } from '../game/offroad'
 import type { CardView } from '../types'
 import { CarCard } from './CarCard'
 
@@ -17,9 +18,11 @@ interface Props {
 }
 
 export function CardDetail({ card, owned, onClose, onSell }: Props) {
+  const offroad = card ? deriveOffroadSpecs(card) : null
+
   return (
     <AnimatePresence>
-      {card && (
+      {card && offroad && (
         <motion.div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm"
           initial={{ opacity: 0 }}
@@ -56,6 +59,15 @@ export function CardDetail({ card, owned, onClose, onSell }: Props) {
                   <Spec label="Units built" value={card.special.limitedTo.toLocaleString('nl-NL')} />
                 )}
                 <Spec label="Owned" value={`${owned}×`} />
+              </dl>
+
+              <p className="mb-2 text-[10px] font-bold uppercase tracking-widest text-white/35">
+                Chassis
+              </p>
+              <dl className="mb-5 grid grid-cols-2 gap-x-6 gap-y-2 text-sm">
+                <Spec label="Drivetrain" value={offroad.driveTrain} />
+                <Spec label="Ground clearance" value={`${offroad.groundClearanceMm} mm`} />
+                <Spec label="Tyres" value={offroad.tyreSize} />
               </dl>
 
               <div className="mb-5 flex items-center gap-3">
