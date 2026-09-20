@@ -1,3 +1,4 @@
+import { deriveOffroadSpecs, type DriveTrain } from './offroad'
 import { ALL_CARDS } from './pack'
 import type { CardView } from '../types'
 
@@ -19,7 +20,7 @@ import type { CardView } from '../types'
  * spread between a good entry and a lazy one is wide enough to be the game.
  */
 
-export type Discipline = 'drag' | 'circuit' | 'topspeed' | 'concours'
+export type Discipline = 'drag' | 'circuit' | 'topspeed' | 'concours' | 'offroad'
 
 /** Which stats each discipline actually rewards, and how much. */
 const WEIGHTS: Record<Discipline, Partial<Record<Stat, number>>> = {
@@ -27,6 +28,7 @@ const WEIGHTS: Record<Discipline, Partial<Record<Stat, number>>> = {
   circuit: { handling: 0.55, acc: 0.15, weight: 0.18, hp: 0.12 },
   topspeed: { topspeed: 0.58, hp: 0.3, acc: 0.12 },
   concours: { wowFactor: 0.72, age: 0.28 },
+  offroad: { driveScore: 0.4, clearance: 0.35, handling: 0.15, weight: 0.1 },
 }
 
 /**
@@ -34,14 +36,27 @@ const WEIGHTS: Record<Discipline, Partial<Record<Stat, number>>> = {
  * more than a wow-factor sort. An old car with presence beats a new one with
  * the same presence, which is the only place in the game a 1960s saloon can
  * beat a modern supercar at anything.
+ *
+ * `clearance` and `driveScore` are not on the card either — they come from
+ * the same estimated chassis specs shown in the card detail view, and they
+ * are what makes off-road a real fourth axis rather than circuit with mud on
+ * it: a hypercar has neither and goes nowhere here no matter how it is rated
+ * everywhere else.
  */
-type Stat = 'hp' | 'acc' | 'topspeed' | 'weight' | 'handling' | 'wowFactor' | 'age'
+type Stat = 'hp' | 'acc' | 'topspeed' | 'weight' | 'handling' | 'wowFactor' | 'age' | 'clearance' | 'driveScore'
 
 /** Stats where a smaller number is the better one. */
 const LOWER_IS_BETTER: Stat[] = ['acc', 'weight']
 
+/** How much a drivetrain actually helps off the tarmac. */
+function driveScore(driveTrain: DriveTrain): number {
+  return { FWD: 0.15, RWD: 0.25, AWD: 0.75, '4WD': 1 }[driveTrain]
+}
+
 function statOf(card: CardView, stat: Stat): number {
   if (stat === 'age') return -card.year
+  if (stat === 'clearance') return deriveOffroadSpecs(card).groundClearanceMm
+  if (stat === 'driveScore') return driveScore(deriveOffroadSpecs(card).driveTrain)
   return card.stats[stat]
 }
 
@@ -50,6 +65,7 @@ export const DISCIPLINE_LABEL: Record<Discipline, string> = {
   circuit: 'Circuit',
   topspeed: 'Top speed',
   concours: 'Concours',
+  offroad: 'Off-road',
 }
 
 /** What the event is judged on, in the words a player would use. */
@@ -58,6 +74,7 @@ export const DISCIPLINE_BLURB: Record<Discipline, string> = {
   circuit: 'Handling and weight through the corners; power barely matters.',
   topspeed: 'Everything is the number on the far end of the speedo.',
   concours: 'Judged on presence, not pace. Age counts in your favour.',
+  offroad: 'Drivetrain and ground clearance decide it; horsepower barely helps.',
 }
 
 export interface RaceEvent {
@@ -70,6 +87,12 @@ export interface RaceEvent {
   /** Themed events narrow the field further. */
   country?: string
   maxWeight?: number
+  /**
+   * Off-road's own ladder. Ground clearance, not the rating, is what a pack
+   * cannot simply deal you: the tallest 4x4s in the roster are as scarce as
+   * the fastest hypercars, just along a different axis.
+   */
+  minGroundClearance?: number
   /** Prize for winning. Every other finishing position is a fraction of it. */
   prize: number
   /** Cars on the grid, yours included. */
@@ -146,12 +169,27 @@ export const EVENTS: RaceEvent[] = [
   // a starter garage can win has to be priced like one.
   { id: 'open-italian', name: 'Strada Italiana', discipline: 'circuit', country: 'IT', prize: 14, grid: 6 },
   { id: 'open-light', name: 'Featherweight Cup', discipline: 'circuit', maxWeight: 1_200, prize: 14, grid: 6 },
+
+  // Off-road. Its own ladder, gated on ground clearance rather than rating —
+  // a hypercar cannot buy its way into this ceiling at any price, and a
+  // basic hatchback cannot either. Only something genuinely built tall and
+  // driven, ideally, through all four wheels gets a look in.
+  { id: 'rookie-offroad', name: 'Farm Track Trial', discipline: 'offroad', minGroundClearance: 150, prize: 6, grid: 6 },
+  { id: 'club-offroad', name: 'Green Lane Run', discipline: 'offroad', minGroundClearance: 175, prize: 15, grid: 6 },
+  { id: 'national-offroad', name: 'Forest Rally Stage', discipline: 'offroad', minGroundClearance: 195, prize: 38, grid: 8 },
+  { id: 'elite-offroad', name: 'Dakar Qualifier', discipline: 'offroad', minGroundClearance: 210, prize: 70, grid: 8 },
 ]
 
 export const EVENT_BY_ID = new Map(EVENTS.map((e) => [e.id, e]))
 
-/** The class an event runs for, read off its rating band. */
+/** The class an event runs for, read off its rating band — or, for off-road, its ground clearance band. */
 export function classOf(event: RaceEvent): string {
+  if (event.minGroundClearance !== undefined) {
+    if (event.minGroundClearance >= 210) return 'Elite'
+    if (event.minGroundClearance >= 195) return 'National'
+    if (event.minGroundClearance >= 175) return 'Club'
+    return 'Rookie'
+  }
   if (event.minOverall === undefined && event.maxOverall === undefined) return 'Open'
   if (event.minOverall !== undefined && event.minOverall >= 88) return 'Elite'
   if (event.minOverall !== undefined && event.minOverall >= 80) return 'National'
@@ -168,6 +206,7 @@ export function entryLine(event: RaceEvent): string {
   else if (event.maxOverall !== undefined) parts.push(`rated up to ${event.maxOverall}`)
   if (event.country) parts.push('Italian cars')
   if (event.maxWeight) parts.push(`under ${event.maxWeight} kg`)
+  if (event.minGroundClearance) parts.push(`${event.minGroundClearance} mm+ ground clearance`)
   return parts.join(', ') || 'anything'
 }
 
@@ -188,12 +227,24 @@ export type { Stat }
 
 /** How a stat reads on a card, with its unit. */
 export function statLabel(stat: Stat): string {
-  return { hp: 'hp', acc: '0-100', topspeed: 'top', weight: 'kg', handling: 'handling', wowFactor: 'wow', age: 'year' }[stat]
+  return {
+    hp: 'hp',
+    acc: '0-100',
+    topspeed: 'top',
+    weight: 'kg',
+    handling: 'handling',
+    wowFactor: 'wow',
+    age: 'year',
+    clearance: 'clearance',
+    driveScore: 'drive',
+  }[stat]
 }
 
 export function statValue(card: CardView, stat: Stat): string {
   if (stat === 'age') return String(card.year)
   if (stat === 'acc') return `${card.stats.acc}s`
+  if (stat === 'clearance') return `${deriveOffroadSpecs(card).groundClearanceMm}mm`
+  if (stat === 'driveScore') return deriveOffroadSpecs(card).driveTrain
   return String(card.stats[stat])
 }
 
@@ -206,7 +257,9 @@ export function eligible(event: RaceEvent): CardView[] {
       (event.minOverall === undefined || c.overall >= event.minOverall) &&
       (event.maxOverall === undefined || c.overall <= event.maxOverall) &&
       (event.country === undefined || c.country === event.country) &&
-      (event.maxWeight === undefined || c.stats.weight <= event.maxWeight),
+      (event.maxWeight === undefined || c.stats.weight <= event.maxWeight) &&
+      (event.minGroundClearance === undefined ||
+        deriveOffroadSpecs(c).groundClearanceMm >= event.minGroundClearance),
   )
   ELIGIBLE.set(event, pool)
   return pool
@@ -240,6 +293,8 @@ function normalizedStat(value: number, stat: Stat, lowerIsBetter: boolean): numb
     handling: [0, 99],
     wowFactor: [0, 99],
     age: [0, 100],
+    clearance: [85, 250],
+    driveScore: [0, 1],
   }
   const [min, max] = ranges[stat]
   const clamped = Math.max(min, Math.min(max, value))

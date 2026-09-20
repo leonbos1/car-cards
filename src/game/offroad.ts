@@ -72,13 +72,32 @@ function isTurboAllWheelDrive911(make: string, model: string, year: number): boo
  */
 const FWD_HOT_HATCH = /\b(type r|golf gti|clubsport|megane rs|clio rs|208 gti|corsa gsi|fiesta st|focus st|i30 n|leon cupra|civic si)\b/i
 
+/**
+ * Genuine low-range 4x4s, as opposed to the crossovers and soft-roaders that
+ * make up most of the rest of the SUV/truck pattern below — those are only
+ * AWD, with no low range and much less rock- or dune-worthy hardware.
+ */
+const TRUE_4X4 = /\b(wrangler|defender|land cruiser|g-class|g63|g60|g500|bronco|raptor|patrol|4runner|gladiator|discovery|amarok|hilux|navara|triton|d-max|colorado zr2|silverado zr2|sierra at4|ram trx|unimog|jimny|hummer)\b/i
+
+/**
+ * Classic rear- or mid-engined cars whose weak old engines would otherwise
+ * put them below the power-to-weight line and read as FWD — the Beetle and
+ * 2CV never had a front-driven bone in them. The Fiat 500 needs its year
+ * checked: the name is shared with a modern, ordinary front-engined car.
+ */
+function isRearEngineClassic(make: string, model: string, year: number): boolean {
+  if (/\b(beetle|2cv|porsche 356|corvair|nsu prinz)\b/i.test(`${make} ${model}`)) return true
+  return make === 'Fiat' && model.trim() === '500' && year < 1975
+}
+
 function classifyDriveTrain(car: CardView, powerToWeight: number, isOffroad: boolean): DriveTrain {
-  if (isOffroad) return '4WD'
+  if (isOffroad) return TRUE_4X4.test(`${car.make} ${car.model}`) ? '4WD' : 'AWD'
   if (AWD_BRANDS.has(car.make)) return 'AWD'
   if (AWD_NAME.test(`${car.make} ${car.model}`)) return 'AWD'
   if (hasAwdException(car.make, car.model)) return 'AWD'
   if (isTurboAllWheelDrive911(car.make, car.model, car.year)) return 'AWD'
   if (FWD_HOT_HATCH.test(car.model)) return 'FWD'
+  if (isRearEngineClassic(car.make, car.model, car.year)) return 'RWD'
   // Above this line, power outruns weight enough that a live rear axle or a
   // mid/rear engine is the usual real-world answer. Below it, front-wheel
   // drive is the economical default most of the roster actually uses.
@@ -86,8 +105,14 @@ function classifyDriveTrain(car: CardView, powerToWeight: number, isOffroad: boo
 }
 
 function deriveGroundClearance(car: CardView, isOffroad: boolean, powerToWeight: number): number {
+  if (isOffroad) {
+    // A soft-road crossover and a lifted Wrangler both match the name-based
+    // pattern, so this needs to span that whole real range, not cluster
+    // around one number.
+    const jitter = (hash(`${car.id}:clearance`) - 0.5) * 70
+    return Math.round(clamp(205 + jitter, 175, 250))
+  }
   const jitter = (hash(`${car.id}:clearance`) - 0.5) * 26
-  if (isOffroad) return Math.round(clamp(205 + jitter, 170, 260))
   const base = 150 - Math.min(65, powerToWeight * 170)
   return Math.round(clamp(base + jitter, 85, 165))
 }

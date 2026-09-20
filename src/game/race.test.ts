@@ -141,9 +141,16 @@ describe('race events', () => {
   it('opens the best-paying events only to cars a pack cannot deal', () => {
     // The Elite grids are where the money is, and the cars that qualify are the
     // ones the market keeps to itself. That is what stops a new player skipping
-    // straight to the top of the grind.
+    // straight to the top of the grind. Off-road runs the same gate on a
+    // different axis — ground clearance instead of rating — since that is
+    // its own scarce resource: only 30 of the 1,100+ cars in the roster clear
+    // 210mm, a tighter cut than the rating gate the other disciplines use.
     for (const event of EVENTS.filter((e) => classOf(e) === 'Elite')) {
-      expect(event.minOverall).toBeGreaterThan(87)
+      if (event.discipline === 'offroad') {
+        expect(event.minGroundClearance, event.name).toBeGreaterThanOrEqual(210)
+      } else {
+        expect(event.minOverall, event.name).toBeGreaterThan(87)
+      }
     }
   })
 
@@ -164,5 +171,28 @@ describe('race events', () => {
     const b = race(car, event, seeded(11))
     expect(a.order.map((e) => e.card.id)).toEqual(b.order.map((e) => e.card.id))
     expect(a.payout).toBe(b.payout)
+  })
+
+  it('shuts a hypercar out of off-road entirely', () => {
+    // The whole point of the discipline: no amount of horsepower buys
+    // ground clearance or a low-range transfer case.
+    const offroadEvents = EVENTS.filter((e) => e.discipline === 'offroad')
+    expect(offroadEvents.length).toBeGreaterThan(0)
+    const topCar = [...ALL_CARDS].sort((a, b) => b.overall - a.overall)[0]
+    for (const event of offroadEvents) {
+      expect(eligible(event).map((c) => c.id), event.name).not.toContain(topCar.id)
+    }
+  })
+
+  it('lets a capable 4x4 beat a faster car with no ground clearance', () => {
+    const event = EVENTS.find((e) => e.id === 'rookie-offroad')!
+    const wrangler = ALL_CARDS.find((c) => c.make === 'Jeep' && c.model === 'Wrangler')
+    const civicTypeR = ALL_CARDS.find((c) => c.id === 'honda-civic-type-r-2023')
+    expect(wrangler).toBeTruthy()
+    expect(civicTypeR).toBeTruthy()
+    // The Civic is rated far higher and would win almost every other
+    // discipline; off-road inverts that.
+    expect(civicTypeR!.overall).toBeGreaterThan(wrangler!.overall)
+    expect(fitness(wrangler!, event)).toBeGreaterThan(fitness(civicTypeR!, event))
   })
 })

@@ -22,7 +22,7 @@ describe('offroad specs', () => {
     }
   })
 
-  it('gives every SUV, truck and off-road nameplate four-wheel drive and taller ride height', () => {
+  it('gives every SUV, truck and off-road nameplate an off-road-capable drivetrain and taller ride height', () => {
     const offroaders = ALL_CARDS.filter((c) =>
       /jeep|wrangler|defender|land cruiser|range rover|hummer|silverado|f-150|raptor/i.test(
         `${c.make} ${c.model}`,
@@ -31,8 +31,20 @@ describe('offroad specs', () => {
     expect(offroaders.length).toBeGreaterThan(0)
     for (const car of offroaders) {
       const specs = deriveOffroadSpecs(car)
-      expect(specs.driveTrain, car.id).toBe('4WD')
+      // A crossover-ish SUV only needs to be AWD; a genuine low-range 4x4
+      // (Wrangler, Defender, Raptor…) is checked separately below.
+      expect(['AWD', '4WD'], car.id).toContain(specs.driveTrain)
       expect(specs.groundClearanceMm, car.id).toBeGreaterThanOrEqual(170)
+    }
+  })
+
+  it('gives genuine low-range 4x4s four-wheel drive specifically', () => {
+    const trueOffroaders = ALL_CARDS.filter((c) =>
+      /wrangler|defender|land cruiser|hummer|raptor/i.test(`${c.make} ${c.model}`),
+    )
+    expect(trueOffroaders.length).toBeGreaterThan(0)
+    for (const car of trueOffroaders) {
+      expect(deriveOffroadSpecs(car).driveTrain, car.id).toBe('4WD')
     }
   })
 
