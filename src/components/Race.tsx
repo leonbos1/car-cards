@@ -13,12 +13,13 @@ import {
   race,
   statLabel,
   statValue,
+  withOverrides,
   type RaceEvent,
   type RaceResult,
 } from '../game/race'
 import { ownedCards, useGame } from '../store/useGame'
-import { awardPoints } from '../game/championships'
 import type { CardView } from '../types'
+import { Championship } from './Championship'
 
 const CLASS_ORDER = ['Rookie', 'Club', 'National', 'Elite', 'Open']
 
@@ -27,9 +28,9 @@ export function Race() {
   const finishRace = useGame((s) => s.finishRace)
   const raceAnimationMs = useGame((s) => s.raceAnimationMs)
   const cardOverrides = useGame((s) => s.cardOverrides)
-  const championshipPoints = useGame((s) => s.championshipPoints)
-  const setChampionshipPoints = (pts: number) => useGame.setState({ championshipPoints: pts })
+  const seasonActive = useGame((s) => s.season !== null)
 
+  const [mode, setMode] = useState<'events' | 'championship'>(seasonActive ? 'championship' : 'events')
   const [event, setEvent] = useState<RaceEvent | null>(null)
   const [car, setCar] = useState<CardView | null>(null)
   const [result, setResult] = useState<RaceResult | null>(null)
@@ -43,25 +44,7 @@ export function Race() {
     setCar(entry)
     setResult(null)
     setRunning(true)
-    // Apply card stat overrides
-    const overrides = cardOverrides[entry.id]
-    const adjustedEntry: CardView = overrides
-      ? {
-          ...entry,
-          stats: {
-            hp: overrides.hp ?? entry.stats.hp,
-            acc: overrides.acc ?? entry.stats.acc,
-            topspeed: overrides.topspeed ?? entry.stats.topspeed,
-            weight: overrides.weight ?? entry.stats.weight,
-            handling: overrides.handling ?? entry.stats.handling,
-            wowFactor: overrides.wowFactor ?? entry.stats.wowFactor,
-          },
-        }
-      : entry
-    const outcome = race(adjustedEntry, on)
-
-    // Award championship points
-    const points = awardPoints(outcome.position)
+    const outcome = race(withOverrides(entry, cardOverrides[entry.id]), on)
 
     // Banked at the flag, not at the click, so the money and the result you are
     // looking at are always the same race.
@@ -69,9 +52,17 @@ export function Race() {
       setResult(outcome)
       setRunning(false)
       finishRace(outcome.payout, outcome.position === 1)
-      setChampionshipPoints(championshipPoints + points)
       setSession((s) => ({ races: s.races + 1, earned: s.earned + outcome.payout }))
     }, raceAnimationMs)
+  }
+
+  if (mode === 'championship') {
+    return (
+      <Shell>
+        <ModeToggle mode={mode} onChange={setMode} />
+        <Championship />
+      </Shell>
+    )
   }
 
   if (event && car && (running || result)) {
@@ -159,6 +150,7 @@ export function Race() {
 
   return (
     <Shell>
+      <ModeToggle mode={mode} onChange={setMode} />
       <h2 className="mb-1 text-2xl font-extrabold tracking-tight">Race</h2>
       <p className="mb-6 text-sm text-white/45">
         No timers and no limit — race as often as you like. What you earn depends on bringing the
@@ -333,6 +325,31 @@ function Finished({
           Change car
         </button>
       </div>
+    </div>
+  )
+}
+
+function ModeToggle({
+  mode,
+  onChange,
+}: {
+  mode: 'events' | 'championship'
+  onChange: (mode: 'events' | 'championship') => void
+}) {
+  return (
+    <div className="mb-5 inline-flex rounded-xl border border-white/10 bg-white/[0.03] p-1">
+      {(['events', 'championship'] as const).map((m) => (
+        <button
+          key={m}
+          type="button"
+          onClick={() => onChange(m)}
+          className={`rounded-lg px-4 py-1.5 text-sm font-bold capitalize transition ${
+            mode === m ? 'bg-white/15 text-white' : 'text-white/45 hover:text-white/80'
+          }`}
+        >
+          {m}
+        </button>
+      ))}
     </div>
   )
 }

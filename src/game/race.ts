@@ -329,6 +329,23 @@ export function payoutFor(event: RaceEvent, position: number): number {
  * Run one race. `rng` is injectable so the simulation and the tests can measure
  * what this actually pays rather than guess at it.
  */
+/** What a car manages on the day: its fitness for the event, moved by luck. */
+export function rollResult(card: CardView, event: RaceEvent, rng: () => number): number {
+  return fitness(card, event) * (1 + (rng() * 2 - 1) * LUCK)
+}
+
+export type StatOverrides = Partial<Record<keyof CardView['stats'], number>>
+
+/** A card with the player's stat overrides from Settings applied. */
+export function withOverrides(card: CardView, overrides?: StatOverrides): CardView {
+  if (!overrides) return card
+  const stats = { ...card.stats }
+  for (const [stat, value] of Object.entries(overrides) as [keyof CardView['stats'], number | undefined][]) {
+    if (value !== undefined) stats[stat] = value
+  }
+  return { ...card, stats }
+}
+
 export function race(card: CardView, event: RaceEvent, rng: () => number = Math.random): RaceResult {
   const pool = eligible(event).filter((c) => c.id !== card.id)
   const field: CardView[] = []
@@ -343,7 +360,7 @@ export function race(card: CardView, event: RaceEvent, rng: () => number = Math.
   const roll = (c: CardView, mine: boolean): Entrant => ({
     card: c,
     mine,
-    result: fitness(c, event) * (1 + (rng() * 2 - 1) * LUCK),
+    result: rollResult(c, event, rng),
   })
 
   const order = [roll(card, true), ...field.map((c) => roll(c, false))].sort(

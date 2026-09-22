@@ -1,7 +1,9 @@
 import { beforeEach, describe, expect, it } from 'vitest'
 import { STARTING_BALANCE, quickSellValue } from '../game/economy'
+import { SEASON_BY_ID, roundEvent, seasonBonus, type Season } from '../game/championships'
 import { bidPrice } from '../game/market'
 import { ALL_CARDS } from '../game/pack'
+import { eligible, fitness } from '../game/race'
 import { ownedCards, useGame } from './useGame'
 
 const CAR = ALL_CARDS.find((c) => !c.special && !c.rare)!
@@ -92,3 +94,98 @@ describe('the save', () => {
     expect(useGame.getState().collection[OTHER.id]).toBe(1)
   })
 })
+
+function seeded(seed: number): () => number {
+  let state = seed >>> 0
+  return () => {
+    state = (state * 1664525 + 1013904223) >>> 0
+    return state / 0x100000000
+  }
+}
+
+/** The best-suited eligible car for each round, never repeating one. */
+function bestDistinct(season: Season): string[] {
+  const picked: string[] = []
+  season.rounds.forEach((_, i) => {
+    const event = roundEvent(season, i)
+    const best = [...eligible(event)]
+      .sort((a, b) => fitness(b, event) - fitness(a, event))
+      .find((c) => !picked.includes(c.id))!
+    picked.push(best.id)
+  })
+  return picked
+}
+
+describe('championship seasons', () => {
+  const CLUB = SEASON_BY_ID.get('club-championship')!
+
+  it('will not start a second season over one still being raced', () => {
+    expect(useGame.getState().startSeason(CLUB.id)).toBe(true)
+    expect(useGame.getState().startSeason('rookie-cup')).toBe(false)
+    expect(useGame.getState().season?.seasonId).toBe(CLUB.id)
+    expect(useGame.getState().startSeason('no-such-season')).toBe(false)
+  })
+
+  it('refuses a car you do not own, one the round turns away, or one already raced', () => {
+    const cars = bestDistinct(CLUB)
+    const ineligible = ALL_CARDS.find((c) => !eligible(roundEvent(CLUB, 0)).some((e) => e.id === c.id))!
+    give({ [cars[0]]: 1, [cars[1]]: 1, [ineligible.id]: 1 })
+    useGame.getState().startSeason(CLUB.id)
+
+    expect(useGame.getState().runSeasonRound(cars[2]), 'not owned').toBeNull()
+    expect(useGame.getState().runSeasonRound(ineligible.id), 'not eligible').toBeNull()
+    expect(useGame.getState().season?.rounds).toHaveLength(0)
+
+    expect(useGame.getState().runSeasonRound(cars[0], seeded(1))).not.toBeNull()
+    // The same car cannot start a second round, even one it would suit.
+    expect(useGame.getState().runSeasonRound(cars[0]), 'already raced').toBeNull()
+    expect(useGame.getState().season?.rounds).toHaveLength(1)
+  })
+
+  it('pays every round, then the title exactly once, and records it', () => {
+    const cars = bestDistinct(CLUB)
+    give(Object.fromEntries(cars.map((id) => [id, 1])))
+    useGame.getState().startSeason(CLUB.id)
+
+    const rng = seeded(7)
+    let roundMoney = 0
+    for (const id of cars) roundMoney += useGame.getState().runSeasonRound(id, rng)!.payout
+
+    const { season, balance, seasonTitles } = useGame.getState()
+    expect(season?.final?.position).toBe(1)
+    expect(season?.final?.bonus).toBe(seasonBonus(CLUB, 1))
+    expect(balance).toBe(roundMoney + seasonBonus(CLUB, 1))
+    expect(seasonTitles[CLUB.id]).toBe(1)
+
+    // A finished season takes no more rounds, and closing it pays nothing more.
+    expect(useGame.getState().runSeasonRound(null)).toBeNull()
+    useGame.getState().closeSeason()
+    expect(useGame.getState().balance).toBe(balance)
+    expect(useGame.getState().season).toBeNull()
+    // And a new season can start once the old one is closed.
+    expect(useGame.getState().startSeason(CLUB.id)).toBe(true)
+  })
+
+  it('forfeits title money when closed mid-season, but keeps what the rounds paid', () => {
+    const cars = bestDistinct(CLUB)
+    give(Object.fromEntries(cars.map((id) => [id, 1])))
+    useGame.getState().startSeason(CLUB.id)
+    const paid = useGame.getState().runSeasonRound(cars[0], seeded(2))!.payout
+
+    useGame.getState().closeSeason()
+    expect(useGame.getState().season).toBeNull()
+    expect(useGame.getState().balance).toBe(paid)
+    expect(useGame.getState().seasonTitles[CLUB.id]).toBeUndefined()
+  })
+
+  it('lets you sit a round out, which uses no car and scores nothing', () => {
+    give({})
+    useGame.getState().startSeason(CLUB.id)
+    const result = useGame.getState().runSeasonRound(null, seeded(4))!
+    expect(result.position).toBeNull()
+    expect(useGame.getState().season?.used).toEqual([])
+    expect(useGame.getState().season?.rounds).toHaveLength(1)
+    expect(useGame.getState().balance).toBe(0)
+  })
+})
+

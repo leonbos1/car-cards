@@ -10,7 +10,26 @@ import { QUIZ_COOLDOWN_MS, QUESTIONS_PER_RUN, rewardFor } from '../game/quiz'
 import { claimSyndication, type SyndicationState } from '../game/syndication'
 import { tuningWindow } from '../game/tuning-contracts'
 import { DEFAULT_CLICKER_STATE, CLICKER_UPGRADES, nextUpgradeCost, type ClickerState } from '../game/clicker'
+import {
+  SEASON_BY_ID,
+  YOU,
+  roundEvent,
+  runRound,
+  seasonBonus,
+  standings,
+  type RoundResult,
+} from '../game/championships'
+import { eligible, withOverrides } from '../game/race'
 import type { CardView } from '../types'
+
+export interface SeasonState {
+  seasonId: string
+  /** Cars already entered this season, one per round started. */
+  used: string[]
+  rounds: RoundResult[]
+  /** Set when the last round is run, which is also when the bonus is paid. */
+  final?: { position: number; bonus: number }
+}
 
 const CARD_BY_ID = new Map(ALL_CARDS.map((c) => [c.id, c]))
 const OBJECTIVE_BY_ID = new Map(OBJECTIVES.map((o) => [o.id, o]))
@@ -40,8 +59,10 @@ interface GameState {
   raceAnimationMs: number
   /** Card stat overrides: carId -> override stats. */
   cardOverrides: Record<string, Partial<Record<'hp' | 'acc' | 'topspeed' | 'weight' | 'handling' | 'wowFactor', number>>>
-  /** Championship points this season. */
-  championshipPoints: number
+  /** The championship season in progress, or finished and not yet closed. */
+  season: SeasonState | null
+  /** Season id -> titles won. */
+  seasonTitles: Record<string, number>
   /** carId -> last syndication payout time. */
   syndicationLastClaimed: SyndicationState
   /** Tuning contract ids already fulfilled. */
@@ -51,11 +72,16 @@ interface GameState {
   setRaceAnimationMs: (ms: number) => void
   overrideCardStats: (carId: string, stats: Partial<Record<'hp' | 'acc' | 'topspeed' | 'weight' | 'handling' | 'wowFactor', number>>) => void
   clearCardOverride: (carId: string) => void
+  /** Start a season. Refused while another is still being raced. */
+  startSeason: (seasonId: string) => boolean
   /**
-   * Award championship points and add syndication/showroom payout.
-   * Returns adjusted payout after bonuses.
+   * Race the next round of the season, or sit it out with `null`. The car
+   * must be owned, eligible, and not yet used this season. Returns the round,
+   * or null if it was refused.
    */
-  finishRaceWithBonuses: (baseRaceIndex: number, won: boolean, now?: number) => number
+  runSeasonRound: (carId: string | null, rng?: () => number) => RoundResult | null
+  /** Clear the season. Mid-season this is a forfeit: no title money. */
+  closeSeason: () => void
   /** Claim syndication payouts for all ready cars. Returns euros earned. */
   claimSyndicationPayouts: (now?: number) => number
   /** Fulfill a tuning contract. Returns euros earned, or 0. */
@@ -150,7 +176,8 @@ export const useGame = create<GameState>()(
       racesWon: 0,
       raceAnimationMs: 4600,
       cardOverrides: {},
-      championshipPoints: 0,
+      season: null,
+      seasonTitles: {},
       syndicationLastClaimed: {},
       fulfilledTuningContracts: [],
       clickerState: DEFAULT_CLICKER_STATE,
@@ -341,11 +368,57 @@ export const useGame = create<GameState>()(
           return { cardOverrides: next }
         }),
 
-      finishRaceWithBonuses: (baseRaceIndex) => {
-        // Stub: championship points awarded in Race component for now
-        // Full integration would award points and apply syndication bonus here
-        return baseRaceIndex
+      startSeason: (seasonId) => {
+        const current = get().season
+        if (!SEASON_BY_ID.has(seasonId) || (current && !current.final)) return false
+        set({ season: { seasonId, used: [], rounds: [] } })
+        return true
       },
+
+      runSeasonRound: (carId, rng = Math.random) => {
+        const state = get()
+        const current = state.season
+        const season = current && SEASON_BY_ID.get(current.seasonId)
+        if (!current || !season || current.final) return null
+
+        const round = current.rounds.length
+        let entry: CardView | null = null
+        // Checked here rather than in the component, so a round cannot be run
+        // with a car you do not own, one the event would turn away, or one
+        // you have already used this season.
+        if (carId !== null) {
+          const card = CARD_BY_ID.get(carId)
+          if (!card || (state.collection[carId] ?? 0) < 1 || current.used.includes(carId)) return null
+          if (!eligible(roundEvent(season, round)).some((c) => c.id === carId)) return null
+          entry = withOverrides(card, state.cardOverrides[carId])
+        }
+
+        const result = runRound(season, round, entry, rng)
+        const rounds = [...current.rounds, result]
+        const used = carId ? [...current.used, carId] : current.used
+
+        // The title is settled and paid the moment the last round is run, so
+        // it cannot be collected twice however the season is closed after.
+        let final: SeasonState['final']
+        if (rounds.length === season.rounds.length) {
+          const position = standings(season, rounds).findIndex((s) => s.driver === YOU) + 1
+          final = { position, bonus: seasonBonus(season, position) }
+        }
+
+        set((s) => ({
+          balance: s.balance + result.payout + (final?.bonus ?? 0),
+          racesRun: s.racesRun + (result.position ? 1 : 0),
+          racesWon: s.racesWon + (result.position === 1 ? 1 : 0),
+          season: { seasonId: current.seasonId, used, rounds, ...(final && { final }) },
+          seasonTitles:
+            final?.position === 1
+              ? { ...s.seasonTitles, [season.id]: (s.seasonTitles[season.id] ?? 0) + 1 }
+              : s.seasonTitles,
+        }))
+        return result
+      },
+
+      closeSeason: () => set({ season: null }),
 
       claimSyndicationPayouts: (now = Date.now()) => {
         const state = get()
@@ -428,7 +501,8 @@ export const useGame = create<GameState>()(
           racesWon: 0,
           raceAnimationMs: 4600,
           cardOverrides: {},
-          championshipPoints: 0,
+          season: null,
+          seasonTitles: {},
           syndicationLastClaimed: {},
           fulfilledTuningContracts: [],
           clickerState: DEFAULT_CLICKER_STATE,
