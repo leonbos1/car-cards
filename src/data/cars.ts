@@ -810,7 +810,10 @@ export const CARS: Car[] = [
   {
     id: 'koenigsegg-jesko-absolut',
     make: 'Koenigsegg', model: 'Jesko Absolut', year: 2020, country: 'SE',
-    stats: { hp: 1600, acc: 2.5, topspeed: 500, weight: 1320, handling: 99, wowFactor: 95 },
+    // Shares the Jesko's chassis but strips the wing and most of the aero
+    // package for outright top speed, which is why it does not share the
+    // base car's handling score.
+    stats: { hp: 1600, acc: 2.5, topspeed: 500, weight: 1320, handling: 78, wowFactor: 95 },
     rare: true,
     special: { label: 'LIMITED EDITION', limitedTo: 125 },
     specs: { hp: 1600, zeroToHundred: 2.5, topSpeed: 500, weightKg: 1320 },
@@ -5708,7 +5711,9 @@ export const CARS: Car[] = [
   {
     id: 'hennessey-venom-f5-2023',
     make: 'Hennessey', model: 'Venom F5', year: 2023, country: 'US',
-    stats: { hp: 1817, acc: 2, topspeed: 531, weight: 1385, handling: 99, wowFactor: 95 },
+    // Built to chase 300+ mph in a straight line, not to carve a lap record —
+    // a low-drag body and a straight-line mission, not a track chassis.
+    stats: { hp: 1817, acc: 2, topspeed: 531, weight: 1385, handling: 55, wowFactor: 95 },
     rare: true,
     special: { label: 'HYPERCAR', limitedTo: 24 },
     specs: { hp: 1817, zeroToHundred: 2, topSpeed: 531, weightKg: 1385 },
@@ -5726,7 +5731,9 @@ export const CARS: Car[] = [
   {
     id: 'ssc-tuatara-2023',
     make: 'SSC', model: 'Tuatara', year: 2023, country: 'US',
-    stats: { hp: 1750, acc: 2.6, topspeed: 531, weight: 1247, handling: 99, wowFactor: 95 },
+    // A long, low-drag body built for a top-speed record run, not for
+    // corners — the same shape of car as the Venom F5, not the Bolide.
+    stats: { hp: 1750, acc: 2.6, topspeed: 531, weight: 1247, handling: 52, wowFactor: 95 },
     rare: true,
     special: { label: 'HYPERCAR', limitedTo: 100 },
     specs: { hp: 1750, zeroToHundred: 2.6, topSpeed: 531, weightKg: 1247 },
@@ -7334,7 +7341,9 @@ export const CARS: Car[] = [
   {
     id: 'aspark-owl-2023-fastest',
     make: 'Aspark', model: 'Owl', year: 2023, country: 'AE',
-    stats: { hp: 1972, acc: 1.69, topspeed: 400, weight: 1850, handling: 91, wowFactor: 99 },
+    // A viral 0-400-0 record and little else — heavy for a hypercar, no real
+    // aero package, and no track pedigree to justify a top handling score.
+    stats: { hp: 1972, acc: 1.69, topspeed: 400, weight: 1850, handling: 60, wowFactor: 99 },
     rare: true,
     specs: { hp: 1972, zeroToHundred: 1.69, topSpeed: 400, weightKg: 1850 },
     imageQuery: 'Aspark Owl 2023',
@@ -7605,7 +7614,9 @@ export const CARS: Car[] = [
   {
     id: 'rimac-nevera-proto-2024',
     make: 'Rimac', model: 'Nevera Proto', year: 2024, country: 'HR',
-    stats: { hp: 1914, acc: 1.85, topspeed: 412, weight: 1445, handling: 99, wowFactor: 95 },
+    // Same car as the production Nevera below — a development mule is not
+    // suddenly a better-handling car than what it became.
+    stats: { hp: 1914, acc: 1.85, topspeed: 412, weight: 1445, handling: 89, wowFactor: 95 },
     rare: true,
     special: { label: 'EV HYPERCAR', limitedTo: 150 },
     specs: { hp: 1914, zeroToHundred: 1.85, topSpeed: 412, weightKg: 1445 },
@@ -7614,7 +7625,9 @@ export const CARS: Car[] = [
   {
     id: 'aspark-owl-extreme-2024',
     make: 'Aspark', model: 'Owl Extreme', year: 2024, country: 'JP',
-    stats: { hp: 1985, acc: 1.69, topspeed: 408, weight: 1480, handling: 99, wowFactor: 95 },
+    // Even more of a straight-line record chaser than the base Owl; lighter
+    // helps a little, but it is no closer to a track car.
+    stats: { hp: 1985, acc: 1.69, topspeed: 408, weight: 1480, handling: 65, wowFactor: 95 },
     rare: true,
     special: { label: 'EXTREME EV PRO', limitedTo: 50 },
     specs: { hp: 1985, zeroToHundred: 1.69, topSpeed: 408, weightKg: 1480 },
