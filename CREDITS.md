@@ -1138,3 +1138,27 @@ each card's detail view.
 | Saab 900 Turbo | Spanish Coches | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1985_SAAB_900_Turbo_(3847480431).jpg) |
 | Volvo 240 Turbo | dave_7 from Lethbridge, Canada | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Volvo_240_Turbo_(4276893797).jpg) |
 | Holden Monaro GTS 350 | Chris Keating from Melbourne, Victoria, Australia. | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1970-1971_Holden_HG_Monaro_GTS_350_coupe_02.jpg) |
+| Lancia Delta S4 Stradale | Charles from Port Chester, New York | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Lancia_Delta_S4_Stradale_(1985)_(52866814842).jpg) |
+| Lancia 037 Stradale | MrWalkr | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Lancia_037_Stradale_HH.jpg) |
+| Audi Sport Quattro S1 | MrWalkr | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1985_Audi_Sport_Quattro_S1_E2_HCC23.jpg) |
+| Ford RS200 | Dave Hamster | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1986_Ford_RS200.jpg) |
+| MG Metro 6R4 | Calreyn88 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1985_MG_Metro_6R4_Group_B_Ex-Works.jpg) |
+| Peugeot 205 T16 | Calreyn88 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Peugeot_205_T16_Rallycross.jpg) |
+| Ford Sierra RS Cosworth | DieselFordMondeo | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1986_Ford_Sierra_RS_Cosworth_-_2.0_(204PS)_petrol_manual_-_2025-05-05,_front_right.jpg) |
+| Ford Escort RS Cosworth | Kieran White from Manchester, England | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1992_Ford_Escort_RS_Cosworth_Luxury_(14958375416).jpg) |
+| Nissan Pulsar GTI-R | PlotagonNoah | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1994_Nissan_Pulsar_GTI-R_(USA,_JDM_Import;_front).jpg) |
+| Mitsubishi Galant VR-4 | Jones028 from Hong Kong | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1992_Mitsubishi_Galant_VR-4_(51285011646).jpg) |
+| Nissan Silvia S15 Spec-R | Ethan Llamas | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Nissan_Silvia_S15_Spec_S,_front_left,_07-28-2024.jpg) |
+| Nissan 180SX | Tokumeigakarinoaoshima | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Tuned_Nissan_180SX_(RPS13)_front.JPG) |
+| Honda Integra Type R DC2 | Ths | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Honda_Integra_Type_R_DC2.JPG) |
+| Mazda RX-8 | Calreyn88 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2006_Mazda_RX-8_PZ.jpg) |
+| Toyota Chaser Tourer V | Tokumeigakarinoaoshima | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Tuned_Toyota_CHASER_TOURER_S_(E-JZX100)_front.jpg) |
+| Mitsubishi Starion | Vauxford | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1988_Mitsubishi_Starion_Turbo_2.0_Front.jpg) |
+| Mazda Cosmo Sport 110S | Joe deSousa | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:1967_Mazda_Cosmo_110S_(39596543274).jpg) |
+| Lotus Elise S1 | Calreyn88 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1997_Lotus_Elise_S1.jpg) |
+| Lotus Exige S | IFCAR | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:2011_Lotus_Exige_S_260_--_2012_DC.JPG) |
+| Caterham Seven 620R | MrWalkr | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2017_Caterham_Seven_620R_SCD_24.jpg) |
+| Ariel Atom 4 | MrWalkr | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2019_Ariel_Atom_4_SCD_24.jpg) |
+| BAC Mono | Calreyn88 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2017_BAC_Mono.jpg) |
+| KTM X-Bow GT | Clément Bucco-Lechat | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Geneva_MotorShow_2013_-_KTM_X-bow_GT_blue_front.jpg) |
+| Radical SR8 | Brian Snelson | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Radical_SR8.jpg) |
