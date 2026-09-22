@@ -48,7 +48,7 @@ const OFFROAD_BRANDS = new Set(['Jeep', 'Land Rover', 'Range Rover', 'Hummer', '
 /** Brands that put all-wheel drive on nearly everything they sell. */
 const AWD_BRANDS = new Set(['Subaru', 'Bugatti', 'Rimac', 'Lamborghini'])
 
-const OFFROAD_NAME = /\b(suv|pickup|pick-up|truck|4x4|wrangler|defender|discovery|range rover|cayenne|urus|bentayga|land cruiser|rav4|cr-?v|explorer|tahoe|suburban|yukon|silverado|sierra|f-?150|f-?250|ranger|hilux|grand cherokee|4runner|bronco|xc90|xc60|q7|q8|macan|touareg|tiguan|santa fe|pathfinder|patrol|jimny|amarok|navara|colorado|d-max|triton|outlander|cx-5|cx-9|forester|crosstrek|tucson|sportage|telluride|palisade|atlas|kodiaq|kuga|edge|expedition|armada|sequoia|g-class|g63|g60|g500|raptor|cybertruck|escalade|navigator|land rover|x-trail|rogue|kicks|creta|venue|seltos|sorento|santa cruz|ridgeline|pilot|passport)\b/i
+const OFFROAD_NAME = /\b(suv|pickup|pick-up|truck|4x4|wrangler|defender|discovery|range rover|cayenne|urus|bentayga|land cruiser|rav4|cr-?v|explorer|tahoe|suburban|yukon|silverado|sierra|f-?150|f-?250|ranger|hilux|grand cherokee|4runner|bronco|xc90|xc60|q7|q8|macan|touareg|tiguan|santa fe|pathfinder|patrol|jimny|amarok|navara|colorado|d-max|triton|outlander|cx-5|cx-9|forester|crosstrek|tucson|sportage|telluride|palisade|atlas|kodiaq|kuga|edge|expedition|armada|sequoia|g-class|g63|g60|g500|raptor|cybertruck|escalade|navigator|land rover|x-trail|rogue|kicks|creta|venue|seltos|sorento|santa cruz|ridgeline|pilot|passport|tacoma|fj cruiser|xterra|pajero|trooper|samurai|excursion|k5 blazer|scout|cj-7|power wagon|280 ge|patriot)\b/i
 
 const AWD_NAME = /\b(quattro|xdrive|4matic|4motion|awd|all-wheel|sti|wrx|evo|evolution|gt-r|gtr|synchro)\b/i
 
@@ -77,7 +77,7 @@ const FWD_HOT_HATCH = /\b(type r|golf gti|clubsport|megane rs|clio rs|208 gti|co
  * make up most of the rest of the SUV/truck pattern below — those are only
  * AWD, with no low range and much less rock- or dune-worthy hardware.
  */
-const TRUE_4X4 = /\b(wrangler|defender|land cruiser|g-class|g63|g60|g500|bronco|raptor|patrol|4runner|gladiator|discovery|amarok|hilux|navara|triton|d-max|colorado zr2|silverado zr2|sierra at4|ram trx|unimog|jimny|hummer)\b/i
+const TRUE_4X4 = /\b(wrangler|defender|land cruiser|g-class|g63|g60|g500|bronco|raptor|patrol|4runner|gladiator|discovery|amarok|hilux|navara|triton|d-max|colorado zr2|silverado zr2|sierra at4|ram trx|unimog|jimny|hummer|tacoma|fj cruiser|xterra|pajero|trooper|samurai|excursion|k5 blazer|scout|cj-7|power wagon|280 ge|patriot)\b/i
 
 /**
  * Classic rear- or mid-engined cars whose weak old engines would otherwise
