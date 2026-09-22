@@ -7186,5 +7186,89 @@
     "artist": "Kevin.B",
     "license": "CC BY-SA 4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Camionette_SNCF_-_Volkswagen_Crafter,_gare_de_Strasbourg.jpg"
+  },
+  "porsche-550-spyder-1955": {
+    "file": "porsche-550-spyder-1955.webp",
+    "artist": "Usien",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Porsche_550_Spyder_1500_RS.JPG"
+  },
+  "porsche-904-carrera-gts-1964": {
+    "file": "porsche-904-carrera-gts-1964.webp",
+    "artist": "MrWalkr",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1964_Porsche_904_Carrera_GTS_at_FOS21.jpg"
+  },
+  "porsche-914-6-1970": {
+    "file": "porsche-914-6-1970.webp",
+    "artist": "Calreyn88",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1970_Porsche_914-6.jpg"
+  },
+  "porsche-928-s4-1987": {
+    "file": "porsche-928-s4-1987.webp",
+    "artist": "The Car Spy",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1987_Porsche_928_S4_front.jpg"
+  },
+  "porsche-944-turbo-1986": {
+    "file": "porsche-944-turbo-1986.webp",
+    "artist": "Niels de Wit from Lunteren, The Netherlands",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1986_Porsche_944_Turbo_(10498305203).jpg"
+  },
+  "ferrari-275-gtb4-1966": {
+    "file": "ferrari-275-gtb4-1966.webp",
+    "artist": "Ank Kumar",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1966_Ferrari_275_GTB_at_Grand_Basel_2018_(Ank_kumar,_Infosys)_01.jpg"
+  },
+  "ferrari-512-bb-1976": {
+    "file": "ferrari-512-bb-1976.webp",
+    "artist": "Pelicanactor",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1977_Ferrari_512_BB_Koenig-Specials.jpg"
+  },
+  "lamborghini-espada-1968": {
+    "file": "lamborghini-espada-1968.webp",
+    "artist": "MrWalkr",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1970_Lamborghini_Espada_S2.jpg"
+  },
+  "lamborghini-urraco-p300-1974": {
+    "file": "lamborghini-urraco-p300-1974.webp",
+    "artist": "MrWalkr",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1974_Lamborghini_Urraco_BS_O24.jpg"
+  },
+  "lamborghini-jarama-1970": {
+    "file": "lamborghini-jarama-1970.webp",
+    "artist": "Robotriot",
+    "license": "CC BY-SA 3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lamborghini_Jarama_400_GT_Front.jpg"
+  },
+  "aston-martin-db4-gt-1961": {
+    "file": "aston-martin-db4-gt-1961.webp",
+    "artist": "MrWalkr",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1961_Aston_Martin_DB4_GT_HCC23.jpg"
+  },
+  "aston-martin-vanquish-2001": {
+    "file": "aston-martin-vanquish-2001.webp",
+    "artist": "Vauxford",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2001_Aston_Martin_Vanquish_6.0_Front.jpg"
+  },
+  "mercedes-280sl-pagoda-1968": {
+    "file": "mercedes-280sl-pagoda-1968.webp",
+    "artist": "14keon27sittler",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hemmels_Mercedes-Benz_W113_280SL_Pagoda_Front.jpg"
+  },
+  "jaguar-xkss-1957": {
+    "file": "jaguar-xkss-1957.webp",
+    "artist": "AlfvanBeem",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1957_Jaguar_XKSS_p1.JPG"
   }
 }

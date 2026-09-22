@@ -1204,3 +1204,17 @@ each card's detail view.
 | Toyota HiAce | User3204 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2019_Toyota_HiAce_(front).jpg) |
 | Mercedes-Benz Vito | Globetrotter19 | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:M%C3%81V-H%C3%89V_Mercedes-Benz_Vito,_2020_Mogyor%C3%B3d.jpg) |
 | Volkswagen Crafter | Kevin.B | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Camionette_SNCF_-_Volkswagen_Crafter,_gare_de_Strasbourg.jpg) |
+| Porsche 550 Spyder | Usien | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Porsche_550_Spyder_1500_RS.JPG) |
+| Porsche 904 Carrera GTS | MrWalkr | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1964_Porsche_904_Carrera_GTS_at_FOS21.jpg) |
+| Porsche 914/6 | Calreyn88 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1970_Porsche_914-6.jpg) |
+| Porsche 928 S4 | The Car Spy | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1987_Porsche_928_S4_front.jpg) |
+| Porsche 944 Turbo | Niels de Wit from Lunteren, The Netherlands | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1986_Porsche_944_Turbo_(10498305203).jpg) |
+| Ferrari 275 GTB/4 | Ank Kumar | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1966_Ferrari_275_GTB_at_Grand_Basel_2018_(Ank_kumar,_Infosys)_01.jpg) |
+| Ferrari 512 BB | Pelicanactor | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1977_Ferrari_512_BB_Koenig-Specials.jpg) |
+| Lamborghini Espada | MrWalkr | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1970_Lamborghini_Espada_S2.jpg) |
+| Lamborghini Urraco P300 | MrWalkr | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1974_Lamborghini_Urraco_BS_O24.jpg) |
+| Lamborghini Jarama | Robotriot | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Lamborghini_Jarama_400_GT_Front.jpg) |
+| Aston Martin DB4 GT | MrWalkr | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1961_Aston_Martin_DB4_GT_HCC23.jpg) |
+| Aston Martin Vanquish | Vauxford | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2001_Aston_Martin_Vanquish_6.0_Front.jpg) |
+| Mercedes-Benz 280SL Pagoda | 14keon27sittler | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Hemmels_Mercedes-Benz_W113_280SL_Pagoda_Front.jpg) |
+| Jaguar XKSS | AlfvanBeem | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:1957_Jaguar_XKSS_p1.JPG) |
