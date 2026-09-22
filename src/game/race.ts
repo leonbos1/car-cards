@@ -133,10 +133,11 @@ export const PRIZE_SCALE = 10
  * Each entrant's result is its fitness for the event moved by up to this much
  * either way. Too little and the fastest car always wins, so there is no race;
  * too much and the car you pick stops mattering, which is the whole game. At
- * 0.17 a well-matched car wins about half its races and a poor one still steals
- * the odd win.
+ * 0.05 the best-matched car wins almost every time — enough of a race that
+ * the grid still finishes in a believable order, but picking the right car is
+ * close to a guarantee rather than good odds.
  */
-const LUCK = 0.17
+const LUCK = 0.05
 
 export const EVENTS: RaceEvent[] = [
   // Rookie — everything a new player owns can enter something here.
