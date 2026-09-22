@@ -448,8 +448,6 @@ each card's detail view.
 | Kia Stinger GT | Elise240SX | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2022_Kia_Stinger_GT_Elite_in_Thunder_Grey,_Front_Left,_04-16-2022.jpg) |
 | Genesis G70 | MercurySable99 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2022_Genesis_G70_2.0T_Prestige,_front_left,_09-09-2023.jpg) |
 | Acura Integra Type S | Gold Pony | CC BY 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:2024_Acura_Integra_Type-S_(United_States)_front_view.png) |
-| Bajaj Auto Rickshaw | Oleg Yunakov | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Auto-rickshaw_Bajaj.jpg) |
-| Piaggio Ape City | Ahri.boy | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Piaggio_Ape_City.jpg) |
 | Mahindra TUV300 | SnapMeUp | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Mahindra_TUV300_2016_(1).JPG) |
 | Tata Nano Genx | Alexander Gounder | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Tata_Nano_-_GenX_02.JPG) |
 | Citroën DS 21 Pallas | Lav Ulv from Viby J, Denmark | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Citro%C3%ABn_DS_21,_1973_-_AE71421_-_DSC_0061_Balancer_(23564877748).jpg) |
@@ -691,7 +689,7 @@ each card's detail view.
 | Mercedes-Benz GLS | Dinkun Chen | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:MERCEDES-BENZ_GLS_(X167)_China.jpg) |
 | Audi Q8 | Ethan Llamas | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Audi_Q8_quattro,_06-02-2024.jpg) |
 | Lexus LX | Dinkun Chen | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:LEXUS_LX_570_(J200)_China.jpg) |
-| Land Rover Range Rover | Dinkun Chen | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:LAND_ROVER_RANGE_ROVER_VELAR_China_(4).jpg) |
+| Land Rover Range Rover | Alexander Migl | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Range_Rover_Evoque_(L551)_IMG_3586.jpg) |
 | Rolls-Royce Ghost | Alexander-93 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Rolls-Royce_Ghost_II_IAA_2023_1X7A0748.jpg) |
 | Bentley Flying Spur | RpM Tartar | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Bentley_Flying_Spur_Mulliner_Hybrid._front_quarter_view_(1).jpg) |
 | Mercedes-Maybach 62 | Thomas Recke from New York City, USA | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Black_Maybach_62_Steuben.jpg) |
@@ -745,12 +743,6 @@ each card's detail view.
 | Hyundai H350 | Ethan Llamas | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Hyundai_H350_2.5L_2019_(1).jpg) |
 | Kia Pregio | Jason Lawrence from New York | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Kia_Pregio_(53262103604).jpg) |
 | Mahindra XUV400 | Ank Kumar | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Mahindra_XUV_400_EL_EV_,_Ashiana_Brahmananda,_Jamshedpur,_Jharkhand,_India_(_Ank_Kumar,_Infosys_Limited_)_03.jpg) |
-| Bajaj Auto | Sabung.hamster | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Bajaj_Auto_Compilance_Plate,_Jakarta.jpg) |
-| Piaggio Ape | Corvettec6r | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Piaggio_Ape_Calessino_white.jpg) |
-| TVS Auto Rickshaw | GloRik | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Auto_rickshaw_tuk_tuk_mototaxi_in_motion.jpg) |
-| Vespa Primavera | Khaosaming | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Vespa_Primavera_125.jpg) |
-| Harley-Davidson Street 750 | CapCase | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Harley-Davidson_Street_750_03.jpg) |
-| Ducati Panigale V4 | Earthshaker13 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Ducati_Panigale_V4_SP2_30%C2%B0_anniversario_916_at_EICMA_2023_-right_view.jpg) |
 | Chevrolet Bolt EV | Kevauto | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2022_Chevrolet_Bolt_EV_2LT,_NYC_official_fleet_1.2.23.jpg) |
 | Volkswagen ID.4 Pro | MercurySable99 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Volkswagen_ID.4_Pro_S,_front_left,_08-03-2024.jpg) |
 | Audi e-tron | Alexander Migl | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Audi_e-tron_GT_1X7A0297.jpg) |
@@ -949,7 +941,6 @@ each card's detail view.
 | Zeekr 001 | JustAnotherCarDesigner | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Zeekr_001_002.jpg) |
 | Geely Geometry E | User3204 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2022_Geely_Geometry_E_(front).jpg) |
 | BYD Qin Plus DM | User3204 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2021_BYD_Qin_Plus_DM-i.jpg) |
-| Apple Vehicle Concept | Ryzom | CC BY-SA 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Ryzom_vehicle_concept_art_001.jpg) |
 | Rolls-Royce Spectre | Matti Blume | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Rolls-Royce_Spectre,_Monaco_(20260620-IMG_3854).jpg) |
 | Mercedes-AMG GT Black Series | MrWalkr | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2021_Mercedes-AMG_GT_Black_Series.jpg) |
 | BMW M Hybrid Concept | Wikisympathisant | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2024-Retro-S_BMW_M-Hybrid-V8.jpg) |
@@ -1117,3 +1108,33 @@ each card's detail view.
 | Audi RS e-tron GT | Alexander-93 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Audi_RS_e-tron_GT_1X7A1875.jpg) |
 | Audi R8 GT RWD | Nate707hp | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Audi_R8_Gt_Rwd_Monterey_car_week_2024.jpg) |
 | Audi RS6 Avant GT | This picture has been taken by Oleg Yunakov. Contact e-mail: yunakovgmail.com. Image can be used in accordance with the terms of the СС-BY-SA license. Other photos can be seen here. | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2025_Audi_RS6_Avant_GT.jpg) |
+| Mercedes-AMG G63 | Tokumeigakarinoaoshima | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Mercedes-AMG_G63_(W464)_front.jpg) |
+| Toyota Land Cruiser 300 | Mohammed Hamad | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Toyota_Land_Cruiser_GR_Sport.jpg) |
+| Toyota Land Cruiser 70 | TTTNIS | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Toyota_Land_Cruiser_70_front_left.jpg) |
+| Ineos Grenadier | LuvsMG481 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Ineos_Grenadier_Fieldmaster_Edition_front.jpg) |
+| Ford Bronco Raptor | crudmucosa | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:2024_Ford_Bronco_Raptor_in_Bold_Colors_(53519776736).jpg) |
+| Land Rover Defender 110 | Calreyn88 | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2022_Land_Rover_Defender_110_V8_James_Bond_60th_Anniversary.jpg) |
+| Land Rover Range Rover Velar | Ethan Llamas | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Land_Rover_Range_Rover_Velar_S_in_Varesine_Blue_Metallic,_front_right.jpg) |
+| Mahindra Thar | DjDavid1998 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Mahindra_Thar_Photoshoot_at_Perupalem_Beach_(West_Godavari_District,_AP,_India)_Djdavid.jpg) |
+| Aston Martin DB12 | MrWalkr | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Aston_Martin_DB12.jpg) |
+| BMW M2 | MrWalkr | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_BMW_M2_Red.jpg) |
+| Alpine A110 R | Andrew Bone from Weymouth, England | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Alpine_A110_(2023)_(53341185827).jpg) |
+| Alpine A290 | Calreyn88 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2024_Alpine_A290_GTS_(72940).jpg) |
+| Renault 5 E-Tech | Matti Blume | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Renault_R5_E-Tech,_GIMS_2024,_Le_Grand-Saconnex_(GIMS0105-2).jpg) |
+| Cupra Leon VZ5 | Calreyn88 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2021_Cupra_Leon_VZ1_TSi.jpg) |
+| Škoda Octavia RS | Calreyn88 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Skoda_Octavia_VRS.jpg) |
+| Ferrari Daytona SP3 | Prova MO | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Ferrari_Daytona_SP3_front_side_at_CF_2022.jpg) |
+| McLaren Solus GT | MrWalkr | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_McLaren_Solus_GT.jpg) |
+| Gordon Murray T.50 | MrWalkr | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Gordon_Murray_Automotive_T.50_Pre_Series_Prototype_2_HCC24.jpg) |
+| Czinger 21C | Calreyn88 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2022_Czinger_21C_(40203).jpg) |
+| Pagani Utopia | ClarinetXX | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023-lego-speed-champions-pagani-utopia-2.webp) |
+| Mazda CX-60 | Alex Neman | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Mazda_CX-60_Kuro_Edition,_Mandiri_Auto_Festival,_Pakuwon_Mall,_West_Surabaya.jpg) |
+| Xiaomi SU7 | S5A-0043 | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:(CHN-Shanghai)_Private_Xiaomi_SU7_%E6%B2%AAA7WE106_2024-11-24.jpg) |
+| BYD Seal | Calreyn88 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_BYD_Seal_Design_EV.jpg) |
+| Polestar 4 | Charles from Port Chester, New York | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Polestar_4_(2024)_(53624473272).jpg) |
+| Toyota Century SUV | TTTNIS | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Toyota_Century.jpg) |
+| Proton X70 | Koenigseggvibes | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2023_Proton_X70_MC_Front.jpg) |
+| Peugeot 205 GTi 1.9 | Vauxford | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1991_Peugeot_205_GTi_1.9_Front.jpg) |
+| Saab 900 Turbo | Spanish Coches | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1985_SAAB_900_Turbo_(3847480431).jpg) |
+| Volvo 240 Turbo | dave_7 from Lethbridge, Canada | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Volvo_240_Turbo_(4276893797).jpg) |
+| Holden Monaro GTS 350 | Chris Keating from Melbourne, Victoria, Australia. | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1970-1971_Holden_HG_Monaro_GTS_350_coupe_02.jpg) |

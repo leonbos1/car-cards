@@ -3185,12 +3185,6 @@
     "license": "CC BY-SA 4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:LEXUS_LX_570_(J200)_China.jpg"
   },
-  "range-rover-2023": {
-    "file": "range-rover-2023.webp",
-    "artist": "Dinkun Chen",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:LAND_ROVER_RANGE_ROVER_VELAR_China_(4).jpg"
-  },
   "rolls-royce-ghost-2023": {
     "file": "rolls-royce-ghost-2023.webp",
     "artist": "Alexander-93",
@@ -3448,30 +3442,6 @@
     "artist": "Jason Lawrence from New York",
     "license": "CC BY 2.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kia_Pregio_(53262103604).jpg"
-  },
-  "piaggio-ape-2023": {
-    "file": "piaggio-ape-2023.webp",
-    "artist": "Corvettec6r",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Piaggio_Ape_Calessino_white.jpg"
-  },
-  "vespa-scooter-2023": {
-    "file": "vespa-scooter-2023.webp",
-    "artist": "Khaosaming",
-    "license": "CC BY-SA 3.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vespa_Primavera_125.jpg"
-  },
-  "harley-davidson-2023": {
-    "file": "harley-davidson-2023.webp",
-    "artist": "CapCase",
-    "license": "CC BY 2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Harley-Davidson_Street_750_03.jpg"
-  },
-  "ducati-panigale-2023": {
-    "file": "ducati-panigale-2023.webp",
-    "artist": "Earthshaker13",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ducati_Panigale_V4_SP2_30%C2%B0_anniversario_916_at_EICMA_2023_-right_view.jpg"
   },
   "chevrolet-bolt-ev-2023": {
     "file": "chevrolet-bolt-ev-2023.webp",
@@ -5147,18 +5117,6 @@
     "license": "CC BY-SA 4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toyota_CH-R_Hybrid.jpg"
   },
-  "bajaj-auto-rickshaw": {
-    "file": "bajaj-auto-rickshaw.webp",
-    "artist": "Oleg Yunakov",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Auto-rickshaw_Bajaj.jpg"
-  },
-  "piaggio-ape-city": {
-    "file": "piaggio-ape-city.webp",
-    "artist": "Ahri.boy",
-    "license": "CC BY 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Piaggio_Ape_City.jpg"
-  },
   "fiat-124-abarth": {
     "file": "fiat-124-abarth.webp",
     "artist": "Ermell",
@@ -5308,18 +5266,6 @@
     "artist": "Sambitpatra2003",
     "license": "CC BY-SA 4.0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:TATA_407_Ex2.jpg"
-  },
-  "bajaj-auto-2023": {
-    "file": "bajaj-auto-2023.webp",
-    "artist": "Sabung.hamster",
-    "license": "CC BY-SA 4.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bajaj_Auto_Compilance_Plate,_Jakarta.jpg"
-  },
-  "tuk-tuk-2023": {
-    "file": "tuk-tuk-2023.webp",
-    "artist": "GloRik",
-    "license": "CC BY 2.0",
-    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Auto_rickshaw_tuk_tuk_mototaxi_in_motion.jpg"
   },
   "gumpert-apollo-2023": {
     "file": "gumpert-apollo-2023.webp",
@@ -6658,5 +6604,191 @@
     "artist": "Calreyn88",
     "license": "CC0",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Pininfarina_Battista_Edizione_Nino_Farina.jpg"
+  },
+  "range-rover-2023": {
+    "file": "range-rover-2023.webp",
+    "artist": "Alexander Migl",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Range_Rover_Evoque_(L551)_IMG_3586.jpg"
+  },
+  "mercedes-amg-g63-2023": {
+    "file": "mercedes-amg-g63-2023.webp",
+    "artist": "Tokumeigakarinoaoshima",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mercedes-AMG_G63_(W464)_front.jpg"
+  },
+  "toyota-land-cruiser-300-2022": {
+    "file": "toyota-land-cruiser-300-2022.webp",
+    "artist": "Mohammed Hamad",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toyota_Land_Cruiser_GR_Sport.jpg"
+  },
+  "toyota-land-cruiser-70-2023": {
+    "file": "toyota-land-cruiser-70-2023.webp",
+    "artist": "TTTNIS",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Toyota_Land_Cruiser_70_front_left.jpg"
+  },
+  "ineos-grenadier-2023": {
+    "file": "ineos-grenadier-2023.webp",
+    "artist": "LuvsMG481",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Ineos_Grenadier_Fieldmaster_Edition_front.jpg"
+  },
+  "ford-bronco-raptor-2022": {
+    "file": "ford-bronco-raptor-2022.webp",
+    "artist": "crudmucosa",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024_Ford_Bronco_Raptor_in_Bold_Colors_(53519776736).jpg"
+  },
+  "land-rover-defender-110-2023": {
+    "file": "land-rover-defender-110-2023.webp",
+    "artist": "Calreyn88",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Land_Rover_Defender_110_V8_James_Bond_60th_Anniversary.jpg"
+  },
+  "range-rover-velar-2023": {
+    "file": "range-rover-velar-2023.webp",
+    "artist": "Ethan Llamas",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Land_Rover_Range_Rover_Velar_S_in_Varesine_Blue_Metallic,_front_right.jpg"
+  },
+  "mahindra-thar-2023": {
+    "file": "mahindra-thar-2023.webp",
+    "artist": "DjDavid1998",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mahindra_Thar_Photoshoot_at_Perupalem_Beach_(West_Godavari_District,_AP,_India)_Djdavid.jpg"
+  },
+  "aston-martin-db12-2023": {
+    "file": "aston-martin-db12-2023.webp",
+    "artist": "MrWalkr",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Aston_Martin_DB12.jpg"
+  },
+  "bmw-m2-g87-2023": {
+    "file": "bmw-m2-g87-2023.webp",
+    "artist": "MrWalkr",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_BMW_M2_Red.jpg"
+  },
+  "alpine-a110-r-2023": {
+    "file": "alpine-a110-r-2023.webp",
+    "artist": "Andrew Bone from Weymouth, England",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alpine_A110_(2023)_(53341185827).jpg"
+  },
+  "alpine-a290-2024": {
+    "file": "alpine-a290-2024.webp",
+    "artist": "Calreyn88",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2024_Alpine_A290_GTS_(72940).jpg"
+  },
+  "renault-5-etech-2024": {
+    "file": "renault-5-etech-2024.webp",
+    "artist": "Matti Blume",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Renault_R5_E-Tech,_GIMS_2024,_Le_Grand-Saconnex_(GIMS0105-2).jpg"
+  },
+  "cupra-leon-vz5-2021": {
+    "file": "cupra-leon-vz5-2021.webp",
+    "artist": "Calreyn88",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021_Cupra_Leon_VZ1_TSi.jpg"
+  },
+  "skoda-octavia-rs-2023": {
+    "file": "skoda-octavia-rs-2023.webp",
+    "artist": "Calreyn88",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Skoda_Octavia_VRS.jpg"
+  },
+  "ferrari-daytona-sp3-2022": {
+    "file": "ferrari-daytona-sp3-2022.webp",
+    "artist": "Prova MO",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ferrari_Daytona_SP3_front_side_at_CF_2022.jpg"
+  },
+  "mclaren-solus-gt-2022": {
+    "file": "mclaren-solus-gt-2022.webp",
+    "artist": "MrWalkr",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_McLaren_Solus_GT.jpg"
+  },
+  "gordon-murray-t50-2022": {
+    "file": "gordon-murray-t50-2022.webp",
+    "artist": "MrWalkr",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Gordon_Murray_Automotive_T.50_Pre_Series_Prototype_2_HCC24.jpg"
+  },
+  "czinger-21c-2022": {
+    "file": "czinger-21c-2022.webp",
+    "artist": "Calreyn88",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022_Czinger_21C_(40203).jpg"
+  },
+  "pagani-utopia-2023": {
+    "file": "pagani-utopia-2023.webp",
+    "artist": "ClarinetXX",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023-lego-speed-champions-pagani-utopia-2.webp"
+  },
+  "mazda-cx-60-2023": {
+    "file": "mazda-cx-60-2023.webp",
+    "artist": "Alex Neman",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Mazda_CX-60_Kuro_Edition,_Mandiri_Auto_Festival,_Pakuwon_Mall,_West_Surabaya.jpg"
+  },
+  "xiaomi-su7-2024": {
+    "file": "xiaomi-su7-2024.webp",
+    "artist": "S5A-0043",
+    "license": "CC BY 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:(CHN-Shanghai)_Private_Xiaomi_SU7_%E6%B2%AAA7WE106_2024-11-24.jpg"
+  },
+  "byd-seal-2023": {
+    "file": "byd-seal-2023.webp",
+    "artist": "Calreyn88",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_BYD_Seal_Design_EV.jpg"
+  },
+  "polestar-4-2024": {
+    "file": "polestar-4-2024.webp",
+    "artist": "Charles from Port Chester, New York",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Polestar_4_(2024)_(53624473272).jpg"
+  },
+  "toyota-century-suv-2023": {
+    "file": "toyota-century-suv-2023.webp",
+    "artist": "TTTNIS",
+    "license": "CC0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Toyota_Century.jpg"
+  },
+  "proton-x70-2023": {
+    "file": "proton-x70-2023.webp",
+    "artist": "Koenigseggvibes",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2023_Proton_X70_MC_Front.jpg"
+  },
+  "peugeot-205-gti-1988": {
+    "file": "peugeot-205-gti-1988.webp",
+    "artist": "Vauxford",
+    "license": "CC BY-SA 4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1991_Peugeot_205_GTi_1.9_Front.jpg"
+  },
+  "saab-900-turbo-1985": {
+    "file": "saab-900-turbo-1985.webp",
+    "artist": "Spanish Coches",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1985_SAAB_900_Turbo_(3847480431).jpg"
+  },
+  "volvo-240-turbo-1983": {
+    "file": "volvo-240-turbo-1983.webp",
+    "artist": "dave_7 from Lethbridge, Canada",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Volvo_240_Turbo_(4276893797).jpg"
+  },
+  "holden-monaro-gts350-1968": {
+    "file": "holden-monaro-gts350-1968.webp",
+    "artist": "Chris Keating from Melbourne, Victoria, Australia.",
+    "license": "CC BY 2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:1970-1971_Holden_HG_Monaro_GTS_350_coupe_02.jpg"
   }
 }
