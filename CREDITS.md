@@ -1183,6 +1183,24 @@ each card's detail view.
 | Opel Kadett GSi 16V | Riley from Christchurch, New Zealand | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1989_Opel_Kadett_GSi_16v_(8568295410).jpg) |
 | BMW M3 Sport Evolution | Jiří Sedláček | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:BMW_M3_Sport_Evolution_at_Legendy_2014.JPG) |
 | BMW 2002 Turbo | KarleHorn | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:BMW_2002_turbo_Front.JPG) |
-| BMW M1 E26 | Mr.choppers | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:BMW_M1_(E26)_front_high.jpg) |
 | Mercedes-Benz 190E 2.5-16 Evo II | GerdeeX | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Mercedes-Benz_190E_2.5-16_Evo_II_front_-_Stuttgart_Museum.jpg) |
 | Mercedes-Benz 500E | Tokumeigakarinoaoshima | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Mercedes-Benz_500E_(W124)_front.jpg) |
+| Suzuki Cappuccino | Calreyn88 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1993_Suzuki_Cappuccino.jpg) |
+| Autozam AZ-1 | Calreyn88 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1993_Autozam_AZ-1_10.jpg) |
+| Honda S660 | User3204 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2015_Honda_S660.jpg) |
+| Suzuki Alto Works | Suzuki-Ham | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Suzuki_Alto_Works_2015_JAPAN_Front.jpg) |
+| Daihatsu Terios | Jakub CA | CC BY 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Daihatsu_Terios_(J100;_1997).jpg) |
+| Nissan Figaro | Lothar Spurzem | CC BY-SA 2.0 de | [Commons](https://commons.wikimedia.org/wiki/File:Nissan_Figaro,_Bj._1991,_front_(2019-06-02_Sp).jpg) |
+| Nissan Pao | Calreyn88 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1989_Nissan_Pao_2.jpg) |
+| Nissan Juke | Vauxford | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2011_Nissan_Juke_Acenta_Premium_DCi_1.5_Front.jpg) |
+| Nissan Cube | Kevauto | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2009_Nissan_Cube,_front_4.3.23.jpg) |
+| Fiat Panda 4x4 | Clément Bucco-Lechat | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Geneva_MotorShow_2013_-_Fiat_Panda_4x4_white.jpg) |
+| Fiat Multipla | Corvettec6r | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Fiat_Multipla_1999_BiPower.jpg) |
+| Lancia Ypsilon | Corvettec6r | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:2012_Lancia_Ypsilon_5-door.JPG) |
+| Volkswagen up! | Vauxford | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2012_Volkswagen_UP!_White_1.0_Front.jpg) |
+| Renault Kangoo | BarnCas | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2013_Renault_Kangoo_Maxi_(fl).jpg) |
+| Peugeot Partner | Vauxford | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2019_Peugeot_Partner_Professional_L1_BlueHDi_1.5_Front.jpg) |
+| Volkswagen Caddy | Vauxford | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2021_Volkswagen_Caddy_C20_Commerce_Pro_TD_2.0_Front.jpg) |
+| Toyota HiAce | User3204 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2019_Toyota_HiAce_(front).jpg) |
+| Mercedes-Benz Vito | Globetrotter19 | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:M%C3%81V-H%C3%89V_Mercedes-Benz_Vito,_2020_Mogyor%C3%B3d.jpg) |
+| Volkswagen Crafter | Kevin.B | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Camionette_SNCF_-_Volkswagen_Crafter,_gare_de_Strasbourg.jpg) |
