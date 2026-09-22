@@ -1218,3 +1218,43 @@ each card's detail view.
 | Aston Martin Vanquish | Vauxford | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2001_Aston_Martin_Vanquish_6.0_Front.jpg) |
 | Mercedes-Benz 280SL Pagoda | 14keon27sittler | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Hemmels_Mercedes-Benz_W113_280SL_Pagoda_Front.jpg) |
 | Jaguar XKSS | AlfvanBeem | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:1957_Jaguar_XKSS_p1.JPG) |
+| Jaguar XK120 | Alexander Migl | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Jaguar_XK120_in_competition_(1950)_Solitude_Revival_2022_1X7A0088.jpg) |
+| Lotus Elite | David Merrett | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1960_Lotus_Elite_S2.jpg) |
+| Bentley Blower | MrWalkr | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1931_Bentley_4.5_Litre_Blower_HCC21.jpg) |
+| BMW 507 | Lothar Spurzem | CC BY-SA 2.0 de | [Commons](https://commons.wikimedia.org/wiki/File:BMW_507_-_Bj._1958_-_17.07.2005.jpg) |
+| Mercedes-Benz 540K | MPW57 | Public domain | [Commons](https://commons.wikimedia.org/wiki/File:Mercedes_Benz_540K.jpg) |
+| NSU Ro 80 | Spurzem - Lothar Spurzem | CC BY-SA 2.0 de | [Commons](https://commons.wikimedia.org/wiki/File:NSU_Ro_80_-_2009-10-11_(Foto_Sp).jpg) |
+| Porsche 906 Carrera 6 | Lothar Spurzem | CC BY-SA 2.0 de | [Commons](https://commons.wikimedia.org/wiki/File:Porsche_906,_Bj._1966_(2011-08-13_Sp).JPG) |
+| Facel Vega HK500 | ZidaneHartono | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1960_Facel_Vega_HK500_FACELVEGA_@_UWA_Car_Park_9,Crawley.jpg) |
+| Citroën Traction Avant | Lothar Spurzem | CC BY-SA 2.0 de | [Commons](https://commons.wikimedia.org/wiki/File:Citro%C3%ABn_Traction_Avant_11B,_Bj._1938_(2008-06-28_Sp).JPG) |
+| Renault 8 Gordini | Handelsgeselschaft | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1967_Renault_R8_Gordini,_2015_Tour_Auto,_Toulouse.jpg) |
+| Delahaye 135 M | Calreyn88 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1938_Delahaye_135_MS_(19770).jpg) |
+| Lancia Aurelia B20 GT | MrWalkr | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1953_Lancia_Aurelia_B20_GT_SP25.jpg) |
+| Maserati 3500 GT | Joe McCarthy | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Maserati_3500_GT_1959.jpg) |
+| Ferrari 250 Testa Rossa | Peter & Laila | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1957_Ferrari_250_Testa_Rossa_(Simeone)_front_01.jpg) |
+| Bizzarrini 5300 GT Strada | Mr.choppers | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:1967_Bizzarrini_5300_GT_Strada_in_Emerald_Green,_front_right.jpg) |
+| Chevrolet Bel Air | MercurySable99 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1957_Chevrolet_Bel_Air_Nomad,_front_right,_10-01-2023.jpg) |
+| Studebaker Avanti | MercurySable99 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1963_Studebaker_Avanti,_front_right,_06-13-2023.jpg) |
+| Lincoln Continental | Sicnag | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1961_Lincoln_Continental_Sedan.jpg) |
+| Volvo P1800 | Staffan Andersson | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Volvo_P1800_1961_Ulva_Uppsala.jpg) |
+| Tatra 603 | Spurzem - Lothar Spurzem | CC BY-SA 2.0 de | [Commons](https://commons.wikimedia.org/wiki/File:Tatra_603,_Typ_1,_2008-06-28_(ret).jpg) |
+| Citroën CX 25 GTi Turbo | Kieran White from Manchester, England | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1985_Citroen_CX_25_GTi_Turbo_(50419228431).jpg) |
+| Citroën SM | Kroelleboelle | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:1971_Citroen_SM_in_Fahrt.jpg) |
+| Peugeot 405 Mi16 | Spanish Coches | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1989_Peugeot_405_Mi16_(5665852775).jpg) |
+| Peugeot 504 Coupé | Joost J. Bakker | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Peugeot_504_coupe_-_Flickr_-_Joost_J._Bakker_IJmuiden.jpg) |
+| Renault 21 Turbo | Spanish Coches | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1988_Renault_21_Turbo_(4322170883).jpg) |
+| Renault 16 TX | Rutger van der Maar | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1976_Renault_16_TX.jpg) |
+| Fiat 130 Coupé | Vauxford | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1973_Fiat_130_Coupe_3.2_Front.jpg) |
+| Lancia Thema 8.32 | Kieran White from Manchester, England | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1990_Lancia_Thema_8.32_V8_(31734408006).jpg) |
+| Fiat Uno Turbo i.e. | Riley from Christchurch, New Zealand | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1986_Fiat_Uno_Turbo_i.e_(25420774522).jpg) |
+| BMW 635 CSi | Alexander Migl | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1985_BMW_M_635_CSi_(E24)_Solitude_Revival_2022_1X7A0101.jpg) |
+| Mercedes-Benz 230 TE | Charlie from United Kingdom | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1982_Mercedes_W123_230_TE_(9988310324).jpg) |
+| Audi S2 Coupé | Charles from Port Chester, New York | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Audi_Coup%C3%A9_S2_Quattro_Evo_(1991)_(52566506854).jpg) |
+| Opel Manta 400 | Vauxford | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1981_Opel_Manta_400_2.4_Rear_(1).jpg) |
+| Rover SD1 Vitesse | Jeremy from Sydney, Australia | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1984_Rover_SD1_3500_Vitesse_(21862878810).jpg) |
+| Jaguar XJ12 | Niels de Wit from Lunteren, The Netherlands | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1983_Jaguar_XJ12_HE_(15627483239).jpg) |
+| Triumph Dolomite Sprint | Akela NDE | CC BY-SA 2.0 fr | [Commons](https://commons.wikimedia.org/wiki/File:1978_Russet_Brown_Triumph_Dolomite_Sprint_in_Morges_2013_-_Front_left_(level).jpg) |
+| Saab 99 Turbo | Jelger Groeneveld | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Saab_99_Turbo_CombiCoupe_(1978).jpg) |
+| Volvo 850 T-5R | Spanish Coches | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1995_Volvo_850_T-5R_(4720583733).jpg) |
+| Škoda Favorit 136 L | Ludek | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Skoda_Favorit_136_L_front.jpg) |
+| Lada Niva 1600 | Throwawayacc222 | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:Lada_Niva_Legend_BLACK_black_front.jpg) |
