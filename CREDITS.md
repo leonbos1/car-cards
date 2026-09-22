@@ -1162,3 +1162,27 @@ each card's detail view.
 | BAC Mono | Calreyn88 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:2017_BAC_Mono.jpg) |
 | KTM X-Bow GT | Clément Bucco-Lechat | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Geneva_MotorShow_2013_-_KTM_X-bow_GT_blue_front.jpg) |
 | Radical SR8 | Brian Snelson | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Radical_SR8.jpg) |
+| Plymouth Superbird | Jeremy from Sydney, Australia | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1970_Plymouth_Road_Runner_Superbird_(16393768774).jpg) |
+| Buick GNX | Michael Barera | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Sloan_Museum_at_Courtland_Center_December_2018_30_(1987_Buick_GNX).jpg) |
+| Shelby GT350 | Jeremy from Sydney, Australia | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1965_Ford_Shelby_Mustang_GT350_(16026653599).jpg) |
+| Ford Mustang Boss 302 | Jeremy from Sydney, Australia | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1970_Ford_Mustang_Boss_302_(16314488451).jpg) |
+| Plymouth Hemi Cuda | Sicnag | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1971_Plymouth_Barracuda_Gran_Coupe_(13506277813).jpg) |
+| Pontiac Firebird Trans Am | Elise240SX | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1977_Pontiac_Firebird_Trans_Am_in_Brentwood_Brown,_Front_Right,_06-11-2022.jpg) |
+| Chevrolet Impala SS 409 | GPS 56 from New Zealand | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1964_Chevrolet_Impala_SS_(12399791345).jpg) |
+| Oldsmobile Toronado | MercurySable99 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1966_Oldsmobile_Toronado_Deluxe,_front_right,_06-16-2024.jpg) |
+| Cadillac Eldorado | Jeremy from Sydney, Australia | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1967_Cadillac_Eldorado_(16473470758).jpg) |
+| Chevrolet Corvair Monza | MercurySable99 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1965_Chevrolet_Corvair_Monza_Sport_Coupe,_front_left,_09-06-2025.jpg) |
+| Ford Thunderbird | MercurySable99 | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:1957_Ford_Thunderbird,_front_left,_08-27-2023.jpg) |
+| De Tomaso Mangusta | Mr.choppers | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:1970_DeTomaso_Mangusta_in_Silver,_front_left_(Greenwich_2024).jpg) |
+| Alfa Romeo Montreal | Akela NDE | CC BY-SA 2.0 fr | [Commons](https://commons.wikimedia.org/wiki/File:Alfa_Romeo_Montreal_-_GPAO_2018_-_Front_three_quarters.jpeg) |
+| Lancia Fulvia HF | Robotriot | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:Lancia_Fulvia_HF_Front.jpg) |
+| Alfa Romeo Giulia Sprint GTA | Dave Hamster | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1965_Alfa_Romeo_Giulia_Sprint_GTA.jpg) |
+| Ford Lotus Cortina | Dave Hamster | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1963_Ford_Lotus_Cortina_Mk1.jpg) |
+| Mini Cooper S | Andrew Bone from Weymouth, England | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Austin_Mini_Cooper_S_(1964)_%26_Austin_Seven_(1960)_(37548507574).jpg) |
+| Ford Capri RS2600 | Charles from Port Chester, New York | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:Ford_Capri_RS2600_(1971)_(52570408982).jpg) |
+| Opel Kadett GSi 16V | Riley from Christchurch, New Zealand | CC BY 2.0 | [Commons](https://commons.wikimedia.org/wiki/File:1989_Opel_Kadett_GSi_16v_(8568295410).jpg) |
+| BMW M3 Sport Evolution | Jiří Sedláček | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:BMW_M3_Sport_Evolution_at_Legendy_2014.JPG) |
+| BMW 2002 Turbo | KarleHorn | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:BMW_2002_turbo_Front.JPG) |
+| BMW M1 E26 | Mr.choppers | CC BY-SA 3.0 | [Commons](https://commons.wikimedia.org/wiki/File:BMW_M1_(E26)_front_high.jpg) |
+| Mercedes-Benz 190E 2.5-16 Evo II | GerdeeX | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Mercedes-Benz_190E_2.5-16_Evo_II_front_-_Stuttgart_Museum.jpg) |
+| Mercedes-Benz 500E | Tokumeigakarinoaoshima | CC BY-SA 4.0 | [Commons](https://commons.wikimedia.org/wiki/File:Mercedes-Benz_500E_(W124)_front.jpg) |
