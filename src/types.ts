@@ -13,9 +13,18 @@ export interface Stats {
   topspeed: number
   /** Weight in kg */
   weight: number
-  /** Handling score (1-99 based on power-to-weight and suspension) */
+  /**
+   * How well it goes round corners, 1-99: grip, balance, steering and body
+   * control on its own period tyres — not power. Scored against real cars:
+   * Valkyrie AMR Pro 99, 911 GT3 RS 94, GR86 82, Golf GTI 76, Polo 56,
+   * Sandero 50, Range Rover 44, full-size pickup 32, Hummer EV 22, Model T 8.
+   */
   handling: number
-  /** Wow factor / Desirability (1-99 subjective) */
+  /**
+   * How much people want it and stop to look, 1-99: rarity, design, status —
+   * not speed or price. Scored against real cars: 250 GTO 99, F40 97,
+   * Countach 94, E30 M3 82, MX-5 NA 72, 2CV 60, Golf 36, Sandero 24, work van 14.
+   */
   wowFactor: number
 }
 

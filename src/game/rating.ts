@@ -44,20 +44,26 @@ function performanceIndex(stats: Stats): number {
  *
  * Control points sit slightly off their car's final rating on purpose: the
  * roster gives quick cars high handling and desirability and slow cars low, so
- * the adjustment below carries a systematic -1.4 at the bottom and +2 at the
- * top. The curve absorbs that, leaving the adjustment to do what it is for —
- * separating cars whose numbers are the same.
+ * the adjustment below carries a systematic -1 at the bottom and +2 at the
+ * top (a Golf GTI, sharp and wanted, sits at +1.1). The curve absorbs that,
+ * leaving the adjustment to do what it is for — separating cars whose numbers
+ * are the same. Re-solve these points whenever handling or wow are rescored
+ * across the roster, so each anchor car stays on its agreed rating.
  */
 const CURVE: readonly (readonly [index: number, rating: number])[] = [
   [-1.45, 31.5], // 1965 Fiat 500 — 18 hp, 40 s to 100 km/h
-  [-0.82, 61.5], // 63 hp Polo — the bronze example this scale was asked for
-  [-0.51, 68.4], // 95 hp Polo
-  [-0.19, 76], // Alfa Romeo Giulietta 1.4 MultiAir — the floor of gold
-  [0.03, 80.1], // Golf GTI
-  [0.21, 84.3], // Golf R
-  [0.62, 90.3], // Porsche 911 GT3 RS
-  [0.94, 93.5], // Bugatti Veyron
-  [1.19, 96], // Bugatti Chiron Super Sport 300+
+  [-0.82, 61.2], // 63 hp Polo — the bronze example this scale was asked for
+  [-0.51, 67.4], // 95 hp Polo
+  [-0.19, 75.9], // Alfa Romeo Giulietta 1.4 MultiAir — the floor of gold
+  [0.03, 78.8], // Golf GTI
+  [0.21, 83], // Golf R
+  [0.62, 89.6], // Porsche 911 GT3 RS
+  [0.94, 93.8], // Bugatti Veyron
+  [1.19, 95.3], // Bugatti Chiron Super Sport 300+
+  // Past the Chiron the line used to be extrapolated, which left the quickest
+  // cars there are one point short of the top once the Chiron's own handling
+  // was scored as it really is. The Owl (1.69 s to 100) pins the ceiling.
+  [1.37, 97.8], // Aspark Owl
 ]
 
 /**
