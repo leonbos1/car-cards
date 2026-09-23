@@ -54,19 +54,14 @@ const warnings: string[] = []
 
 for (const width of widths) {
   const phone = width < 700
+  const height = phone ? 780 : 900
   // Phone widths run as a real touch device, so `pointer: coarse` styles — the
   // larger tap targets — are what gets photographed and measured.
-  const page = await browser.newPage({
-    viewport: { width, height: phone ? 780 : 900 },
+  const context = await browser.newContext({
+    viewport: { width, height },
     ...(phone && { isMobile: true, hasTouch: true }),
   })
-  const errors: string[] = []
-  page.on('pageerror', (e) => errors.push(String(e)))
-  page.on('console', (m) => {
-    // The favicon probe 404s on every page and says nothing about the screen.
-    if (m.type() === 'error' && !m.text().includes('404')) errors.push(m.text())
-  })
-  await page.addInitScript((s) => {
+  await context.addInitScript((s) => {
     if (!sessionStorage.getItem('seeded')) {
       localStorage.setItem('car-cards-save-v2', s)
       sessionStorage.setItem('seeded', '1')
@@ -74,11 +69,21 @@ for (const width of widths) {
   }, save)
 
   for (const tab of tabs) {
+    // A fresh page per screen. Playwright's `fullPage` screenshot quietly drops
+    // touch emulation for the rest of a page's life, which had every screen
+    // after the first measured — and photographed — with mouse-sized controls.
+    const page = await context.newPage()
+    const errors: string[] = []
+    page.on('pageerror', (e) => errors.push(String(e)))
+    page.on('console', (m) => {
+      // The favicon probe 404s on some servers and says nothing about the screen.
+      if (m.type() === 'error' && !m.text().includes('404')) errors.push(m.text())
+    })
     await page.goto(`${url}#/${tab}`)
     await page.waitForTimeout(700)
-    const { scroll, height } = await page.evaluate(() => ({
+    const { scroll, docHeight } = await page.evaluate(() => ({
       scroll: document.documentElement.scrollWidth - document.documentElement.clientWidth,
-      height: document.documentElement.scrollHeight,
+      docHeight: document.documentElement.scrollHeight,
     }))
     if (scroll > 0) problems.push(`${tab} @${width}px scrolls sideways by ${scroll}px`)
     if (phone) {
@@ -93,12 +98,17 @@ for (const width of widths) {
       )
       if (small.length) warnings.push(`${tab} @${width}px: ${small.length} tap target(s) under 40px — ${small.slice(0, 6).join(', ')}`)
     }
+    // Stretch the viewport to the page instead of using `fullPage`, which keeps
+    // the emulation intact and draws fixed bars where they really sit.
+    await page.setViewportSize({ width, height: Math.min(Math.max(docHeight, height), 2400) })
+    await page.waitForTimeout(150)
     const file = path.join(out, `${width}-${tab}.png`)
-    await page.screenshot({ path: file, fullPage: true, clip: { x: 0, y: 0, width, height: Math.min(height, 2400) } })
+    await page.screenshot({ path: file })
     console.log(`  ${file}`)
+    for (const e of errors) problems.push(`${tab} @${width}px: ${e}`)
+    await page.close()
   }
-  for (const e of errors) problems.push(`@${width}px: ${e}`)
-  await page.close()
+  await context.close()
 }
 await browser.close()
 

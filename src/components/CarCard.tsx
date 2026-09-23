@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { useLayoutEffect, useState } from 'react'
 import IMAGES from '../data/car-images.json'
 import { overall } from '../game/rating'
 import type { CardClass, CardView } from '../types'
@@ -20,6 +21,14 @@ export function glowFor(card: Pick<CardView, 'cardClass' | 'rare'>): string {
   // so the saturated mid tone carries the rarity colour instead.
   if (card.cardClass === 'special') return light
   return mid
+}
+
+/** Text on the lower half of a non-special card: the deep tone, darkened. */
+const TEXT_INK: Record<CardClass, string> = {
+  bronze: '#2f1b0b',
+  silver: '#1d2328',
+  gold: '#352607',
+  special: '#fff6e0',
 }
 
 const STAT_LABELS: [keyof CardView['stats'], string][] = [
@@ -45,6 +54,11 @@ export function CarCard({ card, scale = 1, animateStats = false, onClick, classN
   const [deep, mid, light] = CLASS_COLORS[card.cardClass]
   const image = images[card.id]
   const isSpecial = card.cardClass === 'special'
+  /** The colour the rating column is printed in. */
+  const ink = isSpecial ? '#ffd98a' : deep
+  // The lower half of a card sits on the darker end of its gradient, where the
+  // deep tone all but vanished; name and stats print in a darker ink instead.
+  const lowInk = TEXT_INK[card.cardClass]
 
   return (
     <motion.button
@@ -62,7 +76,7 @@ export function CarCard({ card, scale = 1, animateStats = false, onClick, classN
           borderRadius: 18 * scale,
           background: isSpecial
             ? `linear-gradient(160deg, #1b0a1c 0%, #2b1030 45%, #120610 100%)`
-            : `linear-gradient(160deg, ${light} 0%, ${mid} 38%, ${deep} 100%)`,
+            : `linear-gradient(160deg, ${light} 0%, ${mid} 40%, ${deep} 125%)`,
           boxShadow: `0 ${18 * scale}px ${40 * scale}px rgba(0,0,0,.55), inset 0 0 0 ${2 * scale}px ${isSpecial ? '#c9a227' : light}`,
         }}
       >
@@ -85,39 +99,53 @@ export function CarCard({ card, scale = 1, animateStats = false, onClick, classN
           />
         )}
 
-        {/* rating block, top-left, FIFA style */}
+        {/* rating block, top-left, FIFA style — set in the display face so the
+            number reads like a timing screen */}
         <div
-          className="absolute z-10 flex flex-col items-center leading-none"
-          style={{ left: 14 * scale, top: 48 * scale, width: 64 * scale }}
+          className="absolute z-10 flex flex-col items-center font-display"
+          style={{ left: 14 * scale, top: 44 * scale, width: 64 * scale, color: ink }}
         >
           <span
+            className="num italic"
             style={{
-              fontSize: 42 * scale,
-              fontWeight: 800,
-              color: isSpecial ? '#ffd98a' : deep,
+              fontSize: 54 * scale,
+              lineHeight: 0.9,
               letterSpacing: -1 * scale,
+              textShadow: isSpecial ? `0 0 ${14 * scale}px rgba(255,190,80,.45)` : undefined,
             }}
           >
             {card.overall}
           </span>
           <span
+            aria-hidden
             style={{
-              fontSize: 13 * scale,
-              fontWeight: 700,
+              marginTop: 5 * scale,
+              width: 26 * scale,
+              height: Math.max(1, 1.5 * scale),
+              background: 'currentColor',
+              opacity: 0.45,
+            }}
+          />
+          <span
+            style={{
+              marginTop: 5 * scale,
+              fontSize: 15 * scale,
+              lineHeight: 1,
+              fontWeight: 800,
               letterSpacing: 1.5 * scale,
-              color: isSpecial ? '#ffd98a' : deep,
-              opacity: 0.85,
+              opacity: 0.9,
             }}
           >
             {card.country}
           </span>
           <span
+            className="tabular-nums"
             style={{
-              marginTop: 4 * scale,
-              fontSize: 10 * scale,
+              marginTop: 3 * scale,
+              fontSize: 12 * scale,
+              lineHeight: 1,
               fontWeight: 700,
               letterSpacing: 0.8 * scale,
-              color: isSpecial ? '#ffd98a' : deep,
               opacity: 0.7,
             }}
           >
@@ -154,55 +182,74 @@ export function CarCard({ card, scale = 1, animateStats = false, onClick, classN
           )}
         </div>
 
-        {/* limited-edition banner */}
-        {card.special && (
-          <div
-            className="absolute left-0 right-0 text-center"
-            style={{ top: 232 * scale }}
-          >
+        {/*
+          Special label, name and make share one flex column in a fixed band
+          between the photo and the divider. The label used to be positioned on
+          its own at a fixed top, and its line box took the page's unscaled
+          16px line-height, so at garage scale it dropped straight onto the
+          name. In one column with explicit line-heights they stack and can
+          never overlap, whatever the lengths.
+        */}
+        <div
+          className="absolute left-0 right-0 flex flex-col items-center justify-center text-center font-display"
+          style={{
+            top: 222 * scale,
+            height: 66 * scale,
+            padding: `0 ${14 * scale}px`,
+            gap: 3 * scale,
+          }}
+        >
+          {card.special && (
             <span
+              className="block max-w-full truncate"
               style={{
-                fontSize: 9 * scale,
-                letterSpacing: 3 * scale,
+                marginBottom: 1 * scale,
+                padding: `${2.5 * scale}px ${9 * scale}px`,
+                fontSize: 10 * scale,
+                lineHeight: 1,
                 fontWeight: 800,
-                color: '#ffd98a',
+                fontStyle: 'italic',
+                letterSpacing: 1.4 * scale,
+                textTransform: 'uppercase',
+                color: '#2a1703',
+                background: 'linear-gradient(180deg, #ffe7a6 0%, #e0b24a 55%, #b8862a 100%)',
+                clipPath: `polygon(${5 * scale}px 0, 100% 0, calc(100% - ${5 * scale}px) 100%, 0 100%)`,
               }}
             >
               {card.special.label}
               {card.special.limitedTo ? ` · ${card.special.limitedTo} BUILT` : ''}
             </span>
-          </div>
-        )}
-
-        {/* name */}
-        <div
-          className="absolute left-0 right-0 text-center"
-          style={{ top: (card.special ? 250 : 244) * scale, padding: `0 ${14 * scale}px` }}
-        >
-          <div
-            className="truncate"
+          )}
+          <span
+            className="block max-w-full truncate"
             style={{
-              fontSize: 20 * scale,
+              fontSize: 25 * scale,
+              lineHeight: 1,
               fontWeight: 800,
-              letterSpacing: 0.5 * scale,
-              color: isSpecial ? '#fff6e0' : deep,
+              fontStyle: 'italic',
+              letterSpacing: 0.3 * scale,
+              color: isSpecial ? '#fff6e0' : lowInk,
               textTransform: 'uppercase',
+              // Room for the italic overhang, which truncate would otherwise clip.
+              paddingRight: 2 * scale,
             }}
           >
             {card.model}
-          </div>
-          <div
+          </span>
+          <span
+            className="block max-w-full truncate"
             style={{
-              fontSize: 11 * scale,
-              fontWeight: 600,
-              letterSpacing: 2 * scale,
-              opacity: 0.72,
-              color: isSpecial ? '#ffd9f4' : deep,
+              fontSize: 12.5 * scale,
+              lineHeight: 1,
+              fontWeight: 700,
+              letterSpacing: 2.2 * scale,
+              opacity: 0.75,
+              color: isSpecial ? '#ffd9f4' : lowInk,
               textTransform: 'uppercase',
             }}
           >
             {card.make}
-          </div>
+          </span>
         </div>
 
         {/* divider */}
@@ -213,27 +260,30 @@ export function CarCard({ card, scale = 1, animateStats = false, onClick, classN
             right: 44 * scale,
             top: 292 * scale,
             height: Math.max(1, 1 * scale),
-            background: isSpecial ? 'rgba(255,215,140,.4)' : 'rgba(0,0,0,.22)',
+            background: isSpecial
+              ? 'linear-gradient(90deg, transparent, rgba(255,215,140,.6), transparent)'
+              : 'linear-gradient(90deg, transparent, rgba(0,0,0,.3), transparent)',
           }}
         />
 
         {/* the six stats, two rows of three */}
         <div
-          className="absolute grid grid-cols-3"
+          className="absolute grid grid-cols-3 font-display"
           style={{
-            left: 26 * scale,
-            right: 26 * scale,
-            top: 304 * scale,
-            rowGap: 6 * scale,
+            left: 22 * scale,
+            right: 22 * scale,
+            top: 302 * scale,
+            rowGap: 5 * scale,
           }}
         >
           {STAT_LABELS.map(([key, label], i) => (
-            <div key={key} className="flex items-baseline justify-center gap-1">
+            <div key={key} className="flex items-baseline justify-center" style={{ gap: 3 * scale }}>
               <motion.span
+                className="num"
                 style={{
-                  fontSize: 17 * scale,
-                  fontWeight: 800,
-                  color: isSpecial ? '#fff6e0' : deep,
+                  fontSize: 20 * scale,
+                  lineHeight: 1.1,
+                  color: isSpecial ? '#fff6e0' : lowInk,
                 }}
                 initial={animateStats ? { opacity: 0 } : false}
                 animate={animateStats ? { opacity: 1 } : undefined}
@@ -243,11 +293,12 @@ export function CarCard({ card, scale = 1, animateStats = false, onClick, classN
               </motion.span>
               <span
                 style={{
-                  fontSize: 10 * scale,
-                  fontWeight: 600,
-                  letterSpacing: 0.6 * scale,
-                  opacity: 0.68,
-                  color: isSpecial ? '#ffd9f4' : deep,
+                  fontSize: 11 * scale,
+                  lineHeight: 1,
+                  fontWeight: 700,
+                  letterSpacing: 0.8 * scale,
+                  opacity: 0.65,
+                  color: isSpecial ? '#ffd9f4' : lowInk,
                 }}
               >
                 {label}
@@ -262,3 +313,43 @@ export function CarCard({ card, scale = 1, animateStats = false, onClick, classN
 
 /** Used by the garage to sort without recomputing ratings. */
 export const cardRating = (c: CardView) => c.overall ?? overall(c.stats, c.year)
+
+/**
+ * Fits a grid of cards to the width it is given.
+ *
+ * A card is drawn at a fixed pixel size times `scale`, so a CSS grid alone
+ * either leaves an empty band on the right or crops the card. This measures
+ * the grid, picks how many columns fit (never fewer than two, so a 360px phone
+ * still shows a pair), and returns the scale that makes each card exactly one
+ * column wide. Attach `ref` to the grid element and spread `style` on it.
+ */
+export function useCardGrid({ minWidth = 170, maxScale = 1 }: { minWidth?: number; maxScale?: number } = {}) {
+  const [el, setEl] = useState<HTMLElement | null>(null)
+  const [width, setWidth] = useState(0)
+
+  useLayoutEffect(() => {
+    if (!el) return
+    setWidth(el.clientWidth)
+    const observer = new ResizeObserver(([entry]) => setWidth(entry.contentRect.width))
+    observer.observe(el)
+    return () => observer.disconnect()
+  }, [el])
+
+  // Tighter gutters on a phone, where every pixel goes to the cards.
+  const gap = width && width < 480 ? 10 : width < 900 ? 14 : 18
+  const cols = Math.max(2, Math.floor((width + gap) / (minWidth + gap)))
+  const cell = width ? (width - gap * (cols - 1)) / cols : minWidth
+  const scale = Math.min(maxScale, Math.floor((cell / 280) * 1000) / 1000)
+
+  return {
+    ref: setEl,
+    scale,
+    style: {
+      display: 'grid',
+      gridTemplateColumns: `repeat(${cols}, minmax(0, 1fr))`,
+      columnGap: gap,
+      rowGap: gap + 6,
+      justifyItems: 'center',
+    } as const,
+  }
+}

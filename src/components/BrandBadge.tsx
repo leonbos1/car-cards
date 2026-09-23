@@ -45,22 +45,34 @@ function monogram(make: string): string {
 export function BrandBadge({ make, size = 48 }: { make: string; size?: number }) {
   const hue = hash(make) % 360
   const text = monogram(make)
+  // Chamfered like a number plate on a race car rather than a rounded app icon.
+  const cut = Math.round(size * 0.22)
+  const plate = `polygon(0 0, calc(100% - ${cut}px) 0, 100% ${cut}px, 100% 100%, ${cut}px 100%, 0 calc(100% - ${cut}px))`
   return (
     <span
       aria-hidden
-      className="grid shrink-0 place-items-center rounded-xl font-black leading-none"
+      className="relative grid shrink-0 place-items-center font-display font-extrabold italic leading-none"
       style={{
         width: size,
         height: size,
+        clipPath: plate,
         // Two stops of the same hue read as a badge rather than a flat swatch.
-        background: `linear-gradient(140deg, hsl(${hue} 58% 46%), hsl(${(hue + 28) % 360} 52% 28%))`,
-        color: 'rgba(255,255,255,.94)',
-        fontSize: size * (text.length > 2 ? 0.3 : 0.36),
-        letterSpacing: '.02em',
-        boxShadow: 'inset 0 1px 0 rgba(255,255,255,.22)',
+        background: `linear-gradient(140deg, hsl(${hue} 62% 52%), hsl(${(hue + 28) % 360} 55% 24%))`,
+        color: 'rgba(255,255,255,.96)',
+        fontSize: size * (text.length > 2 ? 0.34 : 0.44),
+        letterSpacing: '.01em',
+        textShadow: '0 1px 2px rgba(0,0,0,.35)',
+        boxShadow: 'inset 0 1px 0 rgba(255,255,255,.3), inset 0 0 0 1px rgba(255,255,255,.12)',
       }}
     >
-      {text}
+      {/* a gloss across the top half, like light on a painted panel */}
+      <span
+        className="pointer-events-none absolute inset-x-0 top-0 h-1/2"
+        style={{ background: 'linear-gradient(180deg, rgba(255,255,255,.2), rgba(255,255,255,0))' }}
+      />
+      <span className="relative" style={{ paddingRight: size * 0.03 }}>
+        {text}
+      </span>
     </span>
   )
 }
