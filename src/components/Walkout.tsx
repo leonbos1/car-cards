@@ -3,6 +3,53 @@ import type { CardView } from '../types'
 import { glowFor } from './CarCard'
 
 /**
+ * A broadcast strip across the screen behind the card, reading WALKOUT on
+ * repeat — it shows either side of the card, so even on a phone, where the
+ * card fills most of the width, the edges of the screen say what happened.
+ */
+function Banner({ glow, reduced }: { glow: string; reduced: boolean }) {
+  const words = Array.from({ length: 8 }, () => 'Walkout')
+  const row = (
+    <span className="flex shrink-0 items-center gap-6 pr-6">
+      {words.map((w, i) => (
+        <span key={i} className="flex items-center gap-6">
+          {w}
+          <span className="inline-block h-[0.5em] w-2 bg-current opacity-60" style={{ clipPath: 'polygon(40% 0, 100% 0, 60% 100%, 0 100%)' }} />
+        </span>
+      ))}
+    </span>
+  )
+  return (
+    <motion.div
+      className="absolute inset-x-0 top-[46%] -translate-y-1/2"
+      style={{ rotate: -6 }}
+      initial={reduced ? { opacity: 0 } : { scaleX: 0, opacity: 0 }}
+      animate={{ scaleX: 1, opacity: 1 }}
+      transition={{ duration: reduced ? 0.2 : 0.45, ease: 'easeOut', delay: reduced ? 0 : 0.15 }}
+    >
+      <div
+        className="headline overflow-hidden border-y py-2 text-5xl"
+        style={{
+          color: glow,
+          borderColor: `${glow}88`,
+          background: `linear-gradient(90deg, transparent, ${glow}22 20%, ${glow}33 50%, ${glow}22 80%, transparent)`,
+          textShadow: `0 0 24px ${glow}`,
+        }}
+      >
+        <motion.div
+          className="flex w-max"
+          animate={reduced ? undefined : { x: ['0%', '-50%'] }}
+          transition={{ duration: 14, ease: 'linear', repeat: Infinity }}
+        >
+          {row}
+          {row}
+        </motion.div>
+      </div>
+    </motion.div>
+  )
+}
+
+/**
  * The full-screen light show behind a big pull. Rotating beams plus a particle
  * burst; the card itself is drawn by the caller on top of this.
  */
@@ -11,14 +58,17 @@ export function Walkout({ card, reduced }: { card: CardView; reduced: boolean })
 
   if (reduced) {
     return (
-      <motion.div
-        className="pointer-events-none absolute inset-0"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        style={{
-          background: `radial-gradient(circle at 50% 45%, ${glow}44 0%, transparent 62%)`,
-        }}
-      />
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        <motion.div
+          className="absolute inset-0"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          style={{
+            background: `radial-gradient(circle at 50% 45%, ${glow}44 0%, transparent 62%)`,
+          }}
+        />
+        <Banner glow={glow} reduced />
+      </div>
     )
   }
 
@@ -55,6 +105,8 @@ export function Walkout({ card, reduced }: { card: CardView; reduced: boolean })
           background: `radial-gradient(circle at 50% 46%, ${glow}66 0%, ${glow}18 28%, transparent 60%)`,
         }}
       />
+
+      <Banner glow={glow} reduced={false} />
 
       {/* particle burst */}
       {Array.from({ length: 34 }).map((_, i) => {
