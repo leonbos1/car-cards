@@ -46,7 +46,11 @@ export function SubTabs<T extends string>({
               active ? 'text-white' : 'text-white/45 hover:text-white/80'
             }`}
           >
-            {Icon && <Icon size={16} strokeWidth={2.4} className={active ? 'text-gold-2' : ''} />}
+            {/* On a phone the icons would push the last tab off the edge
+                ("CLICKE…" at 360px); the label and badge carry it alone. */}
+            {Icon && (
+              <Icon size={16} strokeWidth={2.4} className={`hidden sm:block ${active ? 'text-gold-2' : ''}`} />
+            )}
             {label}
             <Badge count={badge} />
             {active && (
