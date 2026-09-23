@@ -1,4 +1,4 @@
-import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
+import { motion, useReducedMotion } from 'framer-motion'
 import { useCallback, useRef, useState } from 'react'
 import { CardDetail } from './components/CardDetail'
 import { Catalog } from './components/Catalog'
@@ -147,20 +147,20 @@ export function App() {
               tabs={hub.tabs.map((t) => ({ ...t, badge: badges[t.id] }))}
             />
           )}
-          {/* No initial={false} here: framer-motion hands it down to every motion
-              component on the screen you land on, which silently skipped each
-              screen's own entrance animations on first load. */}
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={tab}
-              initial={reduceMotion ? false : { opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={reduceMotion ? undefined : { opacity: 0, y: -6 }}
-              transition={{ duration: 0.18, ease: 'easeOut' }}
-            >
-              {screen}
-            </motion.div>
-          </AnimatePresence>
+          {/* Keyed on the tab, so each screen mounts fresh and fades in. No
+              exit phase: an AnimatePresence mode="wait" here held the old
+              screen for its fade-out, and a second tap inside that window
+              left the in-between screen mounted for good — the URL moved on
+              but the page did not. Skipping the fade-out also makes every
+              tap land 180ms sooner. */}
+          <motion.div
+            key={tab}
+            initial={reduceMotion ? false : { opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.18, ease: 'easeOut' }}
+          >
+            {screen}
+          </motion.div>
         </main>
       </div>
 
