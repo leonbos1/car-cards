@@ -92,6 +92,11 @@ export function formatEuros(amount: number): string {
   }).format(amount)
 }
 
+/** The same grouping without the symbol, for places that draw their own € mark. */
+export function formatAmount(amount: number): string {
+  return new Intl.NumberFormat('nl-NL', { maximumFractionDigits: 0 }).format(amount)
+}
+
 /** '3h 12m' — how long until the free pack comes back. */
 export function formatCountdown(ms: number): string {
   const totalMinutes = Math.max(0, Math.ceil(ms / 60_000))

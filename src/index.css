@@ -1,7 +1,14 @@
 @import 'tailwindcss';
 
 @theme {
-  --font-display: 'Archivo', 'Arial Narrow', system-ui, sans-serif;
+  /*
+   * Barlow was drawn from California's highway signs and licence plates, which
+   * is about as close to the subject as a typeface gets. The condensed cut in
+   * heavy italic carries the display type — headings, numbers, the nav — the
+   * way a race broadcast overlay does; the regular cut carries everything read.
+   */
+  --font-display: 'Barlow Condensed', 'Arial Narrow', system-ui, sans-serif;
+  --font-body: 'Barlow', system-ui, sans-serif;
 
   --color-bronze-1: #6b4423;
   --color-bronze-2: #c98f4e;
@@ -15,7 +22,38 @@
   --color-special-1: #10060f;
   --color-special-2: #2b1030;
   --color-special-3: #ffd9f4;
+
+  /* Surfaces, darkest first: the page, a panel, a raised panel, a hover. */
   --color-pitch: #05070c;
+  --color-asphalt: #0b0f17;
+  --color-asphalt-2: #111723;
+  --color-asphalt-3: #19202e;
+  /* Semantic, separate from the gold brand accent. */
+  --color-signal: #ff4d3d;
+  --color-go: #43e08a;
+
+  --animate-pulse-soft: pulse-soft 2.4s ease-in-out infinite;
+  --animate-sheen: sheen 3.2s ease-in-out infinite;
+}
+
+@keyframes pulse-soft {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.55;
+  }
+}
+
+@keyframes sheen {
+  0% {
+    transform: translateX(-120%) skewX(-18deg);
+  }
+  60%,
+  100% {
+    transform: translateX(260%) skewX(-18deg);
+  }
 }
 
 html,
@@ -27,7 +65,7 @@ body,
 body {
   background: var(--color-pitch);
   color: #e8eef6;
-  font-family: var(--font-display);
+  font-family: var(--font-body);
   -webkit-font-smoothing: antialiased;
   overscroll-behavior: none;
   /* No grey flash on tap, and no selection handles from a long press. */
@@ -65,12 +103,242 @@ img {
   user-drag: none;
 }
 
-/* The stadium-ish backdrop every screen sits on. */
+:focus-visible {
+  outline: 2px solid var(--color-gold-2);
+  outline-offset: 2px;
+}
+
+/*
+ * The backdrop every screen sits on: floodlights from above, asphalt below,
+ * and a faint grid of track-surface diagonals so large empty areas read as a
+ * surface rather than a void.
+ */
 .app-bg {
   background:
-    radial-gradient(ellipse 80% 50% at 50% -10%, #1a2740 0%, transparent 60%),
-    radial-gradient(ellipse 60% 40% at 50% 110%, #14203a 0%, transparent 60%),
+    radial-gradient(ellipse 70% 45% at 50% -12%, rgb(232 194 90 / 0.1) 0%, transparent 60%),
+    radial-gradient(ellipse 90% 60% at 50% -20%, #172238 0%, transparent 65%),
+    radial-gradient(ellipse 60% 40% at 80% 115%, #121b30 0%, transparent 60%),
+    repeating-linear-gradient(
+      -55deg,
+      transparent 0 22px,
+      rgb(255 255 255 / 0.012) 22px 23px
+    ),
     var(--color-pitch);
+  background-attachment: fixed;
+}
+
+@layer components {
+  /* ---- Type ---------------------------------------------------------- */
+
+  /* Race-overlay headline: heavy condensed italic caps. */
+  .headline {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    line-height: 0.95;
+    text-wrap: balance;
+  }
+
+  /* The small label that sits above or beside a value. */
+  .eyebrow {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: rgb(255 255 255 / 0.42);
+  }
+
+  /* Numbers that should line up and read like a timing screen. */
+  .num {
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---- Buttons ------------------------------------------------------- */
+
+  /*
+   * Buttons are cut at a slant, like the livery stripes on a race car. The
+   * slant is a clip-path rather than a skew so the label stays upright, and
+   * focus is drawn inside the shape because an outline would be clipped.
+   */
+  .btn {
+    --cut: 10px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.4rem;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-style: italic;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    line-height: 1;
+    clip-path: polygon(var(--cut) 0, 100% 0, calc(100% - var(--cut)) 100%, 0 100%);
+    transition:
+      filter 150ms ease,
+      transform 120ms ease,
+      background-color 150ms ease;
+    cursor: pointer;
+  }
+  .btn:focus-visible {
+    outline: none;
+    box-shadow: inset 0 0 0 2px #fff;
+  }
+  .btn:active:not(:disabled) {
+    transform: translateY(1px) scale(0.985);
+  }
+  .btn:disabled {
+    cursor: not-allowed;
+    filter: grayscale(0.7) brightness(0.55);
+  }
+  .btn-sm {
+    --cut: 7px;
+    padding: 0.45rem 0.95rem;
+    font-size: 0.85rem;
+  }
+  .btn-lg {
+    --cut: 14px;
+    padding: 0.95rem 1.9rem;
+    font-size: 1.2rem;
+  }
+
+  /* The one action a screen wants you to take. */
+  .btn-primary {
+    color: #1a1204;
+    background: linear-gradient(180deg, #ffe08a 0%, var(--color-gold-2) 48%, #c99a2e 100%);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.55);
+  }
+  .btn-primary:hover:not(:disabled) {
+    filter: brightness(1.08);
+  }
+
+  /* Everything else you can press. */
+  .btn-secondary {
+    color: #e8eef6;
+    background: linear-gradient(180deg, rgb(255 255 255 / 0.13), rgb(255 255 255 / 0.06));
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.12);
+  }
+  .btn-secondary:hover:not(:disabled) {
+    background: linear-gradient(180deg, rgb(255 255 255 / 0.19), rgb(255 255 255 / 0.1));
+  }
+
+  /* Irreversible actions. */
+  .btn-danger {
+    color: #fff;
+    background: linear-gradient(180deg, #ff6a5c, #d8322a);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.35);
+  }
+  .btn-danger:hover:not(:disabled) {
+    filter: brightness(1.08);
+  }
+
+  /* ---- Surfaces ------------------------------------------------------ */
+
+  /* A plain container: a list row, a form group, a stat block. */
+  .panel {
+    border-radius: 0.75rem;
+    border: 1px solid rgb(255 255 255 / 0.08);
+    background: linear-gradient(180deg, var(--color-asphalt-2), var(--color-asphalt));
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.04);
+  }
+
+  /* A panel you can press. */
+  .panel-interactive {
+    transition:
+      border-color 150ms ease,
+      background 150ms ease,
+      transform 150ms ease;
+    cursor: pointer;
+  }
+  .panel-interactive:hover {
+    border-color: rgb(232 194 90 / 0.45);
+    background: linear-gradient(180deg, var(--color-asphalt-3), var(--color-asphalt-2));
+  }
+  .panel-interactive:active {
+    transform: scale(0.99);
+  }
+
+  /*
+   * A feature panel with the top-right corner cut off — the one shape that
+   * says "game", spent on what a screen leads with rather than on every box.
+   */
+  .panel-cut {
+    --cut: 18px;
+    clip-path: polygon(0 0, calc(100% - var(--cut)) 0, 100% var(--cut), 100% 100%, 0 100%);
+    background: linear-gradient(160deg, var(--color-asphalt-3), var(--color-asphalt) 70%);
+    box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.06);
+  }
+
+  /* ---- Small parts --------------------------------------------------- */
+
+  /* A filter or toggle pill. Add `chip-on` for the selected one. */
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.35rem 0.8rem;
+    border-radius: 999px;
+    border: 1px solid rgb(255 255 255 / 0.09);
+    background: rgb(255 255 255 / 0.04);
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: rgb(255 255 255 / 0.6);
+    transition:
+      color 150ms ease,
+      background 150ms ease,
+      border-color 150ms ease;
+    cursor: pointer;
+  }
+  .chip:hover {
+    color: #fff;
+    border-color: rgb(255 255 255 / 0.2);
+  }
+  .chip-on,
+  .chip-on:hover {
+    color: #1a1204;
+    background: var(--color-gold-2);
+    border-color: var(--color-gold-2);
+  }
+
+  /* A slanted label: LIVE, NEW, RARE. */
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.12rem 0.55rem;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-style: italic;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    clip-path: polygon(5px 0, 100% 0, calc(100% - 5px) 100%, 0 100%);
+    background: var(--color-gold-2);
+    color: #1a1204;
+  }
+
+  /* Form controls, dressed to match. */
+  .field {
+    border-radius: 0.6rem;
+    border: 1px solid rgb(255 255 255 / 0.1);
+    background: var(--color-asphalt);
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+    color: #e8eef6;
+  }
+  .field:focus {
+    outline: none;
+    border-color: rgb(232 194 90 / 0.6);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
