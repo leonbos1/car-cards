@@ -35,9 +35,9 @@ export function TopBar({
   onNavigate: (tab: Tab) => void
 }) {
   return (
-    <div className="sticky top-0 z-30 border-b border-white/[0.07] bg-[#070a11]/80 backdrop-blur-xl">
+    <div className="sticky top-0 z-30 border-b border-white/[0.07] bg-[#070a11]/80 pt-[env(safe-area-inset-top)] backdrop-blur-xl">
       <div className="flex h-14 items-center gap-2 px-4 lg:h-16 lg:px-8">
-        <button type="button" onClick={() => onNavigate('store')} className="lg:hidden" aria-label="Home">
+        <button type="button" onClick={() => onNavigate('store')} className="flex h-11 items-center lg:hidden" aria-label="Home">
           <Wordmark className="text-[22px]" />
         </button>
         <div className="ml-auto flex items-center gap-2">
@@ -59,7 +59,7 @@ export function TopBar({
             onClick={() => onNavigate(tab === 'settings' ? 'store' : 'settings')}
             aria-label="Settings"
             aria-pressed={tab === 'settings'}
-            className={`grid size-9 place-items-center rounded-full border transition ${
+            className={`grid size-11 place-items-center rounded-full border transition lg:size-9 ${
               tab === 'settings'
                 ? 'border-gold-2/60 bg-gold-2/15 text-gold-2'
                 : 'border-white/10 bg-black/40 text-white/60 hover:text-white'

@@ -97,6 +97,17 @@ select,
   user-select: text;
 }
 
+/*
+ * Taps that come fast — opening pack after pack, hammering the clicker — must
+ * never be read as a double-tap zoom.
+ */
+button,
+a,
+[role='tab'],
+label {
+  touch-action: manipulation;
+}
+
 /* A car photo dragged with the mouse should not tear off a ghost image. */
 img {
   -webkit-user-drag: none;
@@ -338,6 +349,30 @@ img {
   .field:focus {
     outline: none;
     border-color: rgb(232 194 90 / 0.6);
+  }
+}
+
+/*
+ * Fingers, not cursors. On a touch screen every control grows to at least a
+ * 44px target — the size Apple and Google both give as the floor for a
+ * reliable tap — while mouse users keep the compact sizes. Inputs also go to
+ * 16px text: below that, iOS Safari zooms the whole page in on focus.
+ */
+@media (pointer: coarse) {
+  .btn,
+  .btn-sm {
+    min-height: 2.75rem;
+  }
+  .chip {
+    min-height: 2.75rem;
+    padding-inline: 1rem;
+  }
+  .field {
+    min-height: 2.75rem;
+    font-size: 16px;
+  }
+  [role='tab'] {
+    min-height: 2.75rem;
   }
 }
 
