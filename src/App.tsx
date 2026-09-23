@@ -147,7 +147,10 @@ export function App() {
               tabs={hub.tabs.map((t) => ({ ...t, badge: badges[t.id] }))}
             />
           )}
-          <AnimatePresence mode="wait" initial={false}>
+          {/* No initial={false} here: framer-motion hands it down to every motion
+              component on the screen you land on, which silently skipped each
+              screen's own entrance animations on first load. */}
+          <AnimatePresence mode="wait">
             <motion.div
               key={tab}
               initial={reduceMotion ? false : { opacity: 0, y: 10 }}

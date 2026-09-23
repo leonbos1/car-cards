@@ -1,3 +1,5 @@
+/// <reference lib="dom" />
+/// <reference lib="dom.iterable" />
 /**
  * Screenshots every screen at phone and desktop width, from a seeded save.
  *
