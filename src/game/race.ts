@@ -318,6 +318,8 @@ export interface RaceResult {
   /** Where the player's car came, counting from 1. */
   position: number
   payout: number
+  /** Set when the showroom bonus was applied to this payout. */
+  showroom?: boolean
 }
 
 export function payoutFor(event: RaceEvent, position: number): number {

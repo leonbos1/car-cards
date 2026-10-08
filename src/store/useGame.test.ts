@@ -1,6 +1,7 @@
 import { beforeEach, describe, expect, it } from 'vitest'
 import { STARTING_BALANCE, quickSellValue } from '../game/economy'
 import { SEASON_BY_ID, roundEvent, seasonBonus, type Season } from '../game/championships'
+import { contracts, matchesWant } from '../game/contracts'
 import { bidPrice } from '../game/market'
 import { ALL_CARDS } from '../game/pack'
 import { eligible, fitness } from '../game/race'
@@ -115,6 +116,60 @@ function bestDistinct(season: Season): string[] {
   })
   return picked
 }
+
+describe('favourites', () => {
+  it('toggles a car on and off', () => {
+    useGame.getState().toggleFavourite(CAR.id)
+    expect(useGame.getState().favourites).toEqual([CAR.id])
+    useGame.getState().toggleFavourite(CAR.id)
+    expect(useGame.getState().favourites).toEqual([])
+  })
+
+  it('will not quick-sell a starred car, even a spare', () => {
+    give({ [CAR.id]: 3 }, 0)
+    useGame.getState().toggleFavourite(CAR.id)
+    useGame.getState().sellOne(CAR.id)
+    expect(useGame.getState().collection[CAR.id]).toBe(3)
+    expect(useGame.getState().balance).toBe(0)
+  })
+
+  it('keeps every copy of a starred car when selling duplicates, but still sells the rest', () => {
+    give({ [CAR.id]: 3, [OTHER.id]: 2 }, 0)
+    useGame.getState().toggleFavourite(CAR.id)
+    const earned = useGame.getState().sellDuplicates()
+    expect(useGame.getState().collection[CAR.id]).toBe(3)
+    expect(useGame.getState().collection[OTHER.id]).toBe(1)
+    expect(earned).toBe(quickSellValue(OTHER))
+  })
+
+  it('will not offer a starred car to the market, not even the last copy', () => {
+    give({ [CAR.id]: 1 }, 0)
+    useGame.getState().toggleFavourite(CAR.id)
+    expect(useGame.getState().sellToMarket(CAR.id)).toBe(0)
+    expect(useGame.getState().collection[CAR.id]).toBe(1)
+  })
+
+  it('will not hand a starred car to a buyer, even when it qualifies', () => {
+    // Find a live request this car actually fills, so the refusal is about the
+    // star and not about the car failing the request.
+    const live = contracts()
+    const fit = ALL_CARDS.flatMap((card) =>
+      live.filter((c) => matchesWant(card, c.want)).map((contract) => ({ card, contract })),
+    )[0]
+    expect(fit, 'no live request fits any car; the test has nothing to check').toBeDefined()
+    const { card, contract } = fit!
+    give({ [card.id]: 1 }, 0)
+    useGame.getState().toggleFavourite(card.id)
+    expect(useGame.getState().fulfilContract(contract.id, card.id)).toBe(0)
+    expect(useGame.getState().collection[card.id]).toBe(1)
+  })
+
+  it('is cleared by a reset', () => {
+    useGame.getState().toggleFavourite(CAR.id)
+    useGame.getState().reset()
+    expect(useGame.getState().favourites).toEqual([])
+  })
+})
 
 describe('championship seasons', () => {
   const CLUB = SEASON_BY_ID.get('club-championship')!

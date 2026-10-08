@@ -1,7 +1,8 @@
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
 import { CircleCheck, Flag, Lock, Repeat, Trophy, Users } from 'lucide-react'
 import { useMemo, useState, type ReactNode } from 'react'
-import { formatEuros } from '../game/economy'
+import { formatCountdown, formatEuros } from '../game/economy'
+import { SHOWROOM_MULTIPLIER, featuredCars, nextShowroomIn, withShowroomBonus } from '../game/showroom'
 import {
   DISCIPLINE_BLURB,
   DISCIPLINE_LABEL,
@@ -31,6 +32,7 @@ import {
   StatStrip,
   classStyle,
 } from './Championship'
+import { TierSwatch } from './Garage'
 import { PageHeader } from './ui/PageHeader'
 import { SubTabs } from './ui/SubTabs'
 
@@ -64,7 +66,7 @@ export function Race() {
     setCar(entry)
     setResult(null)
     setRunning(true)
-    const outcome = race(withOverrides(entry, cardOverrides[entry.id]), on)
+    const outcome = withShowroomBonus(race(withOverrides(entry, cardOverrides[entry.id]), on), entry)
 
     // Banked at the flag, not at the click, so the money and the result you are
     // looking at are always the same race.
@@ -160,6 +162,8 @@ export function Race() {
         right={session.races > 0 ? <SessionTally session={session} /> : undefined}
       />
 
+      <Showroom owned={collection} />
+
       {CLASS_ORDER.map((cls) => {
         const events = EVENTS.filter((e) => classOf(e) === cls)
         if (!events.length) return null
@@ -188,6 +192,50 @@ export function Race() {
         )
       })}
     </div>
+  )
+}
+
+/**
+ * Three cars that pay 1.5x in any event today. Shown as a strip above the board,
+ * with how you own each one, so the bonus is something you can plan around.
+ */
+function Showroom({ owned }: { owned: Record<string, number> }) {
+  const cars = featuredCars()
+  return (
+    <section aria-label="Showroom" className="panel-cut relative mb-8 overflow-hidden p-4 sm:p-5">
+      <span
+        aria-hidden
+        className="absolute inset-x-0 top-0 h-[3px] bg-gradient-to-r from-gold-2 to-transparent"
+      />
+      <div className="mb-3 flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+        <div>
+          <p className="eyebrow mb-1 text-gold-2">Showroom today</p>
+          <h2 className="headline text-2xl leading-tight">
+            These three pay <span className="num text-gold-2">1.5×</span> in any event
+          </h2>
+        </div>
+        <p className="eyebrow">New in {formatCountdown(nextShowroomIn())}</p>
+      </div>
+      <ul className="grid gap-2 sm:grid-cols-3">
+        {cars.map((card) => {
+          const copies = owned[card.id] ?? 0
+          return (
+            <li key={card.id} className="panel flex min-w-0 items-center gap-3 p-3">
+              <TierSwatch cls={card.cardClass} className="h-10 w-7" />
+              <div className="min-w-0">
+                <p className="eyebrow truncate">{card.make}</p>
+                <p className="headline truncate text-lg leading-tight">{card.model}</p>
+                <p className="text-xs text-white/50">
+                  Rated <span className="num text-white/80">{card.overall}</span>
+                  {' · '}
+                  {copies > 0 ? <span className="text-go">own {copies}</span> : 'not owned'}
+                </p>
+              </div>
+            </li>
+          )
+        })}
+      </ul>
+    </section>
   )
 }
 
@@ -361,6 +409,9 @@ function Finished({
           >
             +{formatEuros(result.payout)}
           </motion.p>
+          {result.showroom && (
+            <p className="eyebrow relative mt-2 text-gold-2">Showroom bonus ×{SHOWROOM_MULTIPLIER}</p>
+          )}
           {mine && <p className="relative mt-2 truncate text-sm text-white/55">{mine.make} {mine.model}</p>}
         </section>
 

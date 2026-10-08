@@ -1,6 +1,7 @@
-import { AlertTriangle, BarChart3, Info, Pencil, SlidersHorizontal, Trash2, X, type LucideIcon } from 'lucide-react'
+import { AlertTriangle, BarChart3, Info, Pencil, SlidersHorizontal, Trash2, Trophy, X, type LucideIcon } from 'lucide-react'
 import { useState, type ReactNode } from 'react'
 import { PACK_BY_ID, contentsLine } from '../data/packs'
+import { careerStats } from '../game/career'
 import { STARTING_BALANCE, formatEuros } from '../game/economy'
 import { ALL_CARDS } from '../game/pack'
 import { ownedCards, useGame } from '../store/useGame'
@@ -32,6 +33,11 @@ export function Settings({ onReset }: Props) {
   const clearCardOverride = useGame((s) => s.clearCardOverride)
   const cardOverrides = useGame((s) => s.cardOverrides)
   const ownedCars = ownedCards(useGame((s) => s.collection))
+  const racesRun = useGame((s) => s.racesRun)
+  const racesWon = useGame((s) => s.racesWon)
+  const seasonTitles = useGame((s) => s.seasonTitles)
+  const claimedObjectives = useGame((s) => s.claimedObjectives)
+  const career = careerStats({ racesRun, racesWon, seasonTitles, claimedObjectives })
 
   const handleReset = () => {
     useGame.getState().reset()
@@ -265,6 +271,17 @@ export function Settings({ onReset }: Props) {
         </div>
       </Section>
 
+      {/* Career */}
+      <Section icon={Trophy} title="Career">
+        <div className="panel grid grid-cols-2 gap-x-4 gap-y-4 p-4 sm:grid-cols-4 sm:p-5">
+          <Figure label="Races run" value={career.racesRun} />
+          <Figure label="Race wins" value={career.racesWon} />
+          <Figure label="Win rate" value={career.racesRun > 0 ? `${career.winRate}%` : '—'} />
+          <Figure label="Season titles" value={career.seasonTitles} />
+          <Figure label="Objectives paid out" value={career.objectivesClaimed} />
+        </div>
+      </Section>
+
       {/* Game Info */}
       <Section icon={Info} title="About This Game">
         <div className="panel space-y-3 p-4 text-sm leading-relaxed text-white/70 sm:p-5">
@@ -363,6 +380,15 @@ function Stat({ label, value, accent }: { label: string; value: ReactNode; accen
     <div className="flex items-center justify-between gap-3 px-4 py-3 sm:block sm:py-4">
       <div className="eyebrow">{label}</div>
       <div className={`num text-xl leading-tight sm:mt-1 sm:text-2xl ${accent ? 'text-gold-2' : ''}`}>{value}</div>
+    </div>
+  )
+}
+
+function Figure({ label, value }: { label: string; value: ReactNode }) {
+  return (
+    <div className="min-w-0">
+      <div className="eyebrow">{label}</div>
+      <div className="num mt-1 text-xl leading-tight sm:text-2xl">{value}</div>
     </div>
   )
 }

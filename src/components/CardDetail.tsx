@@ -1,5 +1,5 @@
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
-import { Coins, X } from 'lucide-react'
+import { Coins, Star, X } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import IMAGES from '../data/car-images.json'
 import { formatEuros, quickSellValue } from '../game/economy'
@@ -17,6 +17,9 @@ interface Props {
   owned: number
   onClose: () => void
   onSell?: (carId: string) => void
+  /** Whether the car is starred, which keeps every copy. */
+  starred?: boolean
+  onToggleStar?: (carId: string) => void
 }
 
 /** True from the `sm` breakpoint up, where the card sits beside its sheet. */
@@ -34,7 +37,7 @@ function useWide(): boolean {
   return wide
 }
 
-export function CardDetail({ card, owned, onClose, onSell }: Props) {
+export function CardDetail({ card, owned, onClose, onSell, starred = false, onToggleStar }: Props) {
   const offroad = card ? deriveOffroadSpecs(card) : null
   const reduceMotion = useReducedMotion()
   const wide = useWide()
@@ -203,15 +206,33 @@ export function CardDetail({ card, owned, onClose, onSell }: Props) {
                       {formatEuros(quickSellValue(card))}
                     </span>
                   </p>
-                  {onSell && owned > 1 && (
-                    <button
-                      type="button"
-                      onClick={() => onSell(card.id)}
-                      className="btn btn-secondary btn-sm grow sm:grow-0"
-                    >
-                      Sell one duplicate
-                    </button>
-                  )}
+                  <div className="flex w-full flex-wrap gap-2 sm:w-auto">
+                    {onToggleStar && (
+                      <button
+                        type="button"
+                        aria-pressed={starred}
+                        onClick={() => onToggleStar(card.id)}
+                        className={`btn btn-sm grow sm:grow-0 ${starred ? 'btn-primary' : 'btn-secondary'}`}
+                      >
+                        <Star
+                          size={15}
+                          strokeWidth={2.4}
+                          aria-hidden
+                          fill={starred ? 'currentColor' : 'none'}
+                        />
+                        {starred ? 'Starred' : 'Star'}
+                      </button>
+                    )}
+                    {onSell && owned > 1 && !starred && (
+                      <button
+                        type="button"
+                        onClick={() => onSell(card.id)}
+                        className="btn btn-secondary btn-sm grow sm:grow-0"
+                      >
+                        Sell one duplicate
+                      </button>
+                    )}
+                  </div>
                 </div>
 
                 <Credit id={card.id} />

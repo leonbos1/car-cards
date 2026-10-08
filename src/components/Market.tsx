@@ -55,6 +55,7 @@ export function Market({ onInspect }: { onInspect: (card: CardView) => void }) {
   const sellToMarket = useGame((s) => s.sellToMarket)
   const fulfilledContracts = useGame((s) => s.fulfilledContracts)
   const fulfilContract = useGame((s) => s.fulfilContract)
+  const favourites = useGame((s) => s.favourites)
 
   const [side, setSide] = useState<Side>('buy')
   const [filter, setFilter] = useState<Filter>('all')
@@ -86,14 +87,21 @@ export function Market({ onInspect }: { onInspect: (card: CardView) => void }) {
    */
   const stock = useMemo(() => {
     void tick
+    // Starred cars are kept back from every selling path, so they are not on
+    // offer here or matched against buyer requests.
     return Object.entries(collection)
-      .filter(([, n]) => n > 0)
+      .filter(([id, n]) => n > 0 && !favourites.includes(id))
       .flatMap(([id, copies]) => {
         const card = CARD_BY_ID.get(id)
         if (!card) return []
         return [{ card, copies, bid: bidPrice(card), move: priceMultiplier(card.id) - 1 }]
       })
-  }, [collection, tick])
+  }, [collection, favourites, tick])
+
+  const keptBack = useMemo(
+    () => favourites.filter((id) => (collection[id] ?? 0) > 0).length,
+    [favourites, collection],
+  )
 
   const open = useMemo(() => {
     void tick
@@ -259,6 +267,11 @@ export function Market({ onInspect }: { onInspect: (card: CardView) => void }) {
       ) : stock.length ? (
         <>
           <div className="mb-4 space-y-3">
+            {keptBack > 0 && (
+              <p className="text-sm text-white/50">
+                {keptBack} starred {keptBack === 1 ? 'car is' : 'cars are'} kept in your garage.
+              </p>
+            )}
             <div className="flex gap-2">
               <label className="relative min-w-0 flex-1">
                 <span className="sr-only">Search your cars</span>
@@ -404,8 +417,9 @@ export function Market({ onInspect }: { onInspect: (card: CardView) => void }) {
         </>
       ) : (
         <Empty>
-          Nothing to sell yet. Cars you pull from packs show up here — the market pays well over
-          twice what quick-selling them does.
+          {keptBack
+            ? 'Everything you own is starred, so there is nothing to sell. Unstar a car to offer it here.'
+            : 'Nothing to sell yet. Cars you pull from packs show up here — the market pays well over twice what quick-selling them does.'}
         </Empty>
       )}
     </div>

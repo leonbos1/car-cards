@@ -69,6 +69,11 @@ interface GameState {
   fulfilledTuningContracts: string[]
   /** Clicker game state. */
   clickerState: ClickerState
+  /**
+   * Cars the player has starred. A starred car keeps every copy: it is never
+   * quick-sold, never offered to the market, and never handed to a buyer.
+   */
+  favourites: string[]
   setRaceAnimationMs: (ms: number) => void
   overrideCardStats: (carId: string, stats: Partial<Record<'hp' | 'acc' | 'topspeed' | 'weight' | 'handling' | 'wowFactor', number>>) => void
   clearCardOverride: (carId: string) => void
@@ -99,8 +104,10 @@ interface GameState {
   add: (cards: CardView[]) => void
   /** Quick-sell one copy. Refuses to sell the last copy of a car. */
   sellOne: (carId: string) => void
-  /** Quick-sell every duplicate, keeping one of each. Returns euros earned. */
+  /** Quick-sell every duplicate, keeping one of each. Starred cars keep all copies. Returns euros earned. */
   sellDuplicates: () => number
+  /** Star or unstar a car. */
+  toggleFavourite: (carId: string) => void
   /** Pay out a completed objective. Returns euros earned, or 0. */
   claimObjective: (id: string) => number
   /** Milliseconds until a quiz category can be played again; 0 when ready. */
@@ -181,6 +188,7 @@ export const useGame = create<GameState>()(
       syndicationLastClaimed: {},
       fulfilledTuningContracts: [],
       clickerState: DEFAULT_CLICKER_STATE,
+      favourites: [],
 
       canAfford: (price) => get().balance >= price,
 
@@ -221,7 +229,7 @@ export const useGame = create<GameState>()(
           const owned = s.collection[carId] ?? 0
           const card = CARD_BY_ID.get(carId)
           // Selling your only copy would punch a hole in the collection.
-          if (!card || owned < 2) return s
+          if (!card || owned < 2 || s.favourites.includes(carId)) return s
           const value = quickSellValue(card)
           return {
             balance: s.balance + value,
@@ -233,8 +241,13 @@ export const useGame = create<GameState>()(
         const { collection } = get()
         let earned = 0
         const next: Record<string, number> = {}
+        const starred = new Set(get().favourites)
         for (const [carId, owned] of Object.entries(collection)) {
           const card = CARD_BY_ID.get(carId)
+          if (starred.has(carId)) {
+            next[carId] = owned
+            continue
+          }
           if (card && owned > 1) earned += quickSellValue(card) * (owned - 1)
           next[carId] = Math.min(owned, 1)
         }
@@ -310,7 +323,7 @@ export const useGame = create<GameState>()(
         // Unlike quick-sell, the market will take your only copy. This is where
         // you come to trade deliberately; refusing to sell a car you no longer
         // want made the market half a feature. The UI confirms a last copy.
-        if (!card || owned < 1) return 0
+        if (!card || owned < 1 || state.favourites.includes(carId)) return 0
 
         const price = bidPrice(card)
         set((s) => ({
@@ -329,7 +342,7 @@ export const useGame = create<GameState>()(
         if (!contract || !card) return 0
         // Checked here rather than in the component, so the fee cannot be
         // claimed with a car that does not actually meet the request.
-        if ((state.collection[carId] ?? 0) < 1) return 0
+        if ((state.collection[carId] ?? 0) < 1 || state.favourites.includes(carId)) return 0
         if (!matchesWant(card, contract.want)) return 0
 
         set((s) => ({
@@ -343,6 +356,13 @@ export const useGame = create<GameState>()(
         }))
         return contract.reward
       },
+
+      toggleFavourite: (carId) =>
+        set((s) => ({
+          favourites: s.favourites.includes(carId)
+            ? s.favourites.filter((id) => id !== carId)
+            : [...s.favourites, carId],
+        })),
 
       finishRace: (payout, won) =>
         set((s) => ({
@@ -506,6 +526,7 @@ export const useGame = create<GameState>()(
           syndicationLastClaimed: {},
           fulfilledTuningContracts: [],
           clickerState: DEFAULT_CLICKER_STATE,
+          favourites: [],
         }),
     }),
     // Bumped: the old save carried a 10,000,000 balance from before there was

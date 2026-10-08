@@ -7,7 +7,7 @@ import type { CardClass, CardView } from '../types'
 import { CarCard, CLASS_COLORS, useCardGrid } from './CarCard'
 import { PageHeader } from './ui/PageHeader'
 
-type Filter = 'all' | 'bronze' | 'silver' | 'gold' | 'special' | 'rare'
+type Filter = 'all' | 'bronze' | 'silver' | 'gold' | 'special' | 'rare' | 'starred'
 type Sort = 'rating' | 'name' | 'owned'
 
 const FILTERS: [Filter, string][] = [
@@ -17,6 +17,7 @@ const FILTERS: [Filter, string][] = [
   ['gold', 'Gold'],
   ['rare', 'Rare'],
   ['special', 'Special'],
+  ['starred', 'Starred'],
 ]
 
 const CLASSES: [CardClass, string][] = [
@@ -88,11 +89,12 @@ export function FilterSelect({
 interface Props {
   collection: Record<string, number>
   packsOpened: number
+  favourites: string[]
   onInspect: (card: CardView) => void
   onSellDuplicates: () => number
 }
 
-export function Garage({ collection, packsOpened, onInspect, onSellDuplicates }: Props) {
+export function Garage({ collection, packsOpened, favourites, onInspect, onSellDuplicates }: Props) {
   const [filter, setFilter] = useState<Filter>('all')
   const [make, setMake] = useState('all')
   const [sort, setSort] = useState<Sort>('rating')
@@ -105,6 +107,10 @@ export function Garage({ collection, packsOpened, onInspect, onSellDuplicates }:
     [collection],
   )
 
+  const starred = useMemo(() => new Set(favourites), [favourites])
+  const isShown = (c: CardView, key: Filter) =>
+    key === 'starred' ? starred.has(c.id) : matchesFilter(c, key)
+
   const makes = useMemo(
     () => ['all', ...Array.from(new Set(owned.map((c) => c.make))).sort()],
     [owned],
@@ -113,22 +119,22 @@ export function Garage({ collection, packsOpened, onInspect, onSellDuplicates }:
   const visible = useMemo(() => {
     const matches = owned.filter((c) => {
       if (make !== 'all' && c.make !== make) return false
-      return matchesFilter(c, filter)
+      return isShown(c, filter)
     })
     return matches.sort((a, b) => {
       if (sort === 'name') return `${a.make} ${a.model}`.localeCompare(`${b.make} ${b.model}`)
       if (sort === 'owned') return (collection[b.id] ?? 0) - (collection[a.id] ?? 0)
       return b.overall - a.overall
     })
-  }, [owned, filter, make, sort, collection])
+  }, [owned, filter, make, sort, collection, starred])
 
   // How many owned cars each chip would show, ignoring the make filter so the
   // counts stay put while you flip between makes.
   const filterCounts = useMemo(() => {
     const counts = {} as Record<Filter, number>
-    for (const [key] of FILTERS) counts[key] = owned.filter((c) => matchesFilter(c, key)).length
+    for (const [key] of FILTERS) counts[key] = owned.filter((c) => isShown(c, key)).length
     return counts
-  }, [owned])
+  }, [owned, starred])
 
   const classOwned = useMemo(() => {
     const counts: Record<CardClass, number> = { bronze: 0, silver: 0, gold: 0, special: 0 }
@@ -136,13 +142,17 @@ export function Garage({ collection, packsOpened, onInspect, onSellDuplicates }:
     return counts
   }, [owned])
 
+  // Starred cars keep every copy, so they are left out of the quick-sell total.
   const duplicateValue = useMemo(
     () =>
       owned.reduce(
-        (sum, c) => sum + quickSellValue(c) * Math.max(0, (collection[c.id] ?? 0) - 1),
+        (sum, c) =>
+          starred.has(c.id)
+            ? sum
+            : sum + quickSellValue(c) * Math.max(0, (collection[c.id] ?? 0) - 1),
         0,
       ),
-    [owned, collection],
+    [owned, collection, starred],
   )
 
   const completion = Math.round((owned.length / ALL_CARDS.length) * 100)
@@ -320,7 +330,7 @@ export function Garage({ collection, packsOpened, onInspect, onSellDuplicates }:
               aria-pressed={filter === key}
               className={`chip shrink-0 ${filter === key ? 'chip-on' : ''}`}
             >
-              {key !== 'all' && key !== 'rare' && <TierSwatch cls={key} />}
+              {key !== 'all' && key !== 'rare' && key !== 'starred' && <TierSwatch cls={key} />}
               {label}
               <span className={`num text-[0.8rem] ${filter === key ? 'text-black/55' : 'text-white/35'}`}>
                 {filterCounts[key]}

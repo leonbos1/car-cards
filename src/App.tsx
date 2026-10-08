@@ -56,6 +56,8 @@ export function App() {
   const add = useGame((s) => s.add)
   const sellOne = useGame((s) => s.sellOne)
   const sellDuplicates = useGame((s) => s.sellDuplicates)
+  const favourites = useGame((s) => s.favourites)
+  const toggleFavourite = useGame((s) => s.toggleFavourite)
 
   // Derived from the subscribed timestamp so the store re-renders when the
   // free pack is taken, rather than reading a snapshot that never updates.
@@ -124,6 +126,7 @@ export function App() {
       <Garage
         collection={collection}
         packsOpened={packsOpened}
+        favourites={favourites}
         onInspect={setInspecting}
         onSellDuplicates={sellDuplicates}
       />
@@ -184,6 +187,8 @@ export function App() {
         owned={inspecting ? (collection[inspecting.id] ?? 0) : 0}
         onClose={() => setInspecting(null)}
         onSell={sellOne}
+        starred={inspecting ? favourites.includes(inspecting.id) : false}
+        onToggleStar={toggleFavourite}
       />
     </div>
   )
